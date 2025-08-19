@@ -54,6 +54,19 @@ export default function Home() {
                 </svg>
                 <span>Цены</span>
               </button>
+              <button className="nav-btn cart-btn">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <path d="M2.5 3.5L3.5 13.5H12.5L13.5 3.5H2.5Z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M2.5 3.5H1" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M5.5 6.5V8.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M8 6.5V8.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M10.5 6.5V8.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                  <circle cx="6" cy="14.5" r="0.5" fill="currentColor"/>
+                  <circle cx="10" cy="14.5" r="0.5" fill="currentColor"/>
+                  <circle cx="13" cy="1.5" r="1" fill="currentColor"/>
+                </svg>
+                <span>Корзина</span>
+              </button>
             </div>
             <div className="navbar-auth">
               <button className="auth-btn login">
@@ -350,7 +363,7 @@ export default function Home() {
                 <span className="highlight-text"> команду продавцов</span>
               </h2>
               <p className="jarvis-subtitle">
-                Один ИИ-ассистент выполняет работу 10+ ��онсультантов: отвечает на вопросы 24/7, квалифицирует лиды и увеличивает конверсию продаж
+                Один ИИ-ассистент выполняет работу 10+ консультантов: отвечает на вопросы 24/7, квалифицирует лиды и увеличивает конверсию продаж
               </p>
               <div className="jarvis-buttons">
                 <button className="btn-primary">
@@ -394,7 +407,7 @@ export default function Home() {
             <div className="pricing-card">
               <div className="pricing-card-header">
                 <h3 className="plan-name">Basic</h3>
-                <p className="plan-description">Стартовое решение</p>
+                <p className="plan-description">Стартовое ре��ение</p>
                 <div className="plan-price">
                   <span className="price-amount">2,500,000</span>
                   <span className="price-currency">сумм</span>
@@ -494,7 +507,7 @@ export default function Home() {
                 <p className="plan-description">Премиум решение</p>
                 <div className="plan-price">
                   <span className="price-amount">5,000,000</span>
-                  <span className="price-currency">��умм</span>
+                  <span className="price-currency">сумм</span>
                 </div>
                 <p className="plan-subtitle">Максимум возможностей для крупного бизнеса</p>
               </div>
