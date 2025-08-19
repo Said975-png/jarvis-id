@@ -904,6 +904,71 @@ body {
   animation-delay: 4s;
 }
 
+/* Responsive Design for JARVIS Section */
+@media (max-width: 768px) {
+  .jarvis-layout {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    text-align: center;
+  }
+
+  .jarvis-visual {
+    height: 500px;
+    order: -1;
+  }
+
+  .jarvis-title {
+    font-size: clamp(2.5rem, 8vw, 4rem);
+  }
+
+  .jarvis-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .jarvis-buttons {
+    justify-content: center;
+  }
+
+  .jarvis-stats {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .sales-demo-widget {
+    width: 320px;
+    height: 380px;
+  }
+
+  .sales-widget {
+    display: none;
+  }
+
+  .decorative-element {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .jarvis-section {
+    padding-top: 100px;
+  }
+
+  .jarvis-container {
+    padding: 0 1rem;
+  }
+
+  .sales-demo-widget {
+    width: 280px;
+    height: 350px;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    min-width: 150px;
+    padding: 0.875rem 1.5rem;
+  }
+}
+
 /* Enhanced Section Styles */
 
 .about-section {
