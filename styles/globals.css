@@ -63,10 +63,7 @@ body {
 .logo-text {
   font-size: 1.5rem;
   font-weight: 800;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #ffffff;
   letter-spacing: -0.5px;
 }
 
@@ -137,14 +134,14 @@ body {
 }
 
 .auth-btn.register {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: #ffffff;
-  box-shadow: 0 2px 10px rgba(102, 126, 234, 0.3);
+  background: #ffffff;
+  color: #000000;
+  border: 1px solid #ffffff;
 }
 
 .auth-btn.register:hover {
   transform: translateY(-1px);
-  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+  background: rgba(255, 255, 255, 0.9);
 }
 
 /* Hero Section - Modern Figma Style */
@@ -169,38 +166,7 @@ body {
 }
 
 .gradient-orb {
-  position: absolute;
-  border-radius: 50%;
-  filter: blur(100px);
-  opacity: 0.4;
-  animation: float 8s ease-in-out infinite;
-}
-
-.orb-1 {
-  width: 300px;
-  height: 300px;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  top: 10%;
-  left: 10%;
-  animation-delay: 0s;
-}
-
-.orb-2 {
-  width: 400px;
-  height: 400px;
-  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-  top: 50%;
-  right: 10%;
-  animation-delay: 2s;
-}
-
-.orb-3 {
-  width: 250px;
-  height: 250px;
-  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
-  bottom: 20%;
-  left: 50%;
-  animation-delay: 4s;
+  display: none;
 }
 
 @keyframes float {
@@ -242,7 +208,7 @@ body {
 .badge-dot {
   width: 8px;
   height: 8px;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: #ffffff;
   border-radius: 50%;
   animation: pulse 2s ease-in-out infinite;
 }
@@ -263,17 +229,7 @@ body {
 }
 
 .gradient-text {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-size: 200% 200%;
-  animation: gradientMove 3s ease-in-out infinite;
-}
-
-@keyframes gradientMove {
-  0%, 100% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
+  color: #ffffff;
 }
 
 .hero-subtitle {
@@ -312,42 +268,25 @@ body {
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: #ffffff;
-  box-shadow: 0 4px 20px rgba(102, 126, 234, 0.4);
-}
-
-.btn-primary::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.2) 0%, transparent 100%);
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.btn-primary:hover::before {
-  opacity: 1;
+  background: #ffffff;
+  color: #000000;
+  border: 1px solid #ffffff;
 }
 
 .btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 30px rgba(102, 126, 234, 0.6);
+  background: rgba(255, 255, 255, 0.9);
 }
 
 .btn-secondary {
-  background: rgba(255, 255, 255, 0.05);
+  background: transparent;
   color: #ffffff;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(10px);
+  border: 1px solid #ffffff;
 }
 
 .btn-secondary:hover {
-  background: rgba(255, 255, 255, 0.1);
-  border-color: rgba(255, 255, 255, 0.3);
+  background: #ffffff;
+  color: #000000;
   transform: translateY(-2px);
 }
 
@@ -413,7 +352,7 @@ body {
   transform: translateX(-50%);
   width: 80px;
   height: 4px;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: #ffffff;
   border-radius: 2px;
 }
 
@@ -438,8 +377,8 @@ body {
 .service-card:hover {
   transform: translateY(-8px);
   background: rgba(255, 255, 255, 0.05);
-  border-color: rgba(102, 126, 234, 0.3);
-  box-shadow: 0 20px 40px rgba(102, 126, 234, 0.1);
+  border-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 20px 40px rgba(255, 255, 255, 0.1);
 }
 
 .service-icon {
@@ -484,8 +423,8 @@ body {
 
 .work-card:hover {
   transform: translateY(-8px);
-  border-color: rgba(102, 126, 234, 0.3);
-  box-shadow: 0 20px 40px rgba(102, 126, 234, 0.1);
+  border-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 20px 40px rgba(255, 255, 255, 0.1);
 }
 
 .work-image {
@@ -528,12 +467,12 @@ body {
 
 .tag {
   padding: 0.5rem 1rem;
-  background: rgba(102, 126, 234, 0.1);
-  color: #667eea;
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
   border-radius: 20px;
   font-size: 0.875rem;
   font-weight: 500;
-  border: 1px solid rgba(102, 126, 234, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 /* Reviews Section */
@@ -555,8 +494,8 @@ body {
 
 .review-card:hover {
   transform: translateY(-8px);
-  border-color: rgba(102, 126, 234, 0.3);
-  box-shadow: 0 20px 40px rgba(102, 126, 234, 0.1);
+  border-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 20px 40px rgba(255, 255, 255, 0.1);
 }
 
 .review-stars {
@@ -580,7 +519,7 @@ body {
 }
 
 .author-company {
-  color: #667eea;
+  color: rgba(255, 255, 255, 0.7);
   font-size: 0.95rem;
   margin-top: 0.25rem;
 }
@@ -637,9 +576,9 @@ body {
 }
 
 .social-link:hover {
-  color: #667eea;
-  border-color: rgba(102, 126, 234, 0.3);
-  background: rgba(102, 126, 234, 0.1);
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.1);
 }
 
 .footer-links {
@@ -655,7 +594,7 @@ body {
 }
 
 .footer-link:hover {
-  color: #667eea;
+  color: #ffffff;
 }
 
 .footer-bottom {
