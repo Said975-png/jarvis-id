@@ -2,15 +2,6 @@ import React from 'react';
 import Head from 'next/head';
 import dynamic from 'next/dynamic';
 
-// Declare model-viewer for TypeScript
-declare global {
-  namespace JSX {
-    interface IntrinsicElements {
-      'model-viewer': any;
-    }
-  }
-}
-
 // Dynamically import 3D components to avoid SSR issues
 const Scene3D = dynamic(() => import('../components/Scene3D'), {
   ssr: false,
@@ -200,7 +191,7 @@ export default function Home() {
                 <span className="highlight-text"> Платформы</span>
               </h2>
               <p className="capabilities-subtitle">
-                Мы создаем сайты с интеллектуальными ИИ ассистентами, которые революционизируют взаимодействие с вашими клиентами
+                Мы создаем сайты с интеллектуальными ИИ ассистентами, котор��е революционизируют взаимодействие с вашими клиентами
               </p>
 
               <div className="capabilities-features">
@@ -355,7 +346,7 @@ export default function Home() {
                 <span>Революция в продажах</span>
               </div>
               <h2 className="jarvis-title">
-                ДЖАРВИС заменяет
+                ДЖАРВИС замен��ет
                 <span className="highlight-text"> команду продавцов</span>
               </h2>
               <p className="jarvis-subtitle">
