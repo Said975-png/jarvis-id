@@ -2,10 +2,15 @@ import React from 'react';
 import Head from 'next/head';
 import dynamic from 'next/dynamic';
 
-// Dynamically import 3D component to avoid SSR issues
+// Dynamically import 3D components to avoid SSR issues
 const Scene3D = dynamic(() => import('../components/Scene3D'), {
   ssr: false,
   loading: () => <div className="scene3d-loading">Loading...</div>
+});
+
+const JarvisModel = dynamic(() => import('../components/JarvisModel'), {
+  ssr: false,
+  loading: () => <div className="scene3d-loading">Loading JARVIS...</div>
 });
 
 export default function Home() {
@@ -19,6 +24,7 @@ export default function Home() {
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+        <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
       </Head>
 
       {/* Navigation Bar */}
@@ -169,9 +175,9 @@ export default function Home() {
       {/* Platform Capabilities Section */}
       <section className="capabilities-section">
         <div className="capabilities-background">
-          <div className="ai-orb ai-orb-1"></div>
-          <div className="ai-orb ai-orb-2"></div>
-          <div className="ai-orb ai-orb-3"></div>
+          <div className="gradient-orb orb-1"></div>
+          <div className="gradient-orb orb-2"></div>
+          <div className="gradient-orb orb-3"></div>
         </div>
         <div className="capabilities-container">
           <div className="capabilities-layout">
@@ -320,6 +326,61 @@ export default function Home() {
               <div className="ai-decorative-element ai-elem-3">
                 <div className="brain-wave"></div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* JARVIS Sales Team Section */}
+      <section className="jarvis-section">
+        <div className="jarvis-background">
+          <div className="gradient-orb orb-1"></div>
+          <div className="gradient-orb orb-2"></div>
+          <div className="gradient-orb orb-3"></div>
+        </div>
+        <div className="jarvis-container">
+          <div className="jarvis-layout">
+            <div className="jarvis-content">
+              <div className="jarvis-badge">
+                <span className="badge-dot"></span>
+                <span>Революция в продажах</span>
+              </div>
+              <h2 className="jarvis-title">
+                ДЖАРВИС заменяет
+                <span className="highlight-text"> команду продавцов</span>
+              </h2>
+              <p className="jarvis-subtitle">
+                Один ИИ-ассистент выполняет работу 10+ консультантов: отвечает на вопросы 24/7, квалифицирует лиды и увеличивает конверсию продаж
+              </p>
+              <div className="jarvis-buttons">
+                <button className="btn-primary">
+                  <span>Протестировать ДЖАРВИС</span>
+                  <div className="btn-shine"></div>
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path d="M3.5 8H12.5M12.5 8L8.5 4M12.5 8L8.5 12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                </button>
+                <button className="btn-secondary">
+                  <span>Посмотреть демо</span>
+                </button>
+              </div>
+              <div className="jarvis-stats">
+                <div className="stat-item">
+                  <div className="stat-number">10x</div>
+                  <div className="stat-label">Экономия на зарплатах</div>
+                </div>
+                <div className="stat-item">
+                  <div className="stat-number">85%</div>
+                  <div className="stat-label">Рост конверсии</div>
+                </div>
+                <div className="stat-item">
+                  <div className="stat-number">24/7</div>
+                  <div className="stat-label">Работа без перерывов</div>
+                </div>
+              </div>
+            </div>
+            <div className="jarvis-visual">
+              <JarvisModel />
             </div>
           </div>
         </div>
