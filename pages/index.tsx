@@ -191,7 +191,7 @@ export default function Home() {
                 <span className="highlight-text"> Платформы</span>
               </h2>
               <p className="capabilities-subtitle">
-                Мы создаем сайты с интеллектуальными ИИ ассистентами, котор��е революционизируют взаимодействие с вашими клиентами
+                Мы создаем сайты с интеллектуальными ИИ ассистентами, которые революционизируют взаимодействие с вашими клиентами
               </p>
 
               <div className="capabilities-features">
@@ -205,7 +205,7 @@ export default function Home() {
                   </div>
                   <div className="feature-content">
                     <h3 className="feature-title">Smart AI Assistants</h3>
-                    <p className="feature-description">Интеллектуальные чат-боты и голосовые помощники с GPT интеграцией</p>
+                    <p className="feature-description">Интеллектуальные чат-бо��ы и голосовые помощники с GPT интеграцией</p>
                   </div>
                 </div>
 
@@ -276,7 +276,7 @@ export default function Home() {
                 </div>
                 <div className="ai-chat-messages">
                   <div className="message ai-message">
-                    <div className="message-text">Привет! Я ИИ ассистент. Помогу вам с вопросами о сайте и продуктах. Что вас интересует?</div>
+                    <div className="message-text">Привет! Я ИИ ассистент. Помогу ва�� с вопросами о сайте и продуктах. Что вас интересует?</div>
                   </div>
                   <div className="message user-message">
                     <div className="message-text">Расскажи о ваших услугах</div>
