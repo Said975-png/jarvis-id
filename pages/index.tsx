@@ -19,6 +19,7 @@ export default function Home() {
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+        <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
       </Head>
 
       {/* Navigation Bar */}
@@ -341,7 +342,7 @@ export default function Home() {
               </div>
               <h2 className="jarvis-title">
                 ДЖАРВИС заменяет
-                <span className="highlight-text"> команду ��родавцов</span>
+                <span className="highlight-text"> команду продавцов</span>
               </h2>
               <p className="jarvis-subtitle">
                 Один ИИ-ассистент выполняет работу 10+ консультантов: отвечает на вопросы 24/7, квалифицирует лиды и увеличивает конверсию продаж
