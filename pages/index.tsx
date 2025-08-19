@@ -169,9 +169,9 @@ export default function Home() {
       {/* Platform Capabilities Section */}
       <section className="capabilities-section">
         <div className="capabilities-background">
-          <div className="ai-orb ai-orb-1"></div>
-          <div className="ai-orb ai-orb-2"></div>
-          <div className="ai-orb ai-orb-3"></div>
+          <div className="gradient-orb orb-1"></div>
+          <div className="gradient-orb orb-2"></div>
+          <div className="gradient-orb orb-3"></div>
         </div>
         <div className="capabilities-container">
           <div className="capabilities-layout">
@@ -185,7 +185,7 @@ export default function Home() {
                 <span className="highlight-text"> Платформы</span>
               </h2>
               <p className="capabilities-subtitle">
-                Мы создаем сайты с интеллектуальными ИИ ассистентами, которые революционизируют взаимодействие с вашими клиентами
+                Мы создаем сайты с интеллектуальными ИИ ассистентами, которые революционизируют взаи��одействие с вашими клиентами
               </p>
 
               <div className="capabilities-features">
