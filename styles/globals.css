@@ -603,7 +603,6 @@ body {
   backdrop-filter: blur(20px);
   position: relative;
   overflow: hidden;
-  cursor: none;
 }
 
 .service-card::before {
@@ -698,7 +697,6 @@ body {
   overflow: hidden;
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   backdrop-filter: blur(20px);
-  cursor: none;
   position: relative;
 }
 
@@ -803,7 +801,6 @@ body {
   font-weight: 500;
   border: 1px solid rgba(255, 255, 255, 0.1);
   transition: all 0.3s ease;
-  cursor: none;
 }
 
 .tag:hover {
@@ -827,7 +824,6 @@ body {
   padding: 3rem 2.5rem;
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   backdrop-filter: blur(20px);
-  cursor: none;
   position: relative;
   overflow: hidden;
 }
@@ -949,7 +945,6 @@ body {
   margin-bottom: 1.25rem;
   color: rgba(255, 255, 255, 0.6);
   transition: all 0.3s ease;
-  cursor: none;
 }
 
 .contact-item:hover {
@@ -975,7 +970,6 @@ body {
   border-radius: 30px;
   transition: all 0.3s ease;
   backdrop-filter: blur(10px);
-  cursor: none;
   position: relative;
   overflow: hidden;
 }
@@ -1013,7 +1007,6 @@ body {
   text-decoration: none;
   transition: all 0.3s ease;
   font-size: 1.05rem;
-  cursor: none;
 }
 
 .footer-link:hover {
