@@ -11,10 +11,15 @@ declare global {
   }
 }
 
-// Dynamically import 3D component to avoid SSR issues
+// Dynamically import 3D components to avoid SSR issues
 const Scene3D = dynamic(() => import('../components/Scene3D'), {
   ssr: false,
   loading: () => <div className="scene3d-loading">Loading...</div>
+});
+
+const JarvisModel = dynamic(() => import('../components/JarvisModel'), {
+  ssr: false,
+  loading: () => <div className="scene3d-loading">Loading JARVIS...</div>
 });
 
 export default function Home() {
@@ -280,7 +285,7 @@ export default function Home() {
                 </div>
                 <div className="ai-chat-messages">
                   <div className="message ai-message">
-                    <div className="message-text">Привет! Я ИИ ассистент. Помогу вам с вопросами о сайте и продуктах. Что вас интересует?</div>
+                    <div className="message-text">Привет! Я ИИ ассистент. П��могу вам с вопросами о сайте и продуктах. Что вас интересует?</div>
                   </div>
                   <div className="message user-message">
                     <div className="message-text">Расскажи о ваших услугах</div>
