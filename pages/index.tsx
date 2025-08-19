@@ -285,7 +285,7 @@ export default function Home() {
                 </div>
                 <div className="ai-chat-messages">
                   <div className="message ai-message">
-                    <div className="message-text">Привет! Я ИИ ассистент. П��могу вам с вопросами о сайте и продуктах. Что вас интересует?</div>
+                    <div className="message-text">Привет! Я ИИ ассистент. Помогу вам с вопросами о сайте и продуктах. Что вас интересует?</div>
                   </div>
                   <div className="message user-message">
                     <div className="message-text">Расскажи о ваших услугах</div>
@@ -389,21 +389,7 @@ export default function Home() {
               </div>
             </div>
             <div className="jarvis-visual">
-              <div className="jarvis-model-container">
-                <model-viewer
-                  src="https://cdn.builder.io/o/assets%2F10fe30a11cee45b9b71e1d7d7d51e7d1%2Fd76f3c260cc549d886f5842a1fab1641?alt=media&token=79723d88-68bd-46cc-86d2-0320b5e73429&apiKey=10fe30a11cee45b9b71e1d7d7d51e7d1"
-                  alt="JARVIS Robot"
-                  auto-rotate
-                  camera-controls
-                  environment-image="neutral"
-                  exposure="1"
-                  style={{
-                    width: '100%',
-                    height: '100%',
-                    background: 'transparent'
-                  }}
-                ></model-viewer>
-              </div>
+              <JarvisModel />
             </div>
           </div>
         </div>
