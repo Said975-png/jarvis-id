@@ -1274,6 +1274,12 @@ body {
     transform: translateY(0);
   }
 
+  /* Hide floating widgets on mobile for cleaner look */
+  .floating-widget,
+  .decorative-element {
+    display: none;
+  }
+
   .hero-stats {
     grid-template-columns: 1fr;
     gap: 1.5rem;
