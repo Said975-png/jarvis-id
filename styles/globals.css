@@ -26,17 +26,6 @@ body {
   perspective: 1000px;
 }
 
-body {
-  font-family: 'Inter', 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif;
-  background: #000000;
-  color: #ffffff;
-  overflow-x: hidden;
-  line-height: 1.6;
-  font-feature-settings: 'kern' 1, 'liga' 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
 
 .container {
   max-width: 1200px;
