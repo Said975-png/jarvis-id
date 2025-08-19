@@ -220,6 +220,8 @@ body {
   position: relative;
   overflow: hidden;
   padding-top: 120px;
+  transition: opacity 0.1s ease-out, transform 0.1s ease-out;
+  will-change: opacity, transform;
 }
 
 .hero-background {
@@ -552,6 +554,14 @@ body {
 .reviews-section {
   padding: 8rem 0;
   position: relative;
+}
+
+.about-section {
+  transition: transform 0.1s ease-out;
+  will-change: transform;
+  margin-top: -100px;
+  z-index: 100;
+  background: #000000;
 }
 
 .section-title {
