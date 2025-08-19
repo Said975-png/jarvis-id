@@ -62,16 +62,16 @@ export default function Home() {
           <div className="hero-content">
             <div className="hero-badge">
               <span className="badge-dot"></span>
-              <span>Web Development Studio</span>
+              <span>Premium Web Development</span>
             </div>
             <h1 className="hero-title">
-              We create
-              <span className="gradient-text"> stunning</span>
-              <br />custom websites
+              <span className="title-line-1">We craft</span>
+              <span className="title-line-2">exceptional</span>
+              <span className="title-line-3">digital experiences</span>
             </h1>
             <p className="hero-subtitle">
-              Modern, responsive, and performant web solutions
-              <br />that drive results for your business
+              Transforming ideas into powerful, scalable web solutions
+              <br />that elevate your brand and drive business growth
             </p>
             <div className="hero-buttons">
               <button className="btn-primary">
