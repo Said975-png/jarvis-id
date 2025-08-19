@@ -1220,34 +1220,7 @@ body {
 }
 
 .ai-orb {
-  position: absolute;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(0, 255, 255, 0.1) 0%, transparent 70%);
-  animation: aiFloat 15s ease-in-out infinite;
-}
-
-.ai-orb-1 {
-  width: 300px;
-  height: 300px;
-  top: 10%;
-  left: 10%;
-  animation-delay: 0s;
-}
-
-.ai-orb-2 {
-  width: 200px;
-  height: 200px;
-  top: 60%;
-  right: 20%;
-  animation-delay: 5s;
-}
-
-.ai-orb-3 {
-  width: 150px;
-  height: 150px;
-  bottom: 20%;
-  left: 60%;
-  animation-delay: 10s;
+  display: none;
 }
 
 .capabilities-container {
