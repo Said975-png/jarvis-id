@@ -165,6 +165,155 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Platform Capabilities Section */}
+      <section className="capabilities-section">
+        <div className="capabilities-background">
+          <div className="ai-orb ai-orb-1"></div>
+          <div className="ai-orb ai-orb-2"></div>
+          <div className="ai-orb ai-orb-3"></div>
+        </div>
+        <div className="capabilities-container">
+          <div className="capabilities-layout">
+            <div className="capabilities-content">
+              <div className="capabilities-badge">
+                <span className="badge-dot"></span>
+                <span>AI-Powered Platform</span>
+              </div>
+              <h2 className="capabilities-title">
+                Возможности нашей
+                <span className="highlight-text"> Платформы</span>
+              </h2>
+              <p className="capabilities-subtitle">
+                Мы создаем сайты с интеллектуальными ИИ ассистентами, которые революционизируют взаимодействие с вашими клиентами
+              </p>
+
+              <div className="capabilities-features">
+                <div className="feature-item">
+                  <div className="feature-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                      <path d="M2 17l10 5 10-5"/>
+                      <path d="M2 12l10 5 10-5"/>
+                    </svg>
+                  </div>
+                  <div className="feature-content">
+                    <h3 className="feature-title">Smart AI Assistants</h3>
+                    <p className="feature-description">Интеллектуальные чат-боты и голосовые помощники с GPT интеграцией</p>
+                  </div>
+                </div>
+
+                <div className="feature-item">
+                  <div className="feature-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <circle cx="12" cy="12" r="3"/>
+                      <path d="M12 1v6m0 6v6m11-7h-6m-6 0H1"/>
+                    </svg>
+                  </div>
+                  <div className="feature-content">
+                    <h3 className="feature-title">Автоматизация бизнеса</h3>
+                    <p className="feature-description">ИИ для обработки заказов, клиентской поддержки и аналитики</p>
+                  </div>
+                </div>
+
+                <div className="feature-item">
+                  <div className="feature-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                      <polyline points="3.27,6.96 12,12.01 20.73,6.96"/>
+                      <line x1="12" y1="22.08" x2="12" y2="12"/>
+                    </svg>
+                  </div>
+                  <div className="feature-content">
+                    <h3 className="feature-title">Персонализация</h3>
+                    <p className="feature-description">Адаптивный контент и рекомендации на основе поведения пользователей</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="capabilities-buttons">
+                <button className="btn-primary">
+                  <span>Попробовать ИИ</span>
+                  <div className="btn-shine"></div>
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path d="M3.5 8H12.5M12.5 8L8.5 4M12.5 8L8.5 12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                </button>
+                <button className="btn-secondary">
+                  <span>Смотреть Демо</span>
+                </button>
+              </div>
+            </div>
+
+            <div className="capabilities-visual">
+              {/* AI Demo Widget */}
+              <div className="ai-demo-widget">
+                <div className="ai-chat-header">
+                  <div className="ai-avatar">🤖</div>
+                  <div className="ai-info">
+                    <div className="ai-name">JARVIS Assistant</div>
+                    <div className="ai-status">
+                      <span className="status-dot"></span>
+                      Онлайн
+                    </div>
+                  </div>
+                </div>
+                <div className="ai-chat-messages">
+                  <div className="message ai-message">
+                    <div className="message-text">Привет! Я ИИ ассистент. Помогу вам с вопросами о сайте и продуктах. Что вас интересует?</div>
+                  </div>
+                  <div className="message user-message">
+                    <div className="message-text">Расскажи о ваших услугах</div>
+                  </div>
+                  <div className="message ai-message typing">
+                    <div className="typing-indicator">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Floating AI Widgets */}
+              <div className="ai-widget ai-widget-1">
+                <div className="ai-widget-icon">🧠</div>
+                <div className="ai-widget-text">
+                  <div className="ai-widget-title">Machine Learning</div>
+                  <div className="ai-widget-subtitle">99.7% Accuracy</div>
+                </div>
+              </div>
+
+              <div className="ai-widget ai-widget-2">
+                <div className="ai-widget-icon">💬</div>
+                <div className="ai-widget-text">
+                  <div className="ai-widget-title">Natural Language</div>
+                  <div className="ai-widget-subtitle">50+ Languages</div>
+                </div>
+              </div>
+
+              <div className="ai-widget ai-widget-3">
+                <div className="ai-widget-icon">⚡</div>
+                <div className="ai-widget-text">
+                  <div className="ai-widget-title">Real-time Response</div>
+                  <div className="ai-widget-subtitle">&lt; 0.2s</div>
+                </div>
+              </div>
+
+              {/* Decorative AI Elements */}
+              <div className="ai-decorative-element ai-elem-1">
+                <div className="neural-node"></div>
+              </div>
+              <div className="ai-decorative-element ai-elem-2">
+                <div className="data-stream"></div>
+              </div>
+              <div className="ai-decorative-element ai-elem-3">
+                <div className="brain-wave"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </>
   );
 }
