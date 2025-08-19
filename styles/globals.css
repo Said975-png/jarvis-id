@@ -967,17 +967,8 @@ body {
     gap: 1rem;
   }
 
-  .sales-demo-widget {
-    width: 320px;
-    height: 380px;
-  }
-
-  .sales-widget {
-    display: none;
-  }
-
-  .decorative-element {
-    display: none;
+  .jarvis-model-container {
+    height: 400px;
   }
 }
 
