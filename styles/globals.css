@@ -112,7 +112,7 @@ body {
   color: rgba(255, 255, 255, 0.7);
   font-size: 0.95rem;
   font-weight: 500;
-  cursor: none;
+  cursor: pointer;
   border-radius: 30px;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   text-decoration: none;
@@ -164,7 +164,7 @@ body {
   border-radius: 30px;
   font-size: 0.95rem;
   font-weight: 600;
-  cursor: none;
+  cursor: pointer;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   border: none;
   text-decoration: none;
@@ -406,7 +406,7 @@ body {
   border-radius: 50px;
   font-size: 1rem;
   font-weight: 600;
-  cursor: none;
+  cursor: pointer;
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   display: inline-flex;
   align-items: center;
@@ -1093,8 +1093,9 @@ body {
   }
 
   .hero-3d {
-    height: 400px;
+    height: 500px;
     order: -1;
+    transform: translateY(0);
   }
 
   .hero-stats {
