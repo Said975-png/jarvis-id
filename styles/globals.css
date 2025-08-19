@@ -682,6 +682,32 @@ body {
   .container {
     padding: 0 1rem;
   }
+
+  .navbar {
+    top: 1rem;
+    padding: 0 1rem;
+  }
+
+  .navbar-content {
+    padding: 0.5rem 1rem;
+  }
+
+  .navbar-menu {
+    display: none;
+  }
+
+  .logo-text {
+    font-size: 1.25rem;
+  }
+
+  .navbar-auth {
+    gap: 0.5rem;
+  }
+
+  .auth-btn {
+    padding: 0.4rem 1rem;
+    font-size: 0.8rem;
+  }
   
   .hero-stats {
     flex-direction: column;
@@ -722,6 +748,19 @@ body {
 @media (max-width: 480px) {
   .hero-content {
     padding: 0 1rem;
+  }
+
+  .navbar-content {
+    padding: 0.4rem 0.75rem;
+  }
+
+  .auth-btn {
+    padding: 0.35rem 0.75rem;
+    font-size: 0.75rem;
+  }
+
+  .logo-text {
+    font-size: 1.1rem;
   }
   
   .service-card,
