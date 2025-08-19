@@ -185,7 +185,7 @@ export default function Home() {
                 <span className="highlight-text"> Платформы</span>
               </h2>
               <p className="capabilities-subtitle">
-                Мы создаем сайты с интеллектуальными ИИ ассистентами, которые революционизируют взаи��одействие с вашими клиентами
+                Мы создаем сайты с интеллектуальными ИИ ассистентами, которые революционизируют взаимодействие с вашими клиентами
               </p>
 
               <div className="capabilities-features">
@@ -319,6 +319,152 @@ export default function Home() {
               </div>
               <div className="ai-decorative-element ai-elem-3">
                 <div className="brain-wave"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* JARVIS Sales Team Section */}
+      <section className="jarvis-section">
+        <div className="jarvis-background">
+          <div className="gradient-orb orb-1"></div>
+          <div className="gradient-orb orb-2"></div>
+          <div className="gradient-orb orb-3"></div>
+        </div>
+        <div className="jarvis-container">
+          <div className="jarvis-layout">
+            <div className="jarvis-content">
+              <div className="jarvis-badge">
+                <span className="badge-dot"></span>
+                <span>Революция в продажах</span>
+              </div>
+              <h2 className="jarvis-title">
+                ДЖАРВИС заменяет
+                <span className="highlight-text"> целую команду</span>
+                <br />продавцов-консультантов
+              </h2>
+              <p className="jarvis-subtitle">
+                Один ИИ-ассистент выполняет работу 10+ консультантов: отв��чает на вопросы 24/7, квалифицирует лиды и увеличивает конверсию продаж
+              </p>
+              <div className="jarvis-buttons">
+                <button className="btn-primary">
+                  <span>Протестировать ДЖАРВИС</span>
+                  <div className="btn-shine"></div>
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path d="M3.5 8H12.5M12.5 8L8.5 4M12.5 8L8.5 12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                </button>
+                <button className="btn-secondary">
+                  <span>Посмотреть демо</span>
+                </button>
+              </div>
+              <div className="jarvis-stats">
+                <div className="stat-item">
+                  <div className="stat-number">10x</div>
+                  <div className="stat-label">Экономия на зарплатах</div>
+                </div>
+                <div className="stat-item">
+                  <div className="stat-number">85%</div>
+                  <div className="stat-label">Рост конверсии</div>
+                </div>
+                <div className="stat-item">
+                  <div className="stat-number">24/7</div>
+                  <div className="stat-label">Работа без перерывов</div>
+                </div>
+              </div>
+            </div>
+            <div className="jarvis-visual">
+              {/* Sales Demo Widget */}
+              <div className="sales-demo-widget">
+                <div className="sales-header">
+                  <div className="sales-avatar">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                      <circle cx="12" cy="7" r="4"/>
+                    </svg>
+                  </div>
+                  <div className="sales-info">
+                    <div className="sales-name">Продажи с ДЖАРВИС</div>
+                    <div className="sales-status">
+                      <span className="status-dot"></span>
+                      Активно работает
+                    </div>
+                  </div>
+                </div>
+                <div className="sales-metrics">
+                  <div className="metric-item">
+                    <div className="metric-icon">👥</div>
+                    <div className="metric-text">
+                      <div className="metric-title">Клиентов обслужено</div>
+                      <div className="metric-value">847 сегодня</div>
+                    </div>
+                  </div>
+                  <div className="metric-item">
+                    <div className="metric-icon">💰</div>
+                    <div className="metric-text">
+                      <div className="metric-title">Продажи</div>
+                      <div className="metric-value">₽2,340,000</div>
+                    </div>
+                  </div>
+                  <div className="metric-item">
+                    <div className="metric-icon">⚡</div>
+                    <div className="metric-text">
+                      <div className="metric-title">Время ответа</div>
+                      <div className="metric-value">0.3 сек</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Floating Sales Widgets */}
+              <div className="sales-widget sales-widget-1">
+                <div className="widget-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                  </svg>
+                </div>
+                <div className="widget-text">
+                  <div className="widget-title">Консультации</div>
+                  <div className="widget-subtitle">∞ в минуту</div>
+                </div>
+              </div>
+
+              <div className="sales-widget sales-widget-2">
+                <div className="widget-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <polyline points="22,12 18,12 15,21 9,3 6,12 2,12"/>
+                  </svg>
+                </div>
+                <div className="widget-text">
+                  <div className="widget-title">Эффективность</div>
+                  <div className="widget-subtitle">98.5%</div>
+                </div>
+              </div>
+
+              <div className="sales-widget sales-widget-3">
+                <div className="widget-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                    <path d="M2 17l10 5 10-5"/>
+                    <path d="M2 12l10 5 10-5"/>
+                  </svg>
+                </div>
+                <div className="widget-text">
+                  <div className="widget-title">Обучение</div>
+                  <div className="widget-subtitle">Непрерывное</div>
+                </div>
+              </div>
+
+              {/* Decorative Elements */}
+              <div className="decorative-element elem-1">
+                <div className="pulse-dot"></div>
+              </div>
+              <div className="decorative-element elem-2">
+                <div className="rotating-ring"></div>
+              </div>
+              <div className="decorative-element elem-3">
+                <div className="floating-plus">+</div>
               </div>
             </div>
           </div>
