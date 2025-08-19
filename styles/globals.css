@@ -1426,6 +1426,21 @@ body {
     display: none;
   }
 
+  /* Simplified animations for mobile */
+  .section-animate {
+    transform: translateY(30px);
+  }
+
+  .section-animate .container > * {
+    transform: translateY(20px);
+  }
+
+  .section-animate .services-grid .service-card,
+  .section-animate .works-grid .work-card,
+  .section-animate .reviews-grid .review-card {
+    transform: translateY(30px) scale(0.98);
+  }
+
   .hero-stats {
     grid-template-columns: 1fr;
     gap: 1.5rem;
