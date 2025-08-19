@@ -350,7 +350,7 @@ export default function Home() {
                 <span className="highlight-text"> команду продавцов</span>
               </h2>
               <p className="jarvis-subtitle">
-                Один ИИ-ассистент выполняе�� работу 10+ консультантов: отвечает на вопросы 24/7, квалифицирует лиды и увеличивает конверсию продаж
+                Один ИИ-ассистент выполняет работу 10+ ��онсультантов: отвечает на вопросы 24/7, квалифицирует лиды и увеличивает конверсию продаж
               </p>
               <div className="jarvis-buttons">
                 <button className="btn-primary">
@@ -367,6 +367,172 @@ export default function Home() {
             </div>
             <div className="jarvis-visual">
               <JarvisModel />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Pricing Section */}
+      <section className="pricing-section">
+        <div className="pricing-container">
+          <div className="pricing-header">
+            <div className="pricing-badge">
+              <span className="badge-dot"></span>
+              <span>Тарифные планы</span>
+            </div>
+            <h2 className="pricing-title">
+              Выберите подходящий
+              <span className="highlight-text"> тариф</span>
+            </h2>
+            <p className="pricing-subtitle">
+              От стартовых решений до премиум возможностей
+            </p>
+          </div>
+
+          <div className="pricing-grid">
+            {/* Basic Plan */}
+            <div className="pricing-card">
+              <div className="pricing-card-header">
+                <h3 className="plan-name">Basic</h3>
+                <p className="plan-description">Стартовое решение</p>
+                <div className="plan-price">
+                  <span className="price-amount">2,500,000</span>
+                  <span className="price-currency">сумм</span>
+                </div>
+                <p className="plan-subtitle">Идеально для небольших проектов и стартапов</p>
+              </div>
+              <div className="pricing-features">
+                <div className="feature">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <polyline points="20,6 9,17 4,12"/>
+                  </svg>
+                  <span>До 5 страниц сайта</span>
+                </div>
+                <div className="feature">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <polyline points="20,6 9,17 4,12"/>
+                  </svg>
+                  <span>Современный дизайн</span>
+                </div>
+                <div className="feature">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <polyline points="20,6 9,17 4,12"/>
+                  </svg>
+                  <span>Адаптивная верстка</span>
+                </div>
+                <div className="feature">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <polyline points="20,6 9,17 4,12"/>
+                  </svg>
+                  <span>SEO оптимизация</span>
+                </div>
+                <div className="feature">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <polyline points="20,6 9,17 4,12"/>
+                  </svg>
+                  <span>Техподдержка email</span>
+                </div>
+              </div>
+              <button className="plan-button">
+                <span>Выбрать план</span>
+              </button>
+            </div>
+
+            {/* Pro Plan */}
+            <div className="pricing-card featured">
+              <div className="featured-badge">Лучший выбор</div>
+              <div className="pricing-card-header">
+                <h3 className="plan-name">Pro</h3>
+                <p className="plan-description">Лучший выбор</p>
+                <div className="plan-price">
+                  <span className="price-amount">4,000,000</span>
+                  <span className="price-currency">сумм</span>
+                </div>
+                <p className="plan-subtitle">Лучший выбор для растущего бизнеса</p>
+              </div>
+              <div className="pricing-features">
+                <div className="feature">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <polyline points="20,6 9,17 4,12"/>
+                  </svg>
+                  <span>Все из Basic</span>
+                </div>
+                <div className="feature">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <polyline points="20,6 9,17 4,12"/>
+                  </svg>
+                  <span>До 15 страниц сайта</span>
+                </div>
+                <div className="feature">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <polyline points="20,6 9,17 4,12"/>
+                  </svg>
+                  <span>ИИ ассистент интеграция</span>
+                </div>
+                <div className="feature">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <polyline points="20,6 9,17 4,12"/>
+                  </svg>
+                  <span>Продвинутая аналитика</span>
+                </div>
+                <div className="feature">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <polyline points="20,6 9,17 4,12"/>
+                  </svg>
+                  <span>Приоритетная поддержка</span>
+                </div>
+              </div>
+              <button className="plan-button featured-button">
+                <span>Выбрать план</span>
+              </button>
+            </div>
+
+            {/* Max Plan */}
+            <div className="pricing-card">
+              <div className="pricing-card-header">
+                <h3 className="plan-name">Max</h3>
+                <p className="plan-description">Премиум решение</p>
+                <div className="plan-price">
+                  <span className="price-amount">5,000,000</span>
+                  <span className="price-currency">��умм</span>
+                </div>
+                <p className="plan-subtitle">Максимум возможностей для крупного бизнеса</p>
+              </div>
+              <div className="pricing-features">
+                <div className="feature">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <polyline points="20,6 9,17 4,12"/>
+                  </svg>
+                  <span>Все из Pro</span>
+                </div>
+                <div className="feature">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <polyline points="20,6 9,17 4,12"/>
+                  </svg>
+                  <span>Безлимитные страницы</span>
+                </div>
+                <div className="feature">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <polyline points="20,6 9,17 4,12"/>
+                  </svg>
+                  <span>ДЖАРВИС ИИ полная версия</span>
+                </div>
+                <div className="feature">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <polyline points="20,6 9,17 4,12"/>
+                  </svg>
+                  <span>Индивидуальные решения</span>
+                </div>
+                <div className="feature">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <polyline points="20,6 9,17 4,12"/>
+                  </svg>
+                  <span>VIP поддержка 24 часа в сутки</span>
+                </div>
+              </div>
+              <button className="plan-button">
+                <span>Выбрать план</span>
+              </button>
             </div>
           </div>
         </div>
