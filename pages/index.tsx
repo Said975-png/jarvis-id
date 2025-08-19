@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Head from 'next/head';
 import dynamic from 'next/dynamic';
 
@@ -9,6 +9,35 @@ const Scene3D = dynamic(() => import('../components/Scene3D'), {
 });
 
 export default function Home() {
+  useEffect(() => {
+    // Intersection Observer для анимаций появления
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate-in');
+          observer.unobserve(entry.target); // Анимация только один раз
+        }
+      });
+    }, observerOptions);
+
+    // Наблюдение за секциями
+    const sections = document.querySelectorAll('.section-animate');
+    sections.forEach((section) => {
+      observer.observe(section);
+    });
+
+    return () => {
+      sections.forEach((section) => {
+        observer.unobserve(section);
+      });
+    };
+  }, []);
+
   return (
     <>
       <Head>
@@ -169,7 +198,7 @@ export default function Home() {
       </section>
 
       {/* About Us Section */}
-      <section className="about-section">
+      <section className="about-section section-animate">
         <div className="container">
           <h2 className="section-title">About Us</h2>
           <div className="services-grid">
@@ -179,7 +208,7 @@ export default function Home() {
               <p className="service-description">Unique designs tailored to your brand and business needs</p>
             </div>
             <div className="service-card">
-              <div className="service-icon">💻</div>
+              <div className="service-icon">���</div>
               <h3 className="service-title">Development</h3>
               <p className="service-description">Modern, responsive websites built with latest technologies</p>
             </div>
@@ -198,7 +227,7 @@ export default function Home() {
       </section>
 
       {/* Our Works Section */}
-      <section className="works-section">
+      <section className="works-section section-animate">
         <div className="container">
           <h2 className="section-title">Our Works</h2>
           <div className="works-grid">
@@ -249,7 +278,7 @@ export default function Home() {
       </section>
 
       {/* Client Reviews Section */}
-      <section className="reviews-section">
+      <section className="reviews-section section-animate">
         <div className="container">
           <h2 className="section-title">Client Reviews</h2>
           <div className="reviews-grid">
@@ -282,7 +311,7 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="footer">
+      <footer className="footer section-animate">
         <div className="container">
           <div className="footer-content">
             <div className="footer-section">
