@@ -1,7 +1,19 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Head from 'next/head';
 
 export default function Home() {
+  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+  const [isHovering, setIsHovering] = useState(false);
+
+  useEffect(() => {
+    const updateMousePosition = (e: MouseEvent) => {
+      setMousePosition({ x: e.clientX, y: e.clientY });
+    };
+
+    window.addEventListener('mousemove', updateMousePosition);
+    return () => window.removeEventListener('mousemove', updateMousePosition);
+  }, []);
+
   return (
     <>
       <Head>
@@ -9,7 +21,27 @@ export default function Home() {
         <meta name="description" content="We create custom websites with modern solutions for online business" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
       </Head>
+
+      {/* Custom Cursor */}
+      <div
+        className="custom-cursor"
+        style={{
+          left: `${mousePosition.x}px`,
+          top: `${mousePosition.y}px`,
+          transform: isHovering ? 'scale(2)' : 'scale(1)'
+        }}
+      />
+      <div
+        className="cursor-dot"
+        style={{
+          left: `${mousePosition.x}px`,
+          top: `${mousePosition.y}px`
+        }}
+      />
 
       {/* Navigation Bar */}
       <nav className="navbar">
@@ -74,14 +106,24 @@ export default function Home() {
               <br />that elevate your brand and drive business growth
             </p>
             <div className="hero-buttons">
-              <button className="btn-primary">
+              <button
+                className="btn-primary magnetic"
+                onMouseEnter={() => setIsHovering(true)}
+                onMouseLeave={() => setIsHovering(false)}
+              >
                 <span>Start Project</span>
+                <div className="btn-shine"></div>
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
                   <path d="M3.5 8H12.5M12.5 8L8.5 4M12.5 8L8.5 12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
               </button>
-              <button className="btn-secondary">
+              <button
+                className="btn-secondary magnetic"
+                onMouseEnter={() => setIsHovering(true)}
+                onMouseLeave={() => setIsHovering(false)}
+              >
                 <span>View Portfolio</span>
+                <div className="btn-ripple"></div>
               </button>
             </div>
             <div className="hero-stats">
