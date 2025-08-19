@@ -288,17 +288,65 @@ body {
 }
 
 .hero-container {
-  max-width: 1200px;
+  max-width: 1400px;
   width: 100%;
   padding: 0 2rem;
   position: relative;
   z-index: 10;
 }
 
+.hero-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  min-height: 80vh;
+}
+
 .hero-content {
-  max-width: 900px;
-  margin: 0 auto;
-  text-align: center;
+  max-width: 600px;
+  text-align: left;
+}
+
+.hero-3d {
+  position: relative;
+  height: 600px;
+  width: 100%;
+}
+
+.scene3d-container {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  background: radial-gradient(circle at center, rgba(255, 255, 255, 0.02) 0%, transparent 70%);
+  position: relative;
+}
+
+.scene3d-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(0, 255, 255, 0.03) 0%, rgba(255, 0, 255, 0.03) 100%);
+  border-radius: 20px;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.scene3d-loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 1.1rem;
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
 }
 
 .hero-badge {
@@ -537,9 +585,8 @@ body {
 .hero-stats {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-  max-width: 600px;
-  margin: 0 auto;
+  gap: 1.5rem;
+  margin-top: 3rem;
   animation: fadeInUp 0.8s ease-out 1.3s both;
 }
 
@@ -1138,9 +1185,26 @@ body {
     cursor: auto;
   }
   
+  .hero-layout {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    text-align: center;
+  }
+
+  .hero-content {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .hero-3d {
+    height: 400px;
+    order: -1;
+  }
+
   .hero-stats {
     grid-template-columns: 1fr;
     gap: 1.5rem;
+    margin-top: 2rem;
   }
   
   .hero-buttons {
@@ -1198,7 +1262,15 @@ body {
     padding: 2rem 1.5rem;
   }
   
+  .hero-3d {
+    height: 300px;
+  }
+
   .stat-item {
     padding: 1.5rem 1rem;
+  }
+
+  .hero-layout {
+    gap: 2rem;
   }
 }
