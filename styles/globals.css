@@ -7,12 +7,16 @@
 html {
   scroll-behavior: smooth;
   scroll-snap-type: y mandatory;
-  overflow-y: scroll;
+  overflow-y: auto;
+  height: 100%;
 }
 
 body {
   scroll-snap-type: y mandatory;
-  overflow-y: scroll;
+  overflow-y: auto;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 /* Performance optimizations for scroll effects */
