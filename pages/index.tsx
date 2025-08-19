@@ -10,31 +10,53 @@ const Scene3D = dynamic(() => import('../components/Scene3D'), {
 
 export default function Home() {
   useEffect(() => {
-    // Intersection Observer для анимаций появления
-    const observerOptions = {
-      threshold: 0.1,
-      rootMargin: '0px 0px -50px 0px'
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
+      const viewportHeight = window.innerHeight;
+
+      // Рассчитываем прогресс скролла для первой секции
+      const heroSection = document.querySelector('.hero-section') as HTMLElement;
+      const aboutSection = document.querySelector('.about-section') as HTMLElement;
+
+      if (heroSection && aboutSection) {
+        // Начинаем эффект когда проскроллили 20% viewport
+        const triggerPoint = viewportHeight * 0.2;
+        const maxScroll = viewportHeight * 0.8;
+
+        if (scrollY > triggerPoint) {
+          const progress = Math.min((scrollY - triggerPoint) / (maxScroll - triggerPoint), 1);
+
+          // Эффект для hero секции - исчезает и поднимается
+          const heroOpacity = Math.max(1 - progress * 1.5, 0);
+          const heroTransform = progress * 100;
+
+          heroSection.style.opacity = heroOpacity.toString();
+          heroSection.style.transform = `translateY(-${heroTransform}px)`;
+
+          // Эффект для about секции - поднимается снизу
+          const aboutTransform = Math.max(100 - progress * 100, 0);
+          aboutSection.style.transform = `translateY(${aboutTransform}px)`;
+          aboutSection.style.zIndex = '100';
+        } else {
+          // Сброс стилей когда скролл в начале
+          heroSection.style.opacity = '1';
+          heroSection.style.transform = 'translateY(0px)';
+          aboutSection.style.transform = 'translateY(100px)';
+        }
+      }
     };
 
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('animate-in');
-          observer.unobserve(entry.target); // Анимация только один раз
-        }
-      });
-    }, observerOptions);
+    // Установка начального состояния
+    const aboutSection = document.querySelector('.about-section') as HTMLElement;
+    if (aboutSection) {
+      aboutSection.style.transform = 'translateY(100px)';
+    }
 
-    // Наблюдение за секциями
-    const sections = document.querySelectorAll('.section-animate');
-    sections.forEach((section) => {
-      observer.observe(section);
-    });
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    handleScroll(); // Вызов при загрузке
 
     return () => {
-      sections.forEach((section) => {
-        observer.unobserve(section);
-      });
+      window.removeEventListener('scroll', handleScroll);
     };
   }, []);
 
@@ -198,7 +220,7 @@ export default function Home() {
       </section>
 
       {/* About Us Section */}
-      <section className="about-section section-animate">
+      <section className="about-section">
         <div className="container">
           <h2 className="section-title">About Us</h2>
           <div className="services-grid">
@@ -208,7 +230,7 @@ export default function Home() {
               <p className="service-description">Unique designs tailored to your brand and business needs</p>
             </div>
             <div className="service-card">
-              <div className="service-icon">���</div>
+              <div className="service-icon">💻</div>
               <h3 className="service-title">Development</h3>
               <p className="service-description">Modern, responsive websites built with latest technologies</p>
             </div>
@@ -227,7 +249,7 @@ export default function Home() {
       </section>
 
       {/* Our Works Section */}
-      <section className="works-section section-animate">
+      <section className="works-section">
         <div className="container">
           <h2 className="section-title">Our Works</h2>
           <div className="works-grid">
@@ -278,7 +300,7 @@ export default function Home() {
       </section>
 
       {/* Client Reviews Section */}
-      <section className="reviews-section section-animate">
+      <section className="reviews-section">
         <div className="container">
           <h2 className="section-title">Client Reviews</h2>
           <div className="reviews-grid">
@@ -311,7 +333,7 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="footer section-animate">
+      <footer className="footer">
         <div className="container">
           <div className="footer-content">
             <div className="footer-section">
