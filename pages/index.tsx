@@ -2,6 +2,15 @@ import React from 'react';
 import Head from 'next/head';
 import dynamic from 'next/dynamic';
 
+// Declare model-viewer for TypeScript
+declare global {
+  namespace JSX {
+    interface IntrinsicElements {
+      'model-viewer': any;
+    }
+  }
+}
+
 // Dynamically import 3D component to avoid SSR issues
 const Scene3D = dynamic(() => import('../components/Scene3D'), {
   ssr: false,
