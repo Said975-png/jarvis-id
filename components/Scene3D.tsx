@@ -37,8 +37,8 @@ function Scene3D({ className }: Scene3DProps) {
             color="#ff00ff"
           />
           
-          {/* Environment for reflections */}
-          <Environment preset="city" />
+          {/* Subtle environment for reflections without visible background */}
+          <Environment preset="city" background={false} />
           
           {/* The Cyborg Head */}
           <CyborgHead 
@@ -55,14 +55,16 @@ function Scene3D({ className }: Scene3DProps) {
             far={2}
           />
           
-          {/* Optional orbit controls for interaction */}
+          {/* Interactive controls */}
           <OrbitControls
             enableZoom={false}
             enablePan={false}
             maxPolarAngle={Math.PI / 2}
             minPolarAngle={Math.PI / 3}
             autoRotate
-            autoRotateSpeed={0.5}
+            autoRotateSpeed={1}
+            dampingFactor={0.05}
+            enableDamping
           />
         </Suspense>
       </Canvas>
