@@ -290,6 +290,7 @@ body {
   height: 100%;
   position: relative;
   background: transparent;
+  overflow: visible;
 }
 
 .scene3d-loading {
