@@ -22,11 +22,17 @@ export default function Home() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Calculate scroll progress
-  const scrollProgress = Math.min(scrollY / (window.innerHeight * 0.8), 1);
-  const heroOpacity = Math.max(1 - scrollProgress * 1.5, 0);
-  const heroTransform = scrollProgress * 50;
-  const aboutTransform = Math.max(100 - scrollProgress * 100, 0);
+  // Calculate scroll progress with smooth easing
+  const viewportHeight = typeof window !== 'undefined' ? window.innerHeight : 800;
+  const scrollProgress = Math.min(scrollY / (viewportHeight * 0.6), 1);
+
+  // Smooth easing function
+  const easeOutCubic = (t: number) => 1 - Math.pow(1 - t, 3);
+  const easedProgress = easeOutCubic(scrollProgress);
+
+  const heroOpacity = Math.max(1 - easedProgress * 1.2, 0);
+  const heroTransform = easedProgress * 80;
+  const aboutTransform = Math.max(150 - easedProgress * 150, 0);
 
   return (
     <>
