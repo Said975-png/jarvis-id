@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import Head from 'next/head';
 import dynamic from 'next/dynamic';
 
@@ -9,6 +9,24 @@ const Scene3D = dynamic(() => import('../components/Scene3D'), {
 });
 
 export default function Home() {
+  const [scrollY, setScrollY] = useState(0);
+  const heroRef = useRef<HTMLElement>(null);
+  const aboutRef = useRef<HTMLElement>(null);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  // Calculate scroll progress
+  const scrollProgress = Math.min(scrollY / (window.innerHeight * 0.8), 1);
+  const heroOpacity = Math.max(1 - scrollProgress * 1.5, 0);
+  const heroTransform = scrollProgress * 50;
+  const aboutTransform = Math.max(100 - scrollProgress * 100, 0);
 
   return (
     <>
@@ -64,7 +82,14 @@ export default function Home() {
       </nav>
 
       {/* Hero Section */}
-      <section className="hero-section">
+      <section
+        ref={heroRef}
+        className="hero-section"
+        style={{
+          opacity: heroOpacity,
+          transform: `translateY(-${heroTransform}px)`,
+        }}
+      >
         <div className="hero-background">
           <div className="gradient-orb orb-1"></div>
           <div className="gradient-orb orb-2"></div>
@@ -170,7 +195,13 @@ export default function Home() {
       </section>
 
       {/* About Us Section */}
-      <section className="about-section">
+      <section
+        ref={aboutRef}
+        className="about-section"
+        style={{
+          transform: `translateY(${aboutTransform}px)`,
+        }}
+      >
         <div className="container">
           <h2 className="section-title">About Us</h2>
           <div className="services-grid">
