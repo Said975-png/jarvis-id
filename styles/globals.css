@@ -6,6 +6,13 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+}
+
+body {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
 }
 
 /* Performance optimizations for scroll effects */
@@ -219,7 +226,7 @@ body {
 
 /* Hero Section - Ultra Premium */
 .hero-section {
-  min-height: 100vh;
+  height: 100vh;
   background: #000000;
   display: flex;
   align-items: center;
@@ -227,8 +234,8 @@ body {
   position: relative;
   overflow: hidden;
   padding-top: 120px;
-  transition: opacity 0.1s ease-out, transform 0.1s ease-out;
-  will-change: opacity, transform;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
 }
 
 .hero-background {
@@ -556,19 +563,26 @@ body {
 }
 
 /* Enhanced Section Styles */
-.about-section,
 .works-section,
 .reviews-section {
-  padding: 8rem 0;
+  min-height: 100vh;
+  padding: 4rem 0;
   position: relative;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  display: flex;
+  align-items: center;
+  background: #000000;
 }
 
 .about-section {
-  transition: transform 0.1s ease-out;
-  will-change: transform;
-  margin-top: -100px;
-  z-index: 100;
+  min-height: 100vh;
   background: #000000;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  display: flex;
+  align-items: center;
+  padding: 4rem 0;
 }
 
 .section-title {
