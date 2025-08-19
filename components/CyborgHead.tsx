@@ -20,13 +20,28 @@ function CyborgHead({ position = [0, 0, 0], scale = 1 }: CyborgHeadProps) {
   // Play all animations from the GLB file
   useEffect(() => {
     if (actions && Object.keys(actions).length > 0) {
-      Object.values(actions).forEach((action) => {
+      console.log('Available animations:', Object.keys(actions));
+      Object.values(actions).forEach((action, index) => {
         if (action) {
+          action.reset();
           action.play();
+          console.log(`Playing animation ${index + 1}:`, action.getClip().name);
         }
       });
+    } else {
+      console.log('No animations found in GLB file');
     }
   }, [actions]);
+
+  // Also log when animations array changes
+  useEffect(() => {
+    if (animations) {
+      console.log('GLB animations loaded:', animations.length, 'animations');
+      animations.forEach((clip, index) => {
+        console.log(`Animation ${index + 1}: ${clip.name}, duration: ${clip.duration}s`);
+      });
+    }
+  }, [animations]);
 
   useEffect(() => {
     if (scene) {
