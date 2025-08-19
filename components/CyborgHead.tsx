@@ -1,7 +1,6 @@
 import React, { useRef, useEffect } from 'react';
-import { useFrame, useLoader } from '@react-three/fiber';
-import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
-import { useGLTF } from '@react-three/drei';
+import { useFrame } from '@react-three/fiber';
+import { useGLTF, useAnimations } from '@react-three/drei';
 import * as THREE from 'three';
 
 interface CyborgHeadProps {
@@ -11,35 +10,43 @@ interface CyborgHeadProps {
 
 function CyborgHead({ position = [0, 0, 0], scale = 1 }: CyborgHeadProps) {
   const meshRef = useRef<THREE.Group>(null);
-  
-  // Load the GLB model
-  const { scene } = useGLTF('https://cdn.builder.io/o/assets%2Fc75c23a61583432b9fe88e8b462fa661%2Fadf99729adc44391ac16b2eabde15205?alt=media&token=643613e8-23af-4fd9-bf01-0fa8bcb1023a&apiKey=c75c23a61583432b9fe88e8b462fa661');
 
-  // Animate the model
-  useFrame((state) => {
-    if (meshRef.current) {
-      // Subtle floating animation
-      meshRef.current.position.y = position[1] + Math.sin(state.clock.elapsedTime * 0.5) * 0.1;
-      // Slow rotation
-      meshRef.current.rotation.y = Math.sin(state.clock.elapsedTime * 0.3) * 0.2;
-      // Slight head tilt
-      meshRef.current.rotation.x = Math.sin(state.clock.elapsedTime * 0.4) * 0.05;
+  // Load the GLB model with animations
+  const { scene, animations } = useGLTF('https://cdn.builder.io/o/assets%2Fc75c23a61583432b9fe88e8b462fa661%2Fadf99729adc44391ac16b2eabde15205?alt=media&token=643613e8-23af-4fd9-bf01-0fa8bcb1023a&apiKey=c75c23a61583432b9fe88e8b462fa661');
+
+  // Setup animations from GLB file
+  const { actions } = useAnimations(animations, meshRef);
+
+  // Play all animations from the GLB file
+  useEffect(() => {
+    if (actions && Object.keys(actions).length > 0) {
+      Object.values(actions).forEach((action) => {
+        if (action) {
+          action.play();
+        }
+      });
     }
-  });
+  }, [actions]);
 
   useEffect(() => {
     if (scene) {
-      // Set up materials for a more cyber look
+      // Enhance materials while preserving original textures
       scene.traverse((child: any) => {
         if (child.isMesh) {
-          child.material.metalness = 0.8;
-          child.material.roughness = 0.2;
-          child.material.envMapIntensity = 1.5;
-          
-          // Add emissive glow to certain parts
-          if (child.material.name && child.material.name.includes('eye')) {
-            child.material.emissive = new THREE.Color(0x00ffff);
-            child.material.emissiveIntensity = 0.3;
+          if (child.material) {
+            // Enhance metallic properties
+            child.material.metalness = Math.max(child.material.metalness || 0, 0.7);
+            child.material.roughness = Math.min(child.material.roughness || 1, 0.3);
+            child.material.envMapIntensity = 1.2;
+
+            // Add subtle emissive glow to eyes or glowing parts
+            if (child.material.name &&
+                (child.material.name.toLowerCase().includes('eye') ||
+                 child.material.name.toLowerCase().includes('glow') ||
+                 child.material.name.toLowerCase().includes('light'))) {
+              child.material.emissive = new THREE.Color(0x00ffff);
+              child.material.emissiveIntensity = 0.2;
+            }
           }
         }
       });
