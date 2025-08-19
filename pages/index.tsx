@@ -185,7 +185,7 @@ export default function Home() {
                 <span className="highlight-text"> Платформы</span>
               </h2>
               <p className="capabilities-subtitle">
-                Мы создаем сайты с интеллектуальными ИИ ассистентами, которые революционизируют взаимодействие с вашими клиентами
+                Мы создаем сайты с интеллектуальными ИИ ассисте��тами, которые революционизируют взаимодействие с вашими клиентами
               </p>
 
               <div className="capabilities-features">
@@ -225,7 +225,7 @@ export default function Home() {
                     </svg>
                   </div>
                   <div className="feature-content">
-                    <h3 className="feature-title">Персонализация</h3>
+                    <h3 className="feature-title">Персонали��ация</h3>
                     <p className="feature-description">Адаптивный контент и рекомендации на основе поведения пользователей</p>
                   </div>
                 </div>
@@ -341,11 +341,10 @@ export default function Home() {
               </div>
               <h2 className="jarvis-title">
                 ДЖАРВИС заменяет
-                <span className="highlight-text"> целую команду</span>
-                <br />продавцов-консультантов
+                <span className="highlight-text"> команду продавцов</span>
               </h2>
               <p className="jarvis-subtitle">
-                Один ИИ-ассистент выполняет работу 10+ консультантов: отв��чает на вопросы 24/7, квалифицирует лиды и увеличивает конверсию продаж
+                Один ИИ-ассистент выполняет работу 10+ консультантов: отвечает на вопросы 24/7, квалифицирует лиды и увеличивает конверсию продаж
               </p>
               <div className="jarvis-buttons">
                 <button className="btn-primary">
