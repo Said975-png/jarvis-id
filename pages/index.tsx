@@ -12,14 +12,28 @@ export default function Home() {
   useEffect(() => {
     let isTransitioning = false;
     let currentSection = 0;
+    let scrollAccumulator = 0;
+    let lastScrollTime = 0;
     const sections = ['hero', 'about'];
+    const SCROLL_THRESHOLD = 150; // Увеличенный порог для срабатывания
+    const DEBOUNCE_TIME = 100; // Время между возможными скроллами
 
     const handleWheel = (e: WheelEvent) => {
       e.preventDefault();
 
-      if (isTransitioning) return;
+      const now = Date.now();
+      if (isTransitioning || (now - lastScrollTime < DEBOUNCE_TIME)) return;
 
-      const direction = e.deltaY > 0 ? 1 : -1; // 1 для вниз, -1 для вверх
+      // Накапливаем скролл до достижения порога
+      scrollAccumulator += Math.abs(e.deltaY);
+
+      if (scrollAccumulator < SCROLL_THRESHOLD) return;
+
+      lastScrollTime = now;
+
+      // Сбрасываем аккумулятор и определяем направление
+      scrollAccumulator = 0;
+      const direction = e.deltaY > 0 ? 1 : -1;
       const targetSection = currentSection + direction;
 
       if (targetSection < 0 || targetSection >= sections.length) return;
@@ -32,8 +46,8 @@ export default function Home() {
 
       if (currentSection === 0) {
         // Переход к hero секции
-        heroSection.style.transition = 'all 0.8s cubic-bezier(0.4, 0, 0.2, 1)';
-        aboutSection.style.transition = 'all 0.8s cubic-bezier(0.4, 0, 0.2, 1)';
+        heroSection.style.transition = 'all 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94)';
+        aboutSection.style.transition = 'all 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94)';
 
         heroSection.style.opacity = '1';
         heroSection.style.transform = 'translateY(0px)';
@@ -42,11 +56,11 @@ export default function Home() {
 
         setTimeout(() => {
           isTransitioning = false;
-        }, 800);
+        }, 1200);
       } else if (currentSection === 1) {
         // Переход к about секции
-        heroSection.style.transition = 'all 0.8s cubic-bezier(0.4, 0, 0.2, 1)';
-        aboutSection.style.transition = 'all 0.8s cubic-bezier(0.4, 0, 0.2, 1)';
+        heroSection.style.transition = 'all 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94)';
+        aboutSection.style.transition = 'all 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94)';
 
         heroSection.style.opacity = '0';
         heroSection.style.transform = 'translateY(-100px)';
@@ -55,7 +69,7 @@ export default function Home() {
 
         setTimeout(() => {
           isTransitioning = false;
-        }, 800);
+        }, 1200);
       }
     };
 
@@ -72,17 +86,22 @@ export default function Home() {
 
     // Поддержка touch событий для мобильных
     let touchStartY = 0;
+    let touchStartTime = 0;
     const handleTouchStart = (e: TouchEvent) => {
       touchStartY = e.touches[0].clientY;
+      touchStartTime = Date.now();
     };
 
     const handleTouchEnd = (e: TouchEvent) => {
       const touchEndY = e.changedTouches[0].clientY;
+      const touchEndTime = Date.now();
       const diff = touchStartY - touchEndY;
+      const timeDiff = touchEndTime - touchStartTime;
 
-      if (Math.abs(diff) > 50) { // Минимальное расстояние для свайпа
+      // Увеличенные требования: минимум 80px за максимум 800ms
+      if (Math.abs(diff) > 80 && timeDiff < 800) {
         const direction = diff > 0 ? 1 : -1;
-        const fakeWheelEvent = { deltaY: direction * 100, preventDefault: () => {} } as WheelEvent;
+        const fakeWheelEvent = { deltaY: direction * 200, preventDefault: () => {} } as WheelEvent;
         handleWheel(fakeWheelEvent);
       }
     };
