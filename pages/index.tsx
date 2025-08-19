@@ -1,5 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import Head from 'next/head';
+import dynamic from 'next/dynamic';
+
+// Dynamically import 3D component to avoid SSR issues
+const Scene3D = dynamic(() => import('../components/Scene3D'), {
+  ssr: false,
+  loading: () => <div className="scene3d-loading">Loading...</div>
+});
 
 export default function Home() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -91,54 +98,59 @@ export default function Home() {
           <div className="gradient-orb orb-3"></div>
         </div>
         <div className="hero-container">
-          <div className="hero-content">
-            <div className="hero-badge">
-              <span className="badge-dot"></span>
-              <span>Premium Web Development</span>
+          <div className="hero-layout">
+            <div className="hero-content">
+              <div className="hero-badge">
+                <span className="badge-dot"></span>
+                <span>Premium Web Development</span>
+              </div>
+              <h1 className="hero-title">
+                <span className="title-line-1">We craft</span>
+                <span className="title-line-2">exceptional</span>
+                <span className="title-line-3">digital experiences</span>
+              </h1>
+              <p className="hero-subtitle">
+                Transforming ideas into powerful, scalable web solutions
+                <br />that elevate your brand and drive business growth
+              </p>
+              <div className="hero-buttons">
+                <button
+                  className="btn-primary magnetic"
+                  onMouseEnter={() => setIsHovering(true)}
+                  onMouseLeave={() => setIsHovering(false)}
+                >
+                  <span>Start Project</span>
+                  <div className="btn-shine"></div>
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path d="M3.5 8H12.5M12.5 8L8.5 4M12.5 8L8.5 12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                </button>
+                <button
+                  className="btn-secondary magnetic"
+                  onMouseEnter={() => setIsHovering(true)}
+                  onMouseLeave={() => setIsHovering(false)}
+                >
+                  <span>View Portfolio</span>
+                  <div className="btn-ripple"></div>
+                </button>
+              </div>
+              <div className="hero-stats">
+                <div className="stat-item">
+                  <div className="stat-number">250+</div>
+                  <div className="stat-label">Projects Completed</div>
+                </div>
+                <div className="stat-item">
+                  <div className="stat-number">99%</div>
+                  <div className="stat-label">Client Satisfaction</div>
+                </div>
+                <div className="stat-item">
+                  <div className="stat-number">24/7</div>
+                  <div className="stat-label">Support Available</div>
+                </div>
+              </div>
             </div>
-            <h1 className="hero-title">
-              <span className="title-line-1">We craft</span>
-              <span className="title-line-2">exceptional</span>
-              <span className="title-line-3">digital experiences</span>
-            </h1>
-            <p className="hero-subtitle">
-              Transforming ideas into powerful, scalable web solutions
-              <br />that elevate your brand and drive business growth
-            </p>
-            <div className="hero-buttons">
-              <button
-                className="btn-primary magnetic"
-                onMouseEnter={() => setIsHovering(true)}
-                onMouseLeave={() => setIsHovering(false)}
-              >
-                <span>Start Project</span>
-                <div className="btn-shine"></div>
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                  <path d="M3.5 8H12.5M12.5 8L8.5 4M12.5 8L8.5 12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>
-              </button>
-              <button
-                className="btn-secondary magnetic"
-                onMouseEnter={() => setIsHovering(true)}
-                onMouseLeave={() => setIsHovering(false)}
-              >
-                <span>View Portfolio</span>
-                <div className="btn-ripple"></div>
-              </button>
-            </div>
-            <div className="hero-stats">
-              <div className="stat-item">
-                <div className="stat-number">250+</div>
-                <div className="stat-label">Projects Completed</div>
-              </div>
-              <div className="stat-item">
-                <div className="stat-number">99%</div>
-                <div className="stat-label">Client Satisfaction</div>
-              </div>
-              <div className="stat-item">
-                <div className="stat-number">24/7</div>
-                <div className="stat-label">Support Available</div>
-              </div>
+            <div className="hero-3d">
+              <Scene3D className="scene3d-container" />
             </div>
           </div>
         </div>
