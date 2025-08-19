@@ -271,6 +271,7 @@ body {
   gap: 4rem;
   align-items: center;
   min-height: 80vh;
+  overflow: visible;
 }
 
 .hero-content {
