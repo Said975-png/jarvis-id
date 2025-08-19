@@ -70,12 +70,33 @@ export default function Home() {
       aboutSection.style.zIndex = '1';
     }
 
-    // Блокируем обычный скролл и используем wheel события
+    // Поддержка touch событий для мобильных
+    let touchStartY = 0;
+    const handleTouchStart = (e: TouchEvent) => {
+      touchStartY = e.touches[0].clientY;
+    };
+
+    const handleTouchEnd = (e: TouchEvent) => {
+      const touchEndY = e.changedTouches[0].clientY;
+      const diff = touchStartY - touchEndY;
+
+      if (Math.abs(diff) > 50) { // Минимальное расстояние для свайпа
+        const direction = diff > 0 ? 1 : -1;
+        const fakeWheelEvent = { deltaY: direction * 100, preventDefault: () => {} } as WheelEvent;
+        handleWheel(fakeWheelEvent);
+      }
+    };
+
+    // Блокируем обычный скролл и добавляем обработчики
     document.body.style.overflow = 'hidden';
     window.addEventListener('wheel', handleWheel, { passive: false });
+    window.addEventListener('touchstart', handleTouchStart, { passive: true });
+    window.addEventListener('touchend', handleTouchEnd, { passive: true });
 
     return () => {
       window.removeEventListener('wheel', handleWheel);
+      window.removeEventListener('touchstart', handleTouchStart);
+      window.removeEventListener('touchend', handleTouchEnd);
       document.body.style.overflow = 'auto';
     };
   }, []);
