@@ -6,17 +6,17 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-snap-type: y mandatory;
-  overflow-y: auto;
-  height: 100%;
 }
 
 body {
-  scroll-snap-type: y mandatory;
-  overflow-y: auto;
-  height: 100%;
-  margin: 0;
-  padding: 0;
+  font-family: 'Inter', 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: #000000;
+  color: #ffffff;
+  overflow-x: hidden;
+  line-height: 1.6;
+  font-feature-settings: 'kern' 1, 'liga' 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /* Performance optimizations for scroll effects */
@@ -230,7 +230,7 @@ body {
 
 /* Hero Section - Ultra Premium */
 .hero-section {
-  height: 100vh;
+  min-height: 100vh;
   background: #000000;
   display: flex;
   align-items: center;
@@ -238,8 +238,6 @@ body {
   position: relative;
   overflow: hidden;
   padding-top: 120px;
-  scroll-snap-align: start;
-  scroll-snap-stop: always;
 }
 
 .hero-background {
@@ -567,26 +565,16 @@ body {
 }
 
 /* Enhanced Section Styles */
+.about-section,
 .works-section,
 .reviews-section {
-  min-height: 100vh;
-  padding: 4rem 0;
+  padding: 8rem 0;
   position: relative;
-  scroll-snap-align: start;
-  scroll-snap-stop: always;
-  display: flex;
-  align-items: center;
-  background: #000000;
 }
 
 .about-section {
-  min-height: 100vh;
-  background: #000000;
-  scroll-snap-align: start;
-  scroll-snap-stop: always;
-  display: flex;
-  align-items: center;
-  padding: 4rem 0;
+  padding: 8rem 0;
+  position: relative;
 }
 
 .section-title {
