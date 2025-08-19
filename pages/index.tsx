@@ -113,6 +113,50 @@ export default function Home() {
             </div>
             <div className="hero-3d">
               <Scene3D className="scene3d-container" />
+
+              {/* Floating Glass Widgets */}
+              <div className="floating-widget widget-1">
+                <div className="widget-icon">⚡</div>
+                <div className="widget-text">
+                  <div className="widget-title">Fast Loading</div>
+                  <div className="widget-subtitle">98% Speed Score</div>
+                </div>
+              </div>
+
+              <div className="floating-widget widget-2">
+                <div className="widget-icon">🛡️</div>
+                <div className="widget-text">
+                  <div className="widget-title">Secure</div>
+                  <div className="widget-subtitle">SSL Protected</div>
+                </div>
+              </div>
+
+              <div className="floating-widget widget-3">
+                <div className="widget-icon">📱</div>
+                <div className="widget-text">
+                  <div className="widget-title">Responsive</div>
+                  <div className="widget-subtitle">All Devices</div>
+                </div>
+              </div>
+
+              <div className="floating-widget widget-4">
+                <div className="widget-icon">🎯</div>
+                <div className="widget-text">
+                  <div className="widget-title">SEO Ready</div>
+                  <div className="widget-subtitle">Top Rankings</div>
+                </div>
+              </div>
+
+              {/* Decorative Elements */}
+              <div className="decorative-element elem-1">
+                <div className="pulse-dot"></div>
+              </div>
+              <div className="decorative-element elem-2">
+                <div className="rotating-ring"></div>
+              </div>
+              <div className="decorative-element elem-3">
+                <div className="floating-plus">+</div>
+              </div>
             </div>
           </div>
         </div>
