@@ -116,7 +116,11 @@ export default function Home() {
 
               {/* Floating Glass Widgets */}
               <div className="floating-widget widget-1">
-                <div className="widget-icon">⚡</div>
+                <div className="widget-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <polygon points="13,2 3,14 12,14 11,22 21,10 12,10 13,2"/>
+                  </svg>
+                </div>
                 <div className="widget-text">
                   <div className="widget-title">Fast Loading</div>
                   <div className="widget-subtitle">98% Speed Score</div>
@@ -124,7 +128,11 @@ export default function Home() {
               </div>
 
               <div className="floating-widget widget-2">
-                <div className="widget-icon">🛡️</div>
+                <div className="widget-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                  </svg>
+                </div>
                 <div className="widget-text">
                   <div className="widget-title">Secure</div>
                   <div className="widget-subtitle">SSL Protected</div>
@@ -132,7 +140,13 @@ export default function Home() {
               </div>
 
               <div className="floating-widget widget-3">
-                <div className="widget-icon">📱</div>
+                <div className="widget-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                    <line x1="8" y1="21" x2="16" y2="21"/>
+                    <line x1="12" y1="17" x2="12" y2="21"/>
+                  </svg>
+                </div>
                 <div className="widget-text">
                   <div className="widget-title">Responsive</div>
                   <div className="widget-subtitle">All Devices</div>
@@ -140,7 +154,12 @@ export default function Home() {
               </div>
 
               <div className="floating-widget widget-4">
-                <div className="widget-icon">🎯</div>
+                <div className="widget-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <circle cx="12" cy="12" r="10"/>
+                    <polygon points="16.24,7.76 14.12,14.12 7.76,16.24 9.88,9.88 16.24,7.76"/>
+                  </svg>
+                </div>
                 <div className="widget-text">
                   <div className="widget-title">SEO Ready</div>
                   <div className="widget-subtitle">Top Rankings</div>
