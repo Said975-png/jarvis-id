@@ -10,53 +10,73 @@ const Scene3D = dynamic(() => import('../components/Scene3D'), {
 
 export default function Home() {
   useEffect(() => {
-    const handleScroll = () => {
-      const scrollY = window.scrollY;
-      const viewportHeight = window.innerHeight;
+    let isTransitioning = false;
+    let currentSection = 0;
+    const sections = ['hero', 'about'];
 
-      // Рассчитываем прогресс скролла для первой секции
+    const handleWheel = (e: WheelEvent) => {
+      e.preventDefault();
+
+      if (isTransitioning) return;
+
+      const direction = e.deltaY > 0 ? 1 : -1; // 1 для вниз, -1 для вверх
+      const targetSection = currentSection + direction;
+
+      if (targetSection < 0 || targetSection >= sections.length) return;
+
+      isTransitioning = true;
+      currentSection = targetSection;
+
       const heroSection = document.querySelector('.hero-section') as HTMLElement;
       const aboutSection = document.querySelector('.about-section') as HTMLElement;
 
-      if (heroSection && aboutSection) {
-        // Начинаем эффект когда проскроллили 20% viewport
-        const triggerPoint = viewportHeight * 0.2;
-        const maxScroll = viewportHeight * 0.8;
+      if (currentSection === 0) {
+        // Переход к hero секции
+        heroSection.style.transition = 'all 0.8s cubic-bezier(0.4, 0, 0.2, 1)';
+        aboutSection.style.transition = 'all 0.8s cubic-bezier(0.4, 0, 0.2, 1)';
 
-        if (scrollY > triggerPoint) {
-          const progress = Math.min((scrollY - triggerPoint) / (maxScroll - triggerPoint), 1);
+        heroSection.style.opacity = '1';
+        heroSection.style.transform = 'translateY(0px)';
+        aboutSection.style.transform = 'translateY(100px)';
+        aboutSection.style.zIndex = '1';
 
-          // Эффект для hero секции - исчезает и поднимается
-          const heroOpacity = Math.max(1 - progress * 1.5, 0);
-          const heroTransform = progress * 100;
+        setTimeout(() => {
+          isTransitioning = false;
+        }, 800);
+      } else if (currentSection === 1) {
+        // Переход к about секции
+        heroSection.style.transition = 'all 0.8s cubic-bezier(0.4, 0, 0.2, 1)';
+        aboutSection.style.transition = 'all 0.8s cubic-bezier(0.4, 0, 0.2, 1)';
 
-          heroSection.style.opacity = heroOpacity.toString();
-          heroSection.style.transform = `translateY(-${heroTransform}px)`;
+        heroSection.style.opacity = '0';
+        heroSection.style.transform = 'translateY(-100px)';
+        aboutSection.style.transform = 'translateY(0px)';
+        aboutSection.style.zIndex = '100';
 
-          // Эффект для about секции - поднимается снизу
-          const aboutTransform = Math.max(100 - progress * 100, 0);
-          aboutSection.style.transform = `translateY(${aboutTransform}px)`;
-          aboutSection.style.zIndex = '100';
-        } else {
-          // Сброс стилей когда скролл в начале
-          heroSection.style.opacity = '1';
-          heroSection.style.transform = 'translateY(0px)';
-          aboutSection.style.transform = 'translateY(100px)';
-        }
+        setTimeout(() => {
+          isTransitioning = false;
+        }, 800);
       }
     };
 
     // Установка начального состояния
+    const heroSection = document.querySelector('.hero-section') as HTMLElement;
     const aboutSection = document.querySelector('.about-section') as HTMLElement;
-    if (aboutSection) {
+
+    if (heroSection && aboutSection) {
+      heroSection.style.opacity = '1';
+      heroSection.style.transform = 'translateY(0px)';
       aboutSection.style.transform = 'translateY(100px)';
+      aboutSection.style.zIndex = '1';
     }
 
-    window.addEventListener('scroll', handleScroll, { passive: true });
-    handleScroll(); // Вызов при загрузке
+    // Блокируем обычный скролл и используем wheel события
+    document.body.style.overflow = 'hidden';
+    window.addEventListener('wheel', handleWheel, { passive: false });
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('wheel', handleWheel);
+      document.body.style.overflow = 'auto';
     };
   }, []);
 
