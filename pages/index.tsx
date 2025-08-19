@@ -249,7 +249,17 @@ export default function Home() {
               {/* AI Demo Widget */}
               <div className="ai-demo-widget">
                 <div className="ai-chat-header">
-                  <div className="ai-avatar">🤖</div>
+                  <div className="ai-avatar">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                      <rect x="3" y="11" width="18" height="10" rx="2" ry="2"/>
+                      <circle cx="12" cy="5" r="2"/>
+                      <path d="M12 7v4"/>
+                      <line x1="8" y1="16" x2="8" y2="16"/>
+                      <line x1="16" y1="16" x2="16" y2="16"/>
+                      <circle cx="8" cy="16" r="1"/>
+                      <circle cx="16" cy="16" r="1"/>
+                    </svg>
+                  </div>
                   <div className="ai-info">
                     <div className="ai-name">JARVIS Assistant</div>
                     <div className="ai-status">
