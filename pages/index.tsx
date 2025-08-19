@@ -1,24 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import Head from 'next/head';
 
 export default function Home() {
-  const [displayText, setDisplayText] = useState('');
-  const fullText = 'We create custom websites with AI';
-
-  useEffect(() => {
-    let i = 0;
-    const timer = setInterval(() => {
-      if (i < fullText.length) {
-        setDisplayText(fullText.slice(0, i + 1));
-        i++;
-      } else {
-        clearInterval(timer);
-      }
-    }, 100);
-
-    return () => clearInterval(timer);
-  }, []);
-
   return (
     <>
       <Head>
@@ -30,61 +13,11 @@ export default function Home() {
       
       {/* Hero Section */}
       <section className="hero-section">
-        <div className="hero-background">
-          <div className="particles-container">
-            {Array.from({ length: 50 }).map((_, i) => (
-              <div key={i} className={`particle particle-${i % 3}`}></div>
-            ))}
-          </div>
-          <div className="neural-network">
-            <div className="node node-1"></div>
-            <div className="node node-2"></div>
-            <div className="node node-3"></div>
-            <div className="node node-4"></div>
-            <div className="node node-5"></div>
-            <div className="connection con-1"></div>
-            <div className="connection con-2"></div>
-            <div className="connection con-3"></div>
-            <div className="connection con-4"></div>
-          </div>
-          <div className="grid-overlay"></div>
-        </div>
         <div className="hero-container">
           <div className="hero-content">
-            <div className="ai-badge">
-              <span className="ai-icon">🤖</span>
-              <span>AI-Powered Development</span>
-            </div>
-            <h1 className="hero-title">
-              <span className="typing-text">{displayText}</span>
-              <span className="cursor">|</span>
-            </h1>
-            <p className="hero-subtitle">
-              Next-generation solutions powered by artificial intelligence
-            </p>
-            <div className="hero-stats">
-              <div className="stat">
-                <div className="stat-number">99.9%</div>
-                <div className="stat-label">Accuracy</div>
-              </div>
-              <div className="stat">
-                <div className="stat-number">24/7</div>
-                <div className="stat-label">AI Support</div>
-              </div>
-              <div className="stat">
-                <div className="stat-number">500+</div>
-                <div className="stat-label">Projects</div>
-              </div>
-            </div>
-            <div className="hero-buttons">
-              <button className="cta-button primary">
-                <span>Start AI Project</span>
-                <div className="button-glow"></div>
-              </button>
-              <button className="cta-button secondary">
-                <span>See AI Demo</span>
-              </button>
-            </div>
+            <h1 className="hero-title">We create custom websites</h1>
+            <p className="hero-subtitle">Modern solutions for online business</p>
+            <button className="cta-button">Order a website</button>
           </div>
         </div>
       </section>
