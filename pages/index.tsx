@@ -13,11 +13,51 @@ export default function Home() {
       
       {/* Hero Section */}
       <section className="hero-section">
+        <div className="hero-background">
+          <div className="gradient-orb orb-1"></div>
+          <div className="gradient-orb orb-2"></div>
+          <div className="gradient-orb orb-3"></div>
+        </div>
         <div className="hero-container">
           <div className="hero-content">
-            <h1 className="hero-title">We create custom websites</h1>
-            <p className="hero-subtitle">Modern solutions for online business</p>
-            <button className="cta-button">Order a website</button>
+            <div className="hero-badge">
+              <span className="badge-dot"></span>
+              <span>Web Development Studio</span>
+            </div>
+            <h1 className="hero-title">
+              We create
+              <span className="gradient-text"> stunning</span>
+              <br />custom websites
+            </h1>
+            <p className="hero-subtitle">
+              Modern, responsive, and performant web solutions
+              <br />that drive results for your business
+            </p>
+            <div className="hero-buttons">
+              <button className="btn-primary">
+                <span>Start Project</span>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <path d="M3.5 8H12.5M12.5 8L8.5 4M12.5 8L8.5 12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+              </button>
+              <button className="btn-secondary">
+                <span>View Portfolio</span>
+              </button>
+            </div>
+            <div className="hero-stats">
+              <div className="stat-item">
+                <div className="stat-number">250+</div>
+                <div className="stat-label">Projects Completed</div>
+              </div>
+              <div className="stat-item">
+                <div className="stat-number">99%</div>
+                <div className="stat-label">Client Satisfaction</div>
+              </div>
+              <div className="stat-item">
+                <div className="stat-number">24/7</div>
+                <div className="stat-label">Support Available</div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
