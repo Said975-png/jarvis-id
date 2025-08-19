@@ -9,17 +9,6 @@ const Scene3D = dynamic(() => import('../components/Scene3D'), {
 });
 
 export default function Home() {
-  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
-  const [isHovering, setIsHovering] = useState(false);
-
-  useEffect(() => {
-    const updateMousePosition = (e: MouseEvent) => {
-      setMousePosition({ x: e.clientX, y: e.clientY });
-    };
-
-    window.addEventListener('mousemove', updateMousePosition);
-    return () => window.removeEventListener('mousemove', updateMousePosition);
-  }, []);
 
   return (
     <>
@@ -33,22 +22,6 @@ export default function Home() {
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
       </Head>
 
-      {/* Custom Cursor */}
-      <div
-        className="custom-cursor"
-        style={{
-          left: `${mousePosition.x}px`,
-          top: `${mousePosition.y}px`,
-          transform: isHovering ? 'scale(2)' : 'scale(1)'
-        }}
-      />
-      <div
-        className="cursor-dot"
-        style={{
-          left: `${mousePosition.x}px`,
-          top: `${mousePosition.y}px`
-        }}
-      />
 
       {/* Navigation Bar */}
       <nav className="navbar">
@@ -105,34 +78,23 @@ export default function Home() {
                 <span>Premium Web Development</span>
               </div>
               <h1 className="hero-title">
-                <span className="title-line-1">We craft</span>
-                <span className="title-line-2">exceptional</span>
-                <span className="title-line-3">digital experiences</span>
-              </h1>
-              <p className="hero-subtitle">
-                Transforming ideas into powerful, scalable web solutions
-                <br />that elevate your brand and drive business growth
-              </p>
+              Create Amazing
+              <span className="highlight-text"> Websites</span>
+            </h1>
+            <p className="hero-subtitle">
+              We build modern, fast and beautiful websites that help your business grow online
+            </p>
               <div className="hero-buttons">
-                <button
-                  className="btn-primary magnetic"
-                  onMouseEnter={() => setIsHovering(true)}
-                  onMouseLeave={() => setIsHovering(false)}
-                >
-                  <span>Start Project</span>
-                  <div className="btn-shine"></div>
-                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                    <path d="M3.5 8H12.5M12.5 8L8.5 4M12.5 8L8.5 12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                  </svg>
-                </button>
-                <button
-                  className="btn-secondary magnetic"
-                  onMouseEnter={() => setIsHovering(true)}
-                  onMouseLeave={() => setIsHovering(false)}
-                >
-                  <span>View Portfolio</span>
-                  <div className="btn-ripple"></div>
-                </button>
+                <button className="btn-primary">
+                <span>Start Project</span>
+                <div className="btn-shine"></div>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <path d="M3.5 8H12.5M12.5 8L8.5 4M12.5 8L8.5 12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+              </button>
+              <button className="btn-secondary">
+                <span>View Portfolio</span>
+              </button>
               </div>
               <div className="hero-stats">
                 <div className="stat-item">
@@ -258,7 +220,7 @@ export default function Home() {
               </div>
             </div>
             <div className="review-card">
-              <div className="review-stars">★★★★★</div>
+              <div className="review-stars">���★★★★</div>
               <p className="review-text">"Outstanding results! The website is not only beautiful but also highly functional. Sales increased by 40% after launch."</p>
               <div className="review-author">
                 <div className="author-name">Emily Rodriguez</div>
