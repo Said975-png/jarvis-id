@@ -21,6 +21,7 @@ const JarvisModel: React.FC = () => {
         exposure="1"
         autoplay
         animationName=""
+        cameraOrbit="0deg 75deg 2.5m"
         style={{
           width: '100%',
           height: '100%',
