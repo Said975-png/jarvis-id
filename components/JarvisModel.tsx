@@ -19,6 +19,8 @@ const JarvisModel: React.FC = () => {
         cameraControls
         environmentImage="neutral"
         exposure="1"
+        autoplay
+        animationName=""
         style={{
           width: '100%',
           height: '100%',
