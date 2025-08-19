@@ -1025,7 +1025,186 @@ body {
   color: rgba(255, 255, 255, 0.4);
 }
 
+/* Floating Glass Widgets */
+.floating-widget {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 1rem 1.25rem;
+  backdrop-filter: blur(20px);
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  min-width: 160px;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  animation: float 6s ease-in-out infinite;
+  z-index: 20;
+}
+
+.floating-widget::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
+  border-radius: 16px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.floating-widget:hover::before {
+  opacity: 1;
+}
+
+.floating-widget:hover {
+  transform: translateY(-8px) scale(1.05);
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 20px 40px rgba(255, 255, 255, 0.1);
+}
+
+.widget-icon {
+  font-size: 1.5rem;
+  filter: grayscale(100%);
+  transition: all 0.3s ease;
+}
+
+.floating-widget:hover .widget-icon {
+  filter: none;
+  transform: scale(1.1);
+}
+
+.widget-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.widget-title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #ffffff;
+  line-height: 1;
+  margin-bottom: 0.25rem;
+}
+
+.widget-subtitle {
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 400;
+}
+
+/* Widget Positioning */
+.widget-1 {
+  top: 10%;
+  right: 15%;
+  animation-delay: 0s;
+}
+
+.widget-2 {
+  top: 40%;
+  right: -5%;
+  animation-delay: 2s;
+}
+
+.widget-3 {
+  bottom: 35%;
+  right: 20%;
+  animation-delay: 4s;
+}
+
+.widget-4 {
+  bottom: 10%;
+  right: 0%;
+  animation-delay: 1s;
+}
+
+/* Decorative Elements */
+.decorative-element {
+  position: absolute;
+  z-index: 15;
+}
+
+.elem-1 {
+  top: 20%;
+  left: -10%;
+}
+
+.elem-2 {
+  top: 60%;
+  left: -5%;
+}
+
+.elem-3 {
+  bottom: 20%;
+  right: 35%;
+}
+
+.pulse-dot {
+  width: 12px;
+  height: 12px;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  animation: pulse-glow 3s ease-in-out infinite;
+}
+
+.rotating-ring {
+  width: 40px;
+  height: 40px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-top-color: rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  animation: rotate-ring 4s linear infinite;
+}
+
+.floating-plus {
+  font-size: 2rem;
+  color: rgba(255, 255, 255, 0.3);
+  font-weight: 300;
+  animation: float-plus 5s ease-in-out infinite;
+}
+
 /* Advanced Animations */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-20px) rotate(2deg);
+  }
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    opacity: 0.6;
+    transform: scale(1);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.5);
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.6);
+  }
+}
+
+@keyframes rotate-ring {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes float-plus {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+    opacity: 0.3;
+  }
+  50% {
+    transform: translateY(-15px) rotate(180deg);
+    opacity: 0.7;
+  }
+}
+
 @keyframes fadeInUp {
   from {
     opacity: 0;
