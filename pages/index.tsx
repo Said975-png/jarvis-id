@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from 'react';
+import React from 'react';
 import Head from 'next/head';
 import dynamic from 'next/dynamic';
 
@@ -9,31 +9,6 @@ const Scene3D = dynamic(() => import('../components/Scene3D'), {
 });
 
 export default function Home() {
-  const [scrollY, setScrollY] = useState(0);
-  const heroRef = useRef<HTMLElement>(null);
-  const aboutRef = useRef<HTMLElement>(null);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrollY(window.scrollY);
-    };
-
-    window.addEventListener('scroll', handleScroll, { passive: true });
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
-  // Calculate scroll progress with smooth easing
-  const viewportHeight = typeof window !== 'undefined' ? window.innerHeight : 800;
-  const scrollProgress = Math.min(scrollY / (viewportHeight * 0.6), 1);
-
-  // Smooth easing function
-  const easeOutCubic = (t: number) => 1 - Math.pow(1 - t, 3);
-  const easedProgress = easeOutCubic(scrollProgress);
-
-  const heroOpacity = Math.max(1 - easedProgress * 1.2, 0);
-  const heroTransform = easedProgress * 80;
-  const aboutTransform = Math.max(150 - easedProgress * 150, 0);
-
   return (
     <>
       <Head>
@@ -88,14 +63,7 @@ export default function Home() {
       </nav>
 
       {/* Hero Section */}
-      <section
-        ref={heroRef}
-        className="hero-section"
-        style={{
-          opacity: heroOpacity,
-          transform: `translateY(-${heroTransform}px)`,
-        }}
-      >
+      <section className="hero-section">
         <div className="hero-background">
           <div className="gradient-orb orb-1"></div>
           <div className="gradient-orb orb-2"></div>
@@ -201,13 +169,7 @@ export default function Home() {
       </section>
 
       {/* About Us Section */}
-      <section
-        ref={aboutRef}
-        className="about-section"
-        style={{
-          transform: `translateY(${aboutTransform}px)`,
-        }}
-      >
+      <section className="about-section">
         <div className="container">
           <h2 className="section-title">About Us</h2>
           <div className="services-grid">
