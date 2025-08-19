@@ -1783,6 +1783,49 @@ body {
     display: none;
   }
 
+  /* AI Capabilities mobile styles */
+  .capabilities-section {
+    padding: 5rem 0;
+  }
+
+  .capabilities-layout {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    text-align: center;
+  }
+
+  .capabilities-content {
+    max-width: 100%;
+    order: 1;
+  }
+
+  .capabilities-visual {
+    height: 400px;
+    order: 2;
+  }
+
+  .ai-demo-widget {
+    width: 300px;
+    height: 350px;
+  }
+
+  .ai-widget,
+  .ai-decorative-element {
+    display: none;
+  }
+
+  .capabilities-buttons {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .capabilities-buttons .btn-primary,
+  .capabilities-buttons .btn-secondary {
+    width: 100%;
+    max-width: 300px;
+  }
+
 
   .hero-stats {
     grid-template-columns: 1fr;
