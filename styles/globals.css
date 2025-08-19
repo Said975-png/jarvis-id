@@ -1198,7 +1198,478 @@ body {
 }
 
 
+/* AI Capabilities Section */
+.capabilities-section {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #000000 0%, #0a0a0a 50%, #000000 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  padding: 8rem 0;
+}
+
+.capabilities-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.ai-orb {
+  position: absolute;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(0, 255, 255, 0.1) 0%, transparent 70%);
+  animation: aiFloat 15s ease-in-out infinite;
+}
+
+.ai-orb-1 {
+  width: 300px;
+  height: 300px;
+  top: 10%;
+  left: 10%;
+  animation-delay: 0s;
+}
+
+.ai-orb-2 {
+  width: 200px;
+  height: 200px;
+  top: 60%;
+  right: 20%;
+  animation-delay: 5s;
+}
+
+.ai-orb-3 {
+  width: 150px;
+  height: 150px;
+  bottom: 20%;
+  left: 60%;
+  animation-delay: 10s;
+}
+
+.capabilities-container {
+  max-width: 1400px;
+  width: 100%;
+  padding: 0 2rem;
+  position: relative;
+  z-index: 10;
+}
+
+.capabilities-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6rem;
+  align-items: center;
+}
+
+.capabilities-content {
+  max-width: 600px;
+}
+
+.capabilities-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1.5rem;
+  background: rgba(0, 255, 255, 0.05);
+  border: 1px solid rgba(0, 255, 255, 0.2);
+  border-radius: 30px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: rgba(0, 255, 255, 0.9);
+  margin-bottom: 3rem;
+  backdrop-filter: blur(20px);
+}
+
+.capabilities-title {
+  font-size: clamp(3rem, 5vw, 5rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  margin-bottom: 1.5rem;
+  color: #ffffff;
+  line-height: 1.1;
+  font-family: 'Inter', sans-serif;
+}
+
+.capabilities-subtitle {
+  font-size: clamp(1.1rem, 1.6vw, 1.4rem);
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 3rem;
+  line-height: 1.6;
+  max-width: 500px;
+}
+
+.capabilities-features {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.feature-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  backdrop-filter: blur(20px);
+  transition: all 0.3s ease;
+}
+
+.feature-item:hover {
+  background: rgba(0, 255, 255, 0.05);
+  border-color: rgba(0, 255, 255, 0.2);
+  transform: translateX(10px);
+}
+
+.feature-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background: rgba(0, 255, 255, 0.1);
+  border-radius: 12px;
+  color: rgba(0, 255, 255, 0.8);
+  transition: all 0.3s ease;
+}
+
+.feature-item:hover .feature-icon {
+  background: rgba(0, 255, 255, 0.2);
+  color: rgba(0, 255, 255, 1);
+  transform: scale(1.1);
+}
+
+.feature-content {
+  flex: 1;
+}
+
+.feature-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+  font-family: 'Inter', sans-serif;
+}
+
+.feature-description {
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.5;
+}
+
+.capabilities-buttons {
+  display: flex;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.capabilities-visual {
+  position: relative;
+  height: 600px;
+  width: 100%;
+}
+
+/* AI Demo Widget */
+.ai-demo-widget {
+  position: relative;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(0, 255, 255, 0.2);
+  border-radius: 20px;
+  backdrop-filter: blur(30px);
+  overflow: hidden;
+  width: 350px;
+  height: 400px;
+  margin: 0 auto;
+  box-shadow: 0 20px 40px rgba(0, 255, 255, 0.1);
+}
+
+.ai-chat-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.5rem;
+  border-bottom: 1px solid rgba(0, 255, 255, 0.1);
+}
+
+.ai-avatar {
+  font-size: 2rem;
+  filter: drop-shadow(0 0 10px rgba(0, 255, 255, 0.3));
+}
+
+.ai-name {
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 1.1rem;
+}
+
+.ai-status {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  color: rgba(0, 255, 255, 0.8);
+}
+
+.status-dot {
+  width: 6px;
+  height: 6px;
+  background: #00ff00;
+  border-radius: 50%;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.ai-chat-messages {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.message {
+  max-width: 80%;
+}
+
+.ai-message {
+  align-self: flex-start;
+}
+
+.user-message {
+  align-self: flex-end;
+}
+
+.message-text {
+  padding: 0.75rem 1rem;
+  border-radius: 12px;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.ai-message .message-text {
+  background: rgba(0, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.9);
+  border-bottom-left-radius: 4px;
+}
+
+.user-message .message-text {
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.8);
+  border-bottom-right-radius: 4px;
+}
+
+.typing-indicator {
+  display: flex;
+  gap: 4px;
+  padding: 0.75rem 1rem;
+}
+
+.typing-indicator span {
+  width: 6px;
+  height: 6px;
+  background: rgba(0, 255, 255, 0.6);
+  border-radius: 50%;
+  animation: typing 1.4s ease-in-out infinite;
+}
+
+.typing-indicator span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.typing-indicator span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+/* AI Floating Widgets */
+.ai-widget {
+  position: absolute;
+  background: rgba(0, 255, 255, 0.05);
+  border: 1px solid rgba(0, 255, 255, 0.2);
+  border-radius: 12px;
+  padding: 1rem;
+  backdrop-filter: blur(20px);
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  min-width: 180px;
+  transition: all 0.4s ease;
+  animation: aiWidgetFloat 8s ease-in-out infinite;
+}
+
+.ai-widget:hover {
+  transform: translateY(-8px) scale(1.05);
+  background: rgba(0, 255, 255, 0.1);
+  border-color: rgba(0, 255, 255, 0.4);
+  box-shadow: 0 20px 40px rgba(0, 255, 255, 0.2);
+}
+
+.ai-widget-1 {
+  top: 15%;
+  right: -10%;
+  animation-delay: 0s;
+}
+
+.ai-widget-2 {
+  top: 50%;
+  left: -15%;
+  animation-delay: 3s;
+}
+
+.ai-widget-3 {
+  bottom: 20%;
+  right: 10%;
+  animation-delay: 6s;
+}
+
+.ai-widget-icon {
+  font-size: 1.5rem;
+  filter: drop-shadow(0 0 10px rgba(0, 255, 255, 0.3));
+}
+
+.ai-widget-title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #ffffff;
+  line-height: 1;
+}
+
+.ai-widget-subtitle {
+  font-size: 0.75rem;
+  color: rgba(0, 255, 255, 0.8);
+  font-weight: 500;
+}
+
+/* Decorative AI Elements */
+.ai-decorative-element {
+  position: absolute;
+}
+
+.ai-elem-1 {
+  top: 10%;
+  left: -20%;
+}
+
+.ai-elem-2 {
+  bottom: 30%;
+  left: -10%;
+}
+
+.ai-elem-3 {
+  top: 70%;
+  right: -15%;
+}
+
+.neural-node {
+  width: 20px;
+  height: 20px;
+  background: radial-gradient(circle, rgba(0, 255, 255, 0.8) 0%, transparent 70%);
+  border-radius: 50%;
+  animation: neuralPulse 3s ease-in-out infinite;
+}
+
+.data-stream {
+  width: 3px;
+  height: 60px;
+  background: linear-gradient(180deg, transparent 0%, rgba(0, 255, 255, 0.6) 50%, transparent 100%);
+  animation: dataFlow 2s ease-in-out infinite;
+}
+
+.brain-wave {
+  width: 40px;
+  height: 2px;
+  background: rgba(0, 255, 255, 0.4);
+  position: relative;
+  animation: brainWave 4s ease-in-out infinite;
+}
+
+.brain-wave::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 255, 255, 0.8);
+  animation: waveMove 1s ease-in-out infinite;
+}
+
 /* Advanced Animations */
+@keyframes aiFloat {
+  0%, 100% {
+    transform: translateY(0px) scale(1);
+    opacity: 0.8;
+  }
+  50% {
+    transform: translateY(-30px) scale(1.05);
+    opacity: 1;
+  }
+}
+
+@keyframes aiWidgetFloat {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-15px) rotate(1deg);
+  }
+}
+
+@keyframes typing {
+  0%, 60%, 100% {
+    transform: scale(0.8);
+    opacity: 0.5;
+  }
+  30% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes neuralPulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+  50% {
+    transform: scale(1.5);
+    opacity: 1;
+  }
+}
+
+@keyframes dataFlow {
+  0% {
+    transform: translateY(0px);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+}
+
+@keyframes brainWave {
+  0%, 100% {
+    transform: scaleX(1);
+  }
+  50% {
+    transform: scaleX(1.2);
+  }
+}
+
+@keyframes waveMove {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
 @keyframes float {
   0%, 100% {
     transform: translateY(0px) rotate(0deg);
