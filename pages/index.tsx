@@ -350,7 +350,7 @@ export default function Home() {
                 <span className="highlight-text"> команду продавцов</span>
               </h2>
               <p className="jarvis-subtitle">
-                Один ИИ-ассистент выполняет работу 10+ консультантов: отвечает на вопросы 24/7, квалифицирует лиды и увеличивает конверсию продаж
+                Один ИИ-ассистент выполняе�� работу 10+ консультантов: отвечает на вопросы 24/7, квалифицирует лиды и увеличивает конверсию продаж
               </p>
               <div className="jarvis-buttons">
                 <button className="btn-primary">
@@ -363,20 +363,6 @@ export default function Home() {
                 <button className="btn-secondary">
                   <span>Посмотреть демо</span>
                 </button>
-              </div>
-              <div className="jarvis-stats">
-                <div className="stat-item">
-                  <div className="stat-number">10x</div>
-                  <div className="stat-label">Экономия на зарплатах</div>
-                </div>
-                <div className="stat-item">
-                  <div className="stat-number">85%</div>
-                  <div className="stat-label">Рост конверсии</div>
-                </div>
-                <div className="stat-item">
-                  <div className="stat-number">24/7</div>
-                  <div className="stat-label">Работа без перерывов</div>
-                </div>
               </div>
             </div>
             <div className="jarvis-visual">
