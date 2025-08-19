@@ -12,12 +12,11 @@ body {
   font-family: 'Inter', 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif;
   background: #000000;
   color: #ffffff;
-  overflow: hidden;
+  overflow-x: hidden;
   line-height: 1.6;
   font-feature-settings: 'kern' 1, 'liga' 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  height: 100vh;
 }
 
 /* Performance optimizations for scroll effects */
@@ -225,14 +224,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 10;
+  position: relative;
   overflow: hidden;
   padding-top: 120px;
-  will-change: opacity, transform;
 }
 
 .hero-background {
@@ -560,25 +554,6 @@ body {
 }
 
 /* Enhanced Section Styles */
-.about-section {
-  padding: 8rem 0;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  background: #000000;
-  will-change: transform;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.works-section,
-.reviews-section {
-  padding: 8rem 0;
-  position: relative;
-}
 
 .about-section {
   padding: 8rem 0;
