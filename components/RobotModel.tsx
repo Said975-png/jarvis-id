@@ -12,12 +12,9 @@ function RobotModel({ position = [0, 0, 0], scale = 1 }: RobotModelProps) {
   const meshRef = useRef<THREE.Group>(null);
 
   // Load the GLB model with animations
-  let scene, animations;
-  try {
-    const gltf = useGLTF('https://cdn.builder.io/o/assets%2F88c65c82286b4ed695827a48fd87b6f4%2Fcb53974d82584bdaa2fb0a65c924e739?alt=media&token=f220db93-dba1-43ec-b702-445a0084458d&apiKey=88c65c82286b4ed695827a48fd87b6f4');
-    scene = gltf.scene;
-    animations = gltf.animations;
-  } catch (error) {
+  const { scene, animations, error } = useGLTF('https://cdn.builder.io/o/assets%2F88c65c82286b4ed695827a48fd87b6f4%2Fcb53974d82584bdaa2fb0a65c924e739?alt=media&token=f220db93-dba1-43ec-b702-445a0084458d&apiKey=88c65c82286b4ed695827a48fd87b6f4');
+
+  if (error) {
     console.error('Error loading GLB model:', error);
     return null;
   }
