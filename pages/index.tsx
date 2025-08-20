@@ -11,6 +11,9 @@ const Scene3D = dynamic(() => import('../components/Scene3D'), {
 const RobotScene3D = dynamic(() => import('../components/RobotScene3D'), {
   ssr: false,
   loading: () => <div className="scene3d-loading">Loading robot...</div>
+}).catch(() => {
+  console.error('Failed to load RobotScene3D');
+  return () => <div className="scene3d-loading">Robot unavailable</div>;
 });
 
 export default function Home() {
