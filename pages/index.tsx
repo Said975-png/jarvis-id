@@ -167,10 +167,6 @@ export default function Home() {
                 <div className="floating-plus">+</div>
               </div>
             </div>
-
-            <div className="capabilities-visual">
-              <RobotScene3D className="robot-scene-container" />
-            </div>
           </div>
         </div>
       </section>
@@ -254,6 +250,9 @@ export default function Home() {
               </div>
             </div>
 
+            <div className="capabilities-visual">
+              <RobotScene3D className="robot-scene-container" />
+            </div>
           </div>
         </div>
       </section>
