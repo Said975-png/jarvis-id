@@ -1371,9 +1371,11 @@ body {
 
 .capabilities-visual {
   position: relative;
-  height: 400px;
-  width: 400px;
-  margin-left: auto;
+  height: 300px;
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .robot-scene-container {

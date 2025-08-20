@@ -49,8 +49,8 @@ function RobotScene3D({ className }: RobotScene3DProps) {
           
           {/* The Robot Model */}
           <RobotModel
-            position={[0, -1, 0]}
-            scale={0.8}
+            position={[0, -0.5, 0]}
+            scale={0.5}
           />
           
           {/* Contact shadows for realism */}
