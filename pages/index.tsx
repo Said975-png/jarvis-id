@@ -185,7 +185,7 @@ export default function Home() {
                 <span className="highlight-text"> Платформы</span>
               </h2>
               <p className="capabilities-subtitle">
-                Мы создаем сайты с интеллектуальными ИИ ассистентами, которые революционизируют взаимодействие с вашими клиен��ами
+                Мы создаем сайты с интеллектуальными ИИ ассистентами, которые революционизируют взаимодействие с вашими клиентами
               </p>
 
               <div className="capabilities-features">
@@ -226,7 +226,7 @@ export default function Home() {
                   </div>
                   <div className="feature-content">
                     <h3 className="feature-title">Персонализация</h3>
-                    <p className="feature-description">Адаптивный контент и ре��омендации на основе поведения пользователей</p>
+                    <p className="feature-description">Адаптивный контент и рекомендации на основе поведения пользовате��ей</p>
                   </div>
                 </div>
               </div>
@@ -245,18 +245,6 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="capabilities-visual">
-              {/* Decorative AI Elements */}
-              <div className="ai-decorative-element ai-elem-1">
-                <div className="neural-node"></div>
-              </div>
-              <div className="ai-decorative-element ai-elem-2">
-                <div className="data-stream"></div>
-              </div>
-              <div className="ai-decorative-element ai-elem-3">
-                <div className="brain-wave"></div>
-              </div>
-            </div>
           </div>
         </div>
       </section>
