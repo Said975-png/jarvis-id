@@ -190,7 +190,7 @@ export default function Home() {
                 <span className="highlight-text"> Платформы</span>
               </h2>
               <p className="capabilities-subtitle">
-                Мы создаем сайты с интеллектуальными ИИ ассистентами, которые революционизируют взаимодействие с вашими клиентами
+                Мы создаем сайты с интеллектуальными ИИ ас��истентами, которые революционизируют взаимодействие с вашими клиентами
               </p>
 
               <div className="capabilities-features">
@@ -230,7 +230,7 @@ export default function Home() {
                     </svg>
                   </div>
                   <div className="feature-content">
-                    <h3 className="feature-title">Персонализация</h3>
+                    <h3 className="feature-title">Перс��нализация</h3>
                     <p className="feature-description">Адаптивный контент и рекомендации на основе поведения пользователей</p>
                   </div>
                 </div>
@@ -252,6 +252,178 @@ export default function Home() {
 
             <div className="capabilities-visual">
               <RobotScene3D className="robot-scene-container" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Pricing Section */}
+      <section className="pricing-section">
+        <div className="pricing-background">
+          <div className="pricing-orb orb-1"></div>
+          <div className="pricing-orb orb-2"></div>
+          <div className="pricing-orb orb-3"></div>
+        </div>
+        <div className="pricing-container">
+          <div className="pricing-header">
+            <div className="pricing-badge">
+              <span className="badge-dot"></span>
+              <span>Наши тарифы</span>
+            </div>
+            <h2 className="pricing-title">
+              Выберите подходящий
+              <span className="highlight-text"> План</span>
+            </h2>
+            <p className="pricing-subtitle">
+              Мы предлагаем гибкие тарифные планы для проектов любой сложности
+            </p>
+          </div>
+
+          <div className="pricing-grid">
+            {/* Basic Plan */}
+            <div className="pricing-card">
+              <div className="plan-header">
+                <h3 className="plan-name">Basic</h3>
+                <p className="plan-description">Стартовое решение</p>
+                <div className="plan-price">
+                  <span className="price-amount">2,500,000</span>
+                  <span className="price-currency">сумм</span>
+                </div>
+                <p className="plan-subtitle">Идеально для небольших проектов и стартапов</p>
+              </div>
+              <div className="plan-features">
+                <div className="feature">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M16.667 5L7.5 14.167L3.333 10" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                  <span>До 5 страниц сайта</span>
+                </div>
+                <div className="feature">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M16.667 5L7.5 14.167L3.333 10" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                  <span>Современный дизайн</span>
+                </div>
+                <div className="feature">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M16.667 5L7.5 14.167L3.333 10" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                  <span>Адаптивная верстка</span>
+                </div>
+                <div className="feature">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M16.667 5L7.5 14.167L3.333 10" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                  <span>SEO оптимизация</span>
+                </div>
+                <div className="feature">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M16.667 5L7.5 14.167L3.333 10" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                  <span>Техподдержка email</span>
+                </div>
+              </div>
+              <button className="plan-button">
+                <span>Выбрать план</span>
+              </button>
+            </div>
+
+            {/* Pro Plan */}
+            <div className="pricing-card featured">
+              <div className="featured-badge">Лучший выбор</div>
+              <div className="plan-header">
+                <h3 className="plan-name">Pro</h3>
+                <p className="plan-description">Лучший выбор</p>
+                <div className="plan-price">
+                  <span className="price-amount">4,000,000</span>
+                  <span className="price-currency">сумм</span>
+                </div>
+                <p className="plan-subtitle">Лучший выбор для растущего бизнеса</p>
+              </div>
+              <div className="plan-features">
+                <div className="feature">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M16.667 5L7.5 14.167L3.333 10" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                  <span>Все из Basic</span>
+                </div>
+                <div className="feature">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M16.667 5L7.5 14.167L3.333 10" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                  <span>До 15 страниц сайта</span>
+                </div>
+                <div className="feature">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M16.667 5L7.5 14.167L3.333 10" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                  <span>ИИ ассистент интеграция</span>
+                </div>
+                <div className="feature">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M16.667 5L7.5 14.167L3.333 10" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                  <span>Продвинутая аналитика</span>
+                </div>
+                <div className="feature">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M16.667 5L7.5 14.167L3.333 10" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                  <span>Приоритетная поддержка</span>
+                </div>
+              </div>
+              <button className="plan-button featured">
+                <span>Выбрать план</span>
+                <div className="btn-shine"></div>
+              </button>
+            </div>
+
+            {/* Max Plan */}
+            <div className="pricing-card">
+              <div className="plan-header">
+                <h3 className="plan-name">Max</h3>
+                <p className="plan-description">Премиум решение</p>
+                <div className="plan-price">
+                  <span className="price-amount">5,000,000</span>
+                  <span className="price-currency">сумм</span>
+                </div>
+                <p className="plan-subtitle">Максимум возможностей для крупного бизнеса</p>
+              </div>
+              <div className="plan-features">
+                <div className="feature">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M16.667 5L7.5 14.167L3.333 10" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                  <span>Все из Pro</span>
+                </div>
+                <div className="feature">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M16.667 5L7.5 14.167L3.333 10" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                  <span>Безлимитные страницы</span>
+                </div>
+                <div className="feature">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M16.667 5L7.5 14.167L3.333 10" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                  <span>ДЖАРВИС ИИ полная версия</span>
+                </div>
+                <div className="feature">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M16.667 5L7.5 14.167L3.333 10" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                  <span>Индивидуальные решения</span>
+                </div>
+                <div className="feature">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M16.667 5L7.5 14.167L3.333 10" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                  <span>VIP поддержка 24 часа в сутки</span>
+                </div>
+              </div>
+              <button className="plan-button">
+                <span>Выбрать план</span>
+              </button>
             </div>
           </div>
         </div>
