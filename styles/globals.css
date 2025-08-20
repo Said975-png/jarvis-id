@@ -1375,6 +1375,14 @@ body {
   width: 100%;
 }
 
+.robot-scene-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background: transparent;
+  overflow: visible;
+}
+
 /* AI Demo Widget */
 .ai-demo-widget {
   position: relative;
