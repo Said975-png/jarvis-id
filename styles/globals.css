@@ -1371,8 +1371,8 @@ body {
 
 .capabilities-visual {
   position: relative;
-  height: 600px;
-  width: 450px;
+  height: 800px;
+  width: 500px;
   display: flex;
   align-items: center;
   justify-content: center;
