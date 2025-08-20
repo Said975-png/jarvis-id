@@ -2,10 +2,15 @@ import React from 'react';
 import Head from 'next/head';
 import dynamic from 'next/dynamic';
 
-// Dynamically import 3D component to avoid SSR issues
+// Dynamically import 3D components to avoid SSR issues
 const Scene3D = dynamic(() => import('../components/Scene3D'), {
   ssr: false,
   loading: () => <div className="scene3d-loading">Loading...</div>
+});
+
+const RobotScene3D = dynamic(() => import('../components/RobotScene3D'), {
+  ssr: false,
+  loading: () => <div className="scene3d-loading">Loading robot...</div>
 });
 
 export default function Home() {
@@ -162,6 +167,10 @@ export default function Home() {
                 <div className="floating-plus">+</div>
               </div>
             </div>
+
+            <div className="capabilities-visual">
+              <RobotScene3D className="robot-scene-container" />
+            </div>
           </div>
         </div>
       </section>
@@ -226,7 +235,7 @@ export default function Home() {
                   </div>
                   <div className="feature-content">
                     <h3 className="feature-title">Персонализация</h3>
-                    <p className="feature-description">Адаптивный контент и рекомендации на основе поведения пользовате��ей</p>
+                    <p className="feature-description">Адаптивный контент и рекомендации на основе поведения пользователей</p>
                   </div>
                 </div>
               </div>
