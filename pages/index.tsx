@@ -8,7 +8,7 @@ const Scene3D = dynamic(() => import('../components/Scene3D'), {
   loading: () => <div className="scene3d-loading">Loading...</div>
 });
 
-const SimpleRobot = dynamic(() => import('../components/SimpleRobot'), {
+const RobotScene3D = dynamic(() => import('../components/RobotScene3D'), {
   ssr: false,
   loading: () => <div className="scene3d-loading">Loading robot...</div>
 });
@@ -251,7 +251,7 @@ export default function Home() {
             </div>
 
             <div className="capabilities-visual">
-              <SimpleRobot className="robot-scene-container" />
+              <RobotScene3D className="robot-scene-container" />
             </div>
           </div>
         </div>
