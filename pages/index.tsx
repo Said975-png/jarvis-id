@@ -8,12 +8,12 @@ const Scene3D = dynamic(() => import('../components/Scene3D'), {
   loading: () => <div className="scene3d-loading">Loading...</div>
 });
 
-const RobotScene3D = dynamic(() => import('../components/RobotScene3D'), {
+const RobotScene3D = dynamic(() => import('../components/RobotScene3D').catch(() => {
+  console.error('Failed to load RobotScene3D');
+  return { default: () => <div className="scene3d-loading">Robot unavailable</div> };
+}), {
   ssr: false,
   loading: () => <div className="scene3d-loading">Loading robot...</div>
-}).catch(() => {
-  console.error('Failed to load RobotScene3D');
-  return () => <div className="scene3d-loading">Robot unavailable</div>;
 });
 
 export default function Home() {
@@ -207,7 +207,7 @@ export default function Home() {
                   </div>
                   <div className="feature-content">
                     <h3 className="feature-title">Smart AI Assistants</h3>
-                    <p className="feature-description">Интеллектуальные чат-боты и голосовые помощники с GPT интеграцией</p>
+                    <p className="feature-description">Интеллектуальные чат-боты и голосовые помо��ники с GPT интеграцией</p>
                   </div>
                 </div>
 
