@@ -76,6 +76,10 @@ function RobotModel({ position = [0, 0, 0], scale = 1 }: RobotModelProps) {
     }
   });
 
+  if (!scene) {
+    return null;
+  }
+
   return (
     <group ref={meshRef} position={position} scale={scale}>
       <primitive object={scene} />
