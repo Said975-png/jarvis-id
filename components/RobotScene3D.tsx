@@ -15,18 +15,7 @@ function RobotScene3D({ className }: RobotScene3DProps) {
         style={{ width: '100%', height: '100%' }}
         gl={{ antialias: true, alpha: true }}
       >
-        <Suspense fallback={
-          <div style={{
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            height: '100%',
-            color: 'rgba(255,255,255,0.6)',
-            fontSize: '0.9rem'
-          }}>
-            Loading...
-          </div>
-        }>
+        <Suspense fallback={null}>
           {/* Lighting */}
           <ambientLight intensity={0.3} />
           <directionalLight
