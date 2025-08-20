@@ -185,7 +185,7 @@ export default function Home() {
                 <span className="highlight-text"> Платформы</span>
               </h2>
               <p className="capabilities-subtitle">
-                Мы создаем сайты с интеллектуальными ИИ ассистентами, которые революционизируют взаимодействие с вашими клиентами
+                Мы создаем сайты с интеллектуальными ИИ ассистентами, которые революционизируют взаимодействие с вашими клиен��ами
               </p>
 
               <div className="capabilities-features">
@@ -226,7 +226,7 @@ export default function Home() {
                   </div>
                   <div className="feature-content">
                     <h3 className="feature-title">Персонализация</h3>
-                    <p className="feature-description">Адаптивный контент и рекомендации на основе поведения пользователей</p>
+                    <p className="feature-description">Адаптивный контент и ре��омендации на основе поведения пользователей</p>
                   </div>
                 </div>
               </div>
@@ -246,70 +246,6 @@ export default function Home() {
             </div>
 
             <div className="capabilities-visual">
-              {/* AI Demo Widget */}
-              <div className="ai-demo-widget">
-                <div className="ai-chat-header">
-                  <div className="ai-avatar">
-                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-                      <rect x="3" y="11" width="18" height="10" rx="2" ry="2"/>
-                      <circle cx="12" cy="5" r="2"/>
-                      <path d="M12 7v4"/>
-                      <line x1="8" y1="16" x2="8" y2="16"/>
-                      <line x1="16" y1="16" x2="16" y2="16"/>
-                      <circle cx="8" cy="16" r="1"/>
-                      <circle cx="16" cy="16" r="1"/>
-                    </svg>
-                  </div>
-                  <div className="ai-info">
-                    <div className="ai-name">JARVIS Assistant</div>
-                    <div className="ai-status">
-                      <span className="status-dot"></span>
-                      Онлайн
-                    </div>
-                  </div>
-                </div>
-                <div className="ai-chat-messages">
-                  <div className="message ai-message">
-                    <div className="message-text">Привет! Я ИИ ассистент. Помогу вам с вопросами о сайте и продуктах. Что вас интересует?</div>
-                  </div>
-                  <div className="message user-message">
-                    <div className="message-text">Расскажи о ваших услугах</div>
-                  </div>
-                  <div className="message ai-message typing">
-                    <div className="typing-indicator">
-                      <span></span>
-                      <span></span>
-                      <span></span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              {/* Floating AI Widgets */}
-              <div className="ai-widget ai-widget-1">
-                <div className="ai-widget-icon">🧠</div>
-                <div className="ai-widget-text">
-                  <div className="ai-widget-title">Machine Learning</div>
-                  <div className="ai-widget-subtitle">99.7% Accuracy</div>
-                </div>
-              </div>
-
-              <div className="ai-widget ai-widget-2">
-                <div className="ai-widget-icon">💬</div>
-                <div className="ai-widget-text">
-                  <div className="ai-widget-title">Natural Language</div>
-                  <div className="ai-widget-subtitle">50+ Languages</div>
-                </div>
-              </div>
-
-              <div className="ai-widget ai-widget-3">
-                <div className="ai-widget-icon">⚡</div>
-                <div className="ai-widget-text">
-                  <div className="ai-widget-title">Real-time Response</div>
-                  <div className="ai-widget-subtitle">&lt; 0.2s</div>
-                </div>
-              </div>
-
               {/* Decorative AI Elements */}
               <div className="ai-decorative-element ai-elem-1">
                 <div className="neural-node"></div>
