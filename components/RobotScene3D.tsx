@@ -48,10 +48,12 @@ function RobotScene3D({ className }: RobotScene3DProps) {
           <Environment preset="city" background={false} />
           
           {/* The Robot Model */}
-          <RobotModel
-            position={[0, -0.3, 0]}
-            scale={0.3}
-          />
+          <Suspense fallback={null}>
+            <RobotModel
+              position={[0, -0.3, 0]}
+              scale={0.3}
+            />
+          </Suspense>
           
           {/* Contact shadows for realism */}
           <ContactShadows
