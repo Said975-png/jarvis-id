@@ -624,9 +624,9 @@ body {
 /* Hero Features */
 .hero-features {
   display: flex;
-  justify-content: center;
-  gap: 1rem;
-  margin-top: 2rem;
+  justify-content: flex-start;
+  gap: 0.8rem;
+  margin-top: 2.5rem;
   flex-wrap: wrap;
 }
 
@@ -634,17 +634,18 @@ body {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  padding: 0.6rem 1.2rem;
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 25px;
-  font-size: 0.8rem;
-  font-weight: 500;
-  color: rgba(255, 255, 255, 0.8);
+  padding: 0.5rem 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.85);
   backdrop-filter: blur(15px);
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
   overflow: hidden;
+  white-space: nowrap;
 }
 
 .feature-pill::before {
@@ -1552,10 +1553,11 @@ body {
 
 .hero-buttons {
   display: flex;
-  gap: 1.25rem;
+  gap: 1.2rem;
   justify-content: flex-start;
   flex-wrap: wrap;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
+  margin-top: 2rem;
   animation: fadeInUp 0.8s ease-out 1.1s both;
 }
 
