@@ -2135,6 +2135,23 @@ body {
     font-size: 4rem;
   }
 
+  .hero-3d-main {
+    width: 280px;
+    height: 280px;
+  }
+
+  .performance-display {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem;
+  }
+
+  .metric-item {
+    flex-direction: row;
+    gap: 0.5rem;
+    justify-content: space-between;
+  }
+
   .navbar {
     top: 0.5rem;
     left: 1rem;
