@@ -375,7 +375,7 @@ export default function Home() {
                     </svg>
                   </div>
                   <div className="feature-content">
-                    <h3 className="feature-title">Голографические Интерфе��сы</h3>
+                    <h3 className="feature-title">Голографические Интерфейсы</h3>
                     <p className="feature-description">Ад��пти��ный контент �� рекомендации на основе по��е��ения пользователей</p>
                   </div>
                 </div>
@@ -486,8 +486,8 @@ export default function Home() {
                     </svg>
                   </div>
                   <div className="metric-content">
-                    <span className="metric-value">24/7</span>
-                    <span className="metric-label">Работа</span>
+                    <span className="metric-value">0.1ms</span>
+                    <span className="metric-label">Отклик</span>
                   </div>
                 </div>
               </div>
