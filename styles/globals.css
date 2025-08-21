@@ -2345,12 +2345,34 @@ body {
 
 
 /* Mobile Responsive Design */
+@media (max-width: 1400px) {
+  .hero-grid {
+    grid-template-columns: 1fr 1.2fr 1fr;
+    gap: 1rem;
+    padding: 0 1rem;
+  }
+
+  .tech-item {
+    padding: 0.8rem;
+    gap: 0.6rem;
+  }
+
+  .tech-content h4 {
+    font-size: 0.8rem;
+  }
+
+  .tech-content p {
+    font-size: 0.65rem;
+  }
+}
+
 @media (max-width: 1200px) {
   .hero-grid {
     grid-template-columns: 1fr;
     gap: 3rem;
     text-align: center;
     padding: 0 1.5rem;
+    max-width: 100%;
   }
 
   .hero-left {
@@ -2370,6 +2392,7 @@ body {
     max-width: 600px;
     margin: 0 auto;
     padding-left: 0;
+    width: 100%;
   }
 
   .hero-buttons {
@@ -2392,8 +2415,9 @@ body {
   }
 
   .tech-stack {
-    max-width: 500px;
+    max-width: 100%;
     margin: 0 auto;
+    width: 100%;
   }
 }
 
