@@ -3169,8 +3169,8 @@ body {
 /* Enhanced 3D Section for capabilities */
 .capabilities-3d-main {
   position: relative;
-  height: 400px;
-  width: 400px;
+  height: 500px;
+  width: 500px;
   display: flex;
   align-items: center;
   justify-content: center;
