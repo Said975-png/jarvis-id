@@ -3979,7 +3979,7 @@ body {
 
 .pricing-card {
   background: transparent;
-  border: none;
+  border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 16px;
   padding: 2rem 1.5rem;
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -4009,15 +4009,18 @@ body {
 }
 
 .pricing-card:hover {
+  border-color: rgba(255, 255, 255, 0.15);
   transform: translateY(-8px);
 }
 
 .pricing-card.featured {
+  border-color: rgba(255, 255, 255, 0.12);
   transform: scale(1.02);
   position: relative;
 }
 
 .pricing-card.featured:hover {
+  border-color: rgba(255, 255, 255, 0.2);
   transform: scale(1.02) translateY(-8px);
 }
 
