@@ -271,7 +271,7 @@ export default function Home() {
               {/* Status Indicator */}
               <div className="status-indicator">
                 <div className="status-dot"></div>
-                <span className="status-text">Система активна • Все модули фун��ционируют</span>
+                <span className="status-text">Система активна • Все модули функционируют</span>
               </div>
             </div>
 
@@ -335,7 +335,7 @@ export default function Home() {
                 <span className="highlight-text"> Решения</span>
               </h2>
               <p className="capabilities-subtitle">
-                Мы создаем сайты с интеллектуальными ИИ ассистентами, которы�� революционизируют взаимоде��ствие с вашими клиентами
+                Мы создаем сайты с интеллектуальными ИИ ассистентами, которые революционизируют взаимоде��ствие с вашими клиентами
               </p>
 
               <div className="capabilities-features">
@@ -375,7 +375,7 @@ export default function Home() {
                     </svg>
                   </div>
                   <div className="feature-content">
-                    <h3 className="feature-title">Голографические Интерфейсы</h3>
+                    <h3 className="feature-title">Голографические Интерфе��сы</h3>
                     <p className="feature-description">Ад��пти��ный контент �� рекомендации на основе по��е��ения пользователей</p>
                   </div>
                 </div>
@@ -474,8 +474,8 @@ export default function Home() {
                     </svg>
                   </div>
                   <div className="metric-content">
-                    <span className="metric-value">∞</span>
-                    <span className="metric-label">Масштаб</span>
+                    <span className="metric-value">1M+</span>
+                    <span className="metric-label">Операций/сек</span>
                   </div>
                 </div>
                 <div className="metric-item">
