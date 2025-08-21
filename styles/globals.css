@@ -2612,69 +2612,24 @@ body {
   }
 }
 
-/* Mobile Small (320px - 389px) */
-@media (max-width: 389px) {
-  .navbar-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.5rem 0.75rem;
-    width: 100%;
-    box-sizing: border-box;
-  }
-
-  .navbar-logo {
-    flex: 0 0 auto;
-  }
-
-  .navbar-search {
-    display: none;
-  }
-
-  .navbar-cart {
-    margin-right: 0.5rem;
-  }
-
-  .navbar-auth {
-    flex: 0 0 auto;
-  }
-
+/* Для очень маленьких экранов - дополнительные настройки */
+@media (max-width: 360px) {
   .hero-title {
-    font-size: 1.75rem;
-    line-height: 1.2;
-    margin-bottom: 1rem;
-    padding: 0 0.75rem;
-    word-wrap: break-word;
+    font-size: 1.6rem;
   }
 
   .hero-subtitle {
     font-size: 0.85rem;
-    line-height: 1.4;
-    margin-bottom: 1.5rem;
-    padding: 0 0.75rem;
-    max-width: 100%;
   }
 
-  .hero-container {
-    padding: 1rem 0;
-    text-align: center;
-    width: 100%;
-    box-sizing: border-box;
+  .navbar-content {
+    padding: 0.5rem 0.75rem;
   }
 
-  .hero-content {
-    padding: 0 0.75rem;
-    max-width: 100%;
-    box-sizing: border-box;
-  }
-
-  .auth-btn {
-    padding: 0.6rem 1rem;
-    font-size: 0.8rem;
-  }
-
-  .cart-btn {
-    padding: 0.5rem;
+  .cta-primary,
+  .cta-secondary {
+    max-width: 260px;
+    font-size: 0.85rem;
   }
 }
 
