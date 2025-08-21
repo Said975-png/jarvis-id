@@ -5018,14 +5018,14 @@ body {
 }
 
 .author-name {
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   font-weight: 600;
   color: #ffffff;
-  margin-bottom: 0.15rem;
+  margin-bottom: 0.2rem;
 }
 
 .author-location {
-  font-size: 0.7rem;
+  font-size: 0.75rem;
   color: rgba(255, 255, 255, 0.6);
 }
 
