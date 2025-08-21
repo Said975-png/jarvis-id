@@ -132,21 +132,6 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Glass Buttons - Positioned at bottom center of entire section */}
-          <div className="glass-buttons-container">
-            <button className="glass-btn primary-glass">
-              <span className="btn-text">EXPLORE</span>
-              <div className="btn-glow"></div>
-            </button>
-            <button className="glass-btn secondary-glass">
-              <span className="btn-text">CONNECT</span>
-              <div className="btn-glow"></div>
-            </button>
-            <button className="glass-btn accent-glass">
-              <span className="btn-text">START</span>
-              <div className="btn-glow"></div>
-            </button>
-          </div>
         </div>
       </section>
 
