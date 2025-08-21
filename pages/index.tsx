@@ -74,6 +74,27 @@ export default function Home() {
           <div className="gradient-orb orb-3"></div>
         </div>
         <div className="hero-container">
+          {/* Additional Creative Texts - Spread across entire section */}
+          <div className="floating-text section-top-left">
+            <span className="mini-text">DIGITAL</span>
+            <span className="mini-sub">evolution</span>
+          </div>
+
+          <div className="floating-text section-top-right">
+            <span className="mini-text">CYBER</span>
+            <span className="mini-sub">intelligence</span>
+          </div>
+
+          <div className="floating-text section-bottom-left">
+            <span className="mini-text">QUANTUM</span>
+            <span className="mini-sub">processing</span>
+          </div>
+
+          <div className="floating-text section-bottom-right">
+            <span className="mini-text">NEURAL</span>
+            <span className="mini-sub">networks</span>
+          </div>
+
           <div className="hero-layout">
             <div className="hero-side-text left-text">
               <div className="creative-text">
@@ -87,43 +108,6 @@ export default function Home() {
             </div>
             <div className="hero-3d">
               <Scene3D className="scene3d-container" />
-
-              {/* Additional Creative Texts */}
-              <div className="floating-text top-left">
-                <span className="mini-text">DIGITAL</span>
-                <span className="mini-sub">evolution</span>
-              </div>
-
-              <div className="floating-text top-right">
-                <span className="mini-text">CYBER</span>
-                <span className="mini-sub">intelligence</span>
-              </div>
-
-              <div className="floating-text bottom-left">
-                <span className="mini-text">QUANTUM</span>
-                <span className="mini-sub">processing</span>
-              </div>
-
-              <div className="floating-text bottom-right">
-                <span className="mini-text">NEURAL</span>
-                <span className="mini-sub">networks</span>
-              </div>
-
-              {/* Glass Buttons */}
-              <div className="glass-buttons-container">
-                <button className="glass-btn primary-glass">
-                  <span className="btn-text">EXPLORE</span>
-                  <div className="btn-glow"></div>
-                </button>
-                <button className="glass-btn secondary-glass">
-                  <span className="btn-text">CONNECT</span>
-                  <div className="btn-glow"></div>
-                </button>
-                <button className="glass-btn accent-glass">
-                  <span className="btn-text">START</span>
-                  <div className="btn-glow"></div>
-                </button>
-              </div>
 
               {/* Decorative Elements */}
               <div className="decorative-element elem-1">
@@ -146,6 +130,22 @@ export default function Home() {
                 "Beyond limits"
               </div>
             </div>
+          </div>
+
+          {/* Glass Buttons - Positioned at bottom center of entire section */}
+          <div className="glass-buttons-container">
+            <button className="glass-btn primary-glass">
+              <span className="btn-text">EXPLORE</span>
+              <div className="btn-glow"></div>
+            </button>
+            <button className="glass-btn secondary-glass">
+              <span className="btn-text">CONNECT</span>
+              <div className="btn-glow"></div>
+            </button>
+            <button className="glass-btn accent-glass">
+              <span className="btn-text">START</span>
+              <div className="btn-glow"></div>
+            </button>
           </div>
         </div>
       </section>
