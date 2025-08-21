@@ -23,7 +23,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet" />
       </Head>
 
       {/* Navigation Bar */}
@@ -74,87 +74,14 @@ export default function Home() {
           <div className="gradient-orb orb-3"></div>
         </div>
         <div className="hero-container">
+          {/* Background JARVIS Text */}
+          <div className="background-text">
+            <span className="bg-jarvis">JARVIS</span>
+          </div>
+
           <div className="hero-layout">
-            <div className="hero-content">
-              <div className="hero-badge">
-                <span className="badge-dot"></span>
-                <span>Premium Web Development</span>
-              </div>
-              <h1 className="hero-title">
-                Create Amazing
-                <span className="highlight-text"> Websites</span>
-              </h1>
-              <p className="hero-subtitle">
-                We build modern, fast and beautiful websites that help your business grow online
-              </p>
-              <div className="hero-buttons">
-                <button className="btn-primary">
-                  <span>Start Project</span>
-                  <div className="btn-shine"></div>
-                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                    <path d="M3.5 8H12.5M12.5 8L8.5 4M12.5 8L8.5 12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                  </svg>
-                </button>
-                <button className="btn-secondary">
-                  <span>View Portfolio</span>
-                </button>
-              </div>
-              <div className="hero-stats">
-                <div className="stat-item">
-                  <div className="stat-number">250+</div>
-                  <div className="stat-label">Projects Completed</div>
-                </div>
-                <div className="stat-item">
-                  <div className="stat-number">99%</div>
-                  <div className="stat-label">Client Satisfaction</div>
-                </div>
-                <div className="stat-item">
-                  <div className="stat-number">24/7</div>
-                  <div className="stat-label">Support Available</div>
-                </div>
-              </div>
-            </div>
             <div className="hero-3d">
               <Scene3D className="scene3d-container" />
-
-              {/* Floating Glass Widgets */}
-              <div className="floating-widget widget-1">
-                <div className="widget-icon">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                    <polygon points="13,2 3,14 12,14 11,22 21,10 12,10 13,2"/>
-                  </svg>
-                </div>
-                <div className="widget-text">
-                  <div className="widget-title">Fast Loading</div>
-                  <div className="widget-subtitle">98% Speed Score</div>
-                </div>
-              </div>
-
-              <div className="floating-widget widget-2">
-                <div className="widget-icon">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-                  </svg>
-                </div>
-                <div className="widget-text">
-                  <div className="widget-title">Secure</div>
-                  <div className="widget-subtitle">SSL Protected</div>
-                </div>
-              </div>
-
-              <div className="floating-widget widget-3">
-                <div className="widget-icon">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
-                    <line x1="8" y1="21" x2="16" y2="21"/>
-                    <line x1="12" y1="17" x2="12" y2="21"/>
-                  </svg>
-                </div>
-                <div className="widget-text">
-                  <div className="widget-title">Responsive</div>
-                  <div className="widget-subtitle">All Devices</div>
-                </div>
-              </div>
 
               {/* Decorative Elements */}
               <div className="decorative-element elem-1">
@@ -168,6 +95,7 @@ export default function Home() {
               </div>
             </div>
           </div>
+
         </div>
       </section>
 
@@ -186,7 +114,7 @@ export default function Home() {
                 <span>AI-Powered Platform</span>
               </div>
               <h2 className="capabilities-title">
-                Возможности нашей
+                В��зможности нашей
                 <span className="highlight-text"> Платформы</span>
               </h2>
               <p className="capabilities-subtitle">
@@ -231,7 +159,7 @@ export default function Home() {
                   </div>
                   <div className="feature-content">
                     <h3 className="feature-title">Персонализация</h3>
-                    <p className="feature-description">Адаптивный контент и рекомендации на основе поведения пользователей</p>
+                    <p className="feature-description">Адаптивный контент �� рекомендации на основе по��едения пользователей</p>
                   </div>
                 </div>
               </div>
