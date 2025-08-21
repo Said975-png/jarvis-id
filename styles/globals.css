@@ -37,12 +37,9 @@ body {
 .navbar {
   position: fixed;
   top: 2rem;
-  left: 50%;
-  transform: translateX(-50%);
+  right: 2rem;
   z-index: 1000;
-  width: 100%;
-  max-width: 1000px;
-  padding: 0 2rem;
+  width: auto;
 }
 
 .navbar-container {
@@ -52,15 +49,13 @@ body {
 .navbar-content {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 1rem 2.5rem;
-  background: rgba(0, 0, 0, 0.85);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 60px;
-  backdrop-filter: blur(40px);
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  position: relative;
-  overflow: hidden;
+  justify-content: flex-end;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  backdrop-filter: blur(20px);
+  transition: all 0.3s ease;
 }
 
 .navbar-content::before {
