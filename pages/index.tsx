@@ -127,76 +127,150 @@ export default function Home() {
             <span className="bg-jarvis">JARVIS</span>
           </div>
 
-          {/* Main Hero Content */}
-          <div className="hero-main-content">
-            <div className="hero-badge">
-              <span className="badge-dot"></span>
-              <span>Революционная AI-платформа</span>
+          {/* Hero Grid Layout */}
+          <div className="hero-grid">
+            {/* Left Content */}
+            <div className="hero-left">
+              <div className="hero-badge">
+                <span className="badge-dot"></span>
+                <span>Революционная AI-платфор��а</span>
+              </div>
+
+              <h1 className="hero-title">
+                Создаем <span className="gradient-text">интеллектуальные</span><br />
+                веб-решения будущего
+              </h1>
+
+              <p className="hero-subtitle">
+                Разрабатываем сайты с ИИ-ассистентами, которые понимают ваших клиентов,
+                автоматизируют бизнес-процессы и увеличивают конверсию в 3 раза
+              </p>
+
+              <div className="hero-buttons">
+                <button className="btn-primary">
+                  <span>Начать бесплатно</span>
+                  <div className="btn-shine"></div>
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path d="M3.5 8H12.5M12.5 8L8.5 4M12.5 8L8.5 12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                </button>
+                <button className="btn-secondary">
+                  <span>Посмотреть демо</span>
+                  <div className="btn-ripple"></div>
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path d="M6 3L10 8L6 13" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                </button>
+              </div>
+
+              <div className="hero-features">
+                <div className="feature-pill">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path d="M8 1L10.09 5.26L15 6L11 9.74L11.91 14.5L8 12.27L4.09 14.5L5 9.74L1 6L5.91 5.26L8 1Z" stroke="currentColor" strokeWidth="1.5"/>
+                  </svg>
+                  <span>GPT-4 интеграция</span>
+                </div>
+                <div className="feature-pill">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path d="M8 1v14M1 8h14" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+                  </svg>
+                  <span>No-code решения</span>
+                </div>
+                <div className="feature-pill">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <circle cx="8" cy="8" r="3" stroke="currentColor" strokeWidth="1.5"/>
+                    <path d="M8 1v6m0 6v6m11-7h-6m-6 0H1" stroke="currentColor" strokeWidth="1.5"/>
+                  </svg>
+                  <span>Реальное время</span>
+                </div>
+              </div>
             </div>
 
-            <h1 className="hero-title">
-              Создаем <span className="gradient-text">интеллектуальные</span><br />
-              веб-решения будущего
-            </h1>
+            {/* Center 3D Model */}
+            <div className="hero-center">
+              <div className="hero-3d-main">
+                <Scene3D className="scene3d-container" />
 
-            <p className="hero-subtitle">
-              Разрабатываем сайты с ИИ-ассистентами, которые понимают ваших клиентов,
-              автоматизируют бизнес-процессы и увеличивают конверсию в 3 раза
-            </p>
+                {/* Interactive Elements */}
+                <div className="orbit-ring ring-1"></div>
+                <div className="orbit-ring ring-2"></div>
+                <div className="orbit-ring ring-3"></div>
 
-            <div className="hero-buttons">
-              <button className="btn-primary">
-                <span>Начать бесплатно</span>
-                <div className="btn-shine"></div>
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                  <path d="M3.5 8H12.5M12.5 8L8.5 4M12.5 8L8.5 12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>
-              </button>
-              <button className="btn-secondary">
-                <span>Посмотреть демо</span>
-                <div className="btn-ripple"></div>
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                  <path d="M6 3L10 8L6 13" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>
-              </button>
-            </div>
-
-            <div className="hero-features">
-              <div className="feature-pill">
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                  <path d="M8 1L10.09 5.26L15 6L11 9.74L11.91 14.5L8 12.27L4.09 14.5L5 9.74L1 6L5.91 5.26L8 1Z" stroke="currentColor" strokeWidth="1.5"/>
-                </svg>
-                <span>GPT-4 интеграция</span>
+                {/* Data Points */}
+                <div className="data-point point-1">
+                  <div className="data-dot"></div>
+                  <div className="data-label">AI Core</div>
+                </div>
+                <div className="data-point point-2">
+                  <div className="data-dot"></div>
+                  <div className="data-label">Neural Net</div>
+                </div>
+                <div className="data-point point-3">
+                  <div className="data-dot"></div>
+                  <div className="data-label">Analytics</div>
+                </div>
               </div>
-              <div className="feature-pill">
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                  <path d="M8 1v14M1 8h14" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
-                </svg>
-                <span>No-code решения</span>
-              </div>
-              <div className="feature-pill">
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                  <circle cx="8" cy="8" r="3" stroke="currentColor" strokeWidth="1.5"/>
-                  <path d="M8 1v6m0 6v6m11-7h-6m-6 0H1" stroke="currentColor" strokeWidth="1.5"/>
-                </svg>
-                <span>Реальное время</span>
+
+              {/* Performance Metrics */}
+              <div className="performance-display">
+                <div className="metric-item">
+                  <span className="metric-value">127%</span>
+                  <span className="metric-label">Конверсия</span>
+                </div>
+                <div className="metric-item">
+                  <span className="metric-value">95%</span>
+                  <span className="metric-label">Автоматизация</span>
+                </div>
+                <div className="metric-item">
+                  <span className="metric-value">24/7</span>
+                  <span className="metric-label">Поддержка</span>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div className="hero-layout">
-            <div className="hero-3d">
-              <Scene3D className="scene3d-container" />
+            {/* Right Content */}
+            <div className="hero-right">
+              <div className="tech-stack">
+                <div className="tech-item">
+                  <div className="tech-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                      <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                      <path d="M2 17l10 5 10-5"/>
+                      <path d="M2 12l10 5 10-5"/>
+                    </svg>
+                  </div>
+                  <div className="tech-content">
+                    <h4>Machine Learning</h4>
+                    <p>Глубокое обучение</p>
+                  </div>
+                </div>
 
-              {/* Decorative Elements */}
-              <div className="decorative-element elem-1">
-                <div className="pulse-dot"></div>
-              </div>
-              <div className="decorative-element elem-2">
-                <div className="rotating-ring"></div>
-              </div>
-              <div className="decorative-element elem-3">
-                <div className="floating-plus">+</div>
+                <div className="tech-item">
+                  <div className="tech-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                      <circle cx="12" cy="12" r="3"/>
+                      <path d="M12 1v6m0 6v6m11-7h-6m-6 0H1"/>
+                    </svg>
+                  </div>
+                  <div className="tech-content">
+                    <h4>Real-time Processing</h4>
+                    <p>Мгновенная обработка</p>
+                  </div>
+                </div>
+
+                <div className="tech-item">
+                  <div className="tech-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                      <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                      <polyline points="3.27,6.96 12,12.01 20.73,6.96"/>
+                      <line x1="12" y1="22.08" x2="12" y2="12"/>
+                    </svg>
+                  </div>
+                  <div className="tech-content">
+                    <h4>Advanced Analytics</h4>
+                    <p>Умная аналитика</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
