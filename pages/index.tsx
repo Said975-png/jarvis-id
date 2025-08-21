@@ -74,6 +74,33 @@ export default function Home() {
           <div className="gradient-orb orb-3"></div>
         </div>
         <div className="hero-container">
+          {/* Central Hero Title */}
+          <div className="hero-central-title">
+            <h1 className="main-title">
+              <span className="title-line">JARVIS</span>
+              <span className="title-sub">AI-Powered Future</span>
+            </h1>
+            <p className="title-description">
+              Революционная платформа искусственного интеллекта
+            </p>
+          </div>
+
+          {/* Action Buttons */}
+          <div className="hero-action-buttons">
+            <button className="action-btn primary">
+              <span className="btn-text">НАЧАТЬ</span>
+              <div className="btn-icon">→</div>
+            </button>
+            <button className="action-btn secondary">
+              <span className="btn-text">ДЕМО</span>
+              <div className="btn-icon">▶</div>
+            </button>
+            <button className="action-btn accent">
+              <span className="btn-text">СВЯЗЬ</span>
+              <div className="btn-icon">✦</div>
+            </button>
+          </div>
+
           {/* Additional Creative Texts - Spread across entire section */}
           <div className="floating-text section-top-left">
             <span className="mini-text">DIGITAL</span>
@@ -93,6 +120,17 @@ export default function Home() {
           <div className="floating-text section-bottom-right">
             <span className="mini-text">NEURAL</span>
             <span className="mini-sub">networks</span>
+          </div>
+
+          {/* Additional Side Texts */}
+          <div className="floating-text section-mid-left">
+            <span className="mini-text">MATRIX</span>
+            <span className="mini-sub">reality</span>
+          </div>
+
+          <div className="floating-text section-mid-right">
+            <span className="mini-text">SINGULARITY</span>
+            <span className="mini-sub">approach</span>
           </div>
 
           <div className="hero-layout">
