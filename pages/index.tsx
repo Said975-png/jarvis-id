@@ -267,58 +267,6 @@ export default function Home() {
             <div className="capabilities-visual">
               <div className="capabilities-3d-main">
                 <RobotScene3D className="robot-scene-container" />
-
-                {/* Advanced Interactive Elements */}
-                <div className="orbit-ring ring-1">
-                  <div className="ring-particle particle-1"></div>
-                  <div className="ring-particle particle-2"></div>
-                </div>
-                <div className="orbit-ring ring-2">
-                  <div className="ring-particle particle-3"></div>
-                  <div className="ring-particle particle-4"></div>
-                </div>
-                <div className="orbit-ring ring-3">
-                  <div className="ring-particle particle-5"></div>
-                  <div className="ring-particle particle-6"></div>
-                </div>
-
-                {/* Enhanced Data Points */}
-                <div className="data-point point-1">
-                  <div className="data-dot">
-                    <div className="dot-pulse"></div>
-                  </div>
-                  <div className="data-label">AI CORE</div>
-                  <div className="data-connection line-1"></div>
-                </div>
-                <div className="data-point point-2">
-                  <div className="data-dot">
-                    <div className="dot-pulse"></div>
-                  </div>
-                  <div className="data-label">NEURAL NET</div>
-                  <div className="data-connection line-2"></div>
-                </div>
-                <div className="data-point point-3">
-                  <div className="data-dot">
-                    <div className="dot-pulse"></div>
-                  </div>
-                  <div className="data-label">ANALYTICS</div>
-                  <div className="data-connection line-3"></div>
-                </div>
-
-                {/* Energy Field */}
-                <div className="energy-field">
-                  <div className="energy-wave wave-1"></div>
-                  <div className="energy-wave wave-2"></div>
-                  <div className="energy-wave wave-3"></div>
-                </div>
-
-                {/* Holographic Grid */}
-                <div className="holo-grid">
-                  <div className="grid-line horizontal line-1"></div>
-                  <div className="grid-line horizontal line-2"></div>
-                  <div className="grid-line vertical line-3"></div>
-                  <div className="grid-line vertical line-4"></div>
-                </div>
               </div>
 
               {/* Enhanced Performance Metrics */}
