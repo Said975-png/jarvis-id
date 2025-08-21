@@ -13,6 +13,11 @@ const RobotScene3D = dynamic(() => import('../components/RobotScene3D'), {
   loading: () => <div className="scene3d-loading">Loading robot...</div>
 });
 
+const JarvisScene3D = dynamic(() => import('../components/JarvisScene3D'), {
+  ssr: false,
+  loading: () => <div className="scene3d-loading">Loading JARVIS...</div>
+});
+
 export default function Home() {
   return (
     <>
@@ -244,7 +249,7 @@ export default function Home() {
                   </div>
                   <div className="feature-content">
                     <h3 className="feature-title">Голографические Интерфейсы</h3>
-                    <p className="feature-description">Иммерсивные 3D-интерфей��ы с поддержкой AR/VR для невероятного пользовательского опыта</p>
+                    <p className="feature-description">Иммерсивные 3D-интерфейсы с поддержкой AR/VR для невероятного пользовательского опыта</p>
                   </div>
                 </div>
               </div>
