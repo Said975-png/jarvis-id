@@ -182,15 +182,6 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Subtle Connection Lines */}
-          <div className="connection-overlay">
-            <svg className="connection-svg" width="100%" height="100%" viewBox="0 0 1400 800" fill="none">
-              <path d="M150 150L350 250" stroke="rgba(255,255,255,0.06)" strokeWidth="1" strokeDasharray="3,6"/>
-              <path d="M1050 250L1250 150" stroke="rgba(255,255,255,0.06)" strokeWidth="1" strokeDasharray="3,6"/>
-              <path d="M150 650L350 550" stroke="rgba(255,255,255,0.06)" strokeWidth="1" strokeDasharray="3,6"/>
-              <path d="M1050 550L1250 650" stroke="rgba(255,255,255,0.06)" strokeWidth="1" strokeDasharray="3,6"/>
-            </svg>
-          </div>
 
         </div>
       </section>
