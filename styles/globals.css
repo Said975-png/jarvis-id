@@ -2663,14 +2663,20 @@ body {
     gap: 1rem;
     flex-direction: column;
     align-items: center;
+    padding: 0 1rem;
+    width: 100%;
+    box-sizing: border-box;
   }
 
   .cta-primary,
   .cta-secondary {
     width: 100%;
-    max-width: 280px;
+    max-width: 300px;
     min-height: 50px;
-    font-size: 1rem;
+    font-size: 0.95rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 25px;
+    box-sizing: border-box;
   }
 }
 
