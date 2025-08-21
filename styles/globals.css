@@ -255,9 +255,8 @@ body {
 }
 
 .hero-layout {
-  display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
-  gap: 2rem;
+  display: flex;
+  justify-content: center;
   align-items: center;
   min-height: 80vh;
   overflow: visible;
