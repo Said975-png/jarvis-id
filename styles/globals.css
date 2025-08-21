@@ -2322,6 +2322,197 @@ body {
 }
 
 
+/* ========================================
+   RESPONSIVE DESIGN FOR ALL DEVICES
+======================================== */
+
+/* Ultra Wide Monitors (3440px+) */
+@media (min-width: 3440px) {
+  .hero-container {
+    max-width: 2400px;
+  }
+
+  .hero-title {
+    font-size: 5.5rem;
+  }
+
+  .navbar-container {
+    max-width: 2400px;
+  }
+}
+
+/* Large Desktop (1920px - 3439px) */
+@media (min-width: 1920px) and (max-width: 3439px) {
+  .hero-container {
+    max-width: 1800px;
+  }
+
+  .hero-title {
+    font-size: 5rem;
+  }
+}
+
+/* Standard Desktop (1440px - 1919px) */
+@media (min-width: 1440px) and (max-width: 1919px) {
+  .hero-container {
+    padding: 0 3rem;
+  }
+
+  .hero-title {
+    font-size: 4.5rem;
+  }
+}
+
+/* Small Desktop (1200px - 1439px) */
+@media (min-width: 1200px) and (max-width: 1439px) {
+  .hero-container {
+    padding: 0 2rem;
+  }
+
+  .hero-title {
+    font-size: 4rem;
+  }
+
+  .navbar-search {
+    width: 300px;
+  }
+}
+
+/* Laptop (992px - 1199px) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .hero-container {
+    padding: 0 1.5rem;
+  }
+
+  .hero-title {
+    font-size: 3.5rem;
+  }
+
+  .navbar-search {
+    width: 250px;
+  }
+}
+
+/* Tablet Landscape (768px - 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .navbar-content {
+    gap: 0.5rem;
+  }
+
+  .navbar-search {
+    width: 200px;
+  }
+
+  .hero-title {
+    font-size: 3rem;
+  }
+
+  .hero-container {
+    padding: 0 1rem;
+  }
+}
+
+/* Tablet Portrait (576px - 767px) */
+@media (min-width: 576px) and (max-width: 767px) {
+  .navbar-content {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .navbar-search {
+    order: 3;
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+}
+
+/* Mobile Large (390px - 575px) */
+@media (min-width: 390px) and (max-width: 575px) {
+  .navbar-content {
+    flex-direction: column;
+    gap: 0.75rem;
+    padding: 0.75rem 1rem;
+  }
+
+  .navbar-logo {
+    align-self: flex-start;
+  }
+
+  .navbar-search {
+    width: 100%;
+    order: 3;
+  }
+
+  .navbar-cart,
+  .navbar-auth {
+    position: absolute;
+    top: 0.75rem;
+    right: 1rem;
+  }
+
+  .navbar-auth {
+    right: 6rem;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+
+  .hero-subtitle {
+    font-size: 0.9rem;
+  }
+
+  .hero-container {
+    padding: 0 1rem;
+    text-align: center;
+  }
+}
+
+/* Mobile Small (320px - 389px) */
+@media (max-width: 389px) {
+  .navbar-content {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0.5rem 0.75rem;
+  }
+
+  .navbar-search {
+    width: 100%;
+  }
+
+  .hero-title {
+    font-size: 1.75rem;
+    line-height: 1.2;
+  }
+
+  .hero-subtitle {
+    font-size: 0.85rem;
+  }
+
+  .hero-container {
+    padding: 0 0.75rem;
+    text-align: center;
+  }
+
+  .auth-btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+  }
+
+  .cart-btn {
+    padding: 0.5rem;
+  }
+}
+
 /* Mobile Responsive Design */
 @media (max-width: 1500px) {
   .hero-grid {
