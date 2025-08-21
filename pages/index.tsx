@@ -79,43 +79,106 @@ export default function Home() {
             <span className="bg-jarvis">JARVIS</span>
           </div>
 
-          {/* Floating Side Elements */}
+          {/* Creative Floating Left Elements */}
           <div className="floating-left-elements">
-            <div className="side-stat">
-              <div className="stat-number">99%</div>
-              <div className="stat-label">Client Satisfaction</div>
-            </div>
-            <div className="side-feature">
-              <div className="feature-icon">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                  <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+            <div className="ai-feature-card">
+              <div className="feature-icon gradient-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                  <path d="M2 17l10 5 10-5"/>
+                  <path d="M2 12l10 5 10-5"/>
                 </svg>
               </div>
-              <div className="feature-text">Lightning Fast</div>
+              <div className="feature-content">
+                <div className="feature-title">AI Integration</div>
+                <div className="feature-desc">Встраиваем ChatGPT в ваш сайт</div>
+              </div>
             </div>
-            <div className="side-quote">
-              "Future of web development"
+
+            <div className="tech-showcase">
+              <div className="tech-title">Современные технологии:</div>
+              <div className="tech-list">
+                <div className="tech-item">
+                  <span className="tech-dot"></span>
+                  <span>React + Next.js</span>
+                </div>
+                <div className="tech-item">
+                  <span className="tech-dot"></span>
+                  <span>OpenAI API</span>
+                </div>
+                <div className="tech-item">
+                  <span className="tech-dot"></span>
+                  <span>Three.js 3D</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="side-stat premium">
+              <div className="stat-number gradient-text">24/7</div>
+              <div className="stat-label">ИИ Поддержка клиентов</div>
+              <div className="stat-icon">🤖</div>
+            </div>
+
+            <div className="creative-quote">
+              <div className="quote-icon">💡</div>
+              <div className="quote-text">
+                <span>"Создаем сайты будущего"</span>
+                <div className="quote-author">- с искусственным интеллектом</div>
+              </div>
             </div>
           </div>
 
           <div className="floating-right-elements">
-            <div className="side-tech">
-              <div className="tech-icon">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                  <polygon points="12 2 2 7 12 12 22 7 12 2"/>
-                  <polyline points="2,17 12,22 22,17"/>
-                  <polyline points="2,12 12,17 22,12"/>
+            <div className="ai-service-card">
+              <div className="service-icon chat-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                  <path d="M8 9h8M8 13h6"/>
                 </svg>
               </div>
-              <div className="tech-text">Next.js</div>
+              <div className="service-content">
+                <div className="service-title">Smart Chatbots</div>
+                <div className="service-desc">Умные чат-боты для вашего бизнеса</div>
+              </div>
             </div>
-            <div className="side-metric">
-              <div className="metric-value">500+</div>
-              <div className="metric-label">Projects</div>
+
+            <div className="achievement-card">
+              <div className="achievement-number">150+</div>
+              <div className="achievement-text">Сайтов с ИИ создано</div>
+              <div className="achievement-visual">
+                <div className="progress-bar">
+                  <div className="progress-fill"></div>
+                </div>
+              </div>
             </div>
-            <div className="side-badge">
-              <div className="badge-icon">✨</div>
-              <div className="badge-text">AI Powered</div>
+
+            <div className="ai-capabilities">
+              <div className="capability-title">ИИ возможности:</div>
+              <div className="capability-list">
+                <div className="capability-item">
+                  <span className="cap-emoji">🎯</span>
+                  <span>Персонализация</span>
+                </div>
+                <div className="capability-item">
+                  <span className="cap-emoji">⚡</span>
+                  <span>Автоматизация</span>
+                </div>
+                <div className="capability-item">
+                  <span className="cap-emoji">📊</span>
+                  <span>Аналитика</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="innovation-badge">
+              <div className="badge-glow"></div>
+              <div className="badge-content">
+                <div className="badge-icon">🚀</div>
+                <div className="badge-text">
+                  <div className="badge-title">Innovation</div>
+                  <div className="badge-subtitle">Лидеры ИИ разработки</div>
+                </div>
+              </div>
             </div>
           </div>
 
