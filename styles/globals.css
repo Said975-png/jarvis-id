@@ -1562,13 +1562,15 @@ body {
 }
 
 .hero-subtitle {
-  font-size: clamp(1rem, 1.4vw, 1.2rem);
+  font-size: clamp(0.9rem, 1.2vw, 1.1rem);
   font-weight: 400;
   color: rgba(255, 255, 255, 0.8);
-  margin-bottom: 2.5rem;
+  margin-bottom: 2rem;
   line-height: 1.6;
   animation: fadeInUp 0.8s ease-out 0.5s both;
-  max-width: 480px;
+  max-width: 100%;
+  word-wrap: break-word;
+  hyphens: auto;
 }
 
 .hero-buttons {
