@@ -235,8 +235,124 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: #000000;
+  background: radial-gradient(ellipse at center, rgba(0,255,255,0.03) 0%, transparent 70%);
   pointer-events: none;
+}
+
+/* Advanced Particle System */
+.particle-system {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.floating-particle {
+  position: absolute;
+  background: #00ffff;
+  border-radius: 50%;
+  animation: particleFloat 15s linear infinite;
+  opacity: 0.6;
+}
+
+.particle-0 {
+  width: 2px;
+  height: 2px;
+  animation-duration: 12s;
+}
+
+.particle-1 {
+  width: 1px;
+  height: 1px;
+  animation-duration: 18s;
+  background: #ff00ff;
+}
+
+.particle-2 {
+  width: 3px;
+  height: 3px;
+  animation-duration: 15s;
+}
+
+.particle-3 {
+  width: 1.5px;
+  height: 1.5px;
+  animation-duration: 20s;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.particle-4 {
+  width: 2.5px;
+  height: 2.5px;
+  animation-duration: 14s;
+  background: #ff00ff;
+}
+
+@keyframes particleFloat {
+  0% {
+    transform: translateY(100vh) translateX(0px);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.6;
+  }
+  90% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateY(-100px) translateX(100px);
+    opacity: 0;
+  }
+}
+
+/* Neural Network */
+.neural-network {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.neural-svg {
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+}
+
+.neural-path {
+  fill: none;
+  stroke: url(#neuralGradient);
+  stroke-width: 1;
+  animation: neuralPulse 8s ease-in-out infinite;
+}
+
+.path-1 {
+  animation-delay: 0s;
+}
+
+.path-2 {
+  animation-delay: 2.6s;
+}
+
+.path-3 {
+  animation-delay: 5.2s;
+}
+
+@keyframes neuralPulse {
+  0%, 100% {
+    stroke-dasharray: 0, 1000;
+    opacity: 0.2;
+  }
+  50% {
+    stroke-dasharray: 100, 900;
+    opacity: 0.8;
+  }
 }
 
 
