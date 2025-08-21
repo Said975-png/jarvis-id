@@ -4913,8 +4913,8 @@ body {
 
 .reviews-track {
   display: flex;
-  gap: 2rem;
-  animation: reviewsScroll 60s linear infinite;
+  gap: 1.5rem;
+  animation: reviewsScroll 25s linear infinite;
 }
 
 @keyframes reviewsScroll {
@@ -4926,16 +4926,12 @@ body {
   }
 }
 
-.reviews-track:hover {
-  animation-play-state: paused;
-}
-
 .review-card {
-  min-width: 400px;
+  min-width: 320px;
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 20px;
-  padding: 2rem;
+  padding: 1.5rem;
   backdrop-filter: blur(20px);
   position: relative;
   overflow: hidden;
