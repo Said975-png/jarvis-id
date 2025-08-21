@@ -5060,12 +5060,7 @@ body {
 /* Responsive Design for Reviews Section */
 @media (max-width: 1024px) {
   .review-card {
-    min-width: 300px;
-  }
-
-  .reviews-stats {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
+    min-width: 260px;
   }
 }
 
@@ -5075,26 +5070,18 @@ body {
   }
 
   .review-card {
-    min-width: 280px;
-    padding: 1.25rem;
-  }
-
-  .reviews-stats .stat-item {
-    padding: 1.5rem;
-  }
-
-  .reviews-stats .stat-number {
-    font-size: 2rem;
+    min-width: 240px;
+    padding: 1rem;
   }
 }
 
 @media (max-width: 480px) {
   .review-card {
-    min-width: 260px;
-    padding: 1rem;
+    min-width: 220px;
+    padding: 0.875rem;
   }
 
   .reviews-track {
-    gap: 1rem;
+    gap: 0.75rem;
   }
 }
