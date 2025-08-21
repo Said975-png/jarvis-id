@@ -224,6 +224,31 @@ export default function Home() {
             </div>
           </div>
 
+          {/* Additional Floating Elements */}
+          <div className="extra-elements">
+            <div className="floating-tag tag-1">
+              <span className="tag-emoji">✨</span>
+              <span className="tag-text">AI Magic</span>
+            </div>
+            <div className="floating-tag tag-2">
+              <span className="tag-emoji">🚀</span>
+              <span className="tag-text">Fast Deploy</span>
+            </div>
+            <div className="floating-tag tag-3">
+              <span className="tag-emoji">🌐</span>
+              <span className="tag-text">Global Scale</span>
+            </div>
+
+            <div className="connection-lines">
+              <svg className="connection-svg" width="100%" height="100%" viewBox="0 0 1400 800" fill="none">
+                <path d="M200 400L400 300" stroke="rgba(255,255,255,0.1)" strokeWidth="1" strokeDasharray="5,5"/>
+                <path d="M1000 300L1200 400" stroke="rgba(255,255,255,0.1)" strokeWidth="1" strokeDasharray="5,5"/>
+                <path d="M300 600L500 500" stroke="rgba(255,255,255,0.1)" strokeWidth="1" strokeDasharray="5,5"/>
+                <path d="M900 500L1100 600" stroke="rgba(255,255,255,0.1)" strokeWidth="1" strokeDasharray="5,5"/>
+              </svg>
+            </div>
+          </div>
+
         </div>
       </section>
 
