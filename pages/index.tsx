@@ -56,7 +56,7 @@ export default function Home() {
             </div>
             <div className="navbar-auth">
               <button className="auth-btn login">
-                <span>Вход</span>
+                <span>В��од</span>
               </button>
               <button className="auth-btn register">
                 <span>Регистрация</span>
@@ -251,7 +251,7 @@ export default function Home() {
                   </div>
                   <div className="metric-content">
                     <span className="metric-value">95%</span>
-                    <span className="metric-label">Автоматиза��ия</span>
+                    <span className="metric-label">Автоматизация</span>
                   </div>
                 </div>
                 <div className="metric-item">
@@ -332,7 +332,7 @@ export default function Home() {
               </div>
               <h2 className="capabilities-title">
                 Революционные
-                <span className="highlight-text"> Платформы</span>
+                <span className="highlight-text"> Решения</span>
               </h2>
               <p className="capabilities-subtitle">
                 Мы создаем сайты с интеллектуальными ИИ ассистентами, которые революционизируют взаимоде��ствие с вашими клиентами
