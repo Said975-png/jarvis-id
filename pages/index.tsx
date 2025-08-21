@@ -56,7 +56,7 @@ export default function Home() {
             </div>
             <div className="navbar-auth">
               <button className="auth-btn login">
-                <span>В��од</span>
+                <span>Вход</span>
               </button>
               <button className="auth-btn register">
                 <span>Регистрация</span>
@@ -127,7 +127,7 @@ export default function Home() {
               </h1>
 
               <p className="hero-subtitle">
-                Разрабатываем сайты с ИИ-ассистентами, которые понимают ваших клиен��ов,
+                Разрабатываем сайты с ИИ-ассистентами, которые понимают в��ших клиентов,
                 автоматизируют бизнес-процессы и увеличивают конверсию в 3 раза
               </p>
 
@@ -335,7 +335,7 @@ export default function Home() {
                 <span className="highlight-text"> Решения</span>
               </h2>
               <p className="capabilities-subtitle">
-                Мы создаем сайты с интеллектуальными ИИ ассистентами, которые революционизируют взаимоде��ствие с вашими клиентами
+                Трансформируем ваш бизнес с помощью передовых AI-технологий, создавая уникальные цифровые экосистемы для максимальной эффективности
               </p>
 
               <div className="capabilities-features">
@@ -376,7 +376,7 @@ export default function Home() {
                   </div>
                   <div className="feature-content">
                     <h3 className="feature-title">Голографические Интерфейсы</h3>
-                    <p className="feature-description">Ад��пти��ный контент �� рекомендации на основе по��е��ения пользователей</p>
+                    <p className="feature-description">Иммерсивные 3D-интерфейсы с поддержкой AR/VR для невероятного пользовательского опыта</p>
                   </div>
                 </div>
               </div>
@@ -487,7 +487,7 @@ export default function Home() {
                   </div>
                   <div className="metric-content">
                     <span className="metric-value">0.1ms</span>
-                    <span className="metric-label">Отклик</span>
+                    <span className="metric-label">Откли��</span>
                   </div>
                 </div>
               </div>
