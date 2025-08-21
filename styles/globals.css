@@ -234,13 +234,7 @@ body {
 
 /* Advanced Particle System */
 .particle-system {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  pointer-events: none;
+  display: none !important;
 }
 
 .floating-particle {
