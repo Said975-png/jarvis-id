@@ -22,13 +22,37 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Custom Website Development - Modern Solutions</title>
-        <meta name="description" content="We create custom websites with modern solutions for online business" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>JARVIS - Интеллектуальные веб-решения будущего</title>
+        <meta name="description" content="Создаем интеллектуальные веб-решения будущего с ИИ-ассистентами, которые понимают ваших клиентов и автоматизируют бизнес-процессы" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="theme-color" content="#000000" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta name="apple-mobile-web-app-title" content="JARVIS" />
+
+        {/* Open Graph мета-теги */}
+        <meta property="og:title" content="JARVIS - Интеллектуальные веб-решения будущего" />
+        <meta property="og:description" content="Создаем интеллектуальные веб-решения будущего с ИИ-ассистентами" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="JARVIS" />
+
+        {/* Twitter Card мета-теги */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="JARVIS - Интеллектуальные веб-решения будущего" />
+        <meta name="twitter:description" content="Создаем интеллектуальные веб-решения будущего с ИИ-ассистентами" />
+
         <link rel="icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+        {/* Preconnect для оптимизации загрузки шрифтов */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet" />
+
+        {/* DNS prefetch для повышения производительности */}
+        <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+        <link rel="dns-prefetch" href="//fonts.gstatic.com" />
       </Head>
 
       {/* Navigation Bar */}
@@ -537,7 +561,7 @@ export default function Home() {
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                     <polyline points="20,6 9,17 4,12"/>
                   </svg>
-                  <span>Понимает эмоции клиентов</span>
+                  <span>Понимает эмоции клие��тов</span>
                 </div>
                 <div className="detail-item">
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -908,7 +932,7 @@ export default function Home() {
                     <span>⭐⭐⭐⭐⭐</span>
                   </div>
                   <p className="review-text">
-                    "Создала магазин косметики с Jarvis. Бот идеально консультирует клиентов по уходу за кожей, подбирает продукты по типу кожи. Продажи выросли в 4 раза!"
+                    "Создала магазин косметики с Jarvis. Бот идеально консультирует клиентов по уходу за кожей, подбирает продукты по типу ко��и. Продажи выросли в 4 раза!"
                   </p>
                   <div className="review-author">
                     <div className="author-info">

@@ -6,6 +6,9 @@
 
 html {
   scroll-behavior: smooth;
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
 }
 
 body {
@@ -17,6 +20,47 @@ body {
   font-feature-settings: 'kern' 1, 'liga' 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  width: 100%;
+  max-width: 100vw;
+  position: relative;
+}
+
+/* Предотвращение переполнения для всех контейнеров */
+.navbar-container,
+.hero-container,
+.hero-content,
+.capabilities-section,
+.pricing-section,
+.jarvis-section,
+.team-section,
+.reviews-section,
+.footer {
+  max-width: 100vw;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+/* Исправление для всех секций на мобильном */
+@media (max-width: 768px) {
+  * {
+    max-width: 100vw;
+    box-sizing: border-box;
+  }
+
+  .hero-section,
+  .capabilities-section,
+  .pricing-section,
+  .jarvis-section,
+  .team-section,
+  .reviews-section,
+  .footer {
+    width: 100vw;
+    max-width: 100vw;
+    overflow-x: hidden;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    box-sizing: border-box;
+  }
 }
 
 /* Performance optimizations for scroll effects */
@@ -43,12 +87,26 @@ body {
   background: rgba(0, 0, 0, 0.95);
   backdrop-filter: blur(20px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  width: 100vw;
+  max-width: 100vw;
+  overflow-x: hidden;
+  box-sizing: border-box;
 }
 
 .navbar-container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 2rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .navbar-container {
+    padding: 0 1rem;
+    max-width: 100vw;
+    width: 100vw;
+  }
 }
 
 .navbar-content {
@@ -56,7 +114,7 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 1rem 0;
-  gap: 2rem;
+  gap: 0;
 }
 
 .navbar-logo {
@@ -123,13 +181,14 @@ body {
 .navbar-cart {
   display: flex;
   align-items: center;
+  margin-right: 0;
 }
 
 .cart-btn {
   position: relative;
   background: none;
   border: none;
-  padding: 0.75rem;
+  padding: 0.75rem 0.25rem 0.75rem 0.75rem;
   cursor: pointer;
   transition: all 0.3s ease;
   border-radius: 10px;
@@ -186,7 +245,8 @@ body {
 .navbar-auth {
   display: flex;
   align-items: center;
-  gap: 0.75rem;
+  gap: 0;
+  margin-left: 0;
 }
 
 .auth-btn {
@@ -2319,6 +2379,465 @@ body {
   animation-delay: 4s;
 }
 
+
+/* ========================================
+   RESPONSIVE DESIGN FOR ALL DEVICES
+======================================== */
+
+/* Ultra Wide Monitors (3440px+) */
+@media (min-width: 3440px) {
+  .hero-container {
+    max-width: 2400px;
+  }
+
+  .hero-title {
+    font-size: 5.5rem;
+  }
+
+  .navbar-container {
+    max-width: 2400px;
+  }
+}
+
+/* Large Desktop (1920px - 3439px) */
+@media (min-width: 1920px) and (max-width: 3439px) {
+  .hero-container {
+    max-width: 1800px;
+  }
+
+  .hero-title {
+    font-size: 5rem;
+  }
+}
+
+/* Standard Desktop (1440px - 1919px) */
+@media (min-width: 1440px) and (max-width: 1919px) {
+  .hero-container {
+    padding: 0 3rem;
+  }
+
+  .hero-title {
+    font-size: 4.5rem;
+  }
+}
+
+/* Small Desktop (1200px - 1439px) */
+@media (min-width: 1200px) and (max-width: 1439px) {
+  .hero-container {
+    padding: 0 2rem;
+  }
+
+  .hero-title {
+    font-size: 4rem;
+  }
+
+  .navbar-search {
+    width: 300px;
+  }
+}
+
+/* Laptop (992px - 1199px) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .hero-container {
+    padding: 0 1.5rem;
+  }
+
+  .hero-title {
+    font-size: 3.5rem;
+  }
+
+  .navbar-search {
+    width: 250px;
+  }
+}
+
+/* Tablet Landscape (768px - 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .navbar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    gap: 1rem;
+  }
+
+  .navbar-search {
+    flex: 1;
+    max-width: 250px;
+    margin: 0 1rem;
+  }
+
+  .navbar-cart {
+    margin-right: 0.5rem;
+  }
+
+  .hero-title {
+    font-size: 3.2rem;
+    line-height: 1.2;
+  }
+
+  .hero-container {
+    padding: 2rem 1.5rem;
+    text-align: center;
+  }
+}
+
+/* Tablet Portrait (576px - 767px) */
+@media (min-width: 576px) and (max-width: 767px) {
+  .navbar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    flex-wrap: nowrap;
+  }
+
+  .navbar-logo {
+    flex: 0 0 auto;
+  }
+
+  .navbar-search {
+    flex: 1;
+    max-width: 300px;
+    margin: 0 2rem;
+  }
+
+  .navbar-cart {
+    order: 2;
+    margin-right: 0.5rem;
+  }
+
+  .navbar-auth {
+    order: 3;
+    flex: 0 0 auto;
+  }
+
+  .hero-title {
+    font-size: 2.8rem;
+    line-height: 1.2;
+  }
+
+  .hero-subtitle {
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+
+  .hero-container {
+    padding: 2rem;
+    text-align: center;
+  }
+}
+
+/* Мобильные устройства - строгое исправление переполнений */
+@media (max-width: 768px) {
+  * {
+    box-sizing: border-box !important;
+    max-width: 100vw !important;
+  }
+
+  .navbar {
+    width: 100vw !important;
+    max-width: 100vw !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .navbar-container {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 0.75rem !important;
+    margin: 0 !important;
+  }
+
+  .navbar-content {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    padding: 0.75rem 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+  }
+
+  .navbar-logo {
+    flex: 0 0 auto !important;
+    margin: 0 !important;
+  }
+
+  .navbar-search {
+    display: none !important;
+  }
+
+  .navbar-cart {
+    flex: 0 0 auto !important;
+    margin: 0 0.5rem 0 0 !important;
+    padding: 0.5rem !important;
+  }
+
+  .navbar-auth {
+    flex: 0 0 auto !important;
+    margin: 0 !important;
+  }
+
+  .auth-btn {
+    padding: 0.6rem 1rem !important;
+    font-size: 0.85rem !important;
+    white-space: nowrap !important;
+  }
+
+  /* Все секции */
+  .hero-section,
+  .capabilities-section,
+  .pricing-section,
+  .jarvis-section,
+  .team-section,
+  .reviews-section,
+  .footer {
+    width: 100vw !important;
+    max-width: 100vw !important;
+    padding: 2rem 1rem !important;
+    margin: 0 !important;
+    overflow-x: hidden !important;
+  }
+
+  .hero-container {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+    text-align: center !important;
+    margin: 0 !important;
+  }
+
+  .hero-content {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .hero-title {
+    font-size: 1.8rem !important;
+    line-height: 1.2 !important;
+    margin-bottom: 1rem !important;
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+  }
+
+  .hero-subtitle {
+    font-size: 0.9rem !important;
+    line-height: 1.5 !important;
+    margin-bottom: 2rem !important;
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+  }
+
+  .hero-cta {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 1rem !important;
+    align-items: center !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .cta-primary,
+  .cta-secondary {
+    width: 90% !important;
+    max-width: 280px !important;
+    padding: 0.75rem 1rem !important;
+    border-radius: 25px !important;
+    font-size: 0.9rem !important;
+    margin: 0 !important;
+    text-align: center !important;
+  }
+}
+
+/* Для очень маленьких экранов - дополнительные настройки */
+@media (max-width: 360px) {
+  .hero-title {
+    font-size: 1.6rem;
+  }
+
+  .hero-subtitle {
+    font-size: 0.85rem;
+  }
+
+  .navbar-content {
+    padding: 0.5rem 0.75rem;
+  }
+
+  .cta-primary,
+  .cta-secondary {
+    max-width: 260px;
+    font-size: 0.85rem;
+  }
+}
+
+/* ========================================
+   HIGH-DPI / RETINA DISPLAYS
+======================================== */
+
+/* Retina displays */
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+       only screen and (min--moz-device-pixel-ratio: 2),
+       only screen and (-o-min-device-pixel-ratio: 2/1),
+       only screen and (min-device-pixel-ratio: 2),
+       only screen and (min-resolution: 192dpi),
+       only screen and (min-resolution: 2dppx) {
+
+  .hero-title {
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .navbar-logo .logo-text {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* ========================================
+   TOUCH DEVICES OPTIMIZATION
+======================================== */
+
+@media (hover: none) and (pointer: coarse) {
+  /* Увеличиваем размеры кнопок для сенсорных устройств */
+  .cart-btn,
+  .auth-btn {
+    min-height: 48px;
+    min-width: 48px;
+    touch-action: manipulation;
+  }
+
+  .auth-btn {
+    padding: 0.8rem 1.5rem;
+    font-size: 0.9rem;
+    border-radius: 25px;
+  }
+
+  .cart-btn {
+    padding: 0.8rem;
+    border-radius: 12px;
+  }
+
+  /* Уб��раем hover эффекты на мобильных */
+  .cart-btn:hover,
+  .auth-btn:hover {
+    transform: none;
+    background: rgba(255, 255, 255, 0.1);
+  }
+
+  /* Улучшаем кнопки действий */
+  .hero-cta {
+    gap: 1rem;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 1rem;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .cta-primary,
+  .cta-secondary {
+    width: 100%;
+    max-width: 300px;
+    min-height: 50px;
+    font-size: 0.95rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 25px;
+    box-sizing: border-box;
+  }
+}
+
+/* ========================================
+   ORIENTATION SPECIFIC STYLES
+======================================== */
+
+/* Landscape режим на мобильных */
+@media screen and (max-height: 500px) and (orientation: landscape) {
+  .hero-section {
+    min-height: 100vh;
+    padding-top: 60px;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .navbar {
+    padding: 0.5rem 0;
+  }
+}
+
+/* Portrait режим на планшетах */
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  .hero-title {
+    font-size: 3.5rem;
+  }
+
+  .navbar-content {
+    padding: 1rem 2rem;
+  }
+}
+
+/* ========================================
+   PRINT STYLES
+======================================== */
+
+@media print {
+  * {
+    background: transparent !important;
+    color: black !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  .navbar,
+  .cart-btn,
+  .auth-btn {
+    display: none !important;
+  }
+
+  .hero-section {
+    page-break-inside: avoid;
+  }
+}
+
+/* ========================================
+   ACCESSIBILITY ENHANCEMENTS
+======================================== */
+
+/* Уменьшение движения для пользователей с вестибулярными расстройствами */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Высокий контраст */
+@media (prefers-contrast: high) {
+  .hero-title {
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  }
+
+  .auth-btn {
+    border: 2px solid #ffffff;
+    background: rgba(0, 0, 0, 0.8);
+  }
+}
 
 /* Mobile Responsive Design */
 @media (max-width: 1500px) {
