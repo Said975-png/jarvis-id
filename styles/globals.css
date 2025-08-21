@@ -4967,32 +4967,40 @@ body {
 .review-content {
   position: relative;
   z-index: 1;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .stars {
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .stars span {
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: #ffd700;
 }
 
 .review-text {
-  font-size: 1rem;
-  line-height: 1.6;
+  font-size: 0.85rem;
+  line-height: 1.4;
   color: rgba(255, 255, 255, 0.8);
-  margin-bottom: 1.5rem;
+  margin-bottom: auto;
   font-style: italic;
   position: relative;
+  flex: 1;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
 }
 
 .review-text::before {
   content: '"';
   position: absolute;
-  top: -10px;
-  left: -20px;
-  font-size: 3rem;
+  top: -8px;
+  left: -15px;
+  font-size: 2rem;
   color: rgba(255, 215, 0, 0.3);
   font-family: serif;
 }
@@ -5000,7 +5008,8 @@ body {
 .review-author {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
 }
 
 .author-info {
@@ -5009,14 +5018,14 @@ body {
 }
 
 .author-name {
-  font-size: 1rem;
+  font-size: 0.85rem;
   font-weight: 600;
   color: #ffffff;
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.15rem;
 }
 
 .author-location {
-  font-size: 0.85rem;
+  font-size: 0.7rem;
   color: rgba(255, 255, 255, 0.6);
 }
 
