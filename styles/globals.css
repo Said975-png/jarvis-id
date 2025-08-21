@@ -4913,8 +4913,8 @@ body {
 
 .reviews-track {
   display: flex;
-  gap: 1.5rem;
-  animation: reviewsScroll 25s linear infinite;
+  gap: 1rem;
+  animation: reviewsScroll 15s linear infinite;
 }
 
 @keyframes reviewsScroll {
@@ -4927,11 +4927,11 @@ body {
 }
 
 .review-card {
-  min-width: 320px;
+  min-width: 280px;
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 20px;
-  padding: 1.5rem;
+  border-radius: 16px;
+  padding: 1.25rem;
   backdrop-filter: blur(20px);
   position: relative;
   overflow: hidden;
