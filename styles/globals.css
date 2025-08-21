@@ -3920,7 +3920,7 @@ body {
 }
 
 .pricing-container {
-  max-width: 1200px;
+  max-width: 1600px;
   margin: 0 auto;
   padding: 0 2rem;
   position: relative;
@@ -3970,9 +3970,9 @@ body {
 .pricing-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 3rem;
+  gap: 2rem;
   margin-bottom: 4rem;
-  max-width: 1400px;
+  max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -3981,13 +3981,14 @@ body {
   background: transparent;
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 24px;
-  padding: 3rem 2.5rem;
+  padding: 3rem 3.5rem;
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
   overflow: hidden;
-  min-height: 600px;
+  min-height: 650px;
   display: flex;
   flex-direction: column;
+  min-width: 420px;
 }
 
 .pricing-card::before {
@@ -4184,6 +4185,18 @@ body {
 }
 
 /* Responsive Design for Pricing */
+@media (max-width: 1200px) {
+  .pricing-grid {
+    max-width: 1200px;
+    gap: 1.5rem;
+  }
+
+  .pricing-card {
+    min-width: 350px;
+    padding: 2.5rem 2.5rem;
+  }
+}
+
 @media (max-width: 768px) {
   .pricing-grid {
     grid-template-columns: 1fr;
@@ -4200,6 +4213,7 @@ body {
 
   .pricing-card {
     padding: 2rem;
+    min-width: auto;
   }
 
   .price-amount {
