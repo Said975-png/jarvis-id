@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import { useFrame } from '@react-three/fiber';
 import { useGLTF, useAnimations } from '@react-three/drei';
 import * as THREE from 'three';
@@ -10,9 +10,26 @@ interface CyborgHeadProps {
 
 function CyborgHead({ position = [0, 0, 0], scale = 1 }: CyborgHeadProps) {
   const meshRef = useRef<THREE.Group>(null);
+  const [modelLoaded, setModelLoaded] = useState(false);
+  const [loadError, setLoadError] = useState(false);
 
-  // Load the GLB model with animations
-  const { scene, animations } = useGLTF('https://cdn.builder.io/o/assets%2F48eedcb3a5ef489391d33a7eabf9e927%2F447f29228bdd4b7cb0c918645b9d99f8?alt=media&token=c162a2af-72d4-45a5-acd2-2be201a67a1d&apiKey=48eedcb3a5ef489391d33a7eabf9e927');
+  // Try to load the GLB model with error handling
+  let scene: THREE.Group | null = null;
+  let animations: THREE.AnimationClip[] = [];
+
+  try {
+    const gltf = useGLTF('https://cdn.builder.io/o/assets%2F48eedcb3a5ef489391d33a7eabf9e927%2F447f29228bdd4b7cb0c918645b9d99f8?alt=media&token=c162a2af-72d4-45a5-acd2-2be201a67a1d&apiKey=48eedcb3a5ef489391d33a7eabf9e927');
+    scene = gltf.scene;
+    animations = gltf.animations;
+
+    useEffect(() => {
+      setModelLoaded(true);
+      console.log('GLB model loaded successfully');
+    }, [scene]);
+  } catch (error) {
+    console.error('Failed to load GLB model:', error);
+    setLoadError(true);
+  }
 
   // Setup animations from GLB file
   const { actions } = useAnimations(animations, meshRef);
@@ -68,9 +85,74 @@ function CyborgHead({ position = [0, 0, 0], scale = 1 }: CyborgHeadProps) {
     }
   }, [scene]);
 
+  // Fallback geometric head if model fails to load
+  const FallbackHead = () => (
+    <group>
+      {/* Main head sphere */}
+      <mesh position={[0, 0, 0]}>
+        <sphereGeometry args={[1, 32, 32]} />
+        <meshStandardMaterial
+          color="#1a1a1a"
+          metalness={0.8}
+          roughness={0.2}
+          emissive={new THREE.Color(0x001122)}
+          emissiveIntensity={0.1}
+        />
+      </mesh>
+
+      {/* Eyes */}
+      <mesh position={[-0.3, 0.2, 0.8]}>
+        <sphereGeometry args={[0.1, 16, 16]} />
+        <meshStandardMaterial
+          color="#00ffff"
+          emissive={new THREE.Color(0x00ffff)}
+          emissiveIntensity={0.5}
+        />
+      </mesh>
+      <mesh position={[0.3, 0.2, 0.8]}>
+        <sphereGeometry args={[0.1, 16, 16]} />
+        <meshStandardMaterial
+          color="#00ffff"
+          emissive={new THREE.Color(0x00ffff)}
+          emissiveIntensity={0.5}
+        />
+      </mesh>
+
+      {/* Cyber lines */}
+      <mesh position={[0, 0, 0.95]} rotation={[0, 0, Math.PI / 4]}>
+        <boxGeometry args={[0.8, 0.02, 0.02]} />
+        <meshStandardMaterial
+          color="#ff00ff"
+          emissive={new THREE.Color(0xff00ff)}
+          emissiveIntensity={0.3}
+        />
+      </mesh>
+      <mesh position={[0, 0, 0.95]} rotation={[0, 0, -Math.PI / 4]}>
+        <boxGeometry args={[0.8, 0.02, 0.02]} />
+        <meshStandardMaterial
+          color="#ff00ff"
+          emissive={new THREE.Color(0xff00ff)}
+          emissiveIntensity={0.3}
+        />
+      </mesh>
+    </group>
+  );
+
+  // Add rotation animation
+  useFrame((state) => {
+    if (meshRef.current) {
+      meshRef.current.rotation.y = Math.sin(state.clock.elapsedTime * 0.5) * 0.2;
+      meshRef.current.rotation.x = Math.sin(state.clock.elapsedTime * 0.3) * 0.1;
+    }
+  });
+
   return (
     <group ref={meshRef} position={position} scale={scale}>
-      <primitive object={scene} />
+      {scene && !loadError ? (
+        <primitive object={scene} />
+      ) : (
+        <FallbackHead />
+      )}
     </group>
   );
 }
