@@ -5526,6 +5526,22 @@ body {
   }
 }
 
+/* Mobile responsiveness for navbar cart */
+@media (max-width: 768px) {
+  .navbar-content {
+    gap: 1rem;
+  }
+
+  .cart-btn {
+    padding: 0.5rem;
+  }
+
+  .cart-count {
+    font-size: 0.65rem;
+    padding: 0.1rem 0.3rem;
+  }
+}
+
 @media (max-width: 480px) {
   .new-footer-container {
     padding: 0 1rem;
@@ -5533,6 +5549,14 @@ body {
 
   .new-footer-links {
     gap: 1.5rem;
+  }
+
+  .navbar-search {
+    display: none;
+  }
+
+  .cart-btn {
+    padding: 0.4rem;
   }
 }
 
