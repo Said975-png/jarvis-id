@@ -2,10 +2,6 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-  experimental: {
-    // Отключаем app directory если используем pages
-    appDir: false
-  },
   // Оптимизация для статических ресурсов
   images: {
     unoptimized: true
