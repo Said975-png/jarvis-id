@@ -75,14 +75,14 @@ function CyborgHead({ position = [0, 0, 0], scale = 1 }: CyborgHeadProps) {
             child.material.roughness = Math.min(child.material.roughness || 1, 0.4);
             child.material.envMapIntensity = 1.0;
 
-            // Keep eyes yellow/bright
+            // Set eyes to white
             if (child.material.name &&
                 (child.material.name.toLowerCase().includes('eye') ||
                  child.material.name.toLowerCase().includes('glow') ||
                  child.material.name.toLowerCase().includes('light'))) {
-              child.material.color = new THREE.Color(0xffff00); // Yellow
-              child.material.emissive = new THREE.Color(0xffff00);
-              child.material.emissiveIntensity = 0.8;
+              child.material.color = new THREE.Color(0xffffff); // White
+              child.material.emissive = new THREE.Color(0xffffff);
+              child.material.emissiveIntensity = 0.9;
             }
           }
         }
