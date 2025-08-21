@@ -109,6 +109,22 @@ export default function Home() {
                 </button>
               </div>
             </div>
+
+            {/* Minimal Floating Stats */}
+            <div className="floating-stats">
+              <div className="stat-item">
+                <span className="stat-number">150+</span>
+                <span className="stat-label">Проектов с ИИ</span>
+              </div>
+              <div className="stat-item">
+                <span className="stat-number">24/7</span>
+                <span className="stat-label">ИИ поддержка</span>
+              </div>
+              <div className="stat-item">
+                <span className="stat-number">99%</span>
+                <span className="stat-label">Автоматизации</span>
+              </div>
+            </div>
           </div>
 
           <div className="floating-left-elements">
@@ -227,7 +243,7 @@ export default function Home() {
                 <span>AI-Powered Platform</span>
               </div>
               <h2 className="capabilities-title">
-                В��зможности нашей
+                В��зможност�� нашей
                 <span className="highlight-text"> Платформы</span>
               </h2>
               <p className="capabilities-subtitle">
