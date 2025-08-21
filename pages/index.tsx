@@ -68,42 +68,7 @@ export default function Home() {
 
       {/* Hero Section */}
       <section className="hero-section">
-        <div className="hero-background">
-          <div className="gradient-orb orb-1"></div>
-          <div className="gradient-orb orb-2"></div>
-          <div className="gradient-orb orb-3"></div>
-
-          {/* Advanced Particle System */}
-          <div className="particle-system">
-            {[...Array(50)].map((_, i) => (
-              <div
-                key={i}
-                className={`floating-particle particle-${i % 5}`}
-                style={{
-                  left: `${Math.random() * 100}%`,
-                  top: `${Math.random() * 100}%`,
-                  animationDelay: `${Math.random() * 10}s`
-                }}
-              ></div>
-            ))}
-          </div>
-
-          {/* Neural Network Lines */}
-          <div className="neural-network">
-            <svg className="neural-svg" viewBox="0 0 1920 1080">
-              <defs>
-                <linearGradient id="neuralGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                  <stop offset="0%" stopColor="rgba(0,255,255,0.3)" />
-                  <stop offset="50%" stopColor="rgba(255,0,255,0.2)" />
-                  <stop offset="100%" stopColor="rgba(0,255,255,0.1)" />
-                </linearGradient>
-              </defs>
-              <path className="neural-path path-1" d="M0,400 Q480,200 960,540 T1920,300" />
-              <path className="neural-path path-2" d="M0,600 Q480,800 960,340 T1920,680" />
-              <path className="neural-path path-3" d="M0,200 Q480,600 960,140 T1920,480" />
-            </svg>
-          </div>
-        </div>
+        <div className="hero-background"></div>
 
 
         <div className="hero-container">
@@ -475,7 +440,7 @@ export default function Home() {
                   </div>
                   <div className="metric-content">
                     <span className="metric-value">1M+</span>
-                    <span className="metric-label">Операций/сек</span>
+                    <span className="metric-label">Опе��аций/сек</span>
                   </div>
                 </div>
                 <div className="metric-item">
