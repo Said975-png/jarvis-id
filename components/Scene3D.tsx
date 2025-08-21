@@ -11,7 +11,7 @@ function Scene3D({ className }: Scene3DProps) {
   return (
     <div className={className}>
       <Canvas
-        camera={{ position: [0, 0, 4], fov: 50 }}
+        camera={{ position: [0, 1, 6], fov: 40 }}
         style={{ width: '100%', height: '100%' }}
         gl={{ antialias: true, alpha: true }}
       >
@@ -42,8 +42,8 @@ function Scene3D({ className }: Scene3DProps) {
           
           {/* The Cyborg Head */}
           <CyborgHead
-            position={[0, 0, 0]}
-            scale={1.2}
+            position={[0, -1.5, 0]}
+            scale={2.5}
           />
           
           {/* Contact shadows for realism */}
