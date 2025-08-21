@@ -83,17 +83,7 @@ export default function Home() {
             <span className="bg-jarvis">JARVIS</span>
           </div>
 
-          {/* Elegant Four-Corner Layout */}
-
-          {/* Top Elements */}
-          <div className="floating-top-elements">
-            <div className="modern-item">
-              <span className="modern-text">🤖 AI Integration</span>
-            </div>
-            <div className="modern-item">
-              <span className="modern-text">⚡ Lightning Fast</span>
-            </div>
-          </div>
+          <ModernHeroElements />
 
           {/* Left Elements */}
           <div className="floating-left-elements">
