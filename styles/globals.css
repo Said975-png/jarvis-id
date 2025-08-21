@@ -5060,7 +5060,7 @@ body {
 /* Responsive Design for Reviews Section */
 @media (max-width: 1024px) {
   .review-card {
-    min-width: 350px;
+    min-width: 300px;
   }
 
   .reviews-stats {
@@ -5075,8 +5075,8 @@ body {
   }
 
   .review-card {
-    min-width: 300px;
-    padding: 1.5rem;
+    min-width: 280px;
+    padding: 1.25rem;
   }
 
   .reviews-stats .stat-item {
@@ -5085,5 +5085,16 @@ body {
 
   .reviews-stats .stat-number {
     font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .review-card {
+    min-width: 260px;
+    padding: 1rem;
+  }
+
+  .reviews-track {
+    gap: 1rem;
   }
 }
