@@ -495,7 +495,7 @@ export default function Home() {
               {/* Status Indicator */}
               <div className="status-indicator">
                 <div className="status-dot"></div>
-                <span className="status-text">Платформа активна • Все модули функционируют</span>
+                <span className="status-text">Квантовые процессоры активны • Нейросеть обучается</span>
               </div>
             </div>
           </div>
