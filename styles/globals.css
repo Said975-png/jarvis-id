@@ -682,13 +682,18 @@ body {
 /* Enhanced 3D Section */
 .hero-3d-main {
   position: relative;
-  height: 400px;
-  width: 400px;
+  height: 450px;
+  width: 450px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0 auto 1.5rem;
   max-width: 100%;
+  overflow: visible;
+  border: 1px solid rgba(0, 255, 255, 0.3);
+  border-radius: 20px;
+  background: linear-gradient(135deg, rgba(0, 255, 255, 0.03), rgba(255, 0, 255, 0.02));
+  backdrop-filter: blur(10px);
 }
 
 /* Orbit Rings */
@@ -1422,6 +1427,7 @@ body {
   position: relative;
   background: transparent;
   overflow: visible;
+  border-radius: 10px;
 }
 
 .scene3d-loading {

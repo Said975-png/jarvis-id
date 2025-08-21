@@ -12,7 +12,7 @@ function CyborgHead({ position = [0, 0, 0], scale = 1 }: CyborgHeadProps) {
   const meshRef = useRef<THREE.Group>(null);
 
   // Load the GLB model with animations
-  const { scene, animations } = useGLTF('https://cdn.builder.io/o/assets%2F48eedcb3a5ef489391d33a7eabf9e927%2F447f29228bdd4b7cb0c918645b9d99f8?alt=media&token=c162a2af-72d4-45a5-acd2-2be201a67a1d&apiKey=48eedcb3a5ef489391d33a7eabf9e927');
+  const { scene, animations } = useGLTF('https://cdn.builder.io/o/assets%2Fe6139e79bb234565a87f250d05a56e59%2Ffec500306e63447f9b4f9e18bf0ee4ba?alt=media&token=e202cfb1-757a-436a-8108-68d399fe8436&apiKey=e6139e79bb234565a87f250d05a56e59');
 
   // Setup animations from GLB file
   const { actions } = useAnimations(animations, meshRef);
@@ -45,32 +45,47 @@ function CyborgHead({ position = [0, 0, 0], scale = 1 }: CyborgHeadProps) {
 
   useEffect(() => {
     if (scene) {
-      // Enhance materials while preserving original textures
-      scene.traverse((child: any) => {
-        if (child.isMesh) {
-          if (child.material) {
-            // Enhance metallic properties
-            child.material.metalness = Math.max(child.material.metalness || 0, 0.7);
-            child.material.roughness = Math.min(child.material.roughness || 1, 0.3);
-            child.material.envMapIntensity = 1.2;
+      console.log('GLB model loaded successfully');
 
-            // Add subtle emissive glow to eyes or glowing parts
-            if (child.material.name &&
-                (child.material.name.toLowerCase().includes('eye') ||
-                 child.material.name.toLowerCase().includes('glow') ||
-                 child.material.name.toLowerCase().includes('light'))) {
-              child.material.emissive = new THREE.Color(0x00ffff);
-              child.material.emissiveIntensity = 0.2;
-            }
-          }
+      // Keep original colors and materials, just enhance lighting
+      scene.traverse((child: any) => {
+        if (child.isMesh && child.material) {
+          // Enhance metallic properties while preserving original colors
+          child.material.metalness = Math.max(child.material.metalness || 0, 0.7);
+          child.material.roughness = Math.min(child.material.roughness || 1, 0.3);
+          child.material.envMapIntensity = 1.2;
         }
       });
     }
   }, [scene]);
 
+  // Add subtle rotation animation if model is static
+  useFrame((state) => {
+    if (meshRef.current) {
+      // Only add rotation if no animations are playing
+      if (!actions || Object.keys(actions).length === 0) {
+        meshRef.current.rotation.y = Math.sin(state.clock.elapsedTime * 0.3) * 0.1;
+      }
+    }
+  });
+
   return (
     <group ref={meshRef} position={position} scale={scale}>
-      <primitive object={scene} />
+      {scene ? (
+        <primitive object={scene} />
+      ) : (
+        // Simple fallback while loading
+        <mesh>
+          <sphereGeometry args={[0.5, 16, 16]} />
+          <meshStandardMaterial
+            color="#00ffff"
+            emissive={new THREE.Color(0x001122)}
+            emissiveIntensity={0.2}
+            transparent
+            opacity={0.8}
+          />
+        </mesh>
+      )}
     </group>
   );
 }
