@@ -1,67 +1,66 @@
 import React, { Suspense } from 'react';
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls, Environment, ContactShadows } from '@react-three/drei';
-import RobotModel from './RobotModel';
+import CyborgHead2 from './CyborgHead2';
 
-interface RobotScene3DProps {
+interface JarvisScene3DProps {
   className?: string;
 }
 
-function RobotScene3D({ className }: RobotScene3DProps) {
+function JarvisScene3D({ className }: JarvisScene3DProps) {
   return (
     <div className={className}>
       <Canvas
-        camera={{ position: [2, 1, 4], fov: 60 }}
+        camera={{ position: [0, 0, 8], fov: 75 }}
         style={{ width: '100%', height: '100%' }}
         gl={{ antialias: true, alpha: true }}
       >
         <Suspense fallback={null}>
           {/* Lighting */}
-          <ambientLight intensity={0.3} />
+          <ambientLight intensity={0.6} />
           <directionalLight
-            position={[10, 10, 5]}
-            intensity={1.2}
+            position={[5, 5, 5]}
+            intensity={1.5}
             color="#ffffff"
             castShadow
           />
           <directionalLight
-            position={[-10, -10, -5]}
-            intensity={0.4}
+            position={[-5, -5, -5]}
+            intensity={0.5}
             color="#00ffff"
           />
-          
-          {/* Rim lighting for tech effect */}
+
+          {/* Rim lighting for cyber effect */}
           <pointLight
-            position={[0, 5, 10]}
-            intensity={0.6}
-            color="#00ffff"
-          />
-          
-          {/* Side lighting */}
-          <pointLight
-            position={[-5, 0, 0]}
-            intensity={0.3}
+            position={[0, 0, 8]}
+            intensity={0.8}
             color="#ff00ff"
           />
           
-          {/* Environment for reflections */}
+          {/* Subtle environment for reflections without visible background */}
           <Environment preset="city" background={false} />
           
-          {/* The Robot Model */}
-          <Suspense fallback={null}>
-            <RobotModel
-              position={[0, -1.5, 0]}
-              scale={0.35}
-            />
-          </Suspense>
+          {/* The New Cyborg Head */}
+          <CyborgHead2
+            position={[0, 0, 0]}
+            scale={2.0}
+          />
           
+          {/* Contact shadows for realism */}
+          <ContactShadows
+            position={[0, -2, 0]}
+            opacity={0.3}
+            scale={5}
+            blur={2}
+            far={2}
+          />
           
           {/* Interactive controls */}
           <OrbitControls
             enableZoom={false}
             enablePan={false}
-            maxPolarAngle={Math.PI / 2}
-            minPolarAngle={Math.PI / 4}
+            maxPolarAngle={Math.PI / 1.8}
+            minPolarAngle={Math.PI / 3.5}
             autoRotate
             autoRotateSpeed={0.8}
             dampingFactor={0.05}
@@ -73,4 +72,4 @@ function RobotScene3D({ className }: RobotScene3DProps) {
   );
 }
 
-export default RobotScene3D;
+export default JarvisScene3D;

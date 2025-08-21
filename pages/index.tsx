@@ -13,6 +13,11 @@ const RobotScene3D = dynamic(() => import('../components/RobotScene3D'), {
   loading: () => <div className="scene3d-loading">Loading robot...</div>
 });
 
+const JarvisScene3D = dynamic(() => import('../components/JarvisScene3D'), {
+  ssr: false,
+  loading: () => <div className="scene3d-loading">Loading JARVIS...</div>
+});
+
 export default function Home() {
   return (
     <>
@@ -196,7 +201,7 @@ export default function Home() {
             <div className="capabilities-content">
               <div className="capabilities-badge">
                 <span className="badge-dot"></span>
-                <span>Технологии будущего</span>
+                <span>Технологии ��удущего</span>
               </div>
               <h2 className="capabilities-title">
                 Революционные
@@ -312,6 +317,313 @@ export default function Home() {
               <div className="status-indicator">
                 <div className="status-dot"></div>
                 <span className="status-text">Квантовые процессоры активны • Нейросеть обучается</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Pricing Section */}
+      <section className="pricing-section">
+        <div className="pricing-background"></div>
+        <div className="pricing-container">
+          <div className="pricing-header">
+            <div className="pricing-badge">
+              <span className="badge-dot"></span>
+              <span>Наши тарифы</span>
+            </div>
+            <h2 className="pricing-title">
+              Выберите идеальный
+              <span className="gradient-text"> план</span>
+            </h2>
+            <p className="pricing-subtitle">
+              Гибкие тарифные планы для любого размера бизнеса - от стартапов до крупных корпораций
+            </p>
+          </div>
+
+          <div className="pricing-grid">
+            {/* Basic Plan */}
+            <div className="pricing-card">
+              <div className="pricing-card-header">
+                <h3 className="plan-name">Basic</h3>
+                <p className="plan-description">Стартовое решение</p>
+                <div className="plan-price">
+                  <span className="price-amount">2,500,000</span>
+                  <span className="price-currency">сумм</span>
+                </div>
+                <p className="plan-ideal">Идеально для небольших проектов и стартапов</p>
+              </div>
+              <div className="pricing-features">
+                <div className="feature-list">
+                  <div className="feature-item">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                      <path d="M13.5 4.5L6 12L2.5 8.5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                    </svg>
+                    <span>До 5 страниц сайта</span>
+                  </div>
+                  <div className="feature-item">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                      <path d="M13.5 4.5L6 12L2.5 8.5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                    </svg>
+                    <span>Современный дизайн</span>
+                  </div>
+                  <div className="feature-item">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                      <path d="M13.5 4.5L6 12L2.5 8.5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                    </svg>
+                    <span>Адаптивная верстка</span>
+                  </div>
+                  <div className="feature-item">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                      <path d="M13.5 4.5L6 12L2.5 8.5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                    </svg>
+                    <span>SEO оптимизация</span>
+                  </div>
+                  <div className="feature-item">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                      <path d="M13.5 4.5L6 12L2.5 8.5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                    </svg>
+                    <span>Техподдержка email</span>
+                  </div>
+                </div>
+              </div>
+              <button className="pricing-btn basic-btn">
+                <span>Выбрать Basic</span>
+              </button>
+            </div>
+
+            {/* Pro Plan */}
+            <div className="pricing-card featured">
+              <div className="featured-badge">Лучший выбор</div>
+              <div className="pricing-card-header">
+                <h3 className="plan-name">Pro</h3>
+                <p className="plan-description">Лучший выбор</p>
+                <div className="plan-price">
+                  <span className="price-amount">4,000,000</span>
+                  <span className="price-currency">сумм</span>
+                </div>
+                <p className="plan-ideal">Лучший выбор для растущего бизнеса</p>
+              </div>
+              <div className="pricing-features">
+                <div className="feature-list">
+                  <div className="feature-item">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                      <path d="M13.5 4.5L6 12L2.5 8.5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                    </svg>
+                    <span>Все из Basic</span>
+                  </div>
+                  <div className="feature-item">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                      <path d="M13.5 4.5L6 12L2.5 8.5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                    </svg>
+                    <span>До 15 страниц сайта</span>
+                  </div>
+                  <div className="feature-item">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                      <path d="M13.5 4.5L6 12L2.5 8.5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                    </svg>
+                    <span>ИИ ассистент интеграция</span>
+                  </div>
+                  <div className="feature-item">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                      <path d="M13.5 4.5L6 12L2.5 8.5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                    </svg>
+                    <span>Продвинутая аналитика</span>
+                  </div>
+                  <div className="feature-item">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                      <path d="M13.5 4.5L6 12L2.5 8.5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                    </svg>
+                    <span>Приоритетная поддержка</span>
+                  </div>
+                </div>
+              </div>
+              <button className="pricing-btn pro-btn">
+                <span>Выбрать Pro</span>
+              </button>
+            </div>
+
+            {/* Max Plan */}
+            <div className="pricing-card">
+              <div className="pricing-card-header">
+                <h3 className="plan-name">Max</h3>
+                <p className="plan-description">Премиум решение</p>
+                <div className="plan-price">
+                  <span className="price-amount">5,000,000</span>
+                  <span className="price-currency">сумм</span>
+                </div>
+                <p className="plan-ideal">Максимум возможностей для крупного бизнеса</p>
+              </div>
+              <div className="pricing-features">
+                <div className="feature-list">
+                  <div className="feature-item">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                      <path d="M13.5 4.5L6 12L2.5 8.5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                    </svg>
+                    <span>Все из Pro</span>
+                  </div>
+                  <div className="feature-item">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                      <path d="M13.5 4.5L6 12L2.5 8.5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                    </svg>
+                    <span>Безлимитные страницы</span>
+                  </div>
+                  <div className="feature-item">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                      <path d="M13.5 4.5L6 12L2.5 8.5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                    </svg>
+                    <span>ДЖАРВИС ИИ полная версия</span>
+                  </div>
+                  <div className="feature-item">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                      <path d="M13.5 4.5L6 12L2.5 8.5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                    </svg>
+                    <span>Индивидуальные решения</span>
+                  </div>
+                  <div className="feature-item">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                      <path d="M13.5 4.5L6 12L2.5 8.5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                    </svg>
+                    <span>VIP поддержка 24 часа в сутки</span>
+                  </div>
+                </div>
+              </div>
+              <button className="pricing-btn max-btn">
+                <span>Выбрать Max</span>
+              </button>
+            </div>
+          </div>
+
+          <div className="pricing-footer">
+            <p className="pricing-note">
+              Все планы включают бесплатное SSL-сертификат и доменное имя на первый год
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* JARVIS AI Section */}
+      <section className="jarvis-section">
+        <div className="jarvis-background"></div>
+        <div className="jarvis-container">
+          <div className="jarvis-layout">
+            <div className="jarvis-content">
+              <div className="jarvis-badge">
+                <span className="badge-dot"></span>
+                <span>Искусственный интеллект</span>
+              </div>
+              <h2 className="jarvis-title">
+                ДЖАРВИС заменяет
+                <span className="highlight-text"> целую команду</span><br />
+                продавцов-консультантов
+              </h2>
+              <p className="jarvis-subtitle">
+                Один умный ассистент выполняет работу десятков сотрудников. ДЖАРВИС ведет естественные диалоги с клиентами, предлагает товары, консультирует и находит лучшие предложения 24 часа в сутки без перерывов и выходных.
+              </p>
+
+              <div className="jarvis-features">
+                <div className="jarvis-feature-item">
+                  <div className="jarvis-feature-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                    </svg>
+                  </div>
+                  <div className="jarvis-feature-content">
+                    <h3 className="jarvis-feature-title">Естественные диалоги</h3>
+                    <p className="jarvis-feature-description">Ведет беседы как живой консультант, понимает контекст и эмоции клиентов</p>
+                  </div>
+                </div>
+
+                <div className="jarvis-feature-item">
+                  <div className="jarvis-feature-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <circle cx="11" cy="11" r="8"/>
+                      <path d="m21 21-4.35-4.35"/>
+                    </svg>
+                  </div>
+                  <div className="jarvis-feature-content">
+                    <h3 className="jarvis-feature-title">Умный поиск предложений</h3>
+                    <p className="jarvis-feature-description">Мгновенно находит лучшие товары и услуги под потребности каждого клиента</p>
+                  </div>
+                </div>
+
+                <div className="jarvis-feature-item">
+                  <div className="jarvis-feature-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <circle cx="12" cy="12" r="10"/>
+                      <polyline points="12,6 12,12 16,14"/>
+                    </svg>
+                  </div>
+                  <div className="jarvis-feature-content">
+                    <h3 className="jarvis-feature-title">Работает 24/7</h3>
+                    <p className="jarvis-feature-description">Никогда не устает, не берет отпуск и готов помочь клиентам в любое время</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="jarvis-buttons">
+                <button className="btn-primary">
+                  <span>Запустить ДЖАРВИС</span>
+                  <div className="btn-shine"></div>
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path d="M3.5 8H12.5M12.5 8L8.5 4M12.5 8L8.5 12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                </button>
+                <button className="btn-secondary">
+                  <span>Посмотреть демо</span>
+                  <div className="btn-ripple"></div>
+                </button>
+              </div>
+            </div>
+
+            <div className="jarvis-visual">
+              <div className="jarvis-3d-main">
+                <JarvisScene3D className="jarvis-scene-container" />
+              </div>
+
+              {/* Enhanced Performance Metrics */}
+              <div className="jarvis-performance-display">
+                <div className="metric-item">
+                  <div className="metric-icon">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                      <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+                    </svg>
+                  </div>
+                  <div className="metric-content">
+                    <span className="metric-value">15x</span>
+                    <span className="metric-label">Быстрее команды</span>
+                  </div>
+                </div>
+                <div className="metric-item">
+                  <div className="metric-icon">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                      <circle cx="12" cy="12" r="3"/>
+                      <path d="M12 1v6m0 6v6m11-7h-6m-6 0H1"/>
+                    </svg>
+                  </div>
+                  <div className="metric-content">
+                    <span className="metric-value">500+</span>
+                    <span className="metric-label">Клиентов в час</span>
+                  </div>
+                </div>
+                <div className="metric-item">
+                  <div className="metric-icon">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                      <circle cx="12" cy="12" r="10"/>
+                      <polyline points="12,6 12,12 16,14"/>
+                    </svg>
+                  </div>
+                  <div className="metric-content">
+                    <span className="metric-value">98%</span>
+                    <span className="metric-label">Удовлетворенность</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Status Indicator */}
+              <div className="status-indicator">
+                <div className="status-dot"></div>
+                <span className="status-text">ДЖАРВИС активен • Обучение в реальном времени</span>
               </div>
             </div>
           </div>
