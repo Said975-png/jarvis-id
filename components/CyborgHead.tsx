@@ -46,23 +46,38 @@ function CyborgHead({ position = [0, 0, 0], scale = 1 }: CyborgHeadProps) {
   useEffect(() => {
     if (scene) {
       console.log('GLB model loaded successfully');
-      
-      // Enhance materials while preserving original textures
+
+      // Enhance materials and set green/teal colors
       scene.traverse((child: any) => {
         if (child.isMesh) {
           if (child.material) {
-            // Enhance metallic properties
-            child.material.metalness = Math.max(child.material.metalness || 0, 0.7);
-            child.material.roughness = Math.min(child.material.roughness || 1, 0.3);
-            child.material.envMapIntensity = 1.2;
+            // Clone material to avoid affecting other instances
+            child.material = child.material.clone();
 
-            // Add subtle emissive glow to eyes or glowing parts
+            // Set main body color to teal/green
+            if (child.material.name &&
+                (child.material.name.toLowerCase().includes('body') ||
+                 child.material.name.toLowerCase().includes('head') ||
+                 child.material.name.toLowerCase().includes('main') ||
+                 !child.material.name.toLowerCase().includes('eye'))) {
+              child.material.color = new THREE.Color(0x00ccaa); // Teal color
+              child.material.emissive = new THREE.Color(0x002222);
+              child.material.emissiveIntensity = 0.1;
+            }
+
+            // Enhance metallic properties
+            child.material.metalness = Math.max(child.material.metalness || 0, 0.6);
+            child.material.roughness = Math.min(child.material.roughness || 1, 0.4);
+            child.material.envMapIntensity = 1.0;
+
+            // Keep eyes yellow/bright
             if (child.material.name &&
                 (child.material.name.toLowerCase().includes('eye') ||
                  child.material.name.toLowerCase().includes('glow') ||
                  child.material.name.toLowerCase().includes('light'))) {
-              child.material.emissive = new THREE.Color(0x00ffff);
-              child.material.emissiveIntensity = 0.2;
+              child.material.color = new THREE.Color(0xffff00); // Yellow
+              child.material.emissive = new THREE.Color(0xffff00);
+              child.material.emissiveIntensity = 0.8;
             }
           }
         }
