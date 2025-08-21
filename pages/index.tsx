@@ -328,7 +328,7 @@ export default function Home() {
             <div className="capabilities-content">
               <div className="capabilities-badge">
                 <span className="badge-dot"></span>
-                <span>AI-Powered Platform</span>
+                <span>Технологии будущего</span>
               </div>
               <h2 className="capabilities-title">
                 В��зможности нашей
@@ -376,7 +376,7 @@ export default function Home() {
                   </div>
                   <div className="feature-content">
                     <h3 className="feature-title">Персонализация</h3>
-                    <p className="feature-description">Ад��птивный контент �� рекомендации на основе по��едения пользователей</p>
+                    <p className="feature-description">Ад��птивный контент �� рекомендации на основе по��е��ения пользователей</p>
                   </div>
                 </div>
               </div>
