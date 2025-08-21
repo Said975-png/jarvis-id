@@ -11,7 +11,7 @@ function Scene3D({ className }: Scene3DProps) {
   return (
     <div className={className}>
       <Canvas
-        camera={{ position: [0, 0, 5], fov: 45 }}
+        camera={{ position: [0, 0, 4], fov: 50 }}
         style={{ width: '100%', height: '100%' }}
         gl={{ antialias: true, alpha: true }}
       >
