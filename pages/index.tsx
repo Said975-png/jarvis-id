@@ -123,7 +123,7 @@ export default function Home() {
 
               <h1 className="hero-title">
                 Создаем <span className="gradient-text">интеллектуальные</span><br />
-                веб-решения будущего
+                веб-реше��ия будущего
               </h1>
 
               <p className="hero-subtitle">
@@ -390,7 +390,7 @@ export default function Home() {
                   </svg>
                 </button>
                 <button className="btn-secondary">
-                  <span>Смотреть Демо</span>
+                  <span>Виртуальный Тур</span>
                   <div className="btn-ripple"></div>
                 </button>
               </div>
