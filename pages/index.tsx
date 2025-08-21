@@ -87,7 +87,7 @@ export default function Home() {
               </div>
 
               <h1 className="hero-title">
-                Создаем <span className="gradient-text">интеллектуальные</span><br />
+                Создаем <span className="gradient-text">интеллектуа��ьные</span><br />
                 веб-решения будущего
               </h1>
 
@@ -234,7 +234,7 @@ export default function Home() {
                     </svg>
                   </div>
                   <div className="feature-content">
-                    <h3 className="feature-title">Нейро-Персонализация</h3>
+                    <h3 className="feature-title">Н��йро-Персонализация</h3>
                     <p className="feature-description">Динамическая адаптация контента под каждого пользователя в режиме реального времени</p>
                   </div>
                 </div>
@@ -249,7 +249,7 @@ export default function Home() {
                   </div>
                   <div className="feature-content">
                     <h3 className="feature-title">Голографические Интерфейсы</h3>
-                    <p className="feature-description">Иммерсивные 3D-интер��ейсы с поддержкой AR/VR для невероятного пользовательского опыта</p>
+                    <p className="feature-description">Иммерсивные 3D-интерфейсы с поддержкой AR/VR для невероятного пользовательского опыта</p>
                   </div>
                 </div>
               </div>
@@ -337,7 +337,7 @@ export default function Home() {
               <span className="gradient-text"> план</span>
             </h2>
             <p className="pricing-subtitle">
-              Гибкие тарифные планы для любого размера бизнеса - от стартапов до крупных корпораций
+              Гибкие тарифные планы для любого размера бизне��а - от стартапов до крупных корпораций
             </p>
           </div>
 
@@ -679,24 +679,6 @@ export default function Home() {
             </div>
           </div>
 
-          {/* CTA */}
-          <div className="team-cta">
-            <h3 className="cta-title">Готовы заменить команду продавцов?</h3>
-            <p className="cta-subtitle">ДЖАРВИС начинает работать уже через 24 часа после запуска</p>
-            <div className="cta-buttons">
-              <button className="btn-primary">
-                <span>Запустить ДЖАРВИС</span>
-                <div className="btn-shine"></div>
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                  <path d="M3.5 8H12.5M12.5 8L8.5 4M12.5 8L8.5 12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>
-              </button>
-              <button className="btn-secondary">
-                <span>Посмотреть демо</span>
-                <div className="btn-ripple"></div>
-              </button>
-            </div>
-          </div>
         </div>
       </section>
 
