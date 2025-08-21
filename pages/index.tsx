@@ -51,7 +51,7 @@ export default function Home() {
                   <path d="M1 4H15V12C15 12.5523 14.5523 13 14 13H2C1.44772 13 1 12.5523 1 12V4Z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                   <path d="M1 4L8 8L15 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
-                <span>Цены</span>
+                <span>Цен��</span>
               </button>
             </div>
             <div className="navbar-auth">
@@ -391,6 +391,7 @@ export default function Home() {
                 </button>
                 <button className="btn-secondary">
                   <span>Смотреть Демо</span>
+                  <div className="btn-ripple"></div>
                 </button>
               </div>
             </div>
