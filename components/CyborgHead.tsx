@@ -56,9 +56,8 @@ function CyborgHead({ position = [0, 0, 0], scale = 1 }: CyborgHeadProps) {
           // Get original color to determine what this part is
           const originalColor = child.material.color;
 
-          // If the original color is very bright/yellow, it's likely eyes
-          const isEye = (originalColor.r > 0.8 && originalColor.g > 0.8 && originalColor.b < 0.5) ||
-                       (originalColor.r > 0.9 && originalColor.g > 0.9 && originalColor.b > 0.9);
+          // If the original color is yellow/bright, it's likely eyes
+          const isEye = (originalColor.r > 0.8 && originalColor.g > 0.8 && originalColor.b < 0.6);
 
           if (isEye) {
             // Bright white glowing eyes
