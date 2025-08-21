@@ -12,7 +12,7 @@ function CyborgHead({ position = [0, 0, 0], scale = 1 }: CyborgHeadProps) {
   const meshRef = useRef<THREE.Group>(null);
 
   // Load the GLB model with animations
-  const { scene, animations } = useGLTF('https://cdn.builder.io/o/assets%2F48eedcb3a5ef489391d33a7eabf9e927%2F447f29228bdd4b7cb0c918645b9d99f8?alt=media&token=c162a2af-72d4-45a5-acd2-2be201a67a1d&apiKey=48eedcb3a5ef489391d33a7eabf9e927');
+  const { scene, animations } = useGLTF('https://cdn.builder.io/o/assets%2Fe6139e79bb234565a87f250d05a56e59%2F3e944de5073248999457188b7bc42dc5?alt=media&token=6e3c48a2-cd2a-4b13-88ed-05450feff663&apiKey=e6139e79bb234565a87f250d05a56e59');
 
   // Setup animations from GLB file
   const { actions } = useAnimations(animations, meshRef);
