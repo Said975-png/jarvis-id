@@ -322,47 +322,6 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Floating Widgets */}
-          <div className="floating-widget widget-1">
-            <div className="widget-icon">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
-                <polyline points="3.27,6.96 12,12.01 20.73,6.96"/>
-                <line x1="12" y1="22.08" x2="12" y2="12"/>
-              </svg>
-            </div>
-            <div className="widget-text">
-              <div className="widget-title">AI Analytics</div>
-              <div className="widget-subtitle">+127% рост</div>
-            </div>
-          </div>
-
-          <div className="floating-widget widget-2">
-            <div className="widget-icon">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                <path d="M12 2L2 7l10 5 10-5-10-5z"/>
-                <path d="M2 17l10 5 10-5"/>
-                <path d="M2 12l10 5 10-5"/>
-              </svg>
-            </div>
-            <div className="widget-text">
-              <div className="widget-title">Smart Chat</div>
-              <div className="widget-subtitle">Онлайн</div>
-            </div>
-          </div>
-
-          <div className="floating-widget widget-3">
-            <div className="widget-icon">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                <circle cx="12" cy="12" r="3"/>
-                <path d="M12 1v6m0 6v6m11-7h-6m-6 0H1"/>
-              </svg>
-            </div>
-            <div className="widget-text">
-              <div className="widget-title">Automation</div>
-              <div className="widget-subtitle">Активно</div>
-            </div>
-          </div>
         </div>
       </section>
 
@@ -411,7 +370,7 @@ export default function Home() {
                     </svg>
                   </div>
                   <div className="feature-content">
-                    <h3 className="feature-title">Автоматиза��ия бизнеса</h3>
+                    <h3 className="feature-title">Автоматизация би��неса</h3>
                     <p className="feature-description">ИИ для обработки заказов, клиентской поддержки и аналитики</p>
                   </div>
                 </div>
