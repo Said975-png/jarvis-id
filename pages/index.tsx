@@ -333,7 +333,7 @@ export default function Home() {
               <span>Наши тарифы</span>
             </div>
             <h2 className="pricing-title">
-              Выберите идеальный
+              ��ыберите идеальный
               <span className="gradient-text"> план</span>
             </h2>
             <p className="pricing-subtitle">
@@ -634,7 +634,7 @@ export default function Home() {
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                     <polyline points="20,6 9,17 4,12"/>
                   </svg>
-                  <span>Никогда не устает</span>
+                  <span>Нико��да не устает</span>
                 </div>
                 <div className="detail-item">
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -889,7 +889,7 @@ export default function Home() {
                     <span>⭐⭐⭐⭐⭐</span>
                   </div>
                   <p className="review-text">
-                    "Мне сделали сайт с Jarvis Intercoma под мою студию украшений. Красиво, удобно, и всё автоматизировано. Теперь я занимаюсь только заказами, а не сижу целый день в переписках с клиентами."
+                    "Мне сделали сайт с Jarvis Intercoma под мою студию украшений. Красиво, удобно, и всё автоматизировано. Теперь я занимаюс�� только заказами, а не сижу целый день в переписках с клиентами."
                   </p>
                   <div className="review-author">
                     <div className="author-info">
@@ -976,31 +976,6 @@ export default function Home() {
                   <p className="footer-description">
                     Создаем интеллектуальные веб-решения будущего с помощью передовых AI-технологий для максимальной эффективности вашего бизнеса.
                   </p>
-                  <div className="footer-social">
-                    <a href="#" className="social-link">
-                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
-                      </svg>
-                    </a>
-                    <a href="#" className="social-link">
-                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                        <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
-                      </svg>
-                    </a>
-                    <a href="#" className="social-link">
-                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                        <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
-                        <line x1="2" y1="7" x2="22" y2="7"/>
-                      </svg>
-                    </a>
-                    <a href="#" className="social-link">
-                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
-                        <rect x="2" y="9" width="4" height="12"/>
-                        <circle cx="4" cy="4" r="2"/>
-                      </svg>
-                    </a>
-                  </div>
                 </div>
 
                 {/* Services */}
