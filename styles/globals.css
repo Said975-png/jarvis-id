@@ -33,31 +33,34 @@ body {
   padding: 0 2rem;
 }
 
-/* Navigation Bar - Ultra Premium */
+/* Navigation Bar */
 .navbar {
   position: fixed;
-  top: 2rem;
-  right: 2rem;
+  top: 0;
+  left: 0;
+  right: 0;
   z-index: 1000;
-  width: auto;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .navbar-container {
-  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
 }
 
 .navbar-content {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-  padding: 0.5rem;
-  background: transparent;
-  transition: all 0.3s ease;
+  justify-content: space-between;
+  padding: 1rem 0;
+  gap: 2rem;
 }
 
-
 .navbar-logo {
-  display: none;
+  display: flex;
 }
 
 .logo-text {
