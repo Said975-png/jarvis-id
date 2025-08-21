@@ -87,7 +87,7 @@ export default function Home() {
               </div>
 
               <h1 className="hero-title">
-                Создаем <span className="gradient-text">интеллектуа��ьные</span><br />
+                Создаем <span className="gradient-text">интеллектуальные</span><br />
                 веб-решения будущего
               </h1>
 
@@ -234,7 +234,7 @@ export default function Home() {
                     </svg>
                   </div>
                   <div className="feature-content">
-                    <h3 className="feature-title">Н��йро-Персонализация</h3>
+                    <h3 className="feature-title">Нейро-Персонализация</h3>
                     <p className="feature-description">Динамическая адаптация контента под каждого пользователя в режиме реального времени</p>
                   </div>
                 </div>
@@ -337,7 +337,7 @@ export default function Home() {
               <span className="gradient-text"> план</span>
             </h2>
             <p className="pricing-subtitle">
-              Гибкие тарифные планы для любого размера бизне��а - от стартапов до крупных корпораций
+              Гибкие тарифные планы для любого размера бизнеса - от стартапов до крупных корпораций
             </p>
           </div>
 
@@ -661,7 +661,7 @@ export default function Home() {
                 </div>
                 <div className="stat-item">
                   <span className="stat-number">90%</span>
-                  <span className="stat-label">Экономия на зарплатах</span>
+                  <span className="stat-label">Экономи�� на зарплатах</span>
                 </div>
                 <div className="stat-item">
                   <span className="stat-number">500+</span>
@@ -679,6 +679,296 @@ export default function Home() {
             </div>
           </div>
 
+        </div>
+      </section>
+
+      {/* Reviews Section */}
+      <section className="reviews-section" id="reviews">
+        <div className="reviews-background"></div>
+        <div className="reviews-container">
+          <div className="reviews-header">
+            <div className="reviews-badge">
+              <span className="badge-dot"></span>
+              <span>Отзывы наших клиентов</span>
+            </div>
+            <h2 className="reviews-title">
+              Что г��ворят о нас
+              <span className="gradient-text"> наши клиенты</span>
+            </h2>
+            <p className="reviews-subtitle">
+              Более 1000+ довольных клиентов уже используют JARVIS для развития своего бизнеса
+            </p>
+          </div>
+
+          <div className="reviews-slider">
+            <div className="reviews-track">
+              {/* Review 1 */}
+              <div className="review-card">
+                <div className="review-content">
+                  <div className="stars">
+                    <span>⭐⭐⭐⭐⭐</span>
+                  </div>
+                  <p className="review-text">
+                    "Я не разбираюсь в сайтах, но в Jarvis всё объяснили простыми словами. Сделал магазин, подключил оплату, и теперь я продаю в 3 странах. Рекомендую!"
+                  </p>
+                  <div className="review-author">
+                    <div className="author-info">
+                      <span className="author-name">Умид А.</span>
+                      <span className="author-location">Ташкент, Freelance</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Review 2 */}
+              <div className="review-card">
+                <div className="review-content">
+                  <div className="stars">
+                    <span>⭐⭐⭐⭐⭐</span>
+                  </div>
+                  <p className="review-text">
+                    "Создала сайт с Jarvis Intercoma для своего магазина одежды. Работать стало легче: бот помогает клиентам выбирать стиль, отвечает на вопросы, а я только получаю заказы. Очень довольна!"
+                  </p>
+                  <div className="review-author">
+                    <div className="author-info">
+                      <span className="author-name">Алимова М.</span>
+                      <span className="author-location">Чебоксары, Freelance</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Review 3 */}
+              <div className="review-card">
+                <div className="review-content">
+                  <div className="stars">
+                    <span>⭐⭐⭐⭐⭐</span>
+                  </div>
+                  <p className="review-text">
+                    "Сделала сайт для своего бутика с Jarvis. Удобно и быстро, клиенты довольны. Бот помогает им найти нужные товары, даже ночью."
+                  </p>
+                  <div className="review-author">
+                    <div className="author-info">
+                      <span className="author-name">Романова И.</span>
+                      <span className="author-location">Уфа, Freelance</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Review 4 */}
+              <div className="review-card">
+                <div className="review-content">
+                  <div className="stars">
+                    <span>⭐⭐⭐⭐⭐</span>
+                  </div>
+                  <p className="review-text">
+                    "Создала интернет-магазин с помощью Jarvis. Весь процесс автоматизирован, а бот отвечает на вопросы клиентов в любое время дня и ночи."
+                  </p>
+                  <div className="review-author">
+                    <div className="author-info">
+                      <span className="author-name">Алексеева Л.</span>
+                      <span className="author-location">Казань, Freelance</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Review 5 */}
+              <div className="review-card">
+                <div className="review-content">
+                  <div className="stars">
+                    <span>⭐⭐⭐⭐⭐</span>
+                  </div>
+                  <p className="review-text">
+                    "Решил попробовать Jarvis для создания сайта магазина бытовой техники. Результат впечатлил: бот быстро и точно помогает клиентам выбрать товар."
+                  </p>
+                  <div className="review-author">
+                    <div className="author-info">
+                      <span className="author-name">Шарипов М.</span>
+                      <span className="author-location">Бухара, Freelance</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Review 6 */}
+              <div className="review-card">
+                <div className="review-content">
+                  <div className="stars">
+                    <span>⭐⭐⭐⭐⭐</span>
+                  </div>
+                  <p className="review-text">
+                    "Мой магазин ювелирных изделий стал более удобным благодаря Jarvis. Бот помогает клиентам выбрать подходящие украшения и отвечает на все вопросы."
+                  </p>
+                  <div className="review-author">
+                    <div className="author-info">
+                      <span className="author-name">Васильева О.</span>
+                      <span className="author-location">Набережные Челны, Freelance</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Review 7 */}
+              <div className="review-card">
+                <div className="review-content">
+                  <div className="stars">
+                    <span>⭐⭐⭐⭐⭐</span>
+                  </div>
+                  <p className="review-text">
+                    "Создала сайт для своего магазина с Jarvis. Клиенты часто обращаются за помощью, и бот всегда подскажет им нужную информацию."
+                  </p>
+                  <div className="review-author">
+                    <div className="author-info">
+                      <span className="author-name">Захарова Т.</span>
+                      <span className="author-location">Самара, Freelance</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Review 8 */}
+              <div className="review-card">
+                <div className="review-content">
+                  <div className="stars">
+                    <span>⭐⭐⭐⭐⭐</span>
+                  </div>
+                  <p className="review-text">
+                    "Сайт для онлайн-магазина с Jarvis стал отличным решением. Бот быстро помогает покупателям, что существенно увеличило количество заказов."
+                  </p>
+                  <div className="review-author">
+                    <div className="author-info">
+                      <span className="author-name">Розенбаум В.</span>
+                      <span className="author-location">Санкт-Петербург, Freelance</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Review 9 */}
+              <div className="review-card">
+                <div className="review-content">
+                  <div className="stars">
+                    <span>⭐⭐⭐⭐⭐</span>
+                  </div>
+                  <p className="review-text">
+                    "С Jarvis сайт для моего магазина одежды стал суперудобным. Бот помогает клиентам найти нужный товар и оформить заказ без проблем."
+                  </p>
+                  <div className="review-author">
+                    <div className="author-info">
+                      <span className="author-name">Петрова М.</span>
+                      <span className="author-location">Нижний Новгород, Freelance</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Review 10 */}
+              <div className="review-card">
+                <div className="review-content">
+                  <div className="stars">
+                    <span>⭐⭐⭐⭐⭐</span>
+                  </div>
+                  <p className="review-text">
+                    "Заказал сайт о�� Jarvis Intercoma онлайн-магазин с ИИ Джарвисом, и не пожалел! Всё сделали быстро, магазин сразу начал приносить заказы. Особенно понравилось, что бот отвечает клиентам мгновенно, даже ночью."
+                  </p>
+                  <div className="review-author">
+                    <div className="author-info">
+                      <span className="author-name">Карим</span>
+                      <span className="author-location">Ташкент, Freelance</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Review 11 */}
+              <div className="review-card">
+                <div className="review-content">
+                  <div className="stars">
+                    <span>⭐⭐⭐⭐⭐</span>
+                  </div>
+                  <p className="review-text">
+                    "Мне сделали сайт с Jarvis Intercoma под мою студию украшений. Красиво, удобно, и всё автоматизировано. Теперь я занимаюсь только заказами, а не сижу целый день в п��реписках с клиентами."
+                  </p>
+                  <div className="review-author">
+                    <div className="author-info">
+                      <span className="author-name">Мадина Р.</span>
+                      <span className="author-location">Ташкент, Freelance</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Review 12 */}
+              <div className="review-card">
+                <div className="review-content">
+                  <div className="stars">
+                    <span>⭐⭐⭐⭐⭐</span>
+                  </div>
+                  <p className="review-text">
+                    "Создала магазин косметики с Jarvis. Бот идеально консультирует клиентов по уходу за кожей, подбирает продукты по типу кожи. Продажи выросли в 4 раза!"
+                  </p>
+                  <div className="review-author">
+                    <div className="author-info">
+                      <span className="author-name">Елена К.</span>
+                      <span className="author-location">Москва, Freelance</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Duplicate cards for infinite scroll */}
+              <div className="review-card">
+                <div className="review-content">
+                  <div className="stars">
+                    <span>⭐⭐⭐⭐⭐</span>
+                  </div>
+                  <p className="review-text">
+                    "Я не разбираюсь в сайтах, но в Jarvis всё объяснили простыми словами. Сделал магазин, подключил оплату, и теперь я продаю в 3 странах. Рекомендую!"
+                  </p>
+                  <div className="review-author">
+                    <div className="author-info">
+                      <span className="author-name">Умид А.</span>
+                      <span className="author-location">Ташкент, Freelance</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="review-card">
+                <div className="review-content">
+                  <div className="stars">
+                    <span>⭐⭐⭐⭐⭐</span>
+                  </div>
+                  <p className="review-text">
+                    "Создала сайт с Jarvis Intercoma для своего магазина одежды. Работать стало легче: бот помогает клиентам выбирать стиль, отвечает на вопросы, а я только получаю заказы. Очень довольна!"
+                  </p>
+                  <div className="review-author">
+                    <div className="author-info">
+                      <span className="author-name">Алимова М.</span>
+                      <span className="author-location">Чебоксары, Freelance</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="reviews-stats">
+            <div className="stat-item">
+              <span className="stat-number">1000+</span>
+              <span className="stat-label">Довольных клиентов</span>
+            </div>
+            <div className="stat-item">
+              <span className="stat-number">4.9/5</span>
+              <span className="stat-label">Средняя оценка</span>
+            </div>
+            <div className="stat-item">
+              <span className="stat-number">98%</span>
+              <span className="stat-label">Рекомендуют друзьям</span>
+            </div>
+          </div>
         </div>
       </section>
 
