@@ -5145,11 +5145,11 @@ body {
 }
 
 .footer-description {
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.7);
-  line-height: 1.6;
-  margin-bottom: 2rem;
+  line-height: 1.4;
+  margin-bottom: 1rem;
 }
 
 .footer-social {
