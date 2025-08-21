@@ -104,7 +104,7 @@ export default function Home() {
             <div className="left-item">
               <div className="stat-card">
                 <div className="stat-value">24/7</div>
-                <div className="stat-label">ИИ Поддержка</div>
+                <div className="stat-label">ИИ По��держка</div>
               </div>
             </div>
             <div className="left-item">
@@ -202,29 +202,14 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Additional Floating Elements */}
-          <div className="extra-elements">
-            <div className="floating-tag tag-1">
-              <span className="tag-emoji">✨</span>
-              <span className="tag-text">AI Magic</span>
-            </div>
-            <div className="floating-tag tag-2">
-              <span className="tag-emoji">🚀</span>
-              <span className="tag-text">Fast Deploy</span>
-            </div>
-            <div className="floating-tag tag-3">
-              <span className="tag-emoji">🌐</span>
-              <span className="tag-text">Global Scale</span>
-            </div>
-
-            <div className="connection-lines">
-              <svg className="connection-svg" width="100%" height="100%" viewBox="0 0 1400 800" fill="none">
-                <path d="M200 400L400 300" stroke="rgba(255,255,255,0.1)" strokeWidth="1" strokeDasharray="5,5"/>
-                <path d="M1000 300L1200 400" stroke="rgba(255,255,255,0.1)" strokeWidth="1" strokeDasharray="5,5"/>
-                <path d="M300 600L500 500" stroke="rgba(255,255,255,0.1)" strokeWidth="1" strokeDasharray="5,5"/>
-                <path d="M900 500L1100 600" stroke="rgba(255,255,255,0.1)" strokeWidth="1" strokeDasharray="5,5"/>
-              </svg>
-            </div>
+          {/* Subtle Connection Lines */}
+          <div className="connection-overlay">
+            <svg className="connection-svg" width="100%" height="100%" viewBox="0 0 1400 800" fill="none">
+              <path d="M150 150L350 250" stroke="rgba(255,255,255,0.06)" strokeWidth="1" strokeDasharray="3,6"/>
+              <path d="M1050 250L1250 150" stroke="rgba(255,255,255,0.06)" strokeWidth="1" strokeDasharray="3,6"/>
+              <path d="M150 650L350 550" stroke="rgba(255,255,255,0.06)" strokeWidth="1" strokeDasharray="3,6"/>
+              <path d="M1050 550L1250 650" stroke="rgba(255,255,255,0.06)" strokeWidth="1" strokeDasharray="3,6"/>
+            </svg>
           </div>
 
         </div>
@@ -249,7 +234,7 @@ export default function Home() {
                 <span className="highlight-text"> Платформы</span>
               </h2>
               <p className="capabilities-subtitle">
-                Мы создаем сайты с интеллектуальными ИИ ассистентами, которые революционизируют взаимодействие с вашими клиентами
+                Мы создаем сайты с интеллектуальными ИИ ассистентами, которые революционизируют взаимодействие с ва��ими клиентами
               </p>
 
               <div className="capabilities-features">
@@ -290,7 +275,7 @@ export default function Home() {
                   </div>
                   <div className="feature-content">
                     <h3 className="feature-title">Персонализация</h3>
-                    <p className="feature-description">Адаптивный контент �� рекомендации на основе по��едения пользовател��й</p>
+                    <p className="feature-description">Адаптивный контент �� рекомендации на основе по��едения пользователей</p>
                   </div>
                 </div>
               </div>
