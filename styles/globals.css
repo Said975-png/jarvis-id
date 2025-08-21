@@ -383,21 +383,36 @@ body {
   align-items: center;
 }
 
-/* Main Hero Content */
-.hero-main-content {
-  text-align: center;
-  max-width: 800px;
-  margin-bottom: 4rem;
+/* Hero Grid Layout */
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 3rem;
+  align-items: center;
+  min-height: 80vh;
+  position: relative;
   z-index: 20;
+}
+
+.hero-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+
+.hero-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   position: relative;
 }
 
-.hero-layout {
+.hero-right {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  position: relative;
-  overflow: visible;
 }
 
 .hero-content {
