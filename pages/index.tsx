@@ -35,36 +35,25 @@ export default function Home() {
       <nav className="navbar">
         <div className="navbar-container">
           <div className="navbar-content">
+            {/* Logo */}
             <div className="navbar-logo">
               <span className="logo-text">JARVIS</span>
             </div>
-            <div className="navbar-menu">
-              <button className="nav-btn">
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+
+            {/* Search */}
+            <div className="navbar-search">
+              <div className="search-container">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" className="search-icon">
                   <path d="M14 14L10.5 10.5M12 6.5C12 9.53757 9.53757 12 6.5 12C3.46243 12 1 9.53757 1 6.5C1 3.46243 3.46243 1 6.5 1C9.53757 1 12 3.46243 12 6.5Z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
-                <span>Поиск</span>
-              </button>
-              <a href="#reviews" className="nav-btn">
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                  <path d="M8 1L10.09 5.26L15 6L11 9.74L11.91 14.5L8 12.27L4.09 14.5L5 9.74L1 6L5.91 5.26L8 1Z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>
-                <span>Отзывы</span>
-              </a>
-              <button className="nav-btn">
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                  <path d="M1 4H15V12C15 12.5523 14.5523 13 14 13H2C1.44772 13 1 12.5523 1 12V4Z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                  <path d="M1 4L8 8L15 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>
-                <span>Цены</span>
-              </button>
+                <input type="text" placeholder="Поиск" className="search-input" />
+              </div>
             </div>
+
+            {/* Auth */}
             <div className="navbar-auth">
-              <button className="auth-btn login">
-                <span>Вход</span>
-              </button>
-              <button className="auth-btn register">
-                <span>Регистрация</span>
+              <button className="auth-btn">
+                <span>Войти</span>
               </button>
             </div>
           </div>
@@ -93,7 +82,7 @@ export default function Home() {
 
               <p className="hero-subtitle">
                 Разрабатываем сайты с ИИ-ассистентами, которые понимают в��ших клиентов,
-                автоматизируют бизнес-процессы и увеличивают к��нверсию в 3 раза
+                автоматизируют бизнес-процессы и увелич��вают к����нверсию в 3 раза
               </p>
 
               <div className="hero-buttons">
@@ -222,7 +211,7 @@ export default function Home() {
                   </div>
                   <div className="feature-content">
                     <h3 className="feature-title">Квантовая Аналитика</h3>
-                    <p className="feature-description">Продвинутые алгоритмы машинного обучен��я для предсказания трендов и оптимизации конверсий</p>
+                    <p className="feature-description">Продвинутые алгоритмы машинно��о обучен��я для предска��ания трендов и оптимизации конверсий</p>
                   </div>
                 </div>
 
@@ -316,7 +305,7 @@ export default function Home() {
               {/* Status Indicator */}
               <div className="status-indicator">
                 <div className="status-dot"></div>
-                <span className="status-text">Квантовые процессоры активны • Нейросеть обучается</span>
+                <span className="status-text">Квантовы�� процессоры активны • Нейросеть обучается</span>
               </div>
             </div>
           </div>
@@ -530,7 +519,7 @@ export default function Home() {
                 </svg>
               </div>
               <h3 className="feature-card-title">Живое общение</h3>
-              <p className="feature-card-description">Общается как человек</p>
+              <p className="feature-card-description">О��щается к��к человек</p>
               <div className="feature-details">
                 <div className="detail-item">
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -649,7 +638,7 @@ export default function Home() {
           {/* Statistics */}
           <div className="team-statistics">
             <div className="statistics-card">
-              <h3 className="statistics-title">Впечатляющие результаты ДЖАРВИС</h3>
+              <h3 className="statistics-title">��печатляющие результаты ДЖАРВИС</h3>
               <div className="statistics-grid">
                 <div className="stat-item">
                   <span className="stat-number">1</span>
@@ -727,7 +716,7 @@ export default function Home() {
                     <span>⭐⭐⭐⭐⭐</span>
                   </div>
                   <p className="review-text">
-                    "Создала сайт с Jarvis Intercoma для своего магазина одежды. Работать стало легче: бот помогает клиентам выбирать стиль, отвечает на вопросы, а я только получаю заказы. Очень довольна!"
+                    "Создала сайт с Jarvis Intercoma для своего магазина одежды. Работать стало легче: бот помогает клиентам выбирать стиль, отвеча��т на вопросы, а я только получаю заказы. Очень довольна!"
                   </p>
                   <div className="review-author">
                     <div className="author-info">
@@ -781,7 +770,7 @@ export default function Home() {
                     <span>⭐⭐⭐⭐⭐</span>
                   </div>
                   <p className="review-text">
-                    "Решил попробовать Jarvis для создания сайта магазина бытовой техники. Результат впечатлил: бот быстро и точно помогает клиентам выбрать товар."
+                    "Решил попробовать Jarvis для создания сайта магазина бытовой техники. Результат впечатлил: ��от быстро и точно помогает клиентам выбрать товар."
                   </p>
                   <div className="review-author">
                     <div className="author-info">
@@ -804,7 +793,7 @@ export default function Home() {
                   <div className="review-author">
                     <div className="author-info">
                       <span className="author-name">Васильева О.</span>
-                      <span className="author-location">Набережные Челны, Freelance</span>
+                      <span className="author-location">Набережные Ч��лны, Freelance</span>
                     </div>
                   </div>
                 </div>
@@ -925,7 +914,7 @@ export default function Home() {
                     <span>⭐⭐⭐⭐⭐</span>
                   </div>
                   <p className="review-text">
-                    "Я не разбираюсь в сайтах, но в Jarvis всё объяснили простыми словами. Сделал магазин, подключил оплату, и теперь я продаю в 3 странах. Рекомендую!"
+                    "Я не разбираюсь в сайтах, но в Jarvis всё объяснили простыми словами. Сделал магазин, ��одключил оплат��, и теперь я продаю в 3 странах. Рекомендую!"
                   </p>
                   <div className="review-author">
                     <div className="author-info">
@@ -957,6 +946,110 @@ export default function Home() {
 
         </div>
       </section>
+
+      {/* Footer */}
+      <footer className="footer">
+        <div className="footer-background"></div>
+        <div className="footer-container">
+          <div className="footer-content">
+
+            {/* Main Footer */}
+            <div className="footer-main">
+              <div className="footer-grid">
+
+                {/* Company Info */}
+                <div className="footer-column company-info">
+                  <div className="footer-logo">
+                    <span className="footer-logo-text">JARVIS</span>
+                  </div>
+                  <p className="footer-description">
+                    Создаем интеллектуальные веб-решения с AI-технологиями.
+                  </p>
+                </div>
+
+                {/* Services */}
+                <div className="footer-column">
+                  <h3 className="footer-column-title">Услуги</h3>
+                  <ul className="footer-links">
+                    <li><a href="#" className="footer-link">Создание сайтов</a></li>
+                    <li><a href="#" className="footer-link">ИИ-ассистенты</a></li>
+                    <li><a href="#" className="footer-link">Автоматизация</a></li>
+                    <li><a href="#" className="footer-link">Аналитика</a></li>
+                    <li><a href="#" className="footer-link">Интеграции</a></li>
+                  </ul>
+                </div>
+
+                {/* Solutions */}
+                <div className="footer-column">
+                  <h3 className="footer-column-title">Решения</h3>
+                  <ul className="footer-links">
+                    <li><a href="#" className="footer-link">Для стартапов</a></li>
+                    <li><a href="#" className="footer-link">Для бизнеса</a></li>
+                    <li><a href="#" className="footer-link">Для корпораций</a></li>
+                    <li><a href="#" className="footer-link">E-commerce</a></li>
+                    <li><a href="#" className="footer-link">Консультации</a></li>
+                  </ul>
+                </div>
+
+                {/* Support */}
+                <div className="footer-column">
+                  <h3 className="footer-column-title">Поддержка</h3>
+                  <ul className="footer-links">
+                    <li><a href="#" className="footer-link">Документация</a></li>
+                    <li><a href="#" className="footer-link">Руководства</a></li>
+                    <li><a href="#" className="footer-link">FAQ</a></li>
+                    <li><a href="#" className="footer-link">Техподдержка</a></li>
+                    <li><a href="#" className="footer-link">Статус системы</a></li>
+                  </ul>
+                </div>
+
+                {/* Contact */}
+                <div className="footer-column">
+                  <h3 className="footer-column-title">Контакты</h3>
+                  <div className="footer-contact">
+                    <div className="contact-item">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                        <polyline points="22,6 12,13 2,6"/>
+                      </svg>
+                      <span>info@jarvis.uz</span>
+                    </div>
+                    <div className="contact-item">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                      </svg>
+                      <span>+998 (90) 123-45-67</span>
+                    </div>
+                    <div className="contact-item">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                        <circle cx="12" cy="10" r="3"/>
+                      </svg>
+                      <span>Та��кент, Узбекистан</span>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            {/* Footer Bottom */}
+            <div className="footer-bottom">
+              <div className="footer-bottom-content">
+                <div className="footer-copyright">
+                  <span>&copy; 2024 JARVIS. Все права защищены.</span>
+                </div>
+                <div className="footer-legal">
+                  <a href="#" className="legal-link">Политика конфиденциальности</a>
+                  <a href="#" className="legal-link">Условия использования</a>
+                  <a href="#" className="legal-link">Соглашение</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </footer>
 
     </>
   );
