@@ -17,23 +17,23 @@ function Scene3D({ className }: Scene3DProps) {
       >
         <Suspense fallback={null}>
           {/* Lighting */}
-          <ambientLight intensity={0.4} />
+          <ambientLight intensity={0.6} />
           <directionalLight
-            position={[10, 10, 5]}
-            intensity={1}
+            position={[5, 5, 5]}
+            intensity={1.5}
             color="#ffffff"
             castShadow
           />
           <directionalLight
-            position={[-10, -10, -5]}
-            intensity={0.3}
+            position={[-5, -5, -5]}
+            intensity={0.5}
             color="#00ffff"
           />
-          
+
           {/* Rim lighting for cyber effect */}
           <pointLight
-            position={[0, 0, 10]}
-            intensity={0.5}
+            position={[0, 0, 8]}
+            intensity={0.8}
             color="#ff00ff"
           />
           
