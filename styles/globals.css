@@ -2437,29 +2437,24 @@ body {
 /* Mobile Large (390px - 575px) */
 @media (min-width: 390px) and (max-width: 575px) {
   .navbar-content {
-    flex-direction: column;
-    gap: 0.75rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
     padding: 0.75rem 1rem;
   }
 
   .navbar-logo {
-    align-self: flex-start;
+    flex-shrink: 0;
   }
 
   .navbar-search {
-    width: 100%;
-    order: 3;
+    display: none; /* Скрываем поиск на мобильном */
   }
 
   .navbar-cart,
   .navbar-auth {
-    position: absolute;
-    top: 0.75rem;
-    right: 1rem;
-  }
-
-  .navbar-auth {
-    right: 6rem;
+    flex-shrink: 0;
   }
 
   .hero-title {
