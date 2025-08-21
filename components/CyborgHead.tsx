@@ -63,17 +63,18 @@ function CyborgHead({ position = [0, 0, 0], scale = 1 }: CyborgHeadProps) {
             // Bright white glowing eyes
             child.material.color = new THREE.Color(0xffffff);
             child.material.emissive = new THREE.Color(0xffffff);
-            child.material.emissiveIntensity = 2.0;
+            child.material.emissiveIntensity = 3.0;
             child.material.metalness = 0.0;
             child.material.roughness = 0.0;
             child.material.transparent = false;
+            child.material.opacity = 1.0;
           } else {
-            // Black face/body with slight metallic reflection
-            child.material.color = new THREE.Color(0x000000);
+            // Black face/body
+            child.material.color = new THREE.Color(0x111111); // Very dark gray instead of pure black
             child.material.emissive = new THREE.Color(0x000000);
             child.material.emissiveIntensity = 0.0;
-            child.material.metalness = 0.9;
-            child.material.roughness = 0.1;
+            child.material.metalness = 0.8;
+            child.material.roughness = 0.2;
           }
 
           child.material.envMapIntensity = 1.0;
