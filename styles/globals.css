@@ -40,9 +40,9 @@ body {
   left: 0;
   right: 0;
   z-index: 1000;
-  background: rgba(255, 255, 255, 0.95);
+  background: rgba(0, 0, 0, 0.95);
   backdrop-filter: blur(20px);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .navbar-container {
@@ -66,7 +66,7 @@ body {
 .logo-text {
   font-size: 1.5rem;
   font-weight: 900;
-  color: #000000;
+  color: #ffffff;
   letter-spacing: -1px;
   font-family: 'Inter', sans-serif;
   transition: all 0.3s ease;
@@ -92,7 +92,7 @@ body {
 .search-icon {
   position: absolute;
   left: 1rem;
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(255, 255, 255, 0.5);
   pointer-events: none;
   z-index: 1;
 }
@@ -100,10 +100,10 @@ body {
 .search-input {
   width: 100%;
   padding: 0.75rem 1rem 0.75rem 2.5rem;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 25px;
-  background: rgba(255, 255, 255, 0.8);
-  color: #000000;
+  background: rgba(0, 0, 0, 0.8);
+  color: #ffffff;
   font-size: 0.9rem;
   font-weight: 400;
   transition: all 0.3s ease;
@@ -111,13 +111,13 @@ body {
 }
 
 .search-input::placeholder {
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .search-input:focus {
-  border-color: rgba(0, 0, 0, 0.3);
-  background: rgba(255, 255, 255, 1);
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border-color: rgba(255, 255, 255, 0.3);
+  background: rgba(0, 0, 0, 1);
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
 }
 
 .navbar-auth {
@@ -127,9 +127,9 @@ body {
 }
 
 .auth-btn {
-  background: rgba(0, 0, 0, 0.08);
-  color: #000000;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.08);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.1);
   padding: 0.6rem 1.5rem;
   border-radius: 20px;
   font-size: 0.9rem;
@@ -147,7 +147,7 @@ body {
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.05), transparent);
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.05), transparent);
   transition: left 0.5s ease;
 }
 
@@ -156,10 +156,10 @@ body {
 }
 
 .auth-btn:hover {
-  background: rgba(0, 0, 0, 0.12);
-  border-color: rgba(0, 0, 0, 0.2);
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.2);
   transform: translateY(-1px);
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
 }
 
 /* Hero Section - Ultra Premium */
