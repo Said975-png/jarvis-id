@@ -208,7 +208,7 @@ export default function Home() {
                 <span className="highlight-text"> Решения</span>
               </h2>
               <p className="capabilities-subtitle">
-                Трансформируем ваш бизнес с помощью передовых AI-технологий, создавая уникальные цифровые экосистемы для максимальной эффективности
+                Трансформируем ваш бизнес с помощью передовых AI-технологий, создавая уникальные цифровые экосистемы для максимальной эффективност��
               </p>
 
               <div className="capabilities-features">
@@ -478,7 +478,7 @@ export default function Home() {
                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
                       <path d="M13.5 4.5L6 12L2.5 8.5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                     </svg>
-                    <span>Индивидуаль��ые решения</span>
+                    <span>Индивидуальные решения</span>
                   </div>
                   <div className="feature-item">
                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
@@ -489,7 +489,7 @@ export default function Home() {
                 </div>
               </div>
               <button className="pricing-btn max-btn">
-                <span>Выбрать Max</span>
+                <span>Вы��рать Max</span>
               </button>
             </div>
           </div>
@@ -502,129 +502,202 @@ export default function Home() {
         </div>
       </section>
 
-      {/* JARVIS AI Section */}
-      <section className="jarvis-section">
-        <div className="jarvis-background"></div>
-        <div className="jarvis-container">
-          <div className="jarvis-layout">
-            <div className="jarvis-content">
-              <div className="jarvis-badge">
-                <span className="badge-dot"></span>
-                <span>Искусственный интеллект</span>
-              </div>
-              <h2 className="jarvis-title">
-                ДЖАРВИС заменяет
-                <span className="highlight-text"> целую команду</span><br />
-                продавцов-консультантов
-              </h2>
-              <p className="jarvis-subtitle">
-                Один умный ассистент выполняет работу десятков сотрудников. ДЖАРВИС ведет естественные диалоги с клиентами, предлагает товары, консультирует и находит лучшие предложения 24 часа в сутки без перерывов и выходных.
-              </p>
+      {/* Economic Impact Section */}
+      <section className="economic-section">
+        <div className="economic-background"></div>
+        <div className="economic-container">
+          {/* Header */}
+          <div className="economic-header">
+            <div className="economic-badge">
+              <span className="badge-dot"></span>
+              <span>Революция в продажах</span>
+            </div>
+            <h2 className="economic-title">
+              <span className="highlight-text">ДЖАРВИС</span> экономит вам<br />
+              до <span className="gradient-text">85% бюджета</span> на персонал
+            </h2>
+            <p className="economic-subtitle">
+              Замените целый отдел продаж одним умным ассистентом. Посчитайте свою экономию прямо сейч��с!
+            </p>
+          </div>
 
-              <div className="jarvis-features">
-                <div className="jarvis-feature-item">
-                  <div className="jarvis-feature-icon">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                      <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
-                    </svg>
-                  </div>
-                  <div className="jarvis-feature-content">
-                    <h3 className="jarvis-feature-title">Естественные диалоги</h3>
-                    <p className="jarvis-feature-description">Ведет беседы как живой консультант, понимает контекст и эмоции клиентов</p>
-                  </div>
-                </div>
-
-                <div className="jarvis-feature-item">
-                  <div className="jarvis-feature-icon">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                      <circle cx="11" cy="11" r="8"/>
-                      <path d="m21 21-4.35-4.35"/>
-                    </svg>
-                  </div>
-                  <div className="jarvis-feature-content">
-                    <h3 className="jarvis-feature-title">Умный поиск предложений</h3>
-                    <p className="jarvis-feature-description">Мгновенно находит лучшие товары и услуги под потребности каждого клиента</p>
-                  </div>
-                </div>
-
-                <div className="jarvis-feature-item">
-                  <div className="jarvis-feature-icon">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                      <circle cx="12" cy="12" r="10"/>
-                      <polyline points="12,6 12,12 16,14"/>
-                    </svg>
-                  </div>
-                  <div className="jarvis-feature-content">
-                    <h3 className="jarvis-feature-title">Работает 24/7</h3>
-                    <p className="jarvis-feature-description">Никогда не устает, не берет отпуск и готов помочь клиентам в любое время</p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="jarvis-buttons">
-                <button className="btn-primary">
-                  <span>Запустить ДЖАРВИС</span>
-                  <div className="btn-shine"></div>
-                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                    <path d="M3.5 8H12.5M12.5 8L8.5 4M12.5 8L8.5 12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+          {/* Comparison Grid */}
+          <div className="comparison-grid">
+            {/* Before - Traditional Team */}
+            <div className="comparison-card traditional">
+              <div className="comparison-header">
+                <div className="comparison-icon traditional-icon">
+                  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                    <circle cx="9" cy="7" r="4"/>
+                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
                   </svg>
-                </button>
-                <button className="btn-secondary">
-                  <span>Посмотреть демо</span>
-                  <div className="btn-ripple"></div>
-                </button>
+                </div>
+                <h3 className="comparison-title">Обычная команда</h3>
+                <p className="comparison-subtitle">Традиционный подход</p>
+              </div>
+
+              <div className="cost-breakdown">
+                <div className="cost-item">
+                  <span className="cost-label">5 консультантов</span>
+                  <span className="cost-value">15,000,000 сум/мес</span>
+                </div>
+                <div className="cost-item">
+                  <span className="cost-label">2 супервайзера</span>
+                  <span className="cost-value">8,000,000 сум/мес</span>
+                </div>
+                <div className="cost-item">
+                  <span className="cost-label">Офис + оборудование</span>
+                  <span className="cost-value">3,000,000 сум/мес</span>
+                </div>
+                <div className="cost-item">
+                  <span className="cost-label">Обучение персонала</span>
+                  <span className="cost-value">2,000,000 сум/мес</span>
+                </div>
+                <div className="cost-total">
+                  <span className="total-label">Итого в месяц:</span>
+                  <span className="total-value">28,000,000 сум</span>
+                </div>
+              </div>
+
+              <div className="limitations">
+                <div className="limitation-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <circle cx="12" cy="12" r="10"/>
+                    <line x1="15" y1="9" x2="9" y2="15"/>
+                    <line x1="9" y1="9" x2="15" y2="15"/>
+                  </svg>
+                  <span>Работает только 8 часов</span>
+                </div>
+                <div className="limitation-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <circle cx="12" cy="12" r="10"/>
+                    <line x1="15" y1="9" x2="9" y2="15"/>
+                    <line x1="9" y1="9" x2="15" y2="15"/>
+                  </svg>
+                  <span>Больничные и отпуска</span>
+                </div>
+                <div className="limitation-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <circle cx="12" cy="12" r="10"/>
+                    <line x1="15" y1="9" x2="9" y2="15"/>
+                    <line x1="9" y1="9" x2="15" y2="15"/>
+                  </svg>
+                  <span>Человеческий фактор</span>
+                </div>
               </div>
             </div>
 
-            <div className="jarvis-visual">
-              <div className="jarvis-3d-main">
-                <JarvisScene3D className="jarvis-scene-container" />
+            {/* After - JARVIS */}
+            <div className="comparison-card jarvis">
+              <div className="comparison-header">
+                <div className="comparison-icon jarvis-icon">
+                  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                    <path d="M2 17l10 5 10-5"/>
+                    <path d="M2 12l10 5 10-5"/>
+                  </svg>
+                </div>
+                <h3 className="comparison-title">ДЖАРВИС AI</h3>
+                <p className="comparison-subtitle">Умное решение</p>
               </div>
 
-              {/* Enhanced Performance Metrics */}
-              <div className="jarvis-performance-display">
-                <div className="metric-item">
-                  <div className="metric-icon">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                      <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
-                    </svg>
-                  </div>
-                  <div className="metric-content">
-                    <span className="metric-value">15x</span>
-                    <span className="metric-label">Быстрее команды</span>
-                  </div>
+              <div className="cost-breakdown">
+                <div className="cost-item savings">
+                  <span className="cost-label">ДЖАРВИС платформа</span>
+                  <span className="cost-value">4,000,000 сум/мес</span>
                 </div>
-                <div className="metric-item">
-                  <div className="metric-icon">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                      <circle cx="12" cy="12" r="3"/>
-                      <path d="M12 1v6m0 6v6m11-7h-6m-6 0H1"/>
-                    </svg>
-                  </div>
-                  <div className="metric-content">
-                    <span className="metric-value">500+</span>
-                    <span className="metric-label">Клиентов в час</span>
-                  </div>
+                <div className="cost-item zero">
+                  <span className="cost-label">Персонал</span>
+                  <span className="cost-value">0 сум/мес</span>
                 </div>
-                <div className="metric-item">
-                  <div className="metric-icon">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                      <circle cx="12" cy="12" r="10"/>
-                      <polyline points="12,6 12,12 16,14"/>
-                    </svg>
-                  </div>
-                  <div className="metric-content">
-                    <span className="metric-value">98%</span>
-                    <span className="metric-label">Удовлетворенность</span>
-                  </div>
+                <div className="cost-item zero">
+                  <span className="cost-label">Офис</span>
+                  <span className="cost-value">0 сум/мес</span>
+                </div>
+                <div className="cost-item zero">
+                  <span className="cost-label">Обучение</span>
+                  <span className="cost-value">0 сум/мес</span>
+                </div>
+                <div className="cost-total savings-total">
+                  <span className="total-label">Итого в месяц:</span>
+                  <span className="total-value">4,000,000 сум</span>
                 </div>
               </div>
 
-              {/* Status Indicator */}
-              <div className="status-indicator">
-                <div className="status-dot"></div>
-                <span className="status-text">ДЖАРВИС активен • Обучение в реальном времени</span>
+              <div className="advantages">
+                <div className="advantage-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <polyline points="20,6 9,17 4,12"/>
+                  </svg>
+                  <span>Работает 24/7/365</span>
+                </div>
+                <div className="advantage-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <polyline points="20,6 9,17 4,12"/>
+                  </svg>
+                  <span>Никогда не устает</span>
+                </div>
+                <div className="advantage-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <polyline points="20,6 9,17 4,12"/>
+                  </svg>
+                  <span>Постоянно обучается</span>
+                </div>
               </div>
+
+              <div className="jarvis-visual-mini">
+                <JarvisScene3D className="jarvis-scene-mini" />
+              </div>
+            </div>
+          </div>
+
+          {/* Savings Calculator */}
+          <div className="savings-display">
+            <div className="savings-card">
+              <h3 className="savings-title">Ваша экономия с ДЖАРВИС</h3>
+              <div className="savings-metrics">
+                <div className="savings-metric">
+                  <span className="metric-value">24,000,000</span>
+                  <span className="metric-label">сум экономии в месяц</span>
+                </div>
+                <div className="savings-metric">
+                  <span className="metric-value">288,000,000</span>
+                  <span className="metric-label">сум экономии в год</span>
+                </div>
+                <div className="savings-metric">
+                  <span className="metric-value">85%</span>
+                  <span className="metric-label">снижение расходов</span>
+                </div>
+              </div>
+
+              <div className="roi-indicator">
+                <span className="roi-label">Окупаемост��:</span>
+                <span className="roi-value">За 2 недели</span>
+              </div>
+
+              <button className="savings-cta">
+                <span>Рассчитать мою экономию</span>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <path d="M3.5 8H12.5M12.5 8L8.5 4M12.5 8L8.5 12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          {/* Bottom CTA */}
+          <div className="economic-cta">
+            <h3 className="cta-title">Готовы начать экономить?</h3>
+            <p className="cta-subtitle">Запустите ДЖАРВИС сегодня и получите первый месяц бесплатно</p>
+            <div className="cta-buttons">
+              <button className="btn-primary">
+                <span>Запустить ДЖАРВИС</span>
+                <div className="btn-shine"></div>
+              </button>
+              <button className="btn-secondary">
+                <span>Демо за 5 минут</span>
+              </button>
             </div>
           </div>
         </div>
