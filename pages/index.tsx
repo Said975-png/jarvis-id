@@ -85,7 +85,6 @@ export default function Home() {
 
           <ModernHeroElements />
 
-          {/* Left Elements */}
           <div className="floating-left-elements">
             <div className="left-item">
               <div className="stat-card">
