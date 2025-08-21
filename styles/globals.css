@@ -4509,3 +4509,414 @@ body {
     width: 400px;
   }
 }
+
+/* Economic Impact Section */
+.economic-section {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #000000 0%, #0a0a0a 50%, #000000 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  padding: 6rem 0;
+}
+
+.economic-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at 30% 20%, rgba(0, 255, 255, 0.03) 0%, transparent 50%),
+              radial-gradient(circle at 80% 80%, rgba(255, 215, 0, 0.03) 0%, transparent 50%),
+              radial-gradient(circle at 60% 50%, rgba(50, 205, 50, 0.02) 0%, transparent 50%);
+}
+
+.economic-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  position: relative;
+  z-index: 10;
+}
+
+.economic-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.economic-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1.5rem;
+  background: rgba(50, 205, 50, 0.08);
+  border: 1px solid rgba(50, 205, 50, 0.2);
+  border-radius: 30px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 2rem;
+  backdrop-filter: blur(20px);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.economic-title {
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  margin-bottom: 1.5rem;
+  color: #ffffff;
+  line-height: 1.1;
+}
+
+.economic-subtitle {
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.5;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.comparison-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  margin-bottom: 4rem;
+}
+
+.comparison-card {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 24px;
+  padding: 2.5rem;
+  backdrop-filter: blur(20px);
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.comparison-card.traditional {
+  border-color: rgba(255, 99, 99, 0.2);
+}
+
+.comparison-card.jarvis {
+  border-color: rgba(50, 205, 50, 0.3);
+  background: rgba(50, 205, 50, 0.03);
+}
+
+.comparison-card.jarvis::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(50, 205, 50, 0.05), transparent);
+  animation: economicScan 4s ease-in-out infinite;
+}
+
+@keyframes economicScan {
+  0% { left: -100%; }
+  100% { left: 100%; }
+}
+
+.comparison-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.comparison-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+  transition: all 0.3s ease;
+}
+
+.traditional-icon {
+  background: rgba(255, 99, 99, 0.1);
+  color: #ff6363;
+}
+
+.jarvis-icon {
+  background: rgba(50, 205, 50, 0.1);
+  color: #32cd32;
+}
+
+.comparison-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+
+.comparison-subtitle {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.6);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.cost-breakdown {
+  margin-bottom: 2rem;
+}
+
+.cost-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.cost-item.savings {
+  background: rgba(50, 205, 50, 0.05);
+  border: 1px solid rgba(50, 205, 50, 0.1);
+}
+
+.cost-item.zero {
+  background: rgba(50, 205, 50, 0.03);
+  position: relative;
+}
+
+.cost-item.zero::after {
+  content: 'БЕСПЛАТНО';
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(50, 205, 50, 0.2);
+  color: #32cd32;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+
+.cost-label {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.cost-value {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.cost-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  margin-top: 1rem;
+}
+
+.savings-total {
+  background: rgba(50, 205, 50, 0.08);
+  border-color: rgba(50, 205, 50, 0.2);
+}
+
+.total-label {
+  font-size: 1rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.total-value {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+.limitations, .advantages {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.limitation-item, .advantage-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.limitation-item svg {
+  color: #ff6363;
+}
+
+.advantage-item svg {
+  color: #32cd32;
+}
+
+.jarvis-visual-mini {
+  height: 150px;
+  width: 100%;
+  margin-top: 1.5rem;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.jarvis-scene-mini {
+  width: 100%;
+  height: 100%;
+}
+
+.savings-display {
+  margin-bottom: 4rem;
+}
+
+.savings-card {
+  background: linear-gradient(135deg, rgba(50, 205, 50, 0.1) 0%, rgba(50, 205, 50, 0.05) 100%);
+  border: 1px solid rgba(50, 205, 50, 0.3);
+  border-radius: 24px;
+  padding: 3rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.savings-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 2rem;
+}
+
+.savings-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.savings-metric {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.savings-metric .metric-value {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #32cd32;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+
+.savings-metric .metric-label {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.7);
+  text-align: center;
+}
+
+.roi-indicator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.roi-label {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.roi-value {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #32cd32;
+}
+
+.savings-cta {
+  background: linear-gradient(135deg, #32cd32 0%, #228b22 100%);
+  border: none;
+  border-radius: 12px;
+  padding: 1rem 2rem;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin: 0 auto;
+}
+
+.savings-cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(50, 205, 50, 0.3);
+}
+
+.economic-cta {
+  text-align: center;
+}
+
+.cta-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.cta-subtitle {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 2rem;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Responsive Design for Economic Section */
+@media (max-width: 1024px) {
+  .comparison-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .savings-metrics {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .economic-title {
+    font-size: 2.5rem;
+  }
+
+  .comparison-card {
+    padding: 2rem;
+  }
+
+  .savings-card {
+    padding: 2rem;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+}
