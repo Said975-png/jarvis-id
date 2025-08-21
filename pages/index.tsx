@@ -76,20 +76,6 @@ export default function Home() {
         <div className="hero-container">
           <div className="hero-layout">
             <div className="hero-content">
-              <div className="hero-stats">
-                <div className="stat-item">
-                  <div className="stat-number">250+</div>
-                  <div className="stat-label">Projects Completed</div>
-                </div>
-                <div className="stat-item">
-                  <div className="stat-number">99%</div>
-                  <div className="stat-label">Client Satisfaction</div>
-                </div>
-                <div className="stat-item">
-                  <div className="stat-number">24/7</div>
-                  <div className="stat-label">Support Available</div>
-                </div>
-              </div>
             </div>
             <div className="hero-3d">
               <Scene3D className="scene3d-container" />
@@ -125,7 +111,7 @@ export default function Home() {
                 <span>AI-Powered Platform</span>
               </div>
               <h2 className="capabilities-title">
-                Возможности нашей
+                В��зможности нашей
                 <span className="highlight-text"> Платформы</span>
               </h2>
               <p className="capabilities-subtitle">
