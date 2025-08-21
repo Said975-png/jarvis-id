@@ -47,37 +47,13 @@ function CyborgHead({ position = [0, 0, 0], scale = 1 }: CyborgHeadProps) {
     if (scene) {
       console.log('GLB model loaded successfully');
 
-      // Simple approach: make everything black except eyes
+      // Keep original colors and materials, just enhance lighting
       scene.traverse((child: any) => {
         if (child.isMesh && child.material) {
-          // Clone material to avoid affecting other instances
-          child.material = child.material.clone();
-
-          // Get original color to determine what this part is
-          const originalColor = child.material.color;
-
-          // If the original color is yellow/bright, it's likely eyes
-          const isEye = (originalColor.r > 0.8 && originalColor.g > 0.8 && originalColor.b < 0.6);
-
-          if (isEye) {
-            // Bright white glowing eyes
-            child.material.color = new THREE.Color(0xffffff);
-            child.material.emissive = new THREE.Color(0xffffff);
-            child.material.emissiveIntensity = 3.0;
-            child.material.metalness = 0.0;
-            child.material.roughness = 0.0;
-            child.material.transparent = false;
-            child.material.opacity = 1.0;
-          } else {
-            // Black face/body
-            child.material.color = new THREE.Color(0x111111); // Very dark gray instead of pure black
-            child.material.emissive = new THREE.Color(0x000000);
-            child.material.emissiveIntensity = 0.0;
-            child.material.metalness = 0.8;
-            child.material.roughness = 0.2;
-          }
-
-          child.material.envMapIntensity = 1.0;
+          // Enhance metallic properties while preserving original colors
+          child.material.metalness = Math.max(child.material.metalness || 0, 0.7);
+          child.material.roughness = Math.min(child.material.roughness || 1, 0.3);
+          child.material.envMapIntensity = 1.2;
         }
       });
     }
