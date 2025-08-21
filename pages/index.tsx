@@ -83,7 +83,33 @@ export default function Home() {
             <span className="bg-jarvis">JARVIS</span>
           </div>
 
-          <ModernHeroElements />
+          {/* Hero Content */}
+          <div className="hero-content">
+            <div className="hero-text">
+              <h1 className="hero-title">
+                Создаем сайты
+                <br />
+                <span className="gradient-text">с искусственным</span>
+                <br />
+                интеллектом
+              </h1>
+              <p className="hero-description">
+                Современная веб-разработка с интеграцией ChatGPT,
+                автоматизацией процессов и персонализацией контента
+              </p>
+              <div className="hero-buttons">
+                <button className="btn btn-primary">
+                  Начать проект
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                  </svg>
+                </button>
+                <button className="btn btn-secondary">
+                  Посмотреть примеры
+                </button>
+              </div>
+            </div>
+          </div>
 
           <div className="floating-left-elements">
             <div className="left-item">
