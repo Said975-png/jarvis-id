@@ -5114,10 +5114,11 @@ body {
 }
 
 .footer-grid {
-  display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1fr;
+  display: flex;
+  flex-wrap: wrap;
   gap: 2rem;
   align-items: flex-start;
+  justify-content: space-between;
 }
 
 .footer-column {
