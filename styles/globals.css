@@ -693,10 +693,7 @@ body {
 
 /* Orbit Rings */
 .orbit-ring {
-  position: absolute;
-  border: 1px solid rgba(0, 255, 255, 0.2);
-  border-radius: 50%;
-  animation: rotateOrbit 20s linear infinite;
+  display: none !important;
 }
 
 .ring-1 {
