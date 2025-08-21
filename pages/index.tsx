@@ -223,7 +223,7 @@ export default function Home() {
                     </svg>
                   </div>
                   <div className="feature-content">
-                    <h3 className="feature-title">��ейро-Персонализация</h3>
+                    <h3 className="feature-title">Нейро-Персонализация</h3>
                     <p className="feature-description">Динамическая адаптация контента под каждого пользователя в режиме реального времени</p>
                   </div>
                 </div>
@@ -326,7 +326,7 @@ export default function Home() {
               <span className="gradient-text"> план</span>
             </h2>
             <p className="pricing-subtitle">
-              Гибкие тарифные планы для любого размера би��неса - от стартапов до крупных корпораций
+              Гибкие тарифные планы для любого размера бизнеса - от стартапов до крупных корпораций
             </p>
           </div>
 
@@ -638,7 +638,7 @@ export default function Home() {
           {/* Statistics */}
           <div className="team-statistics">
             <div className="statistics-card">
-              <h3 className="statistics-title">��печатляющие результаты ДЖАРВИС</h3>
+              <h3 className="statistics-title">��пе��атляющие результаты ДЖАРВИС</h3>
               <div className="statistics-grid">
                 <div className="stat-item">
                   <span className="stat-number">1</span>
@@ -716,7 +716,7 @@ export default function Home() {
                     <span>⭐⭐⭐⭐⭐</span>
                   </div>
                   <p className="review-text">
-                    "Создала сайт с Jarvis Intercoma для своего магазина одежды. Работать стало легче: бот помогает клиентам выбирать стиль, отвеча��т на вопросы, а я только получаю заказы. Очень довольна!"
+                    "Создала сайт с Jarvis Intercoma для своего магазина одежды. Работать стало легче: бот помогает клиентам выбирать стиль, отвеча���� на вопросы, а я только получаю заказы. Очень довольна!"
                   </p>
                   <div className="review-author">
                     <div className="author-info">
@@ -757,7 +757,7 @@ export default function Home() {
                   <div className="review-author">
                     <div className="author-info">
                       <span className="author-name">Алексеева Л.</span>
-                      <span className="author-location">��азань, Freelance</span>
+                      <span className="author-location">Казань, Freelance</span>
                     </div>
                   </div>
                 </div>
@@ -914,7 +914,7 @@ export default function Home() {
                     <span>⭐⭐⭐⭐⭐</span>
                   </div>
                   <p className="review-text">
-                    "Я не разбираюсь в сайтах, но в Jarvis всё объяснили простыми словами. Сделал магазин, ��одключил оплат��, и теперь я продаю в 3 странах. Рекомендую!"
+                    "Я не разбираюсь в сайтах, но в Jarvis всё объяснили простыми словами. С��елал магазин, ��одключил оплат��, и теперь я продаю в 3 странах. Рекомендую!"
                   </p>
                   <div className="review-author">
                     <div className="author-info">
@@ -931,7 +931,7 @@ export default function Home() {
                     <span>⭐⭐⭐⭐⭐</span>
                   </div>
                   <p className="review-text">
-                    "Создала сайт с Jarvis Intercoma для своего магазина одежды. Работать ��тало легче: бот помогает клиентам выбирать стиль, отвечает на вопросы, а я только получаю заказы. Очень довольна!"
+                    "Создала сайт с Jarvis Intercoma для своего магазина одежды. Работать стало легче: бот помогает клиентам выбирать стиль, отвечает на вопросы, а я только получаю заказы. Очень довольна!"
                   </p>
                   <div className="review-author">
                     <div className="author-info">
@@ -997,10 +997,9 @@ export default function Home() {
                   <h3 className="footer-column-title">Поддержка</h3>
                   <ul className="footer-links">
                     <li><a href="#" className="footer-link">Документация</a></li>
-                    <li><a href="#" className="footer-link">Руководства</a></li>
-                    <li><a href="#" className="footer-link">FAQ</a></li>
-                    <li><a href="#" className="footer-link">Техподдержка</a></li>
-                    <li><a href="#" className="footer-link">Статус системы</a></li>
+                    <li><a href="#" className="footer-link">API</a></li>
+                    <li><a href="#" className="footer-link">Статус</a></li>
+                    <li><a href="#" className="footer-link">Безопасность</a></li>
                   </ul>
                 </div>
 
