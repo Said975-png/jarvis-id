@@ -72,26 +72,12 @@ export default function Home() {
           <div className="gradient-orb orb-1"></div>
           <div className="gradient-orb orb-2"></div>
           <div className="gradient-orb orb-3"></div>
-
-          {/* Animated Particles */}
-          <div className="particles-container">
-            {Array.from({ length: 50 }, (_, i) => (
-              <div key={i} className={`particle particle-${i % 5}`}></div>
-            ))}
-          </div>
-
-          {/* Scanning Lines */}
-          <div className="scan-lines">
-            <div className="scan-line scan-1"></div>
-            <div className="scan-line scan-2"></div>
-            <div className="scan-line scan-3"></div>
-          </div>
         </div>
         <div className="hero-container">
           <div className="hero-layout">
             <div className="hero-side-text left-text">
               <div className="creative-text">
-                <span className="text-accent glitch" data-text="AI">AI</span>
+                <span className="text-accent">AI</span>
                 <span className="text-main">POWERED</span>
                 <span className="text-sub">Innovation</span>
               </div>
@@ -101,13 +87,6 @@ export default function Home() {
             </div>
             <div className="hero-3d">
               <Scene3D className="scene3d-container" />
-
-              {/* Pulsing Rings around 3D Model */}
-              <div className="pulse-rings">
-                <div className="pulse-ring ring-1"></div>
-                <div className="pulse-ring ring-2"></div>
-                <div className="pulse-ring ring-3"></div>
-              </div>
 
               {/* Decorative Elements */}
               <div className="decorative-element elem-1">
@@ -122,7 +101,7 @@ export default function Home() {
             </div>
             <div className="hero-side-text right-text">
               <div className="creative-text">
-                <span className="text-accent glitch" data-text="NEXT">NEXT</span>
+                <span className="text-accent">NEXT</span>
                 <span className="text-main">LEVEL</span>
                 <span className="text-sub">Technology</span>
               </div>
