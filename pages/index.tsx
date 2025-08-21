@@ -391,7 +391,7 @@ export default function Home() {
                   <span className="price-amount">4,000,000</span>
                   <span className="price-currency">сумм</span>
                 </div>
-                <p className="plan-ideal">Лучший выбор для растущего бизнеса</p>
+                <p className="plan-ideal">Лучший выбор для растущего ��изнеса</p>
               </div>
               <div className="pricing-features">
                 <div className="feature-list">
@@ -436,7 +436,7 @@ export default function Home() {
             <div className="pricing-card">
               <div className="pricing-card-header">
                 <h3 className="plan-name">Max</h3>
-                <p className="plan-description">Премиум решение</p>
+                <p className="plan-description">Премиум решен��е</p>
                 <div className="plan-price">
                   <span className="price-amount">5,000,000</span>
                   <span className="price-currency">сумм</span>
@@ -806,7 +806,7 @@ export default function Home() {
                     <span>⭐⭐⭐⭐⭐</span>
                   </div>
                   <p className="review-text">
-                    "Создала сайт для своего магазина с Jarvis. Клиенты часто обращаются за помощью, и бот всегда подскажет им нужную информацию."
+                    "Соз��ала сайт для своего магазина с Jarvis. Клиенты часто обращаются за помощью, и бот всегда подскажет им нужную информацию."
                   </p>
                   <div className="review-author">
                     <div className="author-info">
@@ -878,7 +878,7 @@ export default function Home() {
                     <span>⭐⭐⭐⭐⭐</span>
                   </div>
                   <p className="review-text">
-                    "Мне сделали сайт с Jarvis Intercoma под мою студию украшений. Красиво, удобно, и всё автоматизировано. Теперь я занимаюсь только заказами, а не сижу целый день в переписках с клиентами."
+                    "Мне сделали сайт с Jarvis Intercoma под мою студию украшений. Красиво, удобно, и всё автоматизировано. Теперь я занимаюсь только заказам��, а не сижу целый день в переписках с клиентами."
                   </p>
                   <div className="review-author">
                     <div className="author-info">
@@ -928,7 +928,7 @@ export default function Home() {
               <div className="review-card">
                 <div className="review-content">
                   <div className="stars">
-                    <span>⭐⭐⭐⭐⭐</span>
+                    <span>��⭐⭐⭐⭐</span>
                   </div>
                   <p className="review-text">
                     "Создала сайт с Jarvis Intercoma для своего магазина одежды. Работать стало легче: бот помогает клиентам выбирать стиль, отвечает на вопросы, а я только получаю заказы. Очень довольна!"
@@ -948,7 +948,7 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="footer">
+      <footer className="new-footer">
         <div className="footer-background"></div>
         <div className="footer-container">
           <div className="footer-content">
