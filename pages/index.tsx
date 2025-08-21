@@ -375,8 +375,8 @@ export default function Home() {
                     </svg>
                   </div>
                   <div className="feature-content">
-                    <h3 className="feature-title">Персонализация</h3>
-                    <p className="feature-description">Ад��птивный контент �� рекомендации на основе по��е��ения пользователей</p>
+                    <h3 className="feature-title">Голографические Интерфейсы</h3>
+                    <p className="feature-description">Ад��пти��ный контент �� рекомендации на основе по��е��ения пользователей</p>
                   </div>
                 </div>
               </div>
