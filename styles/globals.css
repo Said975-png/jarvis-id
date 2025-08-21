@@ -2476,8 +2476,9 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
-    flex-wrap: nowrap;
+    padding: 0.75rem 1rem;
+    width: 100%;
+    box-sizing: border-box;
   }
 
   .navbar-logo {
@@ -2489,31 +2490,40 @@ body {
   }
 
   .navbar-cart {
-    order: 2;
-    margin-left: auto;
-    margin-right: 0.5rem;
+    margin-right: 0.75rem;
   }
 
   .navbar-auth {
-    order: 3;
     flex: 0 0 auto;
   }
 
   .hero-title {
-    font-size: 2.2rem;
-    line-height: 1.1;
+    font-size: 2rem;
+    line-height: 1.2;
     margin-bottom: 1rem;
+    padding: 0 1rem;
+    word-wrap: break-word;
   }
 
   .hero-subtitle {
-    font-size: 1rem;
+    font-size: 0.95rem;
     line-height: 1.5;
     margin-bottom: 2rem;
+    padding: 0 1rem;
+    max-width: 100%;
   }
 
   .hero-container {
-    padding: 2rem 1rem;
+    padding: 1.5rem 0;
     text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .hero-content {
+    padding: 0 1rem;
+    max-width: 100%;
+    box-sizing: border-box;
   }
 }
 
