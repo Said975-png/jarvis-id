@@ -5209,9 +5209,31 @@ body {
   color: rgba(255, 255, 255, 0.5);
 }
 
-.footer-legal {
+.footer-actions {
   display: flex;
   gap: 2rem;
+  align-items: center;
+}
+
+.chat-support,
+.language-selector {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.chat-support:hover,
+.language-selector:hover {
+  color: #ffffff;
+}
+
+.chat-support svg:last-child {
+  color: #00ff00;
+  animation: statusPulse 2s ease-in-out infinite;
 }
 
 .legal-link {
