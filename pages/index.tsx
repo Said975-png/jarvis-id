@@ -105,52 +105,6 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Floating Side Content */}
-        <div className="side-content left-side">
-          <div className="side-text-group">
-            <div className="side-label">Инноваци��</div>
-            <div className="side-title">Будущее</div>
-            <div className="side-subtitle">уже здесь</div>
-          </div>
-          <div className="side-text-group">
-            <div className="side-label">Технологии</div>
-            <div className="side-title">AI & ML</div>
-            <div className="side-subtitle">решения</div>
-          </div>
-          <div className="side-stats">
-            <div className="stat-mini">
-              <span className="stat-mini-number">500+</span>
-              <span className="stat-mini-label">Проектов</span>
-            </div>
-            <div className="stat-mini">
-              <span className="stat-mini-number">99.9%</span>
-              <span className="stat-mini-label">Uptime</span>
-            </div>
-          </div>
-        </div>
-
-        <div className="side-content right-side">
-          <div className="side-text-group">
-            <div className="side-label">Персонализация</div>
-            <div className="side-title">Умные</div>
-            <div className="side-subtitle">интерфейсы</div>
-          </div>
-          <div className="side-text-group">
-            <div className="side-label">Автоматизация</div>
-            <div className="side-title">24/7</div>
-            <div className="side-subtitle">поддержка</div>
-          </div>
-          <div className="side-stats">
-            <div className="stat-mini">
-              <span className="stat-mini-number">10x</span>
-              <span className="stat-mini-label">Скорость</span>
-            </div>
-            <div className="stat-mini">
-              <span className="stat-mini-number">95%</span>
-              <span className="stat-mini-label">Точность ИИ</span>
-            </div>
-          </div>
-        </div>
 
         <div className="hero-container">
           {/* Background JARVIS Text */}
@@ -457,7 +411,7 @@ export default function Home() {
                     </svg>
                   </div>
                   <div className="feature-content">
-                    <h3 className="feature-title">Автоматизация бизнеса</h3>
+                    <h3 className="feature-title">Автоматиза��ия бизнеса</h3>
                     <p className="feature-description">ИИ для обработки заказов, клиентской поддержки и аналитики</p>
                   </div>
                 </div>
