@@ -96,13 +96,36 @@ function CyborgHead({ position = [0, 0, 0], scale = 1 }: CyborgHeadProps) {
   return (
     <group ref={meshRef} position={position} scale={scale}>
       {scene ? (
-        <primitive object={scene} />
+        <group>
+          <primitive object={scene} />
+          {/* Add extra white eyes to make sure they're visible */}
+          <mesh position={[-0.15, 0.3, 0.8]}>
+            <sphereGeometry args={[0.08, 16, 16]} />
+            <meshStandardMaterial
+              color="#ffffff"
+              emissive={new THREE.Color(0xffffff)}
+              emissiveIntensity={2.0}
+              metalness={0.0}
+              roughness={0.0}
+            />
+          </mesh>
+          <mesh position={[0.15, 0.3, 0.8]}>
+            <sphereGeometry args={[0.08, 16, 16]} />
+            <meshStandardMaterial
+              color="#ffffff"
+              emissive={new THREE.Color(0xffffff)}
+              emissiveIntensity={2.0}
+              metalness={0.0}
+              roughness={0.0}
+            />
+          </mesh>
+        </group>
       ) : (
         // Simple fallback while loading
         <mesh>
           <sphereGeometry args={[0.5, 16, 16]} />
-          <meshStandardMaterial 
-            color="#00ffff" 
+          <meshStandardMaterial
+            color="#00ffff"
             emissive={new THREE.Color(0x001122)}
             emissiveIntensity={0.2}
             transparent
