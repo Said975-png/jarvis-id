@@ -300,29 +300,30 @@ body {
   flex-direction: column;
   align-items: center;
   animation: floatUpDown 4s ease-in-out infinite;
+  z-index: 5;
 }
 
-.floating-text.top-left {
-  top: 10%;
-  left: 10%;
+.floating-text.section-top-left {
+  top: 15%;
+  left: 5%;
   animation-delay: 0s;
 }
 
-.floating-text.top-right {
-  top: 15%;
-  right: 15%;
+.floating-text.section-top-right {
+  top: 20%;
+  right: 5%;
   animation-delay: 1s;
 }
 
-.floating-text.bottom-left {
-  bottom: 20%;
-  left: 8%;
+.floating-text.section-bottom-left {
+  bottom: 25%;
+  left: 3%;
   animation-delay: 2s;
 }
 
-.floating-text.bottom-right {
-  bottom: 15%;
-  right: 12%;
+.floating-text.section-bottom-right {
+  bottom: 30%;
+  right: 3%;
   animation-delay: 3s;
 }
 
@@ -355,7 +356,7 @@ body {
 /* Glass Buttons Container */
 .glass-buttons-container {
   position: absolute;
-  bottom: -80px;
+  bottom: 10%;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
