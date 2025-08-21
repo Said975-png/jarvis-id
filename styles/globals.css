@@ -229,25 +229,12 @@ body {
 }
 
 .hero-background::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: radial-gradient(ellipse at center, rgba(0,255,255,0.03) 0%, transparent 70%);
-  pointer-events: none;
+  display: none;
 }
 
 /* Advanced Particle System */
 .particle-system {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  pointer-events: none;
+  display: none !important;
 }
 
 .floating-particle {
@@ -310,13 +297,7 @@ body {
 
 /* Neural Network */
 .neural-network {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  pointer-events: none;
+  display: none !important;
 }
 
 .neural-svg {
@@ -357,7 +338,7 @@ body {
 
 
 .gradient-orb {
-  display: none;
+  display: none !important;
 }
 
 /* Tech Stack */
@@ -712,10 +693,7 @@ body {
 
 /* Orbit Rings */
 .orbit-ring {
-  position: absolute;
-  border: 1px solid rgba(0, 255, 255, 0.2);
-  border-radius: 50%;
-  animation: rotateOrbit 20s linear infinite;
+  display: none !important;
 }
 
 .ring-1 {
@@ -883,13 +861,7 @@ body {
 
 /* Energy Field */
 .energy-field {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 600px;
-  height: 600px;
-  transform: translate(-50%, -50%);
-  pointer-events: none;
+  display: none !important;
 }
 
 .energy-wave {
@@ -933,13 +905,7 @@ body {
 
 /* Holographic Grid */
 .holo-grid {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 500px;
-  height: 500px;
-  transform: translate(-50%, -50%);
-  pointer-events: none;
+  display: none !important;
 }
 
 .grid-line {
@@ -1207,19 +1173,7 @@ body {
 }
 
 .bg-jarvis {
-  font-size: 18rem;
-  font-weight: 900;
-  font-family: 'Orbitron', 'Inter', monospace;
-  color: rgba(255, 255, 255, 0.12);
-  letter-spacing: 0.25em;
-  text-transform: uppercase;
-  text-shadow:
-    0 0 80px rgba(0, 255, 255, 0.25),
-    0 0 150px rgba(255, 255, 255, 0.15),
-    0 0 300px rgba(0, 255, 255, 0.08);
-  animation: bgTextPulse 6s ease-in-out infinite alternate;
-  filter: blur(1.5px);
-  white-space: nowrap;
+  display: none !important;
 }
 
 @keyframes bgTextPulse {
@@ -2797,54 +2751,131 @@ body {
   overflow: hidden;
 }
 
-.ai-orb {
-  position: absolute;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(0, 255, 255, 0.1) 0%, transparent 70%);
-  animation: aiFloat 15s ease-in-out infinite;
+.capabilities-background::before {
+  display: none;
 }
 
-.ai-orb-1 {
-  width: 300px;
-  height: 300px;
+/* Particle System for capabilities */
+.capabilities-background .particle-system {
+  display: none !important;
+}
+
+.capabilities-background .floating-particle {
+  position: absolute;
+  background: #00ffff;
+  border-radius: 50%;
+  animation: particleFloat 15s linear infinite;
+  opacity: 0.6;
+}
+
+/* Neural Network for capabilities */
+.capabilities-background .neural-network {
+  display: none !important;
+}
+
+.capabilities-background .neural-svg {
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+}
+
+.capabilities-background .neural-path {
+  fill: none;
+  stroke: url(#neuralGradient);
+  stroke-width: 1;
+  animation: neuralPulse 8s ease-in-out infinite;
+}
+
+/* Add gradient orbs to capabilities */
+.capabilities-background .gradient-orb {
+  display: none !important;
+}
+
+.capabilities-background .orb-1 {
+  width: 400px;
+  height: 400px;
   top: 10%;
   left: 10%;
   animation-delay: 0s;
+  background: radial-gradient(circle, rgba(0, 255, 255, 0.08) 0%, transparent 70%);
 }
 
-.ai-orb-2 {
-  width: 200px;
-  height: 200px;
+.capabilities-background .orb-2 {
+  width: 300px;
+  height: 300px;
   top: 60%;
-  right: 20%;
-  animation-delay: 5s;
+  right: 15%;
+  animation-delay: 8s;
+  background: radial-gradient(circle, rgba(255, 0, 255, 0.06) 0%, transparent 70%);
 }
 
-.ai-orb-3 {
-  width: 150px;
-  height: 150px;
+.capabilities-background .orb-3 {
+  width: 250px;
+  height: 250px;
   bottom: 20%;
   left: 60%;
-  animation-delay: 10s;
+  animation-delay: 4s;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.04) 0%, transparent 70%);
+}
+
+.ai-orb {
+  display: none;
+}
+
+.ai-orb-1, .ai-orb-2, .ai-orb-3 {
+  display: none;
 }
 
 .capabilities-container {
-  max-width: 1400px;
   width: 100%;
-  padding: 0 2rem;
+  padding: 0;
   position: relative;
+  min-height: 100vh;
   z-index: 10;
+  overflow: visible;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Background PLATFORM Text for capabilities */
+.capabilities-background-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  pointer-events: none;
+  user-select: none;
+}
+
+.bg-platform {
+  display: none !important;
 }
 
 .capabilities-layout {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 6rem;
+  gap: 3rem;
   align-items: center;
+  min-height: 80vh;
+  position: relative;
+  z-index: 20;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .capabilities-content {
-  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  max-width: 100%;
+  padding-right: 1rem;
 }
 
 .capabilities-badge {
@@ -2852,33 +2883,86 @@ body {
   align-items: center;
   gap: 0.75rem;
   padding: 0.75rem 1.5rem;
-  background: rgba(0, 255, 255, 0.05);
+  background: rgba(0, 255, 255, 0.08);
   border: 1px solid rgba(0, 255, 255, 0.2);
   border-radius: 30px;
   font-size: 0.9rem;
-  font-weight: 500;
-  color: rgba(0, 255, 255, 0.9);
-  margin-bottom: 3rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 2rem;
   backdrop-filter: blur(20px);
+  animation: fadeInUp 0.8s ease-out;
+  position: relative;
+  overflow: hidden;
+  text-transform: uppercase;
+}
+
+.capabilities-badge::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(0, 255, 255, 0.1), transparent);
+  transition: left 0.5s ease;
+}
+
+.capabilities-badge:hover::before {
+  left: 100%;
+}
+
+.capabilities-badge .badge-dot {
+  width: 8px;
+  height: 8px;
+  background: #00ffff;
+  border-radius: 50%;
+  animation: pulse 2s ease-in-out infinite;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.6);
 }
 
 .capabilities-title {
-  font-size: clamp(3rem, 5vw, 5rem);
+  font-size: clamp(3rem, 5vw, 4rem);
   font-weight: 800;
   letter-spacing: -0.02em;
   margin-bottom: 1.5rem;
   color: #ffffff;
   line-height: 1.1;
   font-family: 'Inter', sans-serif;
+  animation: fadeInUp 1s ease-out 0.2s both;
+}
+
+.capabilities-title .highlight-text {
+  background: linear-gradient(135deg, #00ffff 0%, #ff00ff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+}
+
+.capabilities-title .highlight-text::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #00ffff, #ff00ff);
+  transition: width 0.8s ease;
+}
+
+.capabilities-title:hover .highlight-text::after {
+  width: 100%;
 }
 
 .capabilities-subtitle {
-  font-size: clamp(1.1rem, 1.6vw, 1.4rem);
+  font-size: clamp(1.1rem, 1.6vw, 1.3rem);
   font-weight: 400;
   color: rgba(255, 255, 255, 0.7);
-  margin-bottom: 3rem;
+  margin-bottom: 2.5rem;
   line-height: 1.6;
   max-width: 500px;
+  animation: fadeInUp 1.2s ease-out 0.4s both;
 }
 
 .capabilities-features {
@@ -2945,16 +3029,286 @@ body {
   display: flex;
   gap: 1.25rem;
   flex-wrap: wrap;
+  animation: fadeInUp 1.6s ease-out 0.8s both;
+}
+
+/* Button styles matching hero section */
+.capabilities-buttons .btn-primary {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 2rem;
+  background: linear-gradient(135deg, rgba(0, 255, 255, 0.15) 0%, rgba(0, 255, 255, 0.05) 100%);
+  border: 1px solid rgba(0, 255, 255, 0.3);
+  border-radius: 50px;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  backdrop-filter: blur(20px);
+  position: relative;
+  overflow: hidden;
+  font-family: 'Inter', sans-serif;
+  text-decoration: none;
+}
+
+.capabilities-buttons .btn-primary::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+  transition: left 0.5s ease;
+}
+
+.capabilities-buttons .btn-primary:hover::before {
+  left: 100%;
+}
+
+.capabilities-buttons .btn-primary:hover {
+  background: linear-gradient(135deg, rgba(0, 255, 255, 0.25) 0%, rgba(0, 255, 255, 0.1) 100%);
+  border-color: rgba(0, 255, 255, 0.5);
+  transform: translateY(-3px);
+  box-shadow: 0 15px 35px rgba(0, 255, 255, 0.2);
+}
+
+.capabilities-buttons .btn-primary .btn-shine {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.6s ease;
+}
+
+.capabilities-buttons .btn-primary:hover .btn-shine {
+  left: 100%;
+}
+
+.capabilities-buttons .btn-secondary {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 2rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 50px;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  backdrop-filter: blur(20px);
+  position: relative;
+  overflow: hidden;
+  font-family: 'Inter', sans-serif;
+  text-decoration: none;
+}
+
+.capabilities-buttons .btn-secondary::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.08), transparent);
+  transition: left 0.5s ease;
+}
+
+.capabilities-buttons .btn-secondary:hover::before {
+  left: 100%;
+}
+
+.capabilities-buttons .btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.3);
+  color: #ffffff;
+  transform: translateY(-3px);
+  box-shadow: 0 15px 35px rgba(255, 255, 255, 0.1);
+}
+
+.capabilities-buttons .btn-secondary .btn-ripple {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.4s ease;
+}
+
+.capabilities-buttons .btn-secondary:hover .btn-ripple {
+  width: 300px;
+  height: 300px;
 }
 
 .capabilities-visual {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   position: relative;
-  height: 900px;
-  width: 550px;
+  height: 600px;
+  width: 100%;
+  max-width: 500px;
+  overflow: visible;
+}
+
+/* Enhanced 3D Section for capabilities */
+.capabilities-3d-main {
+  position: relative;
+  height: 400px;
+  width: 400px;
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: visible;
+  margin: 0 auto 1.5rem;
+  max-width: 100%;
+}
+
+/* Add similar orbit rings for capabilities */
+.capabilities-visual .orbit-ring {
+  display: none !important;
+}
+
+.capabilities-visual .ring-1 {
+  width: 300px;
+  height: 300px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation-duration: 15s;
+}
+
+.capabilities-visual .ring-2 {
+  width: 400px;
+  height: 400px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation-duration: 25s;
+  animation-direction: reverse;
+  border-color: rgba(255, 0, 255, 0.15);
+}
+
+.capabilities-visual .ring-3 {
+  width: 500px;
+  height: 500px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation-duration: 35s;
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Add performance display for capabilities */
+.capabilities-performance-display {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  padding: 1.5rem;
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(0, 255, 255, 0.2);
+  border-radius: 20px;
+  backdrop-filter: blur(20px);
+  position: relative;
+  overflow: hidden;
+  margin-top: 1rem;
+}
+
+.capabilities-performance-display::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(0, 255, 255, 0.1), transparent);
+  animation: performanceScan 5s ease-in-out infinite;
+}
+
+.capabilities-performance-display .metric-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem;
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 2;
+}
+
+.capabilities-performance-display .metric-item:hover {
+  background: rgba(0, 255, 255, 0.05);
+  transform: translateY(-2px);
+}
+
+.capabilities-performance-display .metric-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background: rgba(0, 255, 255, 0.1);
+  border-radius: 8px;
+  color: #00ffff;
+  transition: all 0.3s ease;
+}
+
+.capabilities-performance-display .metric-item:hover .metric-icon {
+  background: rgba(0, 255, 255, 0.2);
+  transform: scale(1.1);
+}
+
+.capabilities-performance-display .metric-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.capabilities-performance-display .metric-value {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: #ffffff;
+  font-family: 'Inter', sans-serif;
+  line-height: 1;
+}
+
+.capabilities-performance-display .metric-label {
+  font-size: 0.65rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.7);
+  margin-top: 0.15rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Animations for capabilities section */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
 }
 
 .robot-scene-container {

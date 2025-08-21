@@ -68,50 +68,10 @@ export default function Home() {
 
       {/* Hero Section */}
       <section className="hero-section">
-        <div className="hero-background">
-          <div className="gradient-orb orb-1"></div>
-          <div className="gradient-orb orb-2"></div>
-          <div className="gradient-orb orb-3"></div>
-
-          {/* Advanced Particle System */}
-          <div className="particle-system">
-            {[...Array(50)].map((_, i) => (
-              <div
-                key={i}
-                className={`floating-particle particle-${i % 5}`}
-                style={{
-                  left: `${Math.random() * 100}%`,
-                  top: `${Math.random() * 100}%`,
-                  animationDelay: `${Math.random() * 10}s`
-                }}
-              ></div>
-            ))}
-          </div>
-
-          {/* Neural Network Lines */}
-          <div className="neural-network">
-            <svg className="neural-svg" viewBox="0 0 1920 1080">
-              <defs>
-                <linearGradient id="neuralGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                  <stop offset="0%" stopColor="rgba(0,255,255,0.3)" />
-                  <stop offset="50%" stopColor="rgba(255,0,255,0.2)" />
-                  <stop offset="100%" stopColor="rgba(0,255,255,0.1)" />
-                </linearGradient>
-              </defs>
-              <path className="neural-path path-1" d="M0,400 Q480,200 960,540 T1920,300" />
-              <path className="neural-path path-2" d="M0,600 Q480,800 960,340 T1920,680" />
-              <path className="neural-path path-3" d="M0,200 Q480,600 960,140 T1920,480" />
-            </svg>
-          </div>
-        </div>
+        <div className="hero-background"></div>
 
 
         <div className="hero-container">
-          {/* Background JARVIS Text */}
-          <div className="background-text">
-            <span className="bg-jarvis">JARVIS</span>
-          </div>
-
           {/* Hero Grid Layout */}
           <div className="hero-grid">
             {/* Left Content */}
@@ -127,7 +87,7 @@ export default function Home() {
               </h1>
 
               <p className="hero-subtitle">
-                Разрабатываем сайты с ИИ-ассистентами, которые понимают ваших клиентов,
+                Разрабатываем сайты с ИИ-ассистентами, которые понимают в��ших клиентов,
                 автоматизируют бизнес-процессы и увеличивают конверсию в 3 раза
               </p>
 
@@ -175,58 +135,6 @@ export default function Home() {
             <div className="hero-center">
               <div className="hero-3d-main">
                 <Scene3D className="scene3d-container" />
-
-                {/* Advanced Interactive Elements */}
-                <div className="orbit-ring ring-1">
-                  <div className="ring-particle particle-1"></div>
-                  <div className="ring-particle particle-2"></div>
-                </div>
-                <div className="orbit-ring ring-2">
-                  <div className="ring-particle particle-3"></div>
-                  <div className="ring-particle particle-4"></div>
-                </div>
-                <div className="orbit-ring ring-3">
-                  <div className="ring-particle particle-5"></div>
-                  <div className="ring-particle particle-6"></div>
-                </div>
-
-                {/* Enhanced Data Points */}
-                <div className="data-point point-1">
-                  <div className="data-dot">
-                    <div className="dot-pulse"></div>
-                  </div>
-                  <div className="data-label">AI CORE</div>
-                  <div className="data-connection line-1"></div>
-                </div>
-                <div className="data-point point-2">
-                  <div className="data-dot">
-                    <div className="dot-pulse"></div>
-                  </div>
-                  <div className="data-label">NEURAL NET</div>
-                  <div className="data-connection line-2"></div>
-                </div>
-                <div className="data-point point-3">
-                  <div className="data-dot">
-                    <div className="dot-pulse"></div>
-                  </div>
-                  <div className="data-label">ANALYTICS</div>
-                  <div className="data-connection line-3"></div>
-                </div>
-
-                {/* Energy Field */}
-                <div className="energy-field">
-                  <div className="energy-wave wave-1"></div>
-                  <div className="energy-wave wave-2"></div>
-                  <div className="energy-wave wave-3"></div>
-                </div>
-
-                {/* Holographic Grid */}
-                <div className="holo-grid">
-                  <div className="grid-line horizontal line-1"></div>
-                  <div className="grid-line horizontal line-2"></div>
-                  <div className="grid-line vertical line-3"></div>
-                  <div className="grid-line vertical line-4"></div>
-                </div>
               </div>
 
               {/* Enhanced Performance Metrics */}
@@ -282,24 +190,20 @@ export default function Home() {
 
       {/* Platform Capabilities Section */}
       <section className="capabilities-section">
-        <div className="capabilities-background">
-          <div className="ai-orb ai-orb-1"></div>
-          <div className="ai-orb ai-orb-2"></div>
-          <div className="ai-orb ai-orb-3"></div>
-        </div>
+        <div className="capabilities-background"></div>
         <div className="capabilities-container">
           <div className="capabilities-layout">
             <div className="capabilities-content">
               <div className="capabilities-badge">
                 <span className="badge-dot"></span>
-                <span>AI-Powered Platform</span>
+                <span>Технологии будущего</span>
               </div>
               <h2 className="capabilities-title">
-                В��зможности нашей
-                <span className="highlight-text"> Платформы</span>
+                Революционные
+                <span className="highlight-text"> Решения</span>
               </h2>
               <p className="capabilities-subtitle">
-                Мы создаем сайты с интеллектуальными ИИ ассистентами, которые революционизируют взаимоде��ствие с вашими клиентами
+                Трансформируем ваш бизнес с помощью передовых AI-технологий, создавая уникальные цифровые экосистемы для максимальной эффективности
               </p>
 
               <div className="capabilities-features">
@@ -312,8 +216,8 @@ export default function Home() {
                     </svg>
                   </div>
                   <div className="feature-content">
-                    <h3 className="feature-title">Smart AI Assistants</h3>
-                    <p className="feature-description">Интеллектуальные чат-боты и голосовые помощники с GPT интеграцией</p>
+                    <h3 className="feature-title">Квантовая Аналитика</h3>
+                    <p className="feature-description">Продвинутые алгоритмы машинного обучения для предсказания трендов и оптимизации конверсий</p>
                   </div>
                 </div>
 
@@ -325,8 +229,8 @@ export default function Home() {
                     </svg>
                   </div>
                   <div className="feature-content">
-                    <h3 className="feature-title">Автоматизация бизнеса</h3>
-                    <p className="feature-description">ИИ для обработки заказов, клиентской поддержки и аналитики</p>
+                    <h3 className="feature-title">Нейро-Персонализация</h3>
+                    <p className="feature-description">Динамическая адаптация контента под каждого пользователя в режиме реального времени</p>
                   </div>
                 </div>
 
@@ -339,28 +243,76 @@ export default function Home() {
                     </svg>
                   </div>
                   <div className="feature-content">
-                    <h3 className="feature-title">Персонализация</h3>
-                    <p className="feature-description">Ад��птивный контент �� рекомендации на основе по��едения пользователей</p>
+                    <h3 className="feature-title">Голографические Интерфейсы</h3>
+                    <p className="feature-description">Иммерсивные 3D-интерфейсы с поддержкой AR/VR для невероятного пользовательского опыта</p>
                   </div>
                 </div>
               </div>
 
               <div className="capabilities-buttons">
                 <button className="btn-primary">
-                  <span>Попробовать ИИ</span>
+                  <span>Запустить JARVIS</span>
                   <div className="btn-shine"></div>
                   <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
                     <path d="M3.5 8H12.5M12.5 8L8.5 4M12.5 8L8.5 12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                   </svg>
                 </button>
                 <button className="btn-secondary">
-                  <span>Смотреть Демо</span>
+                  <span>Виртуальный Тур</span>
+                  <div className="btn-ripple"></div>
                 </button>
               </div>
             </div>
 
             <div className="capabilities-visual">
-              <RobotScene3D className="robot-scene-container" />
+              <div className="capabilities-3d-main">
+                <RobotScene3D className="robot-scene-container" />
+              </div>
+
+              {/* Enhanced Performance Metrics */}
+              <div className="capabilities-performance-display">
+                <div className="metric-item">
+                  <div className="metric-icon">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                      <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+                    </svg>
+                  </div>
+                  <div className="metric-content">
+                    <span className="metric-value">99.7%</span>
+                    <span className="metric-label">Точность ИИ</span>
+                  </div>
+                </div>
+                <div className="metric-item">
+                  <div className="metric-icon">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                      <circle cx="12" cy="12" r="3"/>
+                      <path d="M12 1v6m0 6v6m11-7h-6m-6 0H1"/>
+                    </svg>
+                  </div>
+                  <div className="metric-content">
+                    <span className="metric-value">1M+</span>
+                    <span className="metric-label">Операций/сек</span>
+                  </div>
+                </div>
+                <div className="metric-item">
+                  <div className="metric-icon">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                      <circle cx="12" cy="12" r="10"/>
+                      <polyline points="12,6 12,12 16,14"/>
+                    </svg>
+                  </div>
+                  <div className="metric-content">
+                    <span className="metric-value">0.1ms</span>
+                    <span className="metric-label">Откли��</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Status Indicator */}
+              <div className="status-indicator">
+                <div className="status-dot"></div>
+                <span className="status-text">Квантовые процессоры активны • Нейросеть обучается</span>
+              </div>
             </div>
           </div>
         </div>
