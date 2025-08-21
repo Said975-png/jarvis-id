@@ -293,6 +293,172 @@ body {
   letter-spacing: 0.05em;
 }
 
+/* Floating Texts */
+.floating-text {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: floatUpDown 4s ease-in-out infinite;
+}
+
+.floating-text.top-left {
+  top: 10%;
+  left: 10%;
+  animation-delay: 0s;
+}
+
+.floating-text.top-right {
+  top: 15%;
+  right: 15%;
+  animation-delay: 1s;
+}
+
+.floating-text.bottom-left {
+  bottom: 20%;
+  left: 8%;
+  animation-delay: 2s;
+}
+
+.floating-text.bottom-right {
+  bottom: 15%;
+  right: 12%;
+  animation-delay: 3s;
+}
+
+.mini-text {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: rgba(0, 255, 255, 0.8);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin-bottom: 0.2rem;
+}
+
+.mini-sub {
+  font-size: 0.5rem;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.4);
+  letter-spacing: 0.1em;
+  font-style: italic;
+}
+
+@keyframes floatUpDown {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Glass Buttons Container */
+.glass-buttons-container {
+  position: absolute;
+  bottom: -80px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 1rem;
+  z-index: 10;
+}
+
+/* Glass Buttons */
+.glass-btn {
+  position: relative;
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 50px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+  text-transform: uppercase;
+}
+
+.glass-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+  transition: left 0.5s ease;
+}
+
+.glass-btn:hover::before {
+  left: 100%;
+}
+
+.glass-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.primary-glass {
+  background: rgba(0, 255, 255, 0.1);
+  border-color: rgba(0, 255, 255, 0.3);
+}
+
+.primary-glass:hover {
+  background: rgba(0, 255, 255, 0.15);
+  border-color: rgba(0, 255, 255, 0.5);
+  box-shadow: 0 10px 30px rgba(0, 255, 255, 0.2);
+}
+
+.secondary-glass {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
+.secondary-glass:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 10px 30px rgba(255, 255, 255, 0.1);
+}
+
+.accent-glass {
+  background: rgba(255, 0, 255, 0.1);
+  border-color: rgba(255, 0, 255, 0.3);
+}
+
+.accent-glass:hover {
+  background: rgba(255, 0, 255, 0.15);
+  border-color: rgba(255, 0, 255, 0.5);
+  box-shadow: 0 10px 30px rgba(255, 0, 255, 0.2);
+}
+
+.btn-text {
+  position: relative;
+  z-index: 2;
+}
+
+.btn-glow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.3), transparent);
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  z-index: 1;
+}
+
+.glass-btn:hover .btn-glow {
+  width: 100%;
+  height: 100%;
+}
+
 
 .scene3d-container {
   width: 100%;
