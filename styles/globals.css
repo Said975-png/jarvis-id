@@ -2808,6 +2808,49 @@ body {
   pointer-events: none;
 }
 
+/* Particle System for capabilities */
+.capabilities-background .particle-system {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.capabilities-background .floating-particle {
+  position: absolute;
+  background: #00ffff;
+  border-radius: 50%;
+  animation: particleFloat 15s linear infinite;
+  opacity: 0.6;
+}
+
+/* Neural Network for capabilities */
+.capabilities-background .neural-network {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.capabilities-background .neural-svg {
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+}
+
+.capabilities-background .neural-path {
+  fill: none;
+  stroke: url(#neuralGradient);
+  stroke-width: 1;
+  animation: neuralPulse 8s ease-in-out infinite;
+}
+
 /* Add gradient orbs to capabilities */
 .capabilities-background .gradient-orb {
   position: absolute;
