@@ -133,7 +133,7 @@ export default function Home() {
             <div className="hero-left">
               <div className="hero-badge">
                 <span className="badge-dot"></span>
-                <span>Революционная AI-платфор��а</span>
+                <span>Революционная AI-платформа</span>
               </div>
 
               <h1 className="hero-title">
@@ -191,40 +191,102 @@ export default function Home() {
               <div className="hero-3d-main">
                 <Scene3D className="scene3d-container" />
 
-                {/* Interactive Elements */}
-                <div className="orbit-ring ring-1"></div>
-                <div className="orbit-ring ring-2"></div>
-                <div className="orbit-ring ring-3"></div>
+                {/* Advanced Interactive Elements */}
+                <div className="orbit-ring ring-1">
+                  <div className="ring-particle particle-1"></div>
+                  <div className="ring-particle particle-2"></div>
+                </div>
+                <div className="orbit-ring ring-2">
+                  <div className="ring-particle particle-3"></div>
+                  <div className="ring-particle particle-4"></div>
+                </div>
+                <div className="orbit-ring ring-3">
+                  <div className="ring-particle particle-5"></div>
+                  <div className="ring-particle particle-6"></div>
+                </div>
 
-                {/* Data Points */}
+                {/* Enhanced Data Points */}
                 <div className="data-point point-1">
-                  <div className="data-dot"></div>
-                  <div className="data-label">AI Core</div>
+                  <div className="data-dot">
+                    <div className="dot-pulse"></div>
+                  </div>
+                  <div className="data-label">AI CORE</div>
+                  <div className="data-connection line-1"></div>
                 </div>
                 <div className="data-point point-2">
-                  <div className="data-dot"></div>
-                  <div className="data-label">Neural Net</div>
+                  <div className="data-dot">
+                    <div className="dot-pulse"></div>
+                  </div>
+                  <div className="data-label">NEURAL NET</div>
+                  <div className="data-connection line-2"></div>
                 </div>
                 <div className="data-point point-3">
-                  <div className="data-dot"></div>
-                  <div className="data-label">Analytics</div>
+                  <div className="data-dot">
+                    <div className="dot-pulse"></div>
+                  </div>
+                  <div className="data-label">ANALYTICS</div>
+                  <div className="data-connection line-3"></div>
+                </div>
+
+                {/* Energy Field */}
+                <div className="energy-field">
+                  <div className="energy-wave wave-1"></div>
+                  <div className="energy-wave wave-2"></div>
+                  <div className="energy-wave wave-3"></div>
+                </div>
+
+                {/* Holographic Grid */}
+                <div className="holo-grid">
+                  <div className="grid-line horizontal line-1"></div>
+                  <div className="grid-line horizontal line-2"></div>
+                  <div className="grid-line vertical line-3"></div>
+                  <div className="grid-line vertical line-4"></div>
                 </div>
               </div>
 
-              {/* Performance Metrics */}
+              {/* Enhanced Performance Metrics */}
               <div className="performance-display">
                 <div className="metric-item">
-                  <span className="metric-value">127%</span>
-                  <span className="metric-label">Конверсия</span>
+                  <div className="metric-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                      <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+                    </svg>
+                  </div>
+                  <div className="metric-content">
+                    <span className="metric-value">127%</span>
+                    <span className="metric-label">Конверсия</span>
+                  </div>
                 </div>
                 <div className="metric-item">
-                  <span className="metric-value">95%</span>
-                  <span className="metric-label">Автоматизация</span>
+                  <div className="metric-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                      <circle cx="12" cy="12" r="3"/>
+                      <path d="M12 1v6m0 6v6m11-7h-6m-6 0H1"/>
+                    </svg>
+                  </div>
+                  <div className="metric-content">
+                    <span className="metric-value">95%</span>
+                    <span className="metric-label">Автоматизация</span>
+                  </div>
                 </div>
                 <div className="metric-item">
-                  <span className="metric-value">24/7</span>
-                  <span className="metric-label">Поддержка</span>
+                  <div className="metric-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                      <circle cx="12" cy="12" r="10"/>
+                      <polyline points="12,6 12,12 16,14"/>
+                    </svg>
+                  </div>
+                  <div className="metric-content">
+                    <span className="metric-value">24/7</span>
+                    <span className="metric-label">Поддержка</span>
+                  </div>
                 </div>
+              </div>
+
+              {/* Status Indicator */}
+              <div className="status-indicator">
+                <div className="status-dot"></div>
+                <span className="status-text">Система активна • Все модули функционируют</span>
               </div>
             </div>
 
