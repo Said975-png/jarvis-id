@@ -50,6 +50,18 @@ export default function Home() {
               </div>
             </div>
 
+            {/* Shopping Cart */}
+            <div className="navbar-cart">
+              <button className="cart-btn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="cart-icon">
+                  <circle cx="8" cy="21" r="1"/>
+                  <circle cx="19" cy="21" r="1"/>
+                  <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/>
+                </svg>
+                <span className="cart-count">0</span>
+              </button>
+            </div>
+
             {/* Auth */}
             <div className="navbar-auth">
               <button className="auth-btn">
@@ -238,7 +250,7 @@ export default function Home() {
                   </div>
                   <div className="feature-content">
                     <h3 className="feature-title">Голографические Интерфейсы</h3>
-                    <p className="feature-description">Иммерсивные 3D-интерфейсы с поддержкой AR/VR для невероятного пользовательского опыта</p>
+                    <p className="feature-description">Иммерсивные 3D-интерфейсы с поддержкой AR/VR для невероятного пользовательского ��пыта</p>
                   </div>
                 </div>
               </div>
@@ -685,7 +697,7 @@ export default function Home() {
               <span className="gradient-text"> наши клиенты</span>
             </h2>
             <p className="reviews-subtitle">
-              Узнайте что говорят наши клиенты о работе с JARVIS
+              Узнайте ��то говорят наши клиенты о работе с JARVIS
             </p>
           </div>
 
