@@ -611,7 +611,7 @@ export default function Home() {
                 </svg>
               </div>
               <h3 className="feature-card-title">24 часа без перерывов</h3>
-              <p className="feature-card-description">Всегда готов помочь</p>
+              <p className="feature-card-description">Всегда го��ов помочь</p>
               <div className="feature-details">
                 <div className="detail-item">
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -788,7 +788,7 @@ export default function Home() {
                     <span>⭐⭐⭐⭐⭐</span>
                   </div>
                   <p className="review-text">
-                    "Мой магазин ювелирных изделий стал более удобным благодаря Jarvis. Бот помогает клиентам выбрать подходящие украшения и отвечает на все вопросы."
+                    "Мой магазин ювелирных изделий стал более удобным благодаря Jarvis. Бот помогает клиентам выбрать подходящие украшения и отвечает на все вопрос��."
                   </p>
                   <div className="review-author">
                     <div className="author-info">
@@ -842,7 +842,7 @@ export default function Home() {
                     <span>⭐⭐⭐⭐⭐</span>
                   </div>
                   <p className="review-text">
-                    "С Jarvis сайт для моего магазина одежды стал суперудобным. Бот помогает клиентам найти нужный товар и оформить заказ без проблем."
+                    "С Jarvis сайт для моего магазина одежды стал суперудобным. Бот помогает клиентам найти нужный товар и оформ��ть заказ без проблем."
                   </p>
                   <div className="review-author">
                     <div className="author-info">
@@ -914,7 +914,7 @@ export default function Home() {
                     <span>⭐⭐⭐⭐⭐</span>
                   </div>
                   <p className="review-text">
-                    "Я не разбираюсь в сайтах, но в Jarvis всё объяснили простыми словами. С��елал магазин, ��одключил оплат��, и теперь я продаю в 3 странах. Рекомендую!"
+                    "Я не разбираюсь в сайтах, но в Jarvis всё объяснил�� простыми словами. С��елал магазин, ��одключил оплат��, и теперь я продаю в 3 странах. Рекомендую!"
                   </p>
                   <div className="review-author">
                     <div className="author-info">
@@ -967,7 +967,7 @@ export default function Home() {
                     <span className="footer-logo-text">JARVIS</span>
                   </div>
                   <p className="footer-description">
-                    Революционный ИИ-ассистент, который понимает ваши потребности и превосходит ваши ожидания, будучи самым мощным представителем вашей компании.
+                    Революционный ИИ-ассистент, которы�� понимает ваши потребности и превосходит ваши ожидания, будучи самым мощным представителем вашей компании.
                   </p>
                 </div>
 
@@ -1037,12 +1037,26 @@ export default function Home() {
             <div className="footer-bottom">
               <div className="footer-bottom-content">
                 <div className="footer-copyright">
-                  <span>&copy; 2024 JARVIS. Все права защищены.</span>
+                  <span>&copy; 2024, JARVIS AI. Все права защищены.</span>
                 </div>
-                <div className="footer-legal">
-                  <a href="#" className="legal-link">Политика конфиденциальности</a>
-                  <a href="#" className="legal-link">Условия использования</a>
-                  <a href="#" className="legal-link">Соглашение</a>
+                <div className="footer-actions">
+                  <div className="chat-support">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                      <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                    </svg>
+                    <span>Чат с Джарвисом</span>
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
+                      <circle cx="12" cy="12" r="5"/>
+                    </svg>
+                  </div>
+                  <div className="language-selector">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                      <circle cx="12" cy="12" r="10"/>
+                      <line x1="2" y1="12" x2="22" y2="12"/>
+                      <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                    </svg>
+                    <span>Русский</span>
+                  </div>
                 </div>
               </div>
             </div>
