@@ -582,7 +582,7 @@ body {
 .hero-grid {
   display: grid;
   grid-template-columns: 1fr 1.5fr 1fr;
-  gap: 2rem;
+  gap: 1.5rem;
   align-items: center;
   min-height: 80vh;
   position: relative;
@@ -590,6 +590,8 @@ body {
   max-width: 1400px;
   margin: 0 auto;
   padding: 0 2rem;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .hero-left {
