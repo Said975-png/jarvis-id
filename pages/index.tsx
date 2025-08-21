@@ -13,6 +13,10 @@ const RobotScene3D = dynamic(() => import('../components/RobotScene3D'), {
   loading: () => <div className="scene3d-loading">Loading robot...</div>
 });
 
+const ModernHeroElements = dynamic(() => import('../components/ModernHeroElements'), {
+  ssr: false
+});
+
 export default function Home() {
   return (
     <>
@@ -79,11 +83,115 @@ export default function Home() {
             <span className="bg-jarvis">JARVIS</span>
           </div>
 
+          {/* Hero Content */}
+          <div className="hero-content">
+            <div className="hero-text">
+              <h1 className="hero-title">
+                Создаем сайты
+                <br />
+                <span className="gradient-text">с искусственным</span>
+                <br />
+                интеллектом
+              </h1>
+              <p className="hero-description">
+                Современная веб-разработка с интеграцией ChatGPT,
+                автоматизацией процессов и персонализацией контента
+              </p>
+              <div className="hero-buttons">
+                <button className="btn btn-primary">
+                  Начать проект
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                  </svg>
+                </button>
+                <button className="btn btn-secondary">
+                  Посмотреть примеры
+                </button>
+              </div>
+            </div>
+
+            {/* Minimal Floating Stats */}
+            <div className="floating-stats">
+              <div className="stat-item">
+                <span className="stat-number">150+</span>
+                <span className="stat-label">Проектов с ИИ</span>
+              </div>
+              <div className="stat-item">
+                <span className="stat-number">24/7</span>
+                <span className="stat-label">ИИ поддержка</span>
+              </div>
+              <div className="stat-item">
+                <span className="stat-number">99%</span>
+                <span className="stat-label">Автоматизации</span>
+              </div>
+            </div>
+          </div>
+
+          <div className="floating-left-elements">
+            <div className="left-item">
+              <div className="stat-card">
+                <div className="stat-value">24/7</div>
+                <div className="stat-label">ИИ По��держка</div>
+              </div>
+            </div>
+            <div className="left-item">
+              <div className="tech-card">
+                <div className="tech-badge">Modern Stack</div>
+                <div className="tech-items">
+                  <span>React</span>
+                  <span>OpenAI</span>
+                  <span>Next.js</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Right Elements */}
+          <div className="floating-right-elements">
+            <div className="right-item">
+              <div className="achievement-card">
+                <div className="achievement-number">150+</div>
+                <div className="achievement-label">ИИ Проектов</div>
+                <div className="achievement-bar">
+                  <div className="bar-fill"></div>
+                </div>
+              </div>
+            </div>
+            <div className="right-item">
+              <div className="capability-card">
+                <div className="capability-title">ИИ Возможности</div>
+                <div className="capability-grid">
+                  <div className="cap-item">🎯 Персонализация</div>
+                  <div className="cap-item">📊 Аналитика</div>
+                  <div className="cap-item">🔄 Автоматизация</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Bottom Elements */}
+          <div className="floating-bottom-elements">
+            <div className="bottom-item bottom-left">
+              <div className="elegant-card">
+                <div className="card-icon">💡</div>
+                <div className="card-title">Smart Solutions</div>
+                <div className="card-desc">Умные решения для бизнеса</div>
+              </div>
+            </div>
+            <div className="bottom-item bottom-right">
+              <div className="elegant-card">
+                <div className="card-icon">🚀</div>
+                <div className="card-title">Innovation</div>
+                <div className="card-desc">Лидеры ИИ разработки</div>
+              </div>
+            </div>
+          </div>
+
           <div className="hero-layout">
             <div className="hero-3d">
               <Scene3D className="scene3d-container" />
 
-              {/* Decorative Elements */}
+              {/* Minimal Decorative Elements */}
               <div className="decorative-element elem-1">
                 <div className="pulse-dot"></div>
               </div>
@@ -93,8 +201,29 @@ export default function Home() {
               <div className="decorative-element elem-3">
                 <div className="floating-plus">+</div>
               </div>
+
+              {/* Subtle Graphics */}
+              <div className="subtle-graphic graph-viz">
+                <svg width="60" height="40" viewBox="0 0 60 40" fill="none">
+                  <path d="M5 35L15 25L25 30L35 15L45 20L55 10" stroke="rgba(255,255,255,0.1)" strokeWidth="1" fill="none"/>
+                  <circle cx="35" cy="15" r="1" fill="rgba(255,255,255,0.2)"/>
+                  <circle cx="55" cy="10" r="1" fill="rgba(255,255,255,0.2)"/>
+                </svg>
+              </div>
+
+              <div className="subtle-graphic network-viz">
+                <svg width="50" height="40" viewBox="0 0 50 40" fill="none">
+                  <circle cx="15" cy="15" r="1.5" fill="rgba(255,255,255,0.15)"/>
+                  <circle cx="35" cy="10" r="1.5" fill="rgba(255,255,255,0.15)"/>
+                  <circle cx="25" cy="30" r="1.5" fill="rgba(255,255,255,0.15)"/>
+                  <line x1="15" y1="15" x2="35" y2="10" stroke="rgba(255,255,255,0.08)" strokeWidth="0.5"/>
+                  <line x1="15" y1="15" x2="25" y2="30" stroke="rgba(255,255,255,0.08)" strokeWidth="0.5"/>
+                  <line x1="25" y1="30" x2="35" y2="10" stroke="rgba(255,255,255,0.08)" strokeWidth="0.5"/>
+                </svg>
+              </div>
             </div>
           </div>
+
 
         </div>
       </section>
@@ -114,11 +243,11 @@ export default function Home() {
                 <span>AI-Powered Platform</span>
               </div>
               <h2 className="capabilities-title">
-                В��зможности нашей
+                В��зможност�� нашей
                 <span className="highlight-text"> Платформы</span>
               </h2>
               <p className="capabilities-subtitle">
-                Мы создаем сайты с интеллектуальными ИИ ассистентами, которые революционизируют взаимодействие с вашими клиентами
+                Мы создаем сайты с интеллектуальными ИИ ассистентами, которые революционизируют взаимодействие с ва��ими клиентами
               </p>
 
               <div className="capabilities-features">

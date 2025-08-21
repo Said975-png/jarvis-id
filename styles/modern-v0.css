@@ -1,0 +1,237 @@
+/* Modern v0.dev Style Layout */
+
+/* Layout Containers */
+.floating-top-elements {
+  position: absolute;
+  top: 4rem;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 4rem;
+  z-index: 15;
+  pointer-events: none;
+}
+
+.floating-left-elements {
+  position: absolute;
+  left: 3rem;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  z-index: 15;
+  pointer-events: none;
+}
+
+.floating-right-elements {
+  position: absolute;
+  right: 3rem;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  z-index: 15;
+  pointer-events: none;
+}
+
+.floating-bottom-elements {
+  position: absolute;
+  bottom: 4rem;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 4rem;
+  z-index: 15;
+  pointer-events: none;
+}
+
+/* Modern Items - No borders, clean typography */
+.modern-item {
+  pointer-events: auto;
+  opacity: 0;
+  animation: modernFadeIn 0.8s ease-out forwards;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.floating-top-elements .modern-item:first-child { animation-delay: 0.2s; }
+.floating-top-elements .modern-item:last-child { animation-delay: 0.4s; }
+
+.floating-left-elements .modern-item:nth-child(1) { animation-delay: 0.6s; }
+.floating-left-elements .modern-item:nth-child(2) { animation-delay: 0.8s; }
+.floating-left-elements .modern-item:nth-child(3) { animation-delay: 1s; }
+
+.floating-right-elements .modern-item:nth-child(1) { animation-delay: 1.2s; }
+.floating-right-elements .modern-item:nth-child(2) { animation-delay: 1.4s; }
+.floating-right-elements .modern-item:nth-child(3) { animation-delay: 1.6s; }
+
+.floating-bottom-elements .modern-item:first-child { animation-delay: 1.8s; }
+.floating-bottom-elements .modern-item:last-child { animation-delay: 2s; }
+
+.modern-item:hover {
+  transform: translateY(-3px);
+}
+
+/* Typography */
+.modern-text {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.8);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  transition: all 0.3s ease;
+  display: block;
+  letter-spacing: -0.01em;
+  line-height: 1.4;
+}
+
+.modern-text:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+.modern-number {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  transition: all 0.3s ease;
+  display: block;
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+
+.modern-number:hover {
+  transform: scale(1.05);
+}
+
+/* Animations */
+@keyframes modernFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Direction-specific hover effects */
+.floating-left-elements .modern-item:hover {
+  transform: translateY(-3px) translateX(8px);
+}
+
+.floating-right-elements .modern-item:hover {
+  transform: translateY(-3px) translateX(-8px);
+}
+
+.floating-top-elements .modern-item:hover {
+  transform: translateY(3px);
+}
+
+.floating-bottom-elements .modern-item:hover {
+  transform: translateY(-6px);
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .floating-top-elements,
+  .floating-bottom-elements {
+    padding: 0 3rem;
+  }
+  
+  .floating-left-elements {
+    left: 2rem;
+  }
+  
+  .floating-right-elements {
+    right: 2rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .floating-top-elements,
+  .floating-bottom-elements,
+  .floating-left-elements,
+  .floating-right-elements {
+    display: none;
+  }
+}
+
+/* Connection Overlay - Subtle */
+.connection-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.connection-svg {
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+}
+
+.connection-svg path {
+  animation: subtleDash 30s linear infinite;
+}
+
+@keyframes subtleDash {
+  0% { stroke-dashoffset: 0; }
+  100% { stroke-dashoffset: 60; }
+}
+
+/* Subtle Graphics */
+.subtle-graphic {
+  position: absolute;
+  opacity: 0.25;
+  transition: all 0.3s ease;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.graph-viz {
+  top: 25%;
+  right: 35%;
+  animation: subtleFloat 15s ease-in-out infinite;
+}
+
+.network-viz {
+  bottom: 30%;
+  left: 30%;
+  animation: subtleFloat 18s ease-in-out infinite 8s;
+}
+
+.subtle-graphic:hover {
+  opacity: 0.4;
+}
+
+@keyframes subtleFloat {
+  0%, 100% {
+    transform: translateY(0px) translateX(0px);
+  }
+  33% {
+    transform: translateY(-8px) translateX(4px);
+  }
+  66% {
+    transform: translateY(-3px) translateX(-2px);
+  }
+}
+
+/* Overall container improvements */
+.hero-container {
+  position: relative;
+}
+
+.hero-container:hover .modern-text {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.hero-container:hover .subtle-graphic {
+  opacity: 0.3;
+}
