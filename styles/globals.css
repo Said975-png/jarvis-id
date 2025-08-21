@@ -2533,8 +2533,9 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.75rem;
-    flex-wrap: nowrap;
+    padding: 0.5rem 0.75rem;
+    width: 100%;
+    box-sizing: border-box;
   }
 
   .navbar-logo {
@@ -2546,40 +2547,49 @@ body {
   }
 
   .navbar-cart {
-    order: 2;
-    margin-left: auto;
     margin-right: 0.5rem;
   }
 
   .navbar-auth {
-    order: 3;
     flex: 0 0 auto;
   }
 
   .hero-title {
-    font-size: 1.9rem;
-    line-height: 1.1;
+    font-size: 1.75rem;
+    line-height: 1.2;
     margin-bottom: 1rem;
+    padding: 0 0.75rem;
+    word-wrap: break-word;
   }
 
   .hero-subtitle {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     line-height: 1.4;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
+    padding: 0 0.75rem;
+    max-width: 100%;
   }
 
   .hero-container {
-    padding: 1.5rem 0.75rem;
+    padding: 1rem 0;
     text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .hero-content {
+    padding: 0 0.75rem;
+    max-width: 100%;
+    box-sizing: border-box;
   }
 
   .auth-btn {
-    padding: 0.6rem 1.2rem;
-    font-size: 0.85rem;
+    padding: 0.6rem 1rem;
+    font-size: 0.8rem;
   }
 
   .cart-btn {
-    padding: 0.6rem;
+    padding: 0.5rem;
   }
 }
 
