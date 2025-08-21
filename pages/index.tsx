@@ -81,8 +81,8 @@ export default function Home() {
               </h1>
 
               <p className="hero-subtitle">
-                Разрабатываем сайты с ИИ-ассистентами, которые понимают в��ших клиентов,
-                автоматизируют бизнес-процессы и увелич��вают к����нверсию в 3 раза
+                Разрабатываем сайты с ИИ-ассистентами, которые понимают ваших клиентов,
+                автоматизируют бизнес-процессы и увеличивают конверсию в 3 раза
               </p>
 
               <div className="hero-buttons">
@@ -190,7 +190,7 @@ export default function Home() {
             <div className="capabilities-content">
               <div className="capabilities-badge">
                 <span className="badge-dot"></span>
-                <span>Технологии ��удущего</span>
+                <span>Технологии будущего</span>
               </div>
               <h2 className="capabilities-title">
                 Революционные
@@ -211,7 +211,7 @@ export default function Home() {
                   </div>
                   <div className="feature-content">
                     <h3 className="feature-title">Квантовая Аналитика</h3>
-                    <p className="feature-description">Продвинутые алгоритмы машинно��о обучен��я для предска��ания трендов и оптимизации конверсий</p>
+                    <p className="feature-description">Продвинутые алгоритмы машинного обучения для предсказания трендов и оптимизации конверсий</p>
                   </div>
                 </div>
 
@@ -297,7 +297,7 @@ export default function Home() {
                   </div>
                   <div className="metric-content">
                     <span className="metric-value">0.1ms</span>
-                    <span className="metric-label">Откли��</span>
+                    <span className="metric-label">Отклик</span>
                   </div>
                 </div>
               </div>
@@ -305,7 +305,7 @@ export default function Home() {
               {/* Status Indicator */}
               <div className="status-indicator">
                 <div className="status-dot"></div>
-                <span className="status-text">Квантовы�� процессоры активны • Нейросеть обучается</span>
+                <span className="status-text">Квантовые процессоры активны • Нейросеть обучается</span>
               </div>
             </div>
           </div>
@@ -391,7 +391,7 @@ export default function Home() {
                   <span className="price-amount">4,000,000</span>
                   <span className="price-currency">сумм</span>
                 </div>
-                <p className="plan-ideal">Лучший выбор для растущего ��изнеса</p>
+                <p className="plan-ideal">Лучший выбор для растущего бизнеса</p>
               </div>
               <div className="pricing-features">
                 <div className="feature-list">
@@ -436,7 +436,7 @@ export default function Home() {
             <div className="pricing-card">
               <div className="pricing-card-header">
                 <h3 className="plan-name">Max</h3>
-                <p className="plan-description">Премиум решен��е</p>
+                <p className="plan-description">Премиум решение</p>
                 <div className="plan-price">
                   <span className="price-amount">5,000,000</span>
                   <span className="price-currency">сумм</span>
@@ -455,7 +455,7 @@ export default function Home() {
                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
                       <path d="M13.5 4.5L6 12L2.5 8.5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                     </svg>
-                    <span>Безли��итные страницы</span>
+                    <span>Безлимитные страницы</span>
                   </div>
                   <div className="feature-item">
                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
@@ -506,7 +506,7 @@ export default function Home() {
               <span className="gradient-text">20+ консультантов</span>
             </h2>
             <p className="team-subtitle">
-              Один умный ассистент выполняет работ�� десятков сотрудников. ДЖАРВИС ведет естественные диалоги с клиентами, предлагает товары, консультирует и находит лучшие предложения 24 часа в сутки без перерывов и выходных.
+              Один умный ассистент выполняет работу десятков сотрудников. ДЖАРВИС ведет естественные диалоги с клиентами, предлагает товары, консультирует и наход��т лучшие предложения 24 часа в сутки без перерывов и выходных.
             </p>
           </div>
 
@@ -519,7 +519,7 @@ export default function Home() {
                 </svg>
               </div>
               <h3 className="feature-card-title">Живое общение</h3>
-              <p className="feature-card-description">О��щается к��к человек</p>
+              <p className="feature-card-description">Общается как человек</p>
               <div className="feature-details">
                 <div className="detail-item">
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -611,7 +611,7 @@ export default function Home() {
                 </svg>
               </div>
               <h3 className="feature-card-title">24 часа без перерывов</h3>
-              <p className="feature-card-description">Всегда го��ов помочь</p>
+              <p className="feature-card-description">Всегда готов помочь</p>
               <div className="feature-details">
                 <div className="detail-item">
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -638,7 +638,7 @@ export default function Home() {
           {/* Statistics */}
           <div className="team-statistics">
             <div className="statistics-card">
-              <h3 className="statistics-title">��пе��атляющие результаты ДЖАРВИС</h3>
+              <h3 className="statistics-title">Впечатляющие результаты ДЖАРВИС</h3>
               <div className="statistics-grid">
                 <div className="stat-item">
                   <span className="stat-number">1</span>
@@ -678,7 +678,7 @@ export default function Home() {
           <div className="reviews-header">
             <div className="reviews-badge">
               <span className="badge-dot"></span>
-              <span>Отзывы наших кли��нтов</span>
+              <span>Отзывы наших клиентов</span>
             </div>
             <h2 className="reviews-title">
               Что говорят о нас
@@ -716,7 +716,7 @@ export default function Home() {
                     <span>⭐⭐⭐⭐⭐</span>
                   </div>
                   <p className="review-text">
-                    "Создала сайт с Jarvis Intercoma для своего магазина одежды. Работать стало легче: бот помогает клиентам выбирать стиль, отвеча���� на вопросы, а я только получаю заказы. Очень довольна!"
+                    "Создала сайт с Jarvis Intercoma для своего магазина одежды. Работать стало легче: бот помогает клиентам выбирать стиль, отвечает на вопросы, а я только получаю заказы. Очень довольна!"
                   </p>
                   <div className="review-author">
                     <div className="author-info">
@@ -756,7 +756,7 @@ export default function Home() {
                   </p>
                   <div className="review-author">
                     <div className="author-info">
-                      <span className="author-name">Алексеева Л.</span>
+                      <span className="author-name">Ал��ксеева Л.</span>
                       <span className="author-location">Казань, Freelance</span>
                     </div>
                   </div>
@@ -770,7 +770,7 @@ export default function Home() {
                     <span>⭐⭐⭐⭐⭐</span>
                   </div>
                   <p className="review-text">
-                    "Решил попробовать Jarvis для создания сайта магазина бытовой техники. Результат впечатлил: ��от быстро и точно помогает клиентам выбрать товар."
+                    "Решил попробовать Jarvis для создания сайта магазина бытовой техники. Результат впечатлил: бот быстро и точно помогает клиентам выбрать товар."
                   </p>
                   <div className="review-author">
                     <div className="author-info">
@@ -788,12 +788,12 @@ export default function Home() {
                     <span>⭐⭐⭐⭐⭐</span>
                   </div>
                   <p className="review-text">
-                    "Мой магазин ювелирных изделий стал более удобным благодаря Jarvis. Бот помогает клиентам выбрать подходящие украшения и отвечает на все вопрос��."
+                    "Мой магазин ювелирных изделий стал более удобным благодаря Jarvis. Бот помогает клиентам выбрать подходящие украшения и отвечает на все вопросы."
                   </p>
                   <div className="review-author">
                     <div className="author-info">
                       <span className="author-name">Васильева О.</span>
-                      <span className="author-location">Набережные Ч��лны, Freelance</span>
+                      <span className="author-location">Набережные Челны, Freelance</span>
                     </div>
                   </div>
                 </div>
@@ -806,7 +806,7 @@ export default function Home() {
                     <span>⭐⭐⭐⭐⭐</span>
                   </div>
                   <p className="review-text">
-                    "Соз��ала сайт для своего магазина с Jarvis. Клиенты часто обращаются за помощью, и бот всегда подскажет им нужную информацию."
+                    "Создала сайт для своего магазина с Jarvis. Клиенты часто обращаются за помощью, и бот всегда подскажет им нужную информацию."
                   </p>
                   <div className="review-author">
                     <div className="author-info">
@@ -829,7 +829,7 @@ export default function Home() {
                   <div className="review-author">
                     <div className="author-info">
                       <span className="author-name">Розенбаум В.</span>
-                      <span className="author-location">Санкт-Петербург, Freelance</span>
+                      <span className="author-location">Санкт-Пете��бург, Freelance</span>
                     </div>
                   </div>
                 </div>
@@ -842,7 +842,7 @@ export default function Home() {
                     <span>⭐⭐⭐⭐⭐</span>
                   </div>
                   <p className="review-text">
-                    "С Jarvis сайт для моего магазина одежды стал суперудобным. Бот помогает клиентам найти нужный товар и оформ��ть заказ без проблем."
+                    "С Jarvis сайт для моего магазина одежды стал суперудобным. Бот помогает клиентам найти нужный товар и оформить заказ без проблем."
                   </p>
                   <div className="review-author">
                     <div className="author-info">
@@ -878,7 +878,7 @@ export default function Home() {
                     <span>⭐⭐⭐⭐⭐</span>
                   </div>
                   <p className="review-text">
-                    "Мне сделали сайт с Jarvis Intercoma под мою студию украшений. Красиво, удобно, и всё автоматизировано. Теперь я занимаюсь только заказам��, а не сижу целый день в переписках с клиентами."
+                    "Мне сделали сайт с Jarvis Intercoma под мою студию украшений. Красиво, удобно, и всё автоматизировано. ��еперь я занимаюсь только заказами, а не сижу целый день в переписках с клиентами."
                   </p>
                   <div className="review-author">
                     <div className="author-info">
@@ -900,7 +900,7 @@ export default function Home() {
                   </p>
                   <div className="review-author">
                     <div className="author-info">
-                      <span className="author-name">Елен�� К.</span>
+                      <span className="author-name">Елена К.</span>
                       <span className="author-location">Москва, Freelance</span>
                     </div>
                   </div>
@@ -914,7 +914,7 @@ export default function Home() {
                     <span>⭐⭐⭐⭐⭐</span>
                   </div>
                   <p className="review-text">
-                    "Я не разбираюсь в сайтах, но в Jarvis всё объяснил�� простыми словами. С��елал магазин, ��одключил оплат��, и теперь я продаю в 3 странах. Рекомендую!"
+                    "Я не разбираюсь в сайтах, но в Jarvis всё объяснили простыми словами. Сделал магазин, подключил оплату, и теперь я продаю в 3 странах. Рекомендую!"
                   </p>
                   <div className="review-author">
                     <div className="author-info">
@@ -928,7 +928,7 @@ export default function Home() {
               <div className="review-card">
                 <div className="review-content">
                   <div className="stars">
-                    <span>��⭐⭐⭐⭐</span>
+                    <span>⭐⭐⭐⭐⭐</span>
                   </div>
                   <p className="review-text">
                     "Создала сайт с Jarvis Intercoma для своего магазина одежды. Работать стало легче: бот помогает клиентам выбирать стиль, отвечает на вопросы, а я только получаю заказы. Очень довольна!"
@@ -947,121 +947,85 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Footer */}
+      {/* New Footer - Based on Design */}
       <footer className="new-footer">
-        <div className="footer-background"></div>
-        <div className="footer-container">
-          <div className="footer-content">
-
-            {/* Main Footer */}
-            <div className="footer-main">
-              <div className="footer-grid">
-
-                {/* Company Info */}
-                <div className="footer-column company-info">
-                  <div className="footer-logo">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" className="footer-logo-icon">
-                      <circle cx="12" cy="12" r="2"/>
-                      <path d="M12 1v6m0 6v6m11-7h-6m-6 0H1"/>
-                    </svg>
-                    <span className="footer-logo-text">JARVIS</span>
-                  </div>
-                  <p className="footer-description">
-                    Революционный ИИ-ассистент, которы�� понимает ваши потребности и превосходит ваши ожидания, будучи самым мощным представителем вашей компании.
-                  </p>
-                </div>
-
-                {/* Product */}
-                <div className="footer-column">
-                  <h3 className="footer-column-title">Продукт</h3>
-                  <ul className="footer-links">
-                    <li><a href="#" className="footer-link">Главная</a></li>
-                    <li><a href="#" className="footer-link">Возможности</a></li>
-                    <li><a href="#" className="footer-link">Тарифы</a></li>
-                  </ul>
-                </div>
-
-                {/* Company */}
-                <div className="footer-column">
-                  <h3 className="footer-column-title">Компания</h3>
-                  <ul className="footer-links">
-                    <li><a href="#" className="footer-link">О проекте</a></li>
-                    <li><a href="#" className="footer-link">Команда</a></li>
-                    <li><a href="#" className="footer-link">Карьера</a></li>
-                    <li><a href="#" className="footer-link">Блог</a></li>
-                  </ul>
-                </div>
-
-                {/* Support */}
-                <div className="footer-column">
-                  <h3 className="footer-column-title">Поддержка</h3>
-                  <ul className="footer-links">
-                    <li><a href="#" className="footer-link">Документация</a></li>
-                    <li><a href="#" className="footer-link">API</a></li>
-                    <li><a href="#" className="footer-link">Статус</a></li>
-                    <li><a href="#" className="footer-link">Безопасность</a></li>
-                  </ul>
-                </div>
-
-                {/* Contact */}
-                <div className="footer-column">
-                  <h3 className="footer-column-title">Контакты</h3>
-                  <div className="footer-contact">
-                    <div className="contact-item">
-                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                        <polyline points="22,6 12,13 2,6"/>
-                      </svg>
-                      <span>info@jarvis.uz</span>
-                    </div>
-                    <div className="contact-item">
-                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
-                      </svg>
-                      <span>+998 (90) 123-45-67</span>
-                    </div>
-                    <div className="contact-item">
-                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
-                        <circle cx="12" cy="10" r="3"/>
-                      </svg>
-                      <span>Та��кент, Узбекистан</span>
-                    </div>
-                  </div>
-                </div>
-
+        <div className="new-footer-container">
+          <div className="new-footer-content">
+            
+            {/* Logo and Description */}
+            <div className="new-footer-left">
+              <div className="new-footer-logo">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                  <circle cx="12" cy="12" r="2"/>
+                  <path d="M12 1v6m0 6v6m11-7h-6m-6 0H1"/>
+                </svg>
+                <span>JARVIS</span>
               </div>
+              <p className="new-footer-description">
+                Революционный ИИ-ассистент, который понимает ваши потребности и превосходит ваши ожидания, будучи самым мощным представителем вашей компании.
+              </p>
             </div>
 
-            {/* Footer Bottom */}
-            <div className="footer-bottom">
-              <div className="footer-bottom-content">
-                <div className="footer-copyright">
-                  <span>&copy; 2024, JARVIS AI. Все права защищены.</span>
-                </div>
-                <div className="footer-actions">
-                  <div className="chat-support">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                      <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
-                    </svg>
-                    <span>Чат с Джарвисом</span>
-                    <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
-                      <circle cx="12" cy="12" r="5"/>
-                    </svg>
-                  </div>
-                  <div className="language-selector">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                      <circle cx="12" cy="12" r="10"/>
-                      <line x1="2" y1="12" x2="22" y2="12"/>
-                      <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
-                    </svg>
-                    <span>Русский</span>
-                  </div>
-                </div>
+            {/* Links Columns */}
+            <div className="new-footer-links">
+              <div className="new-footer-column">
+                <h3>Продукт</h3>
+                <ul>
+                  <li><a href="#">Главная</a></li>
+                  <li><a href="#">Возможности</a></li>
+                  <li><a href="#">Тарифы</a></li>
+                </ul>
+              </div>
+
+              <div className="new-footer-column">
+                <h3>Компания</h3>
+                <ul>
+                  <li><a href="#">О проекте</a></li>
+                  <li><a href="#">Команда</a></li>
+                  <li><a href="#">Карьера</a></li>
+                  <li><a href="#">Блог</a></li>
+                </ul>
+              </div>
+
+              <div className="new-footer-column">
+                <h3>Поддержка</h3>
+                <ul>
+                  <li><a href="#">Документация</a></li>
+                  <li><a href="#">API</a></li>
+                  <li><a href="#">Статус</a></li>
+                  <li><a href="#">Безопасность</a></li>
+                </ul>
               </div>
             </div>
 
           </div>
+
+          {/* Footer Bottom */}
+          <div className="new-footer-bottom">
+            <div className="new-footer-bottom-content">
+              <span>&copy; 2024, JARVIS AI. Все права защищены.</span>
+              
+              <div className="new-footer-actions">
+                <div className="chat-with-jarvis">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                  </svg>
+                  <span>Чат с Джарвисом</span>
+                  <div className="online-dot"></div>
+                </div>
+                
+                <div className="language-selector">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <circle cx="12" cy="12" r="10"/>
+                    <line x1="2" y1="12" x2="22" y2="12"/>
+                    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                  </svg>
+                  <span>Русский</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </footer>
 
