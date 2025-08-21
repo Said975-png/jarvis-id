@@ -85,7 +85,7 @@ body {
   gap: 0.4rem;
   padding: 0.6rem 1rem;
   background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: none;
   color: rgba(255, 255, 255, 0.8);
   font-size: 0.8rem;
   font-weight: 500;
@@ -116,7 +116,6 @@ body {
 .nav-btn:hover {
   color: #ffffff;
   background: rgba(0, 255, 255, 0.08);
-  border-color: rgba(0, 255, 255, 0.2);
   transform: translateY(-1px);
   box-shadow: 0 4px 15px rgba(0, 255, 255, 0.1);
 }
@@ -156,7 +155,7 @@ body {
 .auth-btn.login {
   background: rgba(255, 255, 255, 0.05);
   color: rgba(255, 255, 255, 0.9);
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  border: none;
 }
 
 .auth-btn.login::before {
@@ -177,7 +176,6 @@ body {
 .auth-btn.login:hover {
   color: #ffffff;
   background: rgba(255, 255, 255, 0.08);
-  border-color: rgba(255, 255, 255, 0.3);
   transform: translateY(-1px);
   box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
 }
@@ -185,7 +183,7 @@ body {
 .auth-btn.register {
   background: rgba(0, 255, 255, 0.1);
   color: #ffffff;
-  border: 1px solid rgba(0, 255, 255, 0.3);
+  border: none;
 }
 
 .auth-btn.register::before {
@@ -205,7 +203,6 @@ body {
 
 .auth-btn.register:hover {
   background: rgba(0, 255, 255, 0.15);
-  border-color: rgba(0, 255, 255, 0.5);
   transform: translateY(-1px);
   box-shadow: 0 4px 15px rgba(0, 255, 255, 0.2);
 }
