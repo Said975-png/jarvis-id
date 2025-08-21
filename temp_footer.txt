@@ -1,0 +1,81 @@
+{/* New Footer - Based on Design */}
+      <footer className="new-footer">
+        <div className="new-footer-container">
+          <div className="new-footer-content">
+            
+            {/* Logo and Description */}
+            <div className="new-footer-left">
+              <div className="new-footer-logo">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                  <circle cx="12" cy="12" r="2"/>
+                  <path d="M12 1v6m0 6v6m11-7h-6m-6 0H1"/>
+                </svg>
+                <span>JARVIS</span>
+              </div>
+              <p className="new-footer-description">
+                Революционный ИИ-ассистент, который понимает ваши потребности и превосходит ваши ожидания, будучи самым мощным представителем вашей компании.
+              </p>
+            </div>
+
+            {/* Links Columns */}
+            <div className="new-footer-links">
+              <div className="new-footer-column">
+                <h3>Продукт</h3>
+                <ul>
+                  <li><a href="#">Главная</a></li>
+                  <li><a href="#">Возможности</a></li>
+                  <li><a href="#">Тарифы</a></li>
+                </ul>
+              </div>
+
+              <div className="new-footer-column">
+                <h3>Компания</h3>
+                <ul>
+                  <li><a href="#">О проекте</a></li>
+                  <li><a href="#">Команда</a></li>
+                  <li><a href="#">Карьера</a></li>
+                  <li><a href="#">Блог</a></li>
+                </ul>
+              </div>
+
+              <div className="new-footer-column">
+                <h3>Поддержка</h3>
+                <ul>
+                  <li><a href="#">Документация</a></li>
+                  <li><a href="#">API</a></li>
+                  <li><a href="#">Статус</a></li>
+                  <li><a href="#">Безопасность</a></li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+
+          {/* Footer Bottom */}
+          <div className="new-footer-bottom">
+            <div className="new-footer-bottom-content">
+              <span>&copy; 2024, JARVIS AI. Все права защищены.</span>
+              
+              <div className="new-footer-actions">
+                <div className="chat-with-jarvis">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                  </svg>
+                  <span>Чат с Джарвисом</span>
+                  <div className="online-dot"></div>
+                </div>
+                
+                <div className="language-selector">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <circle cx="12" cy="12" r="10"/>
+                    <line x1="2" y1="12" x2="22" y2="12"/>
+                    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                  </svg>
+                  <span>Русский</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </footer>
