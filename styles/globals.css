@@ -1807,6 +1807,19 @@ body {
   .hero-3d {
     height: 300px;
   }
+
+  .capabilities-stats {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .capability-stat {
+    padding: 1rem;
+  }
+
+  .stat-number {
+    font-size: 1.1rem;
+  }
 }
 
 @media (max-width: 480px) {
