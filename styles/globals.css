@@ -33,178 +33,131 @@ body {
   padding: 0 2rem;
 }
 
-/* Navigation Bar - Ultra Premium */
+/* Navigation Bar - Modern GitHub Style */
 .navbar {
   position: fixed;
-  top: 2rem;
-  right: 2rem;
+  top: 0;
+  left: 0;
+  right: 0;
   z-index: 1000;
-  width: auto;
+  width: 100%;
+  backdrop-filter: blur(10px);
+  background: rgba(0, 0, 0, 0.7);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .navbar-container {
   width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
 }
 
 .navbar-content {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-  padding: 0.5rem;
+  justify-content: space-between;
+  padding: 1rem 0;
   background: transparent;
   transition: all 0.3s ease;
 }
 
-
 .navbar-logo {
-  display: none;
+  display: block;
 }
 
 .logo-text {
-  font-size: 1.75rem;
-  font-weight: 900;
+  font-size: 1.5rem;
+  font-weight: 600;
   color: #ffffff;
-  letter-spacing: -1px;
-  font-family: 'Inter', sans-serif;
+  letter-spacing: -0.5px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;
   transition: all 0.3s ease;
 }
 
 .logo-text:hover {
-  transform: scale(1.05);
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .navbar-menu {
   display: flex;
   align-items: center;
-  gap: 0.3rem;
+  gap: 2rem;
 }
 
 .nav-btn {
   display: flex;
   align-items: center;
-  gap: 0.4rem;
-  padding: 0.6rem 1rem;
-  background: rgba(255, 255, 255, 0.03);
+  gap: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  background: transparent;
   border: none;
   color: rgba(255, 255, 255, 0.8);
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   font-weight: 500;
   cursor: pointer;
-  border-radius: 25px;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 6px;
+  transition: all 0.2s ease;
   text-decoration: none;
   position: relative;
-  overflow: hidden;
-  backdrop-filter: blur(10px);
-}
-
-.nav-btn::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(0, 255, 255, 0.1), transparent);
-  transition: left 0.5s ease;
-}
-
-.nav-btn:hover::before {
-  left: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;
 }
 
 .nav-btn:hover {
   color: #ffffff;
-  background: rgba(0, 255, 255, 0.08);
-  transform: translateY(-1px);
-  box-shadow: 0 4px 15px rgba(0, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.1);
 }
 
 .nav-btn svg {
-  opacity: 0.7;
-  transition: all 0.3s ease;
-  filter: drop-shadow(0 0 2px rgba(0, 255, 255, 0.3));
+  opacity: 0.8;
+  transition: all 0.2s ease;
+  width: 16px;
+  height: 16px;
 }
 
 .nav-btn:hover svg {
   opacity: 1;
-  transform: scale(1.1);
-  filter: drop-shadow(0 0 5px rgba(0, 255, 255, 0.6));
 }
 
 .navbar-auth {
   display: flex;
   align-items: center;
-  gap: 0.75rem;
+  gap: 0.5rem;
 }
 
 .auth-btn {
   padding: 0.5rem 1rem;
-  border-radius: 20px;
-  font-size: 0.8rem;
-  font-weight: 600;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 500;
   cursor: pointer;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  border: none;
+  transition: all 0.2s ease;
+  border: 1px solid transparent;
   text-decoration: none;
   position: relative;
-  overflow: hidden;
-  backdrop-filter: blur(15px);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;
 }
 
 .auth-btn.login {
-  background: rgba(255, 255, 255, 0.05);
+  background: transparent;
   color: rgba(255, 255, 255, 0.9);
   border: none;
 }
 
-.auth-btn.login::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
-  transition: left 0.5s ease;
-}
-
-.auth-btn.login:hover::before {
-  left: 100%;
-}
-
 .auth-btn.login:hover {
   color: #ffffff;
-  background: rgba(255, 255, 255, 0.08);
-  transform: translateY(-1px);
-  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.1);
 }
 
 .auth-btn.register {
-  background: rgba(0, 255, 255, 0.1);
-  color: #ffffff;
-  border: none;
-}
-
-.auth-btn.register::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(0, 255, 255, 0.2), transparent);
-  transition: left 0.5s ease;
-}
-
-.auth-btn.register:hover::before {
-  left: 100%;
+  background: #ffffff;
+  color: #000000;
+  border: 1px solid #ffffff;
 }
 
 .auth-btn.register:hover {
-  background: rgba(0, 255, 255, 0.15);
-  transform: translateY(-1px);
-  box-shadow: 0 4px 15px rgba(0, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.9);
+  color: #000000;
 }
 
 /* Hero Section - Ultra Premium */
