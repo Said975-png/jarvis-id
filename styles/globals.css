@@ -412,10 +412,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
+  width: 32px;
+  height: 32px;
   background: rgba(0, 255, 255, 0.1);
-  border-radius: 12px;
+  border-radius: 10px;
   color: #00ffff;
   flex-shrink: 0;
   transition: all 0.3s ease;
@@ -423,25 +423,34 @@ body {
 
 .tech-item:hover .tech-icon {
   background: rgba(0, 255, 255, 0.15);
-  transform: scale(1.1) rotate(5deg);
+  transform: scale(1.05);
+}
+
+.tech-content {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
 }
 
 .tech-content h4 {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   font-weight: 700;
   color: #ffffff;
   margin-bottom: 0.25rem;
   font-family: 'Inter', sans-serif;
   word-wrap: break-word;
+  overflow-wrap: break-word;
   hyphens: auto;
+  line-height: 1.3;
 }
 
 .tech-content p {
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.6);
   line-height: 1.4;
   word-wrap: break-word;
+  overflow-wrap: break-word;
   hyphens: auto;
 }
 
