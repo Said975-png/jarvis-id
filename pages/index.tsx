@@ -13,6 +13,10 @@ const RobotScene3D = dynamic(() => import('../components/RobotScene3D'), {
   loading: () => <div className="scene3d-loading">Loading robot...</div>
 });
 
+const ModernHeroElements = dynamic(() => import('../components/ModernHeroElements'), {
+  ssr: false
+});
+
 export default function Home() {
   return (
     <>
