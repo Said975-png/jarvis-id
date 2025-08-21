@@ -5124,6 +5124,8 @@ body {
 .footer-column {
   display: flex;
   flex-direction: column;
+  flex: 0 0 auto;
+  min-width: 200px;
 }
 
 .company-info {
