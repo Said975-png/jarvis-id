@@ -5087,7 +5087,16 @@ body {
 }
 
 .footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
   margin-bottom: 1.5rem;
+}
+
+.footer-logo-icon {
+  color: #00ffff;
+  width: 24px;
+  height: 24px;
 }
 
 .footer-logo-text {
