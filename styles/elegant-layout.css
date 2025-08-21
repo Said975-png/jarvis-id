@@ -425,6 +425,46 @@
   }
 }
 
+/* Subtle Graphics */
+.subtle-graphic {
+  position: absolute;
+  opacity: 0.4;
+  transition: all 0.3s ease;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.graph-viz {
+  top: 20%;
+  right: 30%;
+  animation: subtleFloat 12s ease-in-out infinite;
+}
+
+.network-viz {
+  bottom: 25%;
+  left: 25%;
+  animation: subtleFloat 15s ease-in-out infinite 5s;
+}
+
+.subtle-graphic:hover {
+  opacity: 0.7;
+}
+
+@keyframes subtleFloat {
+  0%, 100% {
+    transform: translateY(0px) translateX(0px);
+  }
+  25% {
+    transform: translateY(-8px) translateX(3px);
+  }
+  50% {
+    transform: translateY(-5px) translateX(-2px);
+  }
+  75% {
+    transform: translateY(-12px) translateX(1px);
+  }
+}
+
 /* Hover Effects for Parent Container */
 .hero-container:hover .elegant-card,
 .hero-container:hover .stat-card,
