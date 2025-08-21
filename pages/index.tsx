@@ -73,10 +73,115 @@ export default function Home() {
           <div className="gradient-orb orb-2"></div>
           <div className="gradient-orb orb-3"></div>
         </div>
+
+        {/* Floating Side Content */}
+        <div className="side-content left-side">
+          <div className="side-text-group">
+            <div className="side-label">Инновации</div>
+            <div className="side-title">Будущее</div>
+            <div className="side-subtitle">уже здесь</div>
+          </div>
+          <div className="side-text-group">
+            <div className="side-label">Технологии</div>
+            <div className="side-title">AI & ML</div>
+            <div className="side-subtitle">решения</div>
+          </div>
+          <div className="side-stats">
+            <div className="stat-mini">
+              <span className="stat-mini-number">500+</span>
+              <span className="stat-mini-label">Проектов</span>
+            </div>
+            <div className="stat-mini">
+              <span className="stat-mini-number">99.9%</span>
+              <span className="stat-mini-label">Uptime</span>
+            </div>
+          </div>
+        </div>
+
+        <div className="side-content right-side">
+          <div className="side-text-group">
+            <div className="side-label">Персонализация</div>
+            <div className="side-title">Умные</div>
+            <div className="side-subtitle">интерфейсы</div>
+          </div>
+          <div className="side-text-group">
+            <div className="side-label">Автоматизация</div>
+            <div className="side-title">24/7</div>
+            <div className="side-subtitle">поддержка</div>
+          </div>
+          <div className="side-stats">
+            <div className="stat-mini">
+              <span className="stat-mini-number">10x</span>
+              <span className="stat-mini-label">Скорость</span>
+            </div>
+            <div className="stat-mini">
+              <span className="stat-mini-number">95%</span>
+              <span className="stat-mini-label">Точность ИИ</span>
+            </div>
+          </div>
+        </div>
+
         <div className="hero-container">
           {/* Background JARVIS Text */}
           <div className="background-text">
             <span className="bg-jarvis">JARVIS</span>
+          </div>
+
+          {/* Main Hero Content */}
+          <div className="hero-main-content">
+            <div className="hero-badge">
+              <span className="badge-dot"></span>
+              <span>Революционная AI-платформа</span>
+            </div>
+
+            <h1 className="hero-title">
+              Создаем <span className="gradient-text">интеллектуальные</span><br />
+              веб-решения будущего
+            </h1>
+
+            <p className="hero-subtitle">
+              Разрабатываем сайты с ИИ-ассистентами, которые понимают ваших клиентов,
+              автоматизируют бизнес-процессы и увеличивают конверсию в 3 раза
+            </p>
+
+            <div className="hero-buttons">
+              <button className="btn-primary">
+                <span>Начать бесплатно</span>
+                <div className="btn-shine"></div>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <path d="M3.5 8H12.5M12.5 8L8.5 4M12.5 8L8.5 12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+              </button>
+              <button className="btn-secondary">
+                <span>Посмотреть демо</span>
+                <div className="btn-ripple"></div>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <path d="M6 3L10 8L6 13" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+              </button>
+            </div>
+
+            <div className="hero-features">
+              <div className="feature-pill">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <path d="M8 1L10.09 5.26L15 6L11 9.74L11.91 14.5L8 12.27L4.09 14.5L5 9.74L1 6L5.91 5.26L8 1Z" stroke="currentColor" strokeWidth="1.5"/>
+                </svg>
+                <span>GPT-4 интеграция</span>
+              </div>
+              <div className="feature-pill">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <path d="M8 1v14M1 8h14" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+                </svg>
+                <span>No-code решения</span>
+              </div>
+              <div className="feature-pill">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <circle cx="8" cy="8" r="3" stroke="currentColor" strokeWidth="1.5"/>
+                  <path d="M8 1v6m0 6v6m11-7h-6m-6 0H1" stroke="currentColor" strokeWidth="1.5"/>
+                </svg>
+                <span>Реальное время</span>
+              </div>
+            </div>
           </div>
 
           <div className="hero-layout">
@@ -96,6 +201,47 @@ export default function Home() {
             </div>
           </div>
 
+          {/* Floating Widgets */}
+          <div className="floating-widget widget-1">
+            <div className="widget-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                <polyline points="3.27,6.96 12,12.01 20.73,6.96"/>
+                <line x1="12" y1="22.08" x2="12" y2="12"/>
+              </svg>
+            </div>
+            <div className="widget-text">
+              <div className="widget-title">AI Analytics</div>
+              <div className="widget-subtitle">+127% рост</div>
+            </div>
+          </div>
+
+          <div className="floating-widget widget-2">
+            <div className="widget-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                <path d="M2 17l10 5 10-5"/>
+                <path d="M2 12l10 5 10-5"/>
+              </svg>
+            </div>
+            <div className="widget-text">
+              <div className="widget-title">Smart Chat</div>
+              <div className="widget-subtitle">Онлайн</div>
+            </div>
+          </div>
+
+          <div className="floating-widget widget-3">
+            <div className="widget-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <circle cx="12" cy="12" r="3"/>
+                <path d="M12 1v6m0 6v6m11-7h-6m-6 0H1"/>
+              </svg>
+            </div>
+            <div className="widget-text">
+              <div className="widget-title">Automation</div>
+              <div className="widget-subtitle">Активно</div>
+            </div>
+          </div>
         </div>
       </section>
 
