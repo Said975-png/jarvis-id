@@ -350,7 +350,7 @@ body {
 
 
 .gradient-orb {
-  display: none;
+  display: none !important;
 }
 
 /* Tech Stack */
