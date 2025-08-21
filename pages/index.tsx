@@ -506,8 +506,17 @@ export default function Home() {
       <section className="jarvis-section">
         <div className="jarvis-background"></div>
         <div className="jarvis-container">
-          <div className="jarvis-layout">
-            <div className="jarvis-content">
+          {/* Центральная 3D модель */}
+          <div className="jarvis-center-visual">
+            <div className="jarvis-3d-main">
+              <JarvisScene3D className="jarvis-scene-container" />
+            </div>
+          </div>
+
+          {/* Новая раскладка с текстом вокруг модели */}
+          <div className="jarvis-content-grid">
+            {/* Левый верхний блок */}
+            <div className="jarvis-content-block top-left">
               <div className="jarvis-badge">
                 <span className="badge-dot"></span>
                 <span>Искусственный интеллект</span>
@@ -517,10 +526,17 @@ export default function Home() {
                 <span className="highlight-text"> целую команду</span><br />
                 продавцов-консультантов
               </h2>
+            </div>
+
+            {/* Правый верхний блок */}
+            <div className="jarvis-content-block top-right">
               <p className="jarvis-subtitle">
                 Один умный ассистент выполняет работу десятков сотрудников. ДЖАРВИС ведет естественные диалоги с клиентами, предлагает товары, консультирует и находит лучшие предложения 24 часа в сутки без перерывов и выходных.
               </p>
+            </div>
 
+            {/* Левый нижний блок - функции */}
+            <div className="jarvis-content-block bottom-left">
               <div className="jarvis-features">
                 <div className="jarvis-feature-item">
                   <div className="jarvis-feature-icon">
@@ -560,7 +576,10 @@ export default function Home() {
                   </div>
                 </div>
               </div>
+            </div>
 
+            {/* Правый нижний блок - кнопки и метрики */}
+            <div className="jarvis-content-block bottom-right">
               <div className="jarvis-buttons">
                 <button className="btn-primary">
                   <span>Запустить ДЖАРВИС</span>
@@ -573,12 +592,6 @@ export default function Home() {
                   <span>Посмотреть демо</span>
                   <div className="btn-ripple"></div>
                 </button>
-              </div>
-            </div>
-
-            <div className="jarvis-visual">
-              <div className="jarvis-3d-main">
-                <JarvisScene3D className="jarvis-scene-container" />
               </div>
 
               {/* Enhanced Performance Metrics */}
