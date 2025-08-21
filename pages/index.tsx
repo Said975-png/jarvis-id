@@ -75,7 +75,15 @@ export default function Home() {
         </div>
         <div className="hero-container">
           <div className="hero-layout">
-            <div className="hero-content">
+            <div className="hero-side-text left-text">
+              <div className="creative-text">
+                <span className="text-accent">AI</span>
+                <span className="text-main">POWERED</span>
+                <span className="text-sub">Innovation</span>
+              </div>
+              <div className="creative-quote">
+                "Future is now"
+              </div>
             </div>
             <div className="hero-3d">
               <Scene3D className="scene3d-container" />
@@ -90,6 +98,16 @@ export default function Home() {
               </div>
               <div className="decorative-element elem-3">
                 <div className="floating-plus">+</div>
+              </div>
+            </div>
+            <div className="hero-side-text right-text">
+              <div className="creative-text">
+                <span className="text-accent">NEXT</span>
+                <span className="text-main">LEVEL</span>
+                <span className="text-sub">Technology</span>
+              </div>
+              <div className="creative-quote">
+                "Beyond limits"
               </div>
             </div>
           </div>
