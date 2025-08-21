@@ -4444,12 +4444,12 @@ body {
 
 .jarvis-3d-main {
   position: relative;
-  height: 600px;
-  width: 600px;
+  height: 800px;
+  width: 800px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 auto 1.5rem;
+  margin: 0 auto;
   max-width: 100%;
   overflow: visible;
 }
