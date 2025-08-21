@@ -1,0 +1,403 @@
+/* Creative Quote Styles */
+.creative-quote {
+  padding: 1.5rem;
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  backdrop-filter: blur(15px);
+  position: relative;
+  transition: all 0.4s ease;
+}
+
+.creative-quote:hover {
+  transform: translateY(-5px) translateX(10px);
+  border-color: rgba(255, 255, 255, 0.2);
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.quote-icon {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  opacity: 0.8;
+}
+
+.quote-text {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.quote-text span {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.9);
+  font-style: italic;
+  line-height: 1.4;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.quote-author {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 400;
+}
+
+/* Achievement Card */
+.achievement-card {
+  padding: 1.5rem;
+  background: rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  backdrop-filter: blur(20px);
+  text-align: center;
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.achievement-card:hover {
+  transform: translateY(-5px) translateX(-10px);
+  border-color: rgba(0, 255, 255, 0.3);
+  box-shadow: 0 20px 40px rgba(0, 255, 255, 0.1);
+}
+
+.achievement-number {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.achievement-text {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 1rem;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  width: 85%;
+  height: 100%;
+  background: linear-gradient(90deg, #00ffff, #ffffff);
+  border-radius: 2px;
+  animation: progressAnimation 2s ease-out;
+}
+
+@keyframes progressAnimation {
+  from { width: 0%; }
+  to { width: 85%; }
+}
+
+/* AI Capabilities */
+.ai-capabilities {
+  padding: 1.25rem;
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  backdrop-filter: blur(15px);
+  transition: all 0.3s ease;
+}
+
+.ai-capabilities:hover {
+  transform: translateY(-3px) translateX(-8px);
+  border-color: rgba(255, 255, 255, 0.15);
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.capability-title {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 1rem;
+  font-weight: 500;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.capability-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.capability-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.8);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  transition: all 0.3s ease;
+}
+
+.capability-item:hover {
+  color: rgba(255, 255, 255, 1);
+  transform: translateX(5px);
+}
+
+.cap-emoji {
+  font-size: 1rem;
+  opacity: 0.8;
+}
+
+/* Innovation Badge */
+.innovation-badge {
+  padding: 1.5rem;
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  backdrop-filter: blur(25px);
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s ease;
+}
+
+.innovation-badge:hover {
+  transform: translateY(-8px) translateX(-12px);
+  border-color: rgba(0, 255, 255, 0.4);
+  box-shadow: 0 25px 50px rgba(0, 255, 255, 0.15);
+}
+
+.badge-glow {
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(0, 255, 255, 0.1) 0%, transparent 70%);
+  animation: pulseGlow 4s ease-in-out infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.innovation-badge:hover .badge-glow {
+  opacity: 1;
+}
+
+@keyframes pulseGlow {
+  0%, 100% { transform: scale(1); opacity: 0.1; }
+  50% { transform: scale(1.1); opacity: 0.3; }
+}
+
+.badge-content {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  position: relative;
+  z-index: 2;
+}
+
+.badge-icon {
+  font-size: 1.5rem;
+  opacity: 0.9;
+}
+
+.badge-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 0.25rem;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.badge-subtitle {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.7);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+/* Enhanced Graphics */
+.ai-chart, .neural-network, .code-snippet {
+  position: absolute;
+  opacity: 0.7;
+  transition: all 0.4s ease;
+  z-index: 5;
+}
+
+.ai-chart {
+  top: 12%;
+  right: 22%;
+  animation: float 6s ease-in-out infinite;
+}
+
+.neural-network {
+  bottom: 25%;
+  left: 18%;
+  animation: float 8s ease-in-out infinite 2s;
+}
+
+.code-snippet {
+  top: 60%;
+  right: 35%;
+  animation: float 7s ease-in-out infinite 4s;
+}
+
+.ai-chart:hover, .neural-network:hover, .code-snippet:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.chart-container, .network-container {
+  background: rgba(0, 0, 0, 0.3);
+  padding: 1rem;
+  border-radius: 12px;
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 0.5rem;
+}
+
+.code-container {
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  overflow: hidden;
+  min-width: 200px;
+  margin-bottom: 0.5rem;
+}
+
+.code-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.code-dots {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.dot.red { background: #ff5f57; }
+.dot.yellow { background: #ffbd2e; }
+.dot.green { background: #28ca42; }
+
+.code-title {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.8);
+  font-family: 'SF Mono', Monaco, 'Cascadia Code', monospace;
+}
+
+.code-lines {
+  padding: 1rem;
+}
+
+.code-line {
+  font-size: 0.8rem;
+  font-family: 'SF Mono', Monaco, 'Cascadia Code', monospace;
+  line-height: 1.4;
+  margin-bottom: 0.25rem;
+}
+
+.code-keyword { color: #ff79c6; }
+.code-var { color: #8be9fd; }
+.code-string { color: #f1fa8c; }
+.code-method { color: #50fa7b; }
+
+.graph-label {
+  font-size: 0.7rem;
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+/* Extra Floating Elements */
+.extra-elements {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 3;
+}
+
+.floating-tag {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  backdrop-filter: blur(20px);
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.8);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  opacity: 0.8;
+  transition: all 0.3s ease;
+}
+
+.floating-tag:hover {
+  opacity: 1;
+  transform: scale(1.05);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.tag-1 {
+  top: 20%;
+  left: 45%;
+  animation: floatSlow 8s ease-in-out infinite;
+}
+
+.tag-2 {
+  top: 35%;
+  right: 40%;
+  animation: floatSlow 10s ease-in-out infinite 2s;
+}
+
+.tag-3 {
+  bottom: 30%;
+  left: 40%;
+  animation: floatSlow 9s ease-in-out infinite 4s;
+}
+
+@keyframes floatSlow {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  33% { transform: translateY(-15px) rotate(1deg); }
+  66% { transform: translateY(-5px) rotate(-1deg); }
+}
+
+.tag-emoji {
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+.connection-lines {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.connection-svg {
+  opacity: 0.3;
+}
+
+.connection-svg path {
+  animation: dashAnimation 20s linear infinite;
+}
+
+@keyframes dashAnimation {
+  0% { stroke-dashoffset: 0; }
+  100% { stroke-dashoffset: 100; }
+}
