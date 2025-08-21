@@ -263,7 +263,7 @@ export default function Home() {
                   </div>
                   <div className="metric-content">
                     <span className="metric-value">24/7</span>
-                    <span className="metric-label">Поддерж��а</span>
+                    <span className="metric-label">Поддержка</span>
                   </div>
                 </div>
               </div>
@@ -349,7 +349,7 @@ export default function Home() {
                   </div>
                   <div className="feature-content">
                     <h3 className="feature-title">Квантовая Аналитика</h3>
-                    <p className="feature-description">Продвинутые алгоритмы машинного обучения для предсказан��я трендов и оптимизации конверсий</p>
+                    <p className="feature-description">Продвинутые алгоритмы машинного обучения для предсказания трендов и оптимизации конверсий</p>
                   </div>
                 </div>
 
@@ -361,8 +361,8 @@ export default function Home() {
                     </svg>
                   </div>
                   <div className="feature-content">
-                    <h3 className="feature-title">Автоматизация бизнеса</h3>
-                    <p className="feature-description">ИИ для обработки заказов, клиентской поддержки и аналитики</p>
+                    <h3 className="feature-title">Нейро-Персонализация</h3>
+                    <p className="feature-description">Динамическая адаптация контента под каждого пользователя в режиме реального времени</p>
                   </div>
                 </div>
 
