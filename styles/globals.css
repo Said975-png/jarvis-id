@@ -1957,6 +1957,34 @@ body {
     padding: 0 1.5rem;
   }
 
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    text-align: center;
+  }
+
+  .hero-left {
+    text-align: center;
+    order: 1;
+  }
+
+  .hero-center {
+    order: 2;
+  }
+
+  .hero-right {
+    order: 3;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .hero-subtitle {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .navbar-menu {
     display: none;
   }
@@ -1980,8 +2008,14 @@ body {
     font-size: 10rem;
   }
 
-  .hero-3d {
+  .hero-3d-main {
+    width: 400px;
     height: 400px;
+  }
+
+  .tech-stack {
+    max-width: 400px;
+    margin: 0 auto;
   }
 }
 
