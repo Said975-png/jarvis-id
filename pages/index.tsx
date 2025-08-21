@@ -466,7 +466,7 @@ export default function Home() {
                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
                       <path d="M13.5 4.5L6 12L2.5 8.5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                     </svg>
-                    <span>Безлимитные страницы</span>
+                    <span>Безли��итные страницы</span>
                   </div>
                   <div className="feature-item">
                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
@@ -517,7 +517,7 @@ export default function Home() {
               <span className="gradient-text">20+ консультантов</span>
             </h2>
             <p className="team-subtitle">
-              Один умный ассистент выполняет работу десятков сотрудников. ДЖАРВИС ведет естественные диалоги с клиентами, предлагает товары, консультирует и находит лучшие предложения 24 часа в сутки без перерывов и выходных.
+              Один умный ассистент выполняет работ�� десятков сотрудников. ДЖАРВИС ведет естественные диалоги с клиентами, предлагает товары, консультирует и находит лучшие предложения 24 часа в сутки без перерывов и выходных.
             </p>
           </div>
 
@@ -689,7 +689,7 @@ export default function Home() {
           <div className="reviews-header">
             <div className="reviews-badge">
               <span className="badge-dot"></span>
-              <span>Отзывы наших клиентов</span>
+              <span>Отзывы наших кли��нтов</span>
             </div>
             <h2 className="reviews-title">
               Что говорят о нас
@@ -911,7 +911,7 @@ export default function Home() {
                   </p>
                   <div className="review-author">
                     <div className="author-info">
-                      <span className="author-name">Елена К.</span>
+                      <span className="author-name">Елен�� К.</span>
                       <span className="author-location">Москва, Freelance</span>
                     </div>
                   </div>
@@ -955,20 +955,6 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="reviews-stats">
-            <div className="stat-item">
-              <span className="stat-number">1000+</span>
-              <span className="stat-label">Довольных клиентов</span>
-            </div>
-            <div className="stat-item">
-              <span className="stat-number">4.9/5</span>
-              <span className="stat-label">Средняя оценка</span>
-            </div>
-            <div className="stat-item">
-              <span className="stat-number">98%</span>
-              <span className="stat-label">Рекомендуют друзьям</span>
-            </div>
-          </div>
         </div>
       </section>
 
