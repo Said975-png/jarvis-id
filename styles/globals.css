@@ -58,27 +58,6 @@ body {
   transition: all 0.3s ease;
 }
 
-.navbar-content::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.03), transparent);
-  transition: left 1s ease;
-}
-
-.navbar-content:hover::before {
-  left: 100%;
-}
-
-.navbar-content:hover {
-  background: rgba(0, 0, 0, 0.9);
-  border-color: rgba(255, 255, 255, 0.15);
-  transform: translateY(-2px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-}
 
 .navbar-logo {
   display: flex;
