@@ -93,7 +93,7 @@ export default function Home() {
 
               <p className="hero-subtitle">
                 Разрабатываем сайты с ИИ-ассистентами, которые понимают в��ших клиентов,
-                автоматизируют бизнес-процессы и увеличивают конверсию в 3 раза
+                автоматизируют бизнес-процессы и увеличивают к��нверсию в 3 раза
               </p>
 
               <div className="hero-buttons">
@@ -222,7 +222,7 @@ export default function Home() {
                   </div>
                   <div className="feature-content">
                     <h3 className="feature-title">Квантовая Аналитика</h3>
-                    <p className="feature-description">Продвинутые алгоритмы машинного обучения для предсказания трендов и оптимизации конверсий</p>
+                    <p className="feature-description">Продвинутые алгоритмы машинного обучен��я для предсказания трендов и оптимизации конверсий</p>
                   </div>
                 </div>
 
@@ -466,7 +466,7 @@ export default function Home() {
                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
                       <path d="M13.5 4.5L6 12L2.5 8.5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                     </svg>
-                    <span>Безлимитные страницы</span>
+                    <span>Безли��итные страницы</span>
                   </div>
                   <div className="feature-item">
                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
@@ -502,133 +502,462 @@ export default function Home() {
         </div>
       </section>
 
-      {/* JARVIS AI Section */}
-      <section className="jarvis-section">
-        <div className="jarvis-background"></div>
-        <div className="jarvis-container">
-          <div className="jarvis-layout">
-            <div className="jarvis-content">
-              <div className="jarvis-badge">
-                <span className="badge-dot"></span>
-                <span>Искусственный интеллект</span>
+      {/* JARVIS Team Replacement Section */}
+      <section className="team-replacement-section">
+        <div className="team-background"></div>
+        <div className="team-container">
+          {/* Header */}
+          <div className="team-header">
+            <div className="team-badge">
+              <span className="badge-dot"></span>
+              <span>Замена штата продавцов</span>
+            </div>
+            <h2 className="team-title">
+              <span className="highlight-text">1 ИИ</span> заменяет<br />
+              <span className="gradient-text">20+ консультантов</span>
+            </h2>
+            <p className="team-subtitle">
+              Один умный ассистент выполняет работ�� десятков сотрудников. ДЖАРВИС ведет естественные диалоги с клиентами, предлагает товары, консультирует и находит лучшие предложения 24 часа в сутки без перерывов и выходных.
+            </p>
+          </div>
+
+          {/* Features Grid */}
+          <div className="team-features-grid">
+            <div className="team-feature-card">
+              <div className="feature-card-icon">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                </svg>
               </div>
-              <h2 className="jarvis-title">
-                ДЖАРВИС заменяет
-                <span className="highlight-text"> целую команду</span><br />
-                продавцов-консультантов
-              </h2>
-              <p className="jarvis-subtitle">
-                Один умный ассистент выполняет работу десятков сотрудников. ДЖАРВИС ведет естественные диалоги с клиентами, предлагает товары, консультирует и находит лучшие предложения 24 часа в сутки без перерывов и выходных.
-              </p>
-
-              <div className="jarvis-features">
-                <div className="jarvis-feature-item">
-                  <div className="jarvis-feature-icon">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                      <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
-                    </svg>
-                  </div>
-                  <div className="jarvis-feature-content">
-                    <h3 className="jarvis-feature-title">Естественные диалоги</h3>
-                    <p className="jarvis-feature-description">Ведет беседы как живой консультант, понимает контекст и эмоции клиентов</p>
-                  </div>
-                </div>
-
-                <div className="jarvis-feature-item">
-                  <div className="jarvis-feature-icon">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                      <circle cx="11" cy="11" r="8"/>
-                      <path d="m21 21-4.35-4.35"/>
-                    </svg>
-                  </div>
-                  <div className="jarvis-feature-content">
-                    <h3 className="jarvis-feature-title">Умный поиск предложений</h3>
-                    <p className="jarvis-feature-description">Мгновенно находит лучшие товары и услуги под потребности каждого клиента</p>
-                  </div>
-                </div>
-
-                <div className="jarvis-feature-item">
-                  <div className="jarvis-feature-icon">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                      <circle cx="12" cy="12" r="10"/>
-                      <polyline points="12,6 12,12 16,14"/>
-                    </svg>
-                  </div>
-                  <div className="jarvis-feature-content">
-                    <h3 className="jarvis-feature-title">Работает 24/7</h3>
-                    <p className="jarvis-feature-description">Никогда не устает, не берет отпуск и готов помочь клиентам в любое время</p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="jarvis-buttons">
-                <button className="btn-primary">
-                  <span>Запустить ДЖАРВИС</span>
-                  <div className="btn-shine"></div>
-                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                    <path d="M3.5 8H12.5M12.5 8L8.5 4M12.5 8L8.5 12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+              <h3 className="feature-card-title">Живое общение</h3>
+              <p className="feature-card-description">Общается как человек</p>
+              <div className="feature-details">
+                <div className="detail-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <polyline points="20,6 9,17 4,12"/>
                   </svg>
-                </button>
-                <button className="btn-secondary">
-                  <span>Посмотреть демо</span>
-                  <div className="btn-ripple"></div>
-                </button>
+                  <span>Понимает эмоции клиентов</span>
+                </div>
+                <div className="detail-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <polyline points="20,6 9,17 4,12"/>
+                  </svg>
+                  <span>Естественные диалоги</span>
+                </div>
+                <div className="detail-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <polyline points="20,6 9,17 4,12"/>
+                  </svg>
+                  <span>Адаптируется под клиента</span>
+                </div>
               </div>
             </div>
 
-            <div className="jarvis-visual">
-              <div className="jarvis-3d-main">
-                <JarvisScene3D className="jarvis-scene-container" />
+            <div className="team-feature-card">
+              <div className="feature-card-icon">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <circle cx="11" cy="11" r="8"/>
+                  <path d="m21 21-4.35-4.35"/>
+                </svg>
               </div>
-
-              {/* Enhanced Performance Metrics */}
-              <div className="jarvis-performance-display">
-                <div className="metric-item">
-                  <div className="metric-icon">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                      <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
-                    </svg>
-                  </div>
-                  <div className="metric-content">
-                    <span className="metric-value">15x</span>
-                    <span className="metric-label">Быстрее команды</span>
-                  </div>
+              <h3 className="feature-card-title">Умный подбор товаров</h3>
+              <p className="feature-card-description">Анализирует потребности клиента</p>
+              <div className="feature-details">
+                <div className="detail-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <polyline points="20,6 9,17 4,12"/>
+                  </svg>
+                  <span>Изучает предпочтения</span>
                 </div>
-                <div className="metric-item">
-                  <div className="metric-icon">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                      <circle cx="12" cy="12" r="3"/>
-                      <path d="M12 1v6m0 6v6m11-7h-6m-6 0H1"/>
-                    </svg>
-                  </div>
-                  <div className="metric-content">
-                    <span className="metric-value">500+</span>
-                    <span className="metric-label">Клиентов в час</span>
-                  </div>
+                <div className="detail-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <polyline points="20,6 9,17 4,12"/>
+                  </svg>
+                  <span>Персональные рекомендации</span>
                 </div>
-                <div className="metric-item">
-                  <div className="metric-icon">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                      <circle cx="12" cy="12" r="10"/>
-                      <polyline points="12,6 12,12 16,14"/>
-                    </svg>
-                  </div>
-                  <div className="metric-content">
-                    <span className="metric-value">98%</span>
-                    <span className="metric-label">Удовлетворенность</span>
-                  </div>
+                <div className="detail-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <polyline points="20,6 9,17 4,12"/>
+                  </svg>
+                  <span>Точные предложения</span>
                 </div>
               </div>
+            </div>
 
-              {/* Status Indicator */}
-              <div className="status-indicator">
-                <div className="status-dot"></div>
-                <span className="status-text">ДЖАРВИС активен • Обучение в реальном времени</span>
+            <div className="team-feature-card">
+              <div className="feature-card-icon">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                </svg>
+              </div>
+              <h3 className="feature-card-title">Поиск выгодных аналогов</h3>
+              <p className="feature-card-description">Находит дешевые альтернативы</p>
+              <div className="feature-details">
+                <div className="detail-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <polyline points="20,6 9,17 4,12"/>
+                  </svg>
+                  <span>Сравнивает цены</span>
+                </div>
+                <div className="detail-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <polyline points="20,6 9,17 4,12"/>
+                  </svg>
+                  <span>Находит скидки</span>
+                </div>
+                <div className="detail-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <polyline points="20,6 9,17 4,12"/>
+                  </svg>
+                  <span>Экономит деньги клиентов</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="team-feature-card">
+              <div className="feature-card-icon">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <circle cx="12" cy="12" r="10"/>
+                  <polyline points="12,6 12,12 16,14"/>
+                </svg>
+              </div>
+              <h3 className="feature-card-title">24 часа без перерывов</h3>
+              <p className="feature-card-description">Всегда готов помочь</p>
+              <div className="feature-details">
+                <div className="detail-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <polyline points="20,6 9,17 4,12"/>
+                  </svg>
+                  <span>Работает 24/7/365</span>
+                </div>
+                <div className="detail-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <polyline points="20,6 9,17 4,12"/>
+                  </svg>
+                  <span>Никогда не устает</span>
+                </div>
+                <div className="detail-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <polyline points="20,6 9,17 4,12"/>
+                  </svg>
+                  <span>Мгновенные ответы</span>
+                </div>
               </div>
             </div>
           </div>
+
+          {/* Statistics */}
+          <div className="team-statistics">
+            <div className="statistics-card">
+              <h3 className="statistics-title">Впечатляющие результаты ДЖАРВИС</h3>
+              <div className="statistics-grid">
+                <div className="stat-item">
+                  <span className="stat-number">1</span>
+                  <span className="stat-label">ИИ заменяет 20+ сотрудников</span>
+                </div>
+                <div className="stat-item">
+                  <span className="stat-number">24/7</span>
+                  <span className="stat-label">Работает без перерывов</span>
+                </div>
+                <div className="stat-item">
+                  <span className="stat-number">90%</span>
+                  <span className="stat-label">Экономия на зарплатах</span>
+                </div>
+                <div className="stat-item">
+                  <span className="stat-number">500+</span>
+                  <span className="stat-label">Клиентов в день</span>
+                </div>
+                <div className="stat-item">
+                  <span className="stat-number">98%</span>
+                  <span className="stat-label">Удовлетворенность клиентов</span>
+                </div>
+                <div className="stat-item">
+                  <span className="stat-number">0</span>
+                  <span className="stat-label">Больничных и отпусков</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </section>
+
+      {/* Reviews Section */}
+      <section className="reviews-section" id="reviews">
+        <div className="reviews-background"></div>
+        <div className="reviews-container">
+          <div className="reviews-header">
+            <div className="reviews-badge">
+              <span className="badge-dot"></span>
+              <span>Отзывы наших кли��нтов</span>
+            </div>
+            <h2 className="reviews-title">
+              Что говорят о нас
+              <span className="gradient-text"> наши клиенты</span>
+            </h2>
+            <p className="reviews-subtitle">
+              Узнайте что говорят наши клиенты о работе с JARVIS
+            </p>
+          </div>
+
+          <div className="reviews-slider">
+            <div className="reviews-track">
+              {/* Review 1 */}
+              <div className="review-card">
+                <div className="review-content">
+                  <div className="stars">
+                    <span>⭐⭐⭐⭐⭐</span>
+                  </div>
+                  <p className="review-text">
+                    "Я не разбираюсь в сайтах, но в Jarvis всё объяснили простыми словами. Сделал магазин, подключил оплату, и теперь я продаю в 3 странах. Рекомендую!"
+                  </p>
+                  <div className="review-author">
+                    <div className="author-info">
+                      <span className="author-name">Умид А.</span>
+                      <span className="author-location">Ташкент, Freelance</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Review 2 */}
+              <div className="review-card">
+                <div className="review-content">
+                  <div className="stars">
+                    <span>⭐⭐⭐⭐⭐</span>
+                  </div>
+                  <p className="review-text">
+                    "Создала сайт с Jarvis Intercoma для своего магазина одежды. Работать стало легче: бот помогает клиентам выбирать стиль, отвечает на вопросы, а я только получаю заказы. Очень довольна!"
+                  </p>
+                  <div className="review-author">
+                    <div className="author-info">
+                      <span className="author-name">Алимова М.</span>
+                      <span className="author-location">Чебоксары, Freelance</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Review 3 */}
+              <div className="review-card">
+                <div className="review-content">
+                  <div className="stars">
+                    <span>⭐⭐⭐⭐⭐</span>
+                  </div>
+                  <p className="review-text">
+                    "Сделала сайт для своего бутика с Jarvis. Удобно и быстро, клиенты довольны. Бот помогает им найти нужные товары, даже ночью."
+                  </p>
+                  <div className="review-author">
+                    <div className="author-info">
+                      <span className="author-name">Романова И.</span>
+                      <span className="author-location">Уфа, Freelance</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Review 4 */}
+              <div className="review-card">
+                <div className="review-content">
+                  <div className="stars">
+                    <span>⭐⭐⭐⭐⭐</span>
+                  </div>
+                  <p className="review-text">
+                    "Создала интернет-магазин с помощью Jarvis. Весь процесс автоматизирован, а бот отвечает на вопросы клиентов в любое время дня и ночи."
+                  </p>
+                  <div className="review-author">
+                    <div className="author-info">
+                      <span className="author-name">Алексеева Л.</span>
+                      <span className="author-location">Казань, Freelance</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Review 5 */}
+              <div className="review-card">
+                <div className="review-content">
+                  <div className="stars">
+                    <span>⭐⭐⭐⭐⭐</span>
+                  </div>
+                  <p className="review-text">
+                    "Решил попробовать Jarvis для создания сайта магазина бытовой техники. Результат впечатлил: бот быстро и точно помогает клиентам выбрать товар."
+                  </p>
+                  <div className="review-author">
+                    <div className="author-info">
+                      <span className="author-name">Шарипов М.</span>
+                      <span className="author-location">Бухара, Freelance</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Review 6 */}
+              <div className="review-card">
+                <div className="review-content">
+                  <div className="stars">
+                    <span>⭐⭐⭐⭐⭐</span>
+                  </div>
+                  <p className="review-text">
+                    "Мой магазин ювелирных изделий стал более удобным благодаря Jarvis. Бот помогает клиентам выбрать подходящие украшения и отвечает на все вопросы."
+                  </p>
+                  <div className="review-author">
+                    <div className="author-info">
+                      <span className="author-name">Васильева О.</span>
+                      <span className="author-location">Набережные Челны, Freelance</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Review 7 */}
+              <div className="review-card">
+                <div className="review-content">
+                  <div className="stars">
+                    <span>⭐⭐⭐⭐⭐</span>
+                  </div>
+                  <p className="review-text">
+                    "Создала сайт для своего магазина с Jarvis. Клиенты часто обращаются за помощью, и бот всегда подскажет им нужную информацию."
+                  </p>
+                  <div className="review-author">
+                    <div className="author-info">
+                      <span className="author-name">Захарова Т.</span>
+                      <span className="author-location">Самара, Freelance</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Review 8 */}
+              <div className="review-card">
+                <div className="review-content">
+                  <div className="stars">
+                    <span>⭐⭐⭐⭐⭐</span>
+                  </div>
+                  <p className="review-text">
+                    "Сайт для онлайн-магазина с Jarvis стал отличным решением. Бот быстро помогает покупателям, что существенно увеличило количество заказов."
+                  </p>
+                  <div className="review-author">
+                    <div className="author-info">
+                      <span className="author-name">Розенбаум В.</span>
+                      <span className="author-location">Санкт-Петербург, Freelance</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Review 9 */}
+              <div className="review-card">
+                <div className="review-content">
+                  <div className="stars">
+                    <span>⭐⭐⭐⭐⭐</span>
+                  </div>
+                  <p className="review-text">
+                    "С Jarvis сайт для моего магазина одежды стал суперудобным. Бот помогает клиентам найти нужный товар и оформить заказ без проблем."
+                  </p>
+                  <div className="review-author">
+                    <div className="author-info">
+                      <span className="author-name">Петрова М.</span>
+                      <span className="author-location">Нижний Новгород, Freelance</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Review 10 */}
+              <div className="review-card">
+                <div className="review-content">
+                  <div className="stars">
+                    <span>⭐⭐⭐⭐⭐</span>
+                  </div>
+                  <p className="review-text">
+                    "Заказал сайт от Jarvis Intercoma онлайн-магазин с ИИ Джарвисом, и не пожалел! Всё сделали быстро, магазин сразу начал приносить заказы. Особенно понравилось, что бот отвечает клиентам мгновенно, даже ночью."
+                  </p>
+                  <div className="review-author">
+                    <div className="author-info">
+                      <span className="author-name">Карим</span>
+                      <span className="author-location">Ташкент, Freelance</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Review 11 */}
+              <div className="review-card">
+                <div className="review-content">
+                  <div className="stars">
+                    <span>⭐⭐⭐⭐⭐</span>
+                  </div>
+                  <p className="review-text">
+                    "Мне сделали сайт с Jarvis Intercoma под мою студию украшений. Красиво, удобно, и всё автоматизировано. Теперь я занимаюсь только заказами, а не сижу целый день в переписках с клиентами."
+                  </p>
+                  <div className="review-author">
+                    <div className="author-info">
+                      <span className="author-name">Мадина Р.</span>
+                      <span className="author-location">Ташкент, Freelance</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Review 12 */}
+              <div className="review-card">
+                <div className="review-content">
+                  <div className="stars">
+                    <span>⭐⭐⭐⭐⭐</span>
+                  </div>
+                  <p className="review-text">
+                    "Создала магазин косметики с Jarvis. Бот идеально консультирует клиентов по уходу за кожей, подбирает продукты по типу кожи. Продажи выросли в 4 раза!"
+                  </p>
+                  <div className="review-author">
+                    <div className="author-info">
+                      <span className="author-name">Елен�� К.</span>
+                      <span className="author-location">Москва, Freelance</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Duplicate cards for infinite scroll */}
+              <div className="review-card">
+                <div className="review-content">
+                  <div className="stars">
+                    <span>⭐⭐⭐⭐⭐</span>
+                  </div>
+                  <p className="review-text">
+                    "Я не разбираюсь в сайтах, но в Jarvis всё объяснили простыми словами. Сделал магазин, подключил оплату, и теперь я продаю в 3 странах. Рекомендую!"
+                  </p>
+                  <div className="review-author">
+                    <div className="author-info">
+                      <span className="author-name">Умид А.</span>
+                      <span className="author-location">Ташкент, Freelance</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="review-card">
+                <div className="review-content">
+                  <div className="stars">
+                    <span>⭐⭐⭐⭐⭐</span>
+                  </div>
+                  <p className="review-text">
+                    "Создала сайт с Jarvis Intercoma для своего магазина одежды. Работать стало легче: бот помогает клиентам выбирать стиль, отвечает на вопросы, а я только получаю заказы. Очень довольна!"
+                  </p>
+                  <div className="review-author">
+                    <div className="author-info">
+                      <span className="author-name">Алимова М.</span>
+                      <span className="author-location">Чебоксары, Freelance</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
     </>
   );
 }

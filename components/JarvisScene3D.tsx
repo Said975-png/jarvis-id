@@ -43,7 +43,7 @@ function JarvisScene3D({ className }: JarvisScene3DProps) {
           {/* The New Cyborg Head */}
           <CyborgHead2
             position={[0, 0, 0]}
-            scale={2.0}
+            scale={3.5}
           />
           
           {/* Contact shadows for realism */}
