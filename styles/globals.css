@@ -2048,6 +2048,7 @@ body {
 
   .hero-features {
     gap: 0.5rem;
+    justify-content: center;
   }
 
   .auth-btn {
@@ -2059,8 +2060,30 @@ body {
     font-size: 6rem;
   }
 
-  .hero-3d {
-    height: 300px;
+  .hero-3d-main {
+    width: 320px;
+    height: 320px;
+  }
+
+  .performance-display {
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .metric-value {
+    font-size: 1.2rem;
+  }
+
+  .tech-item {
+    padding: 1rem;
+  }
+
+  .tech-content h4 {
+    font-size: 0.9rem;
+  }
+
+  .tech-content p {
+    font-size: 0.75rem;
   }
 
   .capabilities-stats {
@@ -2074,6 +2097,10 @@ body {
 
   .stat-number {
     font-size: 1.1rem;
+  }
+
+  .orbit-ring {
+    display: none;
   }
 }
 
