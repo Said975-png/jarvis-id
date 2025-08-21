@@ -367,6 +367,159 @@ body {
   animation-delay: 3s;
 }
 
+.floating-text.section-mid-left {
+  top: 50%;
+  left: 2%;
+  animation-delay: 4s;
+  transform: translateY(-50%);
+}
+
+.floating-text.section-mid-right {
+  top: 45%;
+  right: 2%;
+  animation-delay: 5s;
+  transform: translateY(-50%);
+}
+
+/* Central Hero Title */
+.hero-central-title {
+  position: absolute;
+  top: 12%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  z-index: 5;
+}
+
+.main-title {
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+.title-line {
+  display: block;
+  font-size: 4rem;
+  font-weight: 900;
+  color: #ffffff;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+  animation: titleGlow 3s ease-in-out infinite alternate;
+}
+
+.title-sub {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: rgba(0, 255, 255, 0.8);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.title-description {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 300;
+  margin: 0;
+  letter-spacing: 0.05em;
+}
+
+@keyframes titleGlow {
+  0% {
+    text-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+  }
+  100% {
+    text-shadow: 0 0 30px rgba(0, 255, 255, 0.6), 0 0 40px rgba(255, 255, 255, 0.1);
+  }
+}
+
+/* Hero Action Buttons */
+.hero-action-buttons {
+  position: absolute;
+  bottom: 8%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 1.5rem;
+  z-index: 10;
+}
+
+.action-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.8rem 1.5rem;
+  background: rgba(0, 0, 0, 0.3);
+  border: none;
+  border-radius: 30px;
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  backdrop-filter: blur(20px);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  position: relative;
+  overflow: hidden;
+}
+
+.action-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+  transition: left 0.5s ease;
+}
+
+.action-btn:hover::before {
+  left: 100%;
+}
+
+.action-btn:hover {
+  transform: translateY(-3px);
+}
+
+.action-btn.primary {
+  background: rgba(0, 255, 255, 0.15);
+}
+
+.action-btn.primary:hover {
+  background: rgba(0, 255, 255, 0.25);
+  box-shadow: 0 8px 25px rgba(0, 255, 255, 0.3);
+}
+
+.action-btn.secondary {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.action-btn.secondary:hover {
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 25px rgba(255, 255, 255, 0.2);
+}
+
+.action-btn.accent {
+  background: rgba(255, 0, 255, 0.15);
+}
+
+.action-btn.accent:hover {
+  background: rgba(255, 0, 255, 0.25);
+  box-shadow: 0 8px 25px rgba(255, 0, 255, 0.3);
+}
+
+.btn-icon {
+  font-size: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.action-btn:hover .btn-icon {
+  transform: translateX(3px);
+}
+
 .mini-text {
   font-size: 0.7rem;
   font-weight: 700;
