@@ -11,7 +11,7 @@ function RobotScene3D({ className }: RobotScene3DProps) {
   return (
     <div className={className}>
       <Canvas
-        camera={{ position: [2, 0.5, 3], fov: 50 }}
+        camera={{ position: [2, 1, 4], fov: 60 }}
         style={{ width: '100%', height: '100%' }}
         gl={{ antialias: true, alpha: true }}
       >
@@ -50,7 +50,7 @@ function RobotScene3D({ className }: RobotScene3DProps) {
           {/* The Robot Model */}
           <Suspense fallback={null}>
             <RobotModel
-              position={[0, -1.2, 0]}
+              position={[0, -1.5, 0]}
               scale={0.35}
             />
           </Suspense>
