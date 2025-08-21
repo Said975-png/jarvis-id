@@ -2846,11 +2846,7 @@ body {
 
 /* Add gradient orbs to capabilities */
 .capabilities-background .gradient-orb {
-  position: absolute;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(0, 255, 255, 0.1) 0%, transparent 70%);
-  animation: float 20s ease-in-out infinite;
-  display: block;
+  display: none !important;
 }
 
 .capabilities-background .orb-1 {
