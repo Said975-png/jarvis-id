@@ -2851,19 +2851,7 @@ body {
 }
 
 .bg-platform {
-  font-size: 16rem;
-  font-weight: 900;
-  font-family: 'Orbitron', 'Inter', monospace;
-  color: rgba(255, 255, 255, 0.12);
-  letter-spacing: 0.25em;
-  text-transform: uppercase;
-  text-shadow:
-    0 0 80px rgba(0, 255, 255, 0.25),
-    0 0 150px rgba(255, 255, 255, 0.15),
-    0 0 300px rgba(0, 255, 255, 0.08);
-  animation: bgTextPulse 6s ease-in-out infinite alternate;
-  filter: blur(1.5px);
-  white-space: nowrap;
+  display: none !important;
 }
 
 .capabilities-layout {
