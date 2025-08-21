@@ -199,59 +199,40 @@ body {
   backdrop-filter: blur(15px);
 }
 
-.auth-btn.login {
-  background: rgba(255, 255, 255, 0.05);
-  color: rgba(255, 255, 255, 0.9);
-  border: none;
+.auth-btn {
+  background: rgba(0, 0, 0, 0.08);
+  color: #000000;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0.6rem 1.5rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
 }
 
-.auth-btn.login::before {
+.auth-btn::before {
   content: '';
   position: absolute;
   top: 0;
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+  background: linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.05), transparent);
   transition: left 0.5s ease;
 }
 
-.auth-btn.login:hover::before {
+.auth-btn:hover::before {
   left: 100%;
 }
 
-.auth-btn.login:hover {
-  color: #ffffff;
-  background: rgba(255, 255, 255, 0.08);
+.auth-btn:hover {
+  background: rgba(0, 0, 0, 0.12);
+  border-color: rgba(0, 0, 0, 0.2);
   transform: translateY(-1px);
-  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
-}
-
-.auth-btn.register {
-  background: rgba(0, 255, 255, 0.1);
-  color: #ffffff;
-  border: none;
-}
-
-.auth-btn.register::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(0, 255, 255, 0.2), transparent);
-  transition: left 0.5s ease;
-}
-
-.auth-btn.register:hover::before {
-  left: 100%;
-}
-
-.auth-btn.register:hover {
-  background: rgba(0, 255, 255, 0.15);
-  transform: translateY(-1px);
-  box-shadow: 0 4px 15px rgba(0, 255, 255, 0.2);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 /* Hero Section - Ultra Premium */
