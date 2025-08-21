@@ -20,13 +20,42 @@ body {
   width: 100%;
 }
 
-/* Предотвращение переполнения для контейнеров */
+/* Предотвращение переполнения для всех контейнеров */
 .navbar-container,
 .hero-container,
-.hero-content {
-  max-width: 100%;
+.hero-content,
+.capabilities-section,
+.pricing-section,
+.jarvis-section,
+.team-section,
+.reviews-section,
+.footer {
+  max-width: 100vw;
   overflow-x: hidden;
   box-sizing: border-box;
+}
+
+/* Исправление для всех секций на мобильном */
+@media (max-width: 768px) {
+  * {
+    max-width: 100vw;
+    box-sizing: border-box;
+  }
+
+  .hero-section,
+  .capabilities-section,
+  .pricing-section,
+  .jarvis-section,
+  .team-section,
+  .reviews-section,
+  .footer {
+    width: 100vw;
+    max-width: 100vw;
+    overflow-x: hidden;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    box-sizing: border-box;
+  }
 }
 
 /* Performance optimizations for scroll effects */
@@ -2632,7 +2661,7 @@ body {
 ======================================== */
 
 @media (hover: none) and (pointer: coarse) {
-  /* Увеличиваем размеры кнопок для сенсорных устройств */
+  /* Увеличиваем размеры кнопок для сенсорных устр��йств */
   .cart-btn,
   .auth-btn {
     min-height: 48px;
@@ -2700,7 +2729,7 @@ body {
   }
 }
 
-/* Portrait режим на планшетах */
+/* Portrait ��ежим на планшетах */
 @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
   .hero-title {
     font-size: 3.5rem;
