@@ -83,19 +83,11 @@ export default function Home() {
 
           {/* Top Elements */}
           <div className="floating-top-elements">
-            <div className="top-item top-left">
-              <div className="elegant-card">
-                <div className="card-icon">🤖</div>
-                <div className="card-title">AI Integration</div>
-                <div className="card-desc">Встраиваем GPT в ваш сайт</div>
-              </div>
+            <div className="modern-item">
+              <span className="modern-text">🤖 AI Integration</span>
             </div>
-            <div className="top-item top-right">
-              <div className="elegant-card">
-                <div className="card-icon">⚡</div>
-                <div className="card-title">Lightning Fast</div>
-                <div className="card-desc">Мгновенные ответы ИИ</div>
-              </div>
+            <div className="modern-item">
+              <span className="modern-text">⚡ Lightning Fast</span>
             </div>
           </div>
 
