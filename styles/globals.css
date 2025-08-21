@@ -4834,6 +4834,10 @@ body {
   overflow: hidden;
 }
 
+.reviews-background::before {
+  display: none;
+}
+
 .reviews-container {
   max-width: 1400px;
   margin: 0 auto;
