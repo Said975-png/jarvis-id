@@ -50,8 +50,8 @@ function RobotScene3D({ className }: RobotScene3DProps) {
           {/* The Robot Model */}
           <Suspense fallback={null}>
             <RobotModel
-              position={[0, 0, 0]}
-              scale={1}
+              position={[0, -0.8, 0]}
+              scale={0.2}
             />
           </Suspense>
           
