@@ -5029,9 +5029,9 @@ body {
 /* Responsive Design for Reviews Section */
 @media (max-width: 1024px) {
   .review-card {
-    min-width: 280px;
-    max-width: 280px;
-    height: 210px;
+    min-width: 340px;
+    max-width: 340px;
+    min-height: 250px;
   }
 }
 
@@ -5041,24 +5041,23 @@ body {
   }
 
   .review-card {
-    min-width: 240px;
-    max-width: 240px;
-    height: 180px;
-    padding: 1rem;
+    min-width: 300px;
+    max-width: 300px;
+    min-height: 220px;
+    padding: 1.25rem;
   }
 
   .review-text {
     font-size: 0.85rem;
-    -webkit-line-clamp: 4;
   }
 }
 
 @media (max-width: 480px) {
   .review-card {
-    min-width: 200px;
-    max-width: 200px;
-    height: 160px;
-    padding: 0.875rem;
+    min-width: 280px;
+    max-width: 280px;
+    min-height: 200px;
+    padding: 1rem;
   }
 
   .reviews-track {
@@ -5067,7 +5066,6 @@ body {
 
   .review-text {
     font-size: 0.8rem;
-    -webkit-line-clamp: 3;
   }
 
   .author-name {
