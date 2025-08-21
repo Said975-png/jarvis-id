@@ -4973,17 +4973,17 @@ body {
 }
 
 .stars {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.75rem;
 }
 
 .stars span {
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: #ffd700;
 }
 
 .review-text {
-  font-size: 0.85rem;
-  line-height: 1.4;
+  font-size: 0.9rem;
+  line-height: 1.5;
   color: rgba(255, 255, 255, 0.8);
   margin-bottom: auto;
   font-style: italic;
@@ -4991,7 +4991,7 @@ body {
   flex: 1;
   overflow: hidden;
   display: -webkit-box;
-  -webkit-line-clamp: 4;
+  -webkit-line-clamp: 5;
   -webkit-box-orient: vertical;
 }
 
