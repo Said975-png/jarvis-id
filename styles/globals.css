@@ -593,6 +593,8 @@ body {
   flex-direction: column;
   justify-content: center;
   text-align: left;
+  max-width: 100%;
+  padding-right: 1rem;
 }
 
 .hero-center {
