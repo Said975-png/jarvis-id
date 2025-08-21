@@ -577,12 +577,15 @@ body {
 /* Hero Grid Layout */
 .hero-grid {
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
-  gap: 3rem;
+  grid-template-columns: 1fr 1.5fr 1fr;
+  gap: 2rem;
   align-items: center;
   min-height: 80vh;
   position: relative;
   z-index: 20;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
 }
 
 .hero-left {
