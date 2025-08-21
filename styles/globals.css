@@ -2513,6 +2513,137 @@ body {
   }
 }
 
+/* ========================================
+   HIGH-DPI / RETINA DISPLAYS
+======================================== */
+
+/* Retina displays */
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+       only screen and (min--moz-device-pixel-ratio: 2),
+       only screen and (-o-min-device-pixel-ratio: 2/1),
+       only screen and (min-device-pixel-ratio: 2),
+       only screen and (min-resolution: 192dpi),
+       only screen and (min-resolution: 2dppx) {
+
+  .hero-title {
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .navbar-logo .logo-text {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* ========================================
+   TOUCH DEVICES OPTIMIZATION
+======================================== */
+
+@media (hover: none) and (pointer: coarse) {
+  /* Увеличиваем размеры кнопок для сенсорных устройств */
+  .cart-btn,
+  .auth-btn {
+    min-height: 44px;
+    min-width: 44px;
+  }
+
+  .auth-btn {
+    padding: 0.75rem 1.5rem;
+  }
+
+  /* Убираем hover эффекты на мобильных */
+  .cart-btn:hover,
+  .auth-btn:hover {
+    transform: none;
+    background: rgba(255, 255, 255, 0.08);
+  }
+}
+
+/* ========================================
+   ORIENTATION SPECIFIC STYLES
+======================================== */
+
+/* Landscape режим на мобильных */
+@media screen and (max-height: 500px) and (orientation: landscape) {
+  .hero-section {
+    min-height: 100vh;
+    padding-top: 60px;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .navbar {
+    padding: 0.5rem 0;
+  }
+}
+
+/* Portrait режим на планшетах */
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  .hero-title {
+    font-size: 3.5rem;
+  }
+
+  .navbar-content {
+    padding: 1rem 2rem;
+  }
+}
+
+/* ========================================
+   PRINT STYLES
+======================================== */
+
+@media print {
+  * {
+    background: transparent !important;
+    color: black !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  .navbar,
+  .cart-btn,
+  .auth-btn {
+    display: none !important;
+  }
+
+  .hero-section {
+    page-break-inside: avoid;
+  }
+}
+
+/* ========================================
+   ACCESSIBILITY ENHANCEMENTS
+======================================== */
+
+/* Уменьшение движения для пользователей с вестибулярными расстройствами */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Высокий контраст */
+@media (prefers-contrast: high) {
+  .hero-title {
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  }
+
+  .auth-btn {
+    border: 2px solid #ffffff;
+    background: rgba(0, 0, 0, 0.8);
+  }
+}
+
 /* Mobile Responsive Design */
 @media (max-width: 1500px) {
   .hero-grid {
