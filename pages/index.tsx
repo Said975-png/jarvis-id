@@ -72,12 +72,26 @@ export default function Home() {
           <div className="gradient-orb orb-1"></div>
           <div className="gradient-orb orb-2"></div>
           <div className="gradient-orb orb-3"></div>
+
+          {/* Animated Particles */}
+          <div className="particles-container">
+            {Array.from({ length: 50 }, (_, i) => (
+              <div key={i} className={`particle particle-${i % 5}`}></div>
+            ))}
+          </div>
+
+          {/* Scanning Lines */}
+          <div className="scan-lines">
+            <div className="scan-line scan-1"></div>
+            <div className="scan-line scan-2"></div>
+            <div className="scan-line scan-3"></div>
+          </div>
         </div>
         <div className="hero-container">
           <div className="hero-layout">
             <div className="hero-side-text left-text">
               <div className="creative-text">
-                <span className="text-accent">AI</span>
+                <span className="text-accent glitch" data-text="AI">AI</span>
                 <span className="text-main">POWERED</span>
                 <span className="text-sub">Innovation</span>
               </div>
@@ -102,7 +116,7 @@ export default function Home() {
             </div>
             <div className="hero-side-text right-text">
               <div className="creative-text">
-                <span className="text-accent">NEXT</span>
+                <span className="text-accent glitch" data-text="NEXT">NEXT</span>
                 <span className="text-main">LEVEL</span>
                 <span className="text-sub">Technology</span>
               </div>
@@ -174,7 +188,7 @@ export default function Home() {
                   </div>
                   <div className="feature-content">
                     <h3 className="feature-title">Персонализация</h3>
-                    <p className="feature-description">Адаптивный контент и рекомендации на основе поведения пользователей</p>
+                    <p className="feature-description">Адаптивный контент �� рекомендации на основе поведения пользователей</p>
                   </div>
                 </div>
               </div>
