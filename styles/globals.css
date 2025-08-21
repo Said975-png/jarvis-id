@@ -281,8 +281,7 @@ body {
 }
 
 .hero-content {
-  max-width: 600px;
-  text-align: left;
+  display: none;
 }
 
 .hero-3d {
