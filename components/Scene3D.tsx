@@ -43,7 +43,7 @@ function Scene3D({ className }: Scene3DProps) {
           {/* The Cyborg Head */}
           <CyborgHead
             position={[0, 0, 0]}
-            scale={1.0}
+            scale={1.3}
           />
           
           {/* Contact shadows for realism */}
