@@ -5265,12 +5265,15 @@ body {
 /* Footer Responsive */
 @media (max-width: 1024px) {
   .footer-grid {
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 2rem;
+    gap: 1.5rem;
+  }
+
+  .footer-column {
+    min-width: 180px;
   }
 
   .company-info {
-    grid-column: 1 / -1;
+    flex: 1 1 100%;
     max-width: 100%;
     margin-bottom: 2rem;
   }
@@ -5278,8 +5281,13 @@ body {
 
 @media (max-width: 768px) {
   .footer-grid {
-    grid-template-columns: 1fr;
+    flex-direction: column;
     gap: 2rem;
+  }
+
+  .footer-column {
+    min-width: unset;
+    width: 100%;
   }
 
   .footer-content {
