@@ -74,6 +74,11 @@ export default function Home() {
           <div className="gradient-orb orb-3"></div>
         </div>
         <div className="hero-container">
+          {/* Background JARVIS Text */}
+          <div className="background-text">
+            <span className="bg-jarvis">JARVIS</span>
+          </div>
+
           <div className="hero-layout">
             <div className="hero-3d">
               <Scene3D className="scene3d-container" />
