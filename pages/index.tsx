@@ -89,16 +89,6 @@ export default function Home() {
                 <div className="floating-plus">+</div>
               </div>
             </div>
-            <div className="hero-side-text right-text">
-              <div className="creative-text">
-                <span className="text-accent">NEXT</span>
-                <span className="text-main">LEVEL</span>
-                <span className="text-sub">Technology</span>
-              </div>
-              <div className="creative-quote">
-                "Beyond limits"
-              </div>
-            </div>
           </div>
 
         </div>
