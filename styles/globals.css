@@ -60,8 +60,7 @@ body {
 
 
 .navbar-logo {
-  display: flex;
-  align-items: center;
+  display: none;
 }
 
 .logo-text {
