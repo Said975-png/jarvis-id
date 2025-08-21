@@ -283,9 +283,40 @@ export default function Home() {
       {/* Platform Capabilities Section */}
       <section className="capabilities-section">
         <div className="capabilities-background">
-          <div className="ai-orb ai-orb-1"></div>
-          <div className="ai-orb ai-orb-2"></div>
-          <div className="ai-orb ai-orb-3"></div>
+          <div className="gradient-orb orb-1"></div>
+          <div className="gradient-orb orb-2"></div>
+          <div className="gradient-orb orb-3"></div>
+
+          {/* Advanced Particle System */}
+          <div className="particle-system">
+            {[...Array(40)].map((_, i) => (
+              <div
+                key={i}
+                className={`floating-particle particle-${i % 5}`}
+                style={{
+                  left: `${Math.random() * 100}%`,
+                  top: `${Math.random() * 100}%`,
+                  animationDelay: `${Math.random() * 10}s`
+                }}
+              ></div>
+            ))}
+          </div>
+
+          {/* Neural Network Lines */}
+          <div className="neural-network">
+            <svg className="neural-svg" viewBox="0 0 1920 1080">
+              <defs>
+                <linearGradient id="neuralGradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stopColor="rgba(0,255,255,0.3)" />
+                  <stop offset="50%" stopColor="rgba(255,0,255,0.2)" />
+                  <stop offset="100%" stopColor="rgba(0,255,255,0.1)" />
+                </linearGradient>
+              </defs>
+              <path className="neural-path path-1" d="M0,300 Q480,100 960,440 T1920,200" stroke="url(#neuralGradient2)" />
+              <path className="neural-path path-2" d="M0,500 Q480,700 960,240 T1920,580" stroke="url(#neuralGradient2)" />
+              <path className="neural-path path-3" d="M0,700 Q480,500 960,640 T1920,380" stroke="url(#neuralGradient2)" />
+            </svg>
+          </div>
         </div>
         <div className="capabilities-container">
           <div className="capabilities-layout">
