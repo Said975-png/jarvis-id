@@ -51,7 +51,7 @@ export default function Home() {
                   <path d="M1 4H15V12C15 12.5523 14.5523 13 14 13H2C1.44772 13 1 12.5523 1 12V4Z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                   <path d="M1 4L8 8L15 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
-                <span>Цен��</span>
+                <span>Цены</span>
               </button>
             </div>
             <div className="navbar-auth">
@@ -127,7 +127,7 @@ export default function Home() {
               </h1>
 
               <p className="hero-subtitle">
-                Разрабатываем сайты с ИИ-ассистентами, которые понимают ваших клиентов,
+                Разрабатываем сайты с ИИ-ассистентами, которые понимают ваших клиен��ов,
                 автоматизируют бизнес-процессы и увеличивают конверсию в 3 раза
               </p>
 
@@ -397,7 +397,106 @@ export default function Home() {
             </div>
 
             <div className="capabilities-visual">
-              <RobotScene3D className="robot-scene-container" />
+              <div className="capabilities-3d-main">
+                <RobotScene3D className="robot-scene-container" />
+
+                {/* Advanced Interactive Elements */}
+                <div className="orbit-ring ring-1">
+                  <div className="ring-particle particle-1"></div>
+                  <div className="ring-particle particle-2"></div>
+                </div>
+                <div className="orbit-ring ring-2">
+                  <div className="ring-particle particle-3"></div>
+                  <div className="ring-particle particle-4"></div>
+                </div>
+                <div className="orbit-ring ring-3">
+                  <div className="ring-particle particle-5"></div>
+                  <div className="ring-particle particle-6"></div>
+                </div>
+
+                {/* Enhanced Data Points */}
+                <div className="data-point point-1">
+                  <div className="data-dot">
+                    <div className="dot-pulse"></div>
+                  </div>
+                  <div className="data-label">AI CORE</div>
+                  <div className="data-connection line-1"></div>
+                </div>
+                <div className="data-point point-2">
+                  <div className="data-dot">
+                    <div className="dot-pulse"></div>
+                  </div>
+                  <div className="data-label">NEURAL NET</div>
+                  <div className="data-connection line-2"></div>
+                </div>
+                <div className="data-point point-3">
+                  <div className="data-dot">
+                    <div className="dot-pulse"></div>
+                  </div>
+                  <div className="data-label">ANALYTICS</div>
+                  <div className="data-connection line-3"></div>
+                </div>
+
+                {/* Energy Field */}
+                <div className="energy-field">
+                  <div className="energy-wave wave-1"></div>
+                  <div className="energy-wave wave-2"></div>
+                  <div className="energy-wave wave-3"></div>
+                </div>
+
+                {/* Holographic Grid */}
+                <div className="holo-grid">
+                  <div className="grid-line horizontal line-1"></div>
+                  <div className="grid-line horizontal line-2"></div>
+                  <div className="grid-line vertical line-3"></div>
+                  <div className="grid-line vertical line-4"></div>
+                </div>
+              </div>
+
+              {/* Enhanced Performance Metrics */}
+              <div className="capabilities-performance-display">
+                <div className="metric-item">
+                  <div className="metric-icon">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                      <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+                    </svg>
+                  </div>
+                  <div className="metric-content">
+                    <span className="metric-value">95%</span>
+                    <span className="metric-label">Точность</span>
+                  </div>
+                </div>
+                <div className="metric-item">
+                  <div className="metric-icon">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                      <circle cx="12" cy="12" r="3"/>
+                      <path d="M12 1v6m0 6v6m11-7h-6m-6 0H1"/>
+                    </svg>
+                  </div>
+                  <div className="metric-content">
+                    <span className="metric-value">∞</span>
+                    <span className="metric-label">Масштаб</span>
+                  </div>
+                </div>
+                <div className="metric-item">
+                  <div className="metric-icon">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                      <circle cx="12" cy="12" r="10"/>
+                      <polyline points="12,6 12,12 16,14"/>
+                    </svg>
+                  </div>
+                  <div className="metric-content">
+                    <span className="metric-value">24/7</span>
+                    <span className="metric-label">Работа</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Status Indicator */}
+              <div className="status-indicator">
+                <div className="status-dot"></div>
+                <span className="status-text">Платформа активна • Все модули функционируют</span>
+              </div>
             </div>
           </div>
         </div>
