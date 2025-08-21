@@ -192,11 +192,6 @@ export default function Home() {
       <section className="capabilities-section">
         <div className="capabilities-background"></div>
         <div className="capabilities-container">
-          {/* Background PLATFORM Text */}
-          <div className="capabilities-background-text">
-            <span className="bg-platform">PLATFORM</span>
-          </div>
-
           <div className="capabilities-layout">
             <div className="capabilities-content">
               <div className="capabilities-badge">
