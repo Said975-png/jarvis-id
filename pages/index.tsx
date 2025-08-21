@@ -35,36 +35,25 @@ export default function Home() {
       <nav className="navbar">
         <div className="navbar-container">
           <div className="navbar-content">
+            {/* Logo */}
             <div className="navbar-logo">
               <span className="logo-text">JARVIS</span>
             </div>
-            <div className="navbar-menu">
-              <button className="nav-btn">
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+
+            {/* Search */}
+            <div className="navbar-search">
+              <div className="search-container">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" className="search-icon">
                   <path d="M14 14L10.5 10.5M12 6.5C12 9.53757 9.53757 12 6.5 12C3.46243 12 1 9.53757 1 6.5C1 3.46243 3.46243 1 6.5 1C9.53757 1 12 3.46243 12 6.5Z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
-                <span>Поиск</span>
-              </button>
-              <a href="#reviews" className="nav-btn">
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                  <path d="M8 1L10.09 5.26L15 6L11 9.74L11.91 14.5L8 12.27L4.09 14.5L5 9.74L1 6L5.91 5.26L8 1Z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>
-                <span>Отзывы</span>
-              </a>
-              <button className="nav-btn">
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                  <path d="M1 4H15V12C15 12.5523 14.5523 13 14 13H2C1.44772 13 1 12.5523 1 12V4Z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                  <path d="M1 4L8 8L15 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>
-                <span>Цены</span>
-              </button>
+                <input type="text" placeholder="Поиск" className="search-input" />
+              </div>
             </div>
+
+            {/* Auth */}
             <div className="navbar-auth">
-              <button className="auth-btn login">
-                <span>Вход</span>
-              </button>
-              <button className="auth-btn register">
-                <span>Регистрация</span>
+              <button className="auth-btn">
+                <span>Войти</span>
               </button>
             </div>
           </div>
@@ -93,7 +82,7 @@ export default function Home() {
 
               <p className="hero-subtitle">
                 Разрабатываем сайты с ИИ-ассистентами, которые понимают в��ших клиентов,
-                автоматизируют бизнес-процессы и увелич��вают к��нверсию в 3 раза
+                автоматизируют бизнес-процессы и увелич��вают к����нверсию в 3 раза
               </p>
 
               <div className="hero-buttons">
@@ -222,7 +211,7 @@ export default function Home() {
                   </div>
                   <div className="feature-content">
                     <h3 className="feature-title">Квантовая Аналитика</h3>
-                    <p className="feature-description">Продвинутые алгоритмы машинно��о обучен��я для предсказания трендов и оптимизации конверсий</p>
+                    <p className="feature-description">Продвинутые алгоритмы машинно��о обучен��я для предска��ания трендов и оптимизации конверсий</p>
                   </div>
                 </div>
 
@@ -249,7 +238,7 @@ export default function Home() {
                   </div>
                   <div className="feature-content">
                     <h3 className="feature-title">Голографические Интерфейсы</h3>
-                    <p className="feature-description">Им��ерсивные 3D-интерфейсы с поддержкой AR/VR для невероятного пользовательского опыта</p>
+                    <p className="feature-description">Иммерсивные 3D-интерфейсы с поддержкой AR/VR для невероятного пользовательского опыта</p>
                   </div>
                 </div>
               </div>
@@ -316,7 +305,7 @@ export default function Home() {
               {/* Status Indicator */}
               <div className="status-indicator">
                 <div className="status-dot"></div>
-                <span className="status-text">Квантовые процессоры активны • Нейросеть обучается</span>
+                <span className="status-text">Квантовы�� процессоры активны • Нейросеть обучается</span>
               </div>
             </div>
           </div>
@@ -530,7 +519,7 @@ export default function Home() {
                 </svg>
               </div>
               <h3 className="feature-card-title">Живое общение</h3>
-              <p className="feature-card-description">Общается к��к человек</p>
+              <p className="feature-card-description">О��щается к��к человек</p>
               <div className="feature-details">
                 <div className="detail-item">
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -590,7 +579,7 @@ export default function Home() {
                   <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
                 </svg>
               </div>
-              <h3 className="feature-card-title">Поиск выгодных ��налогов</h3>
+              <h3 className="feature-card-title">Поиск выгодных аналогов</h3>
               <p className="feature-card-description">Находит дешевые альтернативы</p>
               <div className="feature-details">
                 <div className="detail-item">
@@ -649,7 +638,7 @@ export default function Home() {
           {/* Statistics */}
           <div className="team-statistics">
             <div className="statistics-card">
-              <h3 className="statistics-title">Впечатляющие результаты ДЖАРВИС</h3>
+              <h3 className="statistics-title">��печатляющие результаты ДЖАРВИС</h3>
               <div className="statistics-grid">
                 <div className="stat-item">
                   <span className="stat-number">1</span>
@@ -727,7 +716,7 @@ export default function Home() {
                     <span>⭐⭐⭐⭐⭐</span>
                   </div>
                   <p className="review-text">
-                    "Создала сайт с Jarvis Intercoma для своего магазина одежды. Работать стало легче: бот помогает клиентам выбирать стиль, отвечает на вопросы, а я только получаю заказы. Очень довольна!"
+                    "Создала сайт с Jarvis Intercoma для своего магазина одежды. Работать стало легче: бот помогает клиентам выбирать стиль, отвеча��т на вопросы, а я только получаю заказы. Очень довольна!"
                   </p>
                   <div className="review-author">
                     <div className="author-info">
@@ -804,7 +793,7 @@ export default function Home() {
                   <div className="review-author">
                     <div className="author-info">
                       <span className="author-name">Васильева О.</span>
-                      <span className="author-location">Набережные Челны, Freelance</span>
+                      <span className="author-location">Набережные Ч��лны, Freelance</span>
                     </div>
                   </div>
                 </div>
@@ -889,7 +878,7 @@ export default function Home() {
                     <span>⭐⭐⭐⭐⭐</span>
                   </div>
                   <p className="review-text">
-                    "Мне сделали сайт с Jarvis Intercoma под мою студию украшений. Красиво, удобно, и всё автоматизировано. Теперь я занимаюсь только заказами, а не сижу целый день в переписках с клиента��и."
+                    "Мне сделали сайт с Jarvis Intercoma под мою студию украшений. Красиво, удобно, и всё автоматизировано. Теперь я занимаюсь только заказами, а не сижу целый день в переписках с клиентами."
                   </p>
                   <div className="review-author">
                     <div className="author-info">
@@ -925,7 +914,7 @@ export default function Home() {
                     <span>⭐⭐⭐⭐⭐</span>
                   </div>
                   <p className="review-text">
-                    "Я не разбираюсь в сайтах, но в Jarvis всё объяснили простыми словами. Сделал магазин, ��одключил оплату, и теперь я продаю в 3 странах. Рекомендую!"
+                    "Я не разбираюсь в сайтах, но в Jarvis всё объяснили простыми словами. Сделал магазин, ��одключил оплат��, и теперь я продаю в 3 странах. Рекомендую!"
                   </p>
                   <div className="review-author">
                     <div className="author-info">
