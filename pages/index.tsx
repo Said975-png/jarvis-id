@@ -102,6 +102,12 @@ export default function Home() {
             <div className="hero-3d">
               <Scene3D className="scene3d-container" />
 
+              {/* Pulsing Rings around 3D Model */}
+              <div className="pulse-rings">
+                <div className="pulse-ring ring-1"></div>
+                <div className="pulse-ring ring-2"></div>
+                <div className="pulse-ring ring-3"></div>
+              </div>
 
               {/* Decorative Elements */}
               <div className="decorative-element elem-1">
