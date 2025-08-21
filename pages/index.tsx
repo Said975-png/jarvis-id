@@ -661,7 +661,7 @@ export default function Home() {
                 </div>
                 <div className="stat-item">
                   <span className="stat-number">90%</span>
-                  <span className="stat-label">Экономи�� на зарплатах</span>
+                  <span className="stat-label">Экономия на зарплатах</span>
                 </div>
                 <div className="stat-item">
                   <span className="stat-number">500+</span>
@@ -692,11 +692,11 @@ export default function Home() {
               <span>Отзывы наших клиентов</span>
             </div>
             <h2 className="reviews-title">
-              Что г��ворят о нас
+              Что говорят о нас
               <span className="gradient-text"> наши клиенты</span>
             </h2>
             <p className="reviews-subtitle">
-              Более 1000+ довольных клиентов уже используют JARVIS для развития своего бизнеса
+              Узнайте что говорят наши клиенты о работе с JARVIS
             </p>
           </div>
 
@@ -871,7 +871,7 @@ export default function Home() {
                     <span>⭐⭐⭐⭐⭐</span>
                   </div>
                   <p className="review-text">
-                    "Заказал сайт о�� Jarvis Intercoma онлайн-магазин с ИИ Джарвисом, и не пожалел! Всё сделали быстро, магазин сразу начал приносить заказы. Особенно понравилось, что бот отвечает клиентам мгновенно, даже ночью."
+                    "Заказал сайт от Jarvis Intercoma онлайн-магазин с ИИ Джарвисом, и не пожалел! Всё сделали быстро, магазин сразу начал приносить заказы. Особенно понравилось, что бот отвечает клиентам мгновенно, даже ночью."
                   </p>
                   <div className="review-author">
                     <div className="author-info">
@@ -889,7 +889,7 @@ export default function Home() {
                     <span>⭐⭐⭐⭐⭐</span>
                   </div>
                   <p className="review-text">
-                    "Мне сделали сайт с Jarvis Intercoma под мою студию украшений. Красиво, удобно, и всё автоматизировано. Теперь я занимаюсь только заказами, а не сижу целый день в п��реписках с клиентами."
+                    "Мне сделали сайт с Jarvis Intercoma под мою студию украшений. Красиво, удобно, и всё автоматизировано. Теперь я занимаюсь только заказами, а не сижу целый день в переписках с клиентами."
                   </p>
                   <div className="review-author">
                     <div className="author-info">
