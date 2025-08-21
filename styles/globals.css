@@ -4251,66 +4251,27 @@ body {
   padding: 0 2rem;
   position: relative;
   z-index: 10;
-  width: 100%;
 }
 
-/* Центральная 3D модель */
-.jarvis-center-visual {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 1;
-}
-
-/* Сетка с контентом вокруг модели */
-.jarvis-content-grid {
+.jarvis-layout {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto auto;
-  gap: 4rem;
-  position: relative;
-  z-index: 2;
-  padding: 0 1rem;
+  gap: 5rem;
+  align-items: center;
 }
 
-.jarvis-content-block {
+.jarvis-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.jarvis-visual {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   position: relative;
-}
-
-.jarvis-content-block.top-left {
-  grid-column: 1;
-  grid-row: 1;
-  text-align: right;
-  padding-right: 3rem;
-  margin-top: -3rem;
-}
-
-.jarvis-content-block.top-right {
-  grid-column: 2;
-  grid-row: 1;
-  text-align: left;
-  padding-left: 3rem;
-  margin-top: -3rem;
-}
-
-.jarvis-content-block.bottom-left {
-  grid-column: 1;
-  grid-row: 2;
-  text-align: right;
-  padding-right: 3rem;
-  margin-bottom: -3rem;
-}
-
-.jarvis-content-block.bottom-right {
-  grid-column: 2;
-  grid-row: 2;
-  text-align: left;
-  padding-left: 3rem;
-  margin-bottom: -3rem;
 }
 
 .jarvis-badge {
