@@ -395,24 +395,25 @@ body {
 .bg-jarvis {
   font-size: 12rem;
   font-weight: 900;
-  color: rgba(255, 255, 255, 0.03);
+  color: rgba(255, 255, 255, 0.15);
   letter-spacing: 0.2em;
   text-transform: uppercase;
   text-shadow:
-    0 0 50px rgba(0, 255, 255, 0.05),
-    0 0 100px rgba(255, 255, 255, 0.02);
+    0 0 50px rgba(0, 255, 255, 0.2),
+    0 0 100px rgba(255, 255, 255, 0.1),
+    0 0 200px rgba(0, 255, 255, 0.05);
   animation: bgTextPulse 6s ease-in-out infinite alternate;
-  filter: blur(0.5px);
+  filter: blur(1px);
 }
 
 @keyframes bgTextPulse {
   0% {
-    opacity: 0.03;
+    opacity: 0.1;
     transform: scale(1);
   }
   100% {
-    opacity: 0.08;
-    transform: scale(1.02);
+    opacity: 0.25;
+    transform: scale(1.03);
   }
 }
 
