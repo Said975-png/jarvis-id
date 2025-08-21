@@ -223,7 +223,7 @@ export default function Home() {
                     </svg>
                   </div>
                   <div className="feature-content">
-                    <h3 className="feature-title">Нейро-Персонализация</h3>
+                    <h3 className="feature-title">��ейро-Персонализация</h3>
                     <p className="feature-description">Динамическая адаптация контента под каждого пользователя в режиме реального времени</p>
                   </div>
                 </div>
@@ -326,7 +326,7 @@ export default function Home() {
               <span className="gradient-text"> план</span>
             </h2>
             <p className="pricing-subtitle">
-              Гибкие тарифные планы для любого размера бизнеса - от стартапов до крупных корпораций
+              Гибкие тарифные планы для любого размера би��неса - от стартапов до крупных корпораций
             </p>
           </div>
 
@@ -734,7 +734,7 @@ export default function Home() {
                     <span>⭐⭐⭐⭐⭐</span>
                   </div>
                   <p className="review-text">
-                    "Сделала сайт для своего бутика с Jarvis. Удобно и быстро, клиенты довольны. Бот помогает им найти нужные то��ары, даже ночью."
+                    "Сделала сайт для своего бутика с Jarvis. Удобно и быстро, клиенты довольны. Бот помогает им найти нужные товары, даже ночью."
                   </p>
                   <div className="review-author">
                     <div className="author-info">
@@ -757,7 +757,7 @@ export default function Home() {
                   <div className="review-author">
                     <div className="author-info">
                       <span className="author-name">Алексеева Л.</span>
-                      <span className="author-location">Казань, Freelance</span>
+                      <span className="author-location">��азань, Freelance</span>
                     </div>
                   </div>
                 </div>
@@ -860,7 +860,7 @@ export default function Home() {
                     <span>⭐⭐⭐⭐⭐</span>
                   </div>
                   <p className="review-text">
-                    "Заказал сайт от Jarvis Intercoma онлайн-маг��зин с ИИ Джарвисом, и не пожалел! Всё сделали быстро, магазин сразу начал приносить заказы. Особенно понравилось, что бот отвечает клиентам мгновенно, даже ночью."
+                    "Заказал сайт от Jarvis Intercoma онлайн-магазин с ИИ Джарвисом, и не пожалел! Всё сделали быстро, магазин сразу начал приносить заказы. Особенно понравилось, что бот отвечает клиентам мгновенно, даже ночью."
                   </p>
                   <div className="review-author">
                     <div className="author-info">
@@ -931,7 +931,7 @@ export default function Home() {
                     <span>⭐⭐⭐⭐⭐</span>
                   </div>
                   <p className="review-text">
-                    "Создала сайт с Jarvis Intercoma для своего магазина одежды. Работать стало легче: бот помогает клиентам выбира��ь стиль, отвечает на вопросы, а я только получаю заказы. Очень довольна!"
+                    "Создала сайт с Jarvis Intercoma для своего магазина одежды. Работать ��тало легче: бот помогает клиентам выбирать стиль, отвечает на вопросы, а я только получаю заказы. Очень довольна!"
                   </p>
                   <div className="review-author">
                     <div className="author-info">
@@ -981,15 +981,14 @@ export default function Home() {
                   </ul>
                 </div>
 
-                {/* Solutions */}
+                {/* Company */}
                 <div className="footer-column">
-                  <h3 className="footer-column-title">Решения</h3>
+                  <h3 className="footer-column-title">Компания</h3>
                   <ul className="footer-links">
-                    <li><a href="#" className="footer-link">Для стартапов</a></li>
-                    <li><a href="#" className="footer-link">Для бизнеса</a></li>
-                    <li><a href="#" className="footer-link">Для корпораций</a></li>
-                    <li><a href="#" className="footer-link">E-commerce</a></li>
-                    <li><a href="#" className="footer-link">Консультации</a></li>
+                    <li><a href="#" className="footer-link">О проекте</a></li>
+                    <li><a href="#" className="footer-link">Команда</a></li>
+                    <li><a href="#" className="footer-link">Карьера</a></li>
+                    <li><a href="#" className="footer-link">Блог</a></li>
                   </ul>
                 </div>
 
