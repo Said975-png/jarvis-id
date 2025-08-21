@@ -275,51 +275,6 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Right Content */}
-            <div className="hero-right">
-              <div className="tech-stack">
-                <div className="tech-item">
-                  <div className="tech-icon">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                      <path d="M12 2L2 7l10 5 10-5-10-5z"/>
-                      <path d="M2 17l10 5 10-5"/>
-                      <path d="M2 12l10 5 10-5"/>
-                    </svg>
-                  </div>
-                  <div className="tech-content">
-                    <h4>Machine Learning</h4>
-                    <p>Глубокое обучение</p>
-                  </div>
-                </div>
-
-                <div className="tech-item">
-                  <div className="tech-icon">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                      <circle cx="12" cy="12" r="3"/>
-                      <path d="M12 1v6m0 6v6m11-7h-6m-6 0H1"/>
-                    </svg>
-                  </div>
-                  <div className="tech-content">
-                    <h4>Real-time Processing</h4>
-                    <p>Мгновенная обработка</p>
-                  </div>
-                </div>
-
-                <div className="tech-item">
-                  <div className="tech-icon">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                      <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
-                      <polyline points="3.27,6.96 12,12.01 20.73,6.96"/>
-                      <line x1="12" y1="22.08" x2="12" y2="12"/>
-                    </svg>
-                  </div>
-                  <div className="tech-content">
-                    <h4>Advanced Analytics</h4>
-                    <p>Умная аналитика</p>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
 
         </div>
@@ -344,7 +299,7 @@ export default function Home() {
                 <span className="highlight-text"> Платформы</span>
               </h2>
               <p className="capabilities-subtitle">
-                Мы создаем сайты с интеллектуальными ИИ ассистентами, которые революционизируют взаимодействие с вашими клиентами
+                Мы создаем сайты с интеллектуальными ИИ ассистентами, которые революционизируют взаимоде��ствие с вашими клиентами
               </p>
 
               <div className="capabilities-features">
@@ -370,7 +325,7 @@ export default function Home() {
                     </svg>
                   </div>
                   <div className="feature-content">
-                    <h3 className="feature-title">Автоматизация би��неса</h3>
+                    <h3 className="feature-title">Автоматизация бизнеса</h3>
                     <p className="feature-description">ИИ для обработки заказов, клиентской поддержки и аналитики</p>
                   </div>
                 </div>
@@ -385,7 +340,7 @@ export default function Home() {
                   </div>
                   <div className="feature-content">
                     <h3 className="feature-title">Персонализация</h3>
-                    <p className="feature-description">Адаптивный контент �� рекомендации на основе по��едения пользователей</p>
+                    <p className="feature-description">Ад��птивный контент �� рекомендации на основе по��едения пользователей</p>
                   </div>
                 </div>
               </div>
