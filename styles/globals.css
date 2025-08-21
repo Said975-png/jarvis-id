@@ -4009,19 +4009,15 @@ body {
 }
 
 .pricing-card:hover {
-  border-color: rgba(255, 255, 255, 0.15);
   transform: translateY(-8px);
-  box-shadow: 0 32px 64px rgba(0, 0, 0, 0.25);
 }
 
 .pricing-card.featured {
-  border-color: rgba(255, 255, 255, 0.12);
   transform: scale(1.02);
   position: relative;
 }
 
 .pricing-card.featured:hover {
-  border-color: rgba(255, 255, 255, 0.2);
   transform: scale(1.02) translateY(-8px);
 }
 
