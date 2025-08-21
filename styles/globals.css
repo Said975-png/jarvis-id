@@ -82,6 +82,10 @@ body {
   background: rgba(0, 0, 0, 0.95);
   backdrop-filter: blur(20px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  width: 100vw;
+  max-width: 100vw;
+  overflow-x: hidden;
+  box-sizing: border-box;
 }
 
 .navbar-container {
@@ -2661,7 +2665,7 @@ body {
 ======================================== */
 
 @media (hover: none) and (pointer: coarse) {
-  /* Увеличиваем размеры кнопок для сенсорных устр��йств */
+  /* Увеличиваем размеры кнопок для сенсорных устройств */
   .cart-btn,
   .auth-btn {
     min-height: 48px;
@@ -2729,7 +2733,7 @@ body {
   }
 }
 
-/* Portrait ��ежим на планшетах */
+/* Portrait режим на планшетах */
 @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
   .hero-title {
     font-size: 3.5rem;
