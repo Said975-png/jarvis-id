@@ -175,29 +175,24 @@ export default function Home() {
                 <div className="floating-plus">+</div>
               </div>
 
-              {/* Additional Graphics */}
-              <div className="graphic-element graph-1">
+              {/* Subtle Graphics */}
+              <div className="subtle-graphic graph-viz">
                 <svg width="60" height="40" viewBox="0 0 60 40" fill="none">
-                  <path d="M5 35L15 25L25 30L35 15L45 20L55 10" stroke="rgba(255,255,255,0.3)" strokeWidth="2" fill="none"/>
-                  <circle cx="15" cy="25" r="2" fill="rgba(255,255,255,0.5)"/>
-                  <circle cx="35" cy="15" r="2" fill="rgba(255,255,255,0.5)"/>
-                  <circle cx="55" cy="10" r="2" fill="rgba(255,255,255,0.5)"/>
+                  <path d="M5 35L15 25L25 30L35 15L45 20L55 10" stroke="rgba(255,255,255,0.1)" strokeWidth="1" fill="none"/>
+                  <circle cx="35" cy="15" r="1" fill="rgba(255,255,255,0.2)"/>
+                  <circle cx="55" cy="10" r="1" fill="rgba(255,255,255,0.2)"/>
                 </svg>
-                <div className="graph-label">Performance</div>
               </div>
 
-              <div className="graphic-element network-1">
-                <svg width="80" height="60" viewBox="0 0 80 60" fill="none">
-                  <circle cx="20" cy="20" r="3" fill="rgba(255,255,255,0.4)"/>
-                  <circle cx="60" cy="15" r="3" fill="rgba(255,255,255,0.4)"/>
-                  <circle cx="40" cy="40" r="3" fill="rgba(255,255,255,0.4)"/>
-                  <circle cx="15" cy="45" r="3" fill="rgba(255,255,255,0.4)"/>
-                  <line x1="20" y1="20" x2="60" y2="15" stroke="rgba(255,255,255,0.2)" strokeWidth="1"/>
-                  <line x1="20" y1="20" x2="40" y2="40" stroke="rgba(255,255,255,0.2)" strokeWidth="1"/>
-                  <line x1="40" y1="40" x2="60" y2="15" stroke="rgba(255,255,255,0.2)" strokeWidth="1"/>
-                  <line x1="15" y1="45" x2="40" y2="40" stroke="rgba(255,255,255,0.2)" strokeWidth="1"/>
+              <div className="subtle-graphic network-viz">
+                <svg width="50" height="40" viewBox="0 0 50 40" fill="none">
+                  <circle cx="15" cy="15" r="1.5" fill="rgba(255,255,255,0.15)"/>
+                  <circle cx="35" cy="10" r="1.5" fill="rgba(255,255,255,0.15)"/>
+                  <circle cx="25" cy="30" r="1.5" fill="rgba(255,255,255,0.15)"/>
+                  <line x1="15" y1="15" x2="35" y2="10" stroke="rgba(255,255,255,0.08)" strokeWidth="0.5"/>
+                  <line x1="15" y1="15" x2="25" y2="30" stroke="rgba(255,255,255,0.08)" strokeWidth="0.5"/>
+                  <line x1="25" y1="30" x2="35" y2="10" stroke="rgba(255,255,255,0.08)" strokeWidth="0.5"/>
                 </svg>
-                <div className="graph-label">Network</div>
               </div>
             </div>
           </div>
