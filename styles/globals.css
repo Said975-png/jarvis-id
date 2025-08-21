@@ -4222,3 +4222,258 @@ body {
     font-size: 2.5rem;
   }
 }
+
+/* JARVIS AI Section */
+.jarvis-section {
+  min-height: 100vh;
+  background: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  padding: 5rem 0;
+}
+
+.jarvis-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at 70% 20%, rgba(255, 0, 255, 0.05) 0%, transparent 50%),
+              radial-gradient(circle at 30% 80%, rgba(0, 255, 255, 0.05) 0%, transparent 50%);
+}
+
+.jarvis-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  position: relative;
+  z-index: 10;
+}
+
+.jarvis-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.jarvis-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.jarvis-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1.5rem;
+  background: rgba(255, 0, 255, 0.08);
+  border: 1px solid rgba(255, 0, 255, 0.2);
+  border-radius: 30px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 2rem;
+  backdrop-filter: blur(20px);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  width: fit-content;
+}
+
+.jarvis-title {
+  font-size: clamp(2.5rem, 4vw, 4rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  margin-bottom: 1.5rem;
+  color: #ffffff;
+  line-height: 1.2;
+}
+
+.jarvis-subtitle {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.6;
+  margin-bottom: 3rem;
+}
+
+.jarvis-features {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.jarvis-feature-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  backdrop-filter: blur(20px);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.jarvis-feature-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 0, 255, 0.05), transparent);
+  transition: left 0.5s ease;
+}
+
+.jarvis-feature-item:hover::before {
+  left: 100%;
+}
+
+.jarvis-feature-item:hover {
+  background: rgba(255, 255, 255, 0.04);
+  border-color: rgba(255, 0, 255, 0.2);
+  transform: translateX(5px);
+}
+
+.jarvis-feature-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background: rgba(255, 0, 255, 0.1);
+  border-radius: 12px;
+  color: #ff00ff;
+  flex-shrink: 0;
+  transition: all 0.3s ease;
+}
+
+.jarvis-feature-item:hover .jarvis-feature-icon {
+  background: rgba(255, 0, 255, 0.15);
+  transform: scale(1.05);
+}
+
+.jarvis-feature-content {
+  flex: 1;
+}
+
+.jarvis-feature-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+  font-family: 'Inter', sans-serif;
+}
+
+.jarvis-feature-description {
+  font-size: 0.95rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.5;
+}
+
+.jarvis-buttons {
+  display: flex;
+  gap: 1.2rem;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.jarvis-visual {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.jarvis-3d-main {
+  position: relative;
+  height: 600px;
+  width: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+  max-width: 100%;
+  overflow: visible;
+}
+
+.jarvis-scene-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background: transparent;
+  overflow: visible;
+  border-radius: 10px;
+}
+
+.jarvis-performance-display {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 0, 255, 0.2);
+  border-radius: 20px;
+  backdrop-filter: blur(20px);
+  position: relative;
+  overflow: hidden;
+}
+
+.jarvis-performance-display::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 0, 255, 0.1), transparent);
+  animation: jarvisPerformanceScan 5s ease-in-out infinite;
+}
+
+@keyframes jarvisPerformanceScan {
+  0% { left: -100%; }
+  100% { left: 100%; }
+}
+
+/* Responsive Design for JARVIS Section */
+@media (max-width: 1024px) {
+  .jarvis-layout {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    text-align: center;
+  }
+
+  .jarvis-3d-main {
+    height: 500px;
+    width: 500px;
+  }
+}
+
+@media (max-width: 768px) {
+  .jarvis-features {
+    gap: 1.5rem;
+  }
+
+  .jarvis-feature-item {
+    padding: 1.25rem;
+  }
+
+  .jarvis-3d-main {
+    height: 400px;
+    width: 400px;
+  }
+
+  .jarvis-buttons {
+    justify-content: center;
+  }
+}
