@@ -940,7 +940,24 @@ body {
 }
 
 .gradient-text {
-  color: #ffffff;
+  background: linear-gradient(135deg, #00ffff 0%, #ffffff 50%, #ff00ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: gradientShift 3s ease-in-out infinite alternate;
+}
+
+@keyframes gradientShift {
+  0% {
+    background: linear-gradient(135deg, #00ffff 0%, #ffffff 50%, #ff00ff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  100% {
+    background: linear-gradient(135deg, #ff00ff 0%, #ffffff 50%, #00ffff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 }
 
 .hero-subtitle {
