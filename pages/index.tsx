@@ -72,11 +72,6 @@ export default function Home() {
 
 
         <div className="hero-container">
-          {/* Background JARVIS Text */}
-          <div className="background-text">
-            <span className="bg-jarvis">JARVIS</span>
-          </div>
-
           {/* Hero Grid Layout */}
           <div className="hero-grid">
             {/* Left Content */}
@@ -92,7 +87,7 @@ export default function Home() {
               </h1>
 
               <p className="hero-subtitle">
-                Разрабатываем сайты с ИИ-ассистентами, которые понимают в��ших клиентов,
+                Разрабатываем сайты с ИИ-ассистентами, кото��ые понимают в��ших клиентов,
                 автоматизируют бизнес-процессы и увеличивают конверсию в 3 раза
               </p>
 
@@ -440,7 +435,7 @@ export default function Home() {
                   </div>
                   <div className="metric-content">
                     <span className="metric-value">1M+</span>
-                    <span className="metric-label">Опе��аций/сек</span>
+                    <span className="metric-label">Операций/сек</span>
                   </div>
                 </div>
                 <div className="metric-item">
