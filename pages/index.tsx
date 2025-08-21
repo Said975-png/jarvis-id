@@ -76,7 +76,7 @@ export default function Home() {
               </div>
 
               <h1 className="hero-title">
-                Соз��аем <span className="gradient-text">интеллектуальные</span><br />
+                Создаем <span className="gradient-text">интеллектуальные</span><br />
                 веб-решения будущего
               </h1>
 
@@ -238,7 +238,7 @@ export default function Home() {
                   </div>
                   <div className="feature-content">
                     <h3 className="feature-title">Голографические Интерфейсы</h3>
-                    <p className="feature-description">Иммерсивные 3D-интерфейсы с поддержкой AR/VR д��я невероятного пользовательского опыта</p>
+                    <p className="feature-description">Иммерсивные 3D-интерфейсы с поддержкой AR/VR для невероятного пользовательского опыта</p>
                   </div>
                 </div>
               </div>
@@ -348,7 +348,7 @@ export default function Home() {
                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
                       <path d="M13.5 4.5L6 12L2.5 8.5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                     </svg>
-                    <span>До 5 стр��ниц сайта</span>
+                    <span>До 5 страниц сайта</span>
                   </div>
                   <div className="feature-item">
                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
@@ -506,7 +506,7 @@ export default function Home() {
               <span className="gradient-text">20+ консультантов</span>
             </h2>
             <p className="team-subtitle">
-              Один умный ассистент выполняет работ�� десятков сотрудников. ДЖАРВИС ведет естественные диалоги с клиентами, предлагает товары, консультирует и находит лучшие пре��ложения 24 часа в сутки без перерывов и выходных.
+              Один умный ассистент выполняет работ�� десятков сотрудников. ДЖАРВИС ведет естественные диалоги с клиентами, предлагает товары, консультирует и находит лучшие предложения 24 часа в сутки без перерывов и выходных.
             </p>
           </div>
 
@@ -734,7 +734,7 @@ export default function Home() {
                     <span>⭐⭐⭐⭐⭐</span>
                   </div>
                   <p className="review-text">
-                    "Сделала сайт для ��воего бутика с Jarvis. Удобно и быстро, клиенты довольны. Бот помогает им найти нужные товары, даже ночью."
+                    "Сделала сайт для своего бутика с Jarvis. Удобно и быстро, клиенты довольны. Бот помогает им найти нужные то��ары, даже ночью."
                   </p>
                   <div className="review-author">
                     <div className="author-info">
@@ -756,7 +756,7 @@ export default function Home() {
                   </p>
                   <div className="review-author">
                     <div className="author-info">
-                      <span className="author-name">Алек��еева Л.</span>
+                      <span className="author-name">Алексеева Л.</span>
                       <span className="author-location">Казань, Freelance</span>
                     </div>
                   </div>
@@ -806,7 +806,7 @@ export default function Home() {
                     <span>⭐⭐⭐⭐⭐</span>
                   </div>
                   <p className="review-text">
-                    "Создала сайт для своего магазина с Jarvis. Клиенты часто обращаются за помощью, и б��т всегда подскажет им нужную информацию."
+                    "Создала сайт для своего магазина с Jarvis. Клиенты часто обращаются за помощью, и бот всегда подскажет им нужную информацию."
                   </p>
                   <div className="review-author">
                     <div className="author-info">
@@ -829,7 +829,7 @@ export default function Home() {
                   <div className="review-author">
                     <div className="author-info">
                       <span className="author-name">Розенбаум В.</span>
-                      <span className="author-location">Санкт-Пе��ербург, Freelance</span>
+                      <span className="author-location">Санкт-Петербург, Freelance</span>
                     </div>
                   </div>
                 </div>
@@ -860,7 +860,7 @@ export default function Home() {
                     <span>⭐⭐⭐⭐⭐</span>
                   </div>
                   <p className="review-text">
-                    "Заказал сайт от Jarvis Intercoma онлайн-магазин с ИИ Джарвисом, и не пожалел! Всё сделали быстро, магазин сразу начал приносить заказы. Особенно понравилось, что бот отвечает клиентам мгновенно, даже ночью."
+                    "Заказал сайт от Jarvis Intercoma онлайн-маг��зин с ИИ Джарвисом, и не пожалел! Всё сделали быстро, магазин сразу начал приносить заказы. Особенно понравилось, что бот отвечает клиентам мгновенно, даже ночью."
                   </p>
                   <div className="review-author">
                     <div className="author-info">
@@ -931,7 +931,7 @@ export default function Home() {
                     <span>⭐⭐⭐⭐⭐</span>
                   </div>
                   <p className="review-text">
-                    "Создала сайт с Jarvis Intercoma для своего магазина одежды. Работать стало легче: бот помогает клиентам выбирать стиль, отвечает на вопросы, а я только получаю заказы. Очень довольна!"
+                    "Создала сайт с Jarvis Intercoma для своего магазина одежды. Работать стало легче: бот помогает клиентам выбира��ь стиль, отвечает на вопросы, а я только получаю заказы. Очень довольна!"
                   </p>
                   <div className="review-author">
                     <div className="author-info">
@@ -971,15 +971,13 @@ export default function Home() {
                   </p>
                 </div>
 
-                {/* Services */}
+                {/* Product */}
                 <div className="footer-column">
-                  <h3 className="footer-column-title">Услуги</h3>
+                  <h3 className="footer-column-title">Продукт</h3>
                   <ul className="footer-links">
-                    <li><a href="#" className="footer-link">Создание сайтов</a></li>
-                    <li><a href="#" className="footer-link">ИИ-ассистенты</a></li>
-                    <li><a href="#" className="footer-link">Автоматизация</a></li>
-                    <li><a href="#" className="footer-link">Аналитика</a></li>
-                    <li><a href="#" className="footer-link">Интеграции</a></li>
+                    <li><a href="#" className="footer-link">Главная</a></li>
+                    <li><a href="#" className="footer-link">Возможности</a></li>
+                    <li><a href="#" className="footer-link">Тарифы</a></li>
                   </ul>
                 </div>
 
@@ -1045,7 +1043,7 @@ export default function Home() {
                 </div>
                 <div className="footer-legal">
                   <a href="#" className="legal-link">Политика конфиденциальности</a>
-                  <a href="#" className="legal-link">Условия использован��я</a>
+                  <a href="#" className="legal-link">Условия использования</a>
                   <a href="#" className="legal-link">Соглашение</a>
                 </div>
               </div>
