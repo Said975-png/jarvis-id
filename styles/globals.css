@@ -4455,8 +4455,8 @@ body {
 
 /* Responsive Design for JARVIS Section */
 @media (max-width: 1200px) {
-  .jarvis-content-grid {
-    gap: 3rem;
+  .jarvis-layout {
+    gap: 4rem;
   }
 
   .jarvis-3d-main {
@@ -4466,62 +4466,30 @@ body {
 }
 
 @media (max-width: 1024px) {
-  .jarvis-content-grid {
+  .jarvis-layout {
     grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto auto;
-    gap: 2rem;
+    gap: 3rem;
     text-align: center;
   }
 
-  .jarvis-content-block {
-    text-align: center !important;
-    padding: 0 !important;
-    margin: 0 !important;
-  }
-
-  .jarvis-center-visual {
-    position: relative;
-    top: auto;
-    left: auto;
-    transform: none;
-    order: 1;
-    margin: 2rem 0;
-  }
-
-  .jarvis-content-block.top-left {
-    order: 2;
-  }
-
-  .jarvis-content-block.top-right {
-    order: 3;
-  }
-
-  .jarvis-content-block.bottom-left {
-    order: 4;
-  }
-
-  .jarvis-content-block.bottom-right {
-    order: 5;
-  }
-
   .jarvis-3d-main {
-    height: 500px;
-    width: 500px;
+    height: 600px;
+    width: 600px;
   }
 }
 
 @media (max-width: 768px) {
   .jarvis-features {
-    gap: 1rem;
+    gap: 1.5rem;
   }
 
   .jarvis-feature-item {
-    padding: 1rem;
+    padding: 1.25rem;
   }
 
   .jarvis-3d-main {
-    height: 400px;
-    width: 400px;
+    height: 500px;
+    width: 500px;
   }
 
   .jarvis-buttons {
@@ -4532,5 +4500,12 @@ body {
     flex-direction: column;
     gap: 1rem;
     padding: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .jarvis-3d-main {
+    height: 400px;
+    width: 400px;
   }
 }
