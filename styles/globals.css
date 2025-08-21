@@ -2475,13 +2475,15 @@ body {
 /* Mobile Small (320px - 389px) */
 @media (max-width: 389px) {
   .navbar-content {
-    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     gap: 0.5rem;
     padding: 0.5rem 0.75rem;
   }
 
   .navbar-search {
-    width: 100%;
+    display: none; /* Скрываем поиск на маленьких экранах */
   }
 
   .hero-title {
