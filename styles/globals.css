@@ -392,11 +392,11 @@ body {
 }
 
 .bg-jarvis {
-  font-size: clamp(8rem, 12vw, 16rem);
+  font-size: clamp(12rem, 15vw, 22rem);
   font-weight: 900;
   font-family: 'Orbitron', 'Inter', monospace;
   color: rgba(255, 255, 255, 0.12);
-  letter-spacing: 0.15em;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
   text-shadow:
     0 0 80px rgba(0, 255, 255, 0.25),
@@ -405,7 +405,7 @@ body {
   animation: bgTextPulse 6s ease-in-out infinite alternate;
   filter: blur(1.5px);
   white-space: nowrap;
-  max-width: 90vw;
+  max-width: 95vw;
   overflow: hidden;
 }
 
