@@ -251,7 +251,7 @@ export default function Home() {
                   </div>
                   <div className="metric-content">
                     <span className="metric-value">95%</span>
-                    <span className="metric-label">Автоматизация</span>
+                    <span className="metric-label">Автоматиза��ия</span>
                   </div>
                 </div>
                 <div className="metric-item">
@@ -331,7 +331,7 @@ export default function Home() {
                 <span>Технологии будущего</span>
               </div>
               <h2 className="capabilities-title">
-                В��зможности нашей
+                Революционные
                 <span className="highlight-text"> Платформы</span>
               </h2>
               <p className="capabilities-subtitle">
