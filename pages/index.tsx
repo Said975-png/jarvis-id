@@ -79,11 +79,51 @@ export default function Home() {
             <span className="bg-jarvis">JARVIS</span>
           </div>
 
+          {/* Floating Side Elements */}
+          <div className="floating-left-elements">
+            <div className="side-stat">
+              <div className="stat-number">99%</div>
+              <div className="stat-label">Client Satisfaction</div>
+            </div>
+            <div className="side-feature">
+              <div className="feature-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                </svg>
+              </div>
+              <div className="feature-text">Lightning Fast</div>
+            </div>
+            <div className="side-quote">
+              "Future of web development"
+            </div>
+          </div>
+
+          <div className="floating-right-elements">
+            <div className="side-tech">
+              <div className="tech-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <polygon points="12 2 2 7 12 12 22 7 12 2"/>
+                  <polyline points="2,17 12,22 22,17"/>
+                  <polyline points="2,12 12,17 22,12"/>
+                </svg>
+              </div>
+              <div className="tech-text">Next.js</div>
+            </div>
+            <div className="side-metric">
+              <div className="metric-value">500+</div>
+              <div className="metric-label">Projects</div>
+            </div>
+            <div className="side-badge">
+              <div className="badge-icon">✨</div>
+              <div className="badge-text">AI Powered</div>
+            </div>
+          </div>
+
           <div className="hero-layout">
             <div className="hero-3d">
               <Scene3D className="scene3d-container" />
 
-              {/* Decorative Elements */}
+              {/* Minimal Decorative Elements */}
               <div className="decorative-element elem-1">
                 <div className="pulse-dot"></div>
               </div>
@@ -92,6 +132,31 @@ export default function Home() {
               </div>
               <div className="decorative-element elem-3">
                 <div className="floating-plus">+</div>
+              </div>
+
+              {/* Additional Graphics */}
+              <div className="graphic-element graph-1">
+                <svg width="60" height="40" viewBox="0 0 60 40" fill="none">
+                  <path d="M5 35L15 25L25 30L35 15L45 20L55 10" stroke="rgba(255,255,255,0.3)" strokeWidth="2" fill="none"/>
+                  <circle cx="15" cy="25" r="2" fill="rgba(255,255,255,0.5)"/>
+                  <circle cx="35" cy="15" r="2" fill="rgba(255,255,255,0.5)"/>
+                  <circle cx="55" cy="10" r="2" fill="rgba(255,255,255,0.5)"/>
+                </svg>
+                <div className="graph-label">Performance</div>
+              </div>
+
+              <div className="graphic-element network-1">
+                <svg width="80" height="60" viewBox="0 0 80 60" fill="none">
+                  <circle cx="20" cy="20" r="3" fill="rgba(255,255,255,0.4)"/>
+                  <circle cx="60" cy="15" r="3" fill="rgba(255,255,255,0.4)"/>
+                  <circle cx="40" cy="40" r="3" fill="rgba(255,255,255,0.4)"/>
+                  <circle cx="15" cy="45" r="3" fill="rgba(255,255,255,0.4)"/>
+                  <line x1="20" y1="20" x2="60" y2="15" stroke="rgba(255,255,255,0.2)" strokeWidth="1"/>
+                  <line x1="20" y1="20" x2="40" y2="40" stroke="rgba(255,255,255,0.2)" strokeWidth="1"/>
+                  <line x1="40" y1="40" x2="60" y2="15" stroke="rgba(255,255,255,0.2)" strokeWidth="1"/>
+                  <line x1="15" y1="45" x2="40" y2="40" stroke="rgba(255,255,255,0.2)" strokeWidth="1"/>
+                </svg>
+                <div className="graph-label">Network</div>
               </div>
             </div>
           </div>
