@@ -54,13 +54,18 @@ function CyborgHead({ position = [0, 0, 0], scale = 1 }: CyborgHeadProps) {
             // Clone material to avoid affecting other instances
             child.material = child.material.clone();
 
-            // Set main body color to teal/green
+            // Set body color to teal/green, but head/face to black
             if (child.material.name &&
+                (child.material.name.toLowerCase().includes('head') ||
+                 child.material.name.toLowerCase().includes('face'))) {
+              child.material.color = new THREE.Color(0x000000); // Black face
+              child.material.emissive = new THREE.Color(0x000000);
+              child.material.emissiveIntensity = 0.0;
+            } else if (child.material.name &&
                 (child.material.name.toLowerCase().includes('body') ||
-                 child.material.name.toLowerCase().includes('head') ||
                  child.material.name.toLowerCase().includes('main') ||
                  !child.material.name.toLowerCase().includes('eye'))) {
-              child.material.color = new THREE.Color(0x00ccaa); // Teal color
+              child.material.color = new THREE.Color(0x00ccaa); // Teal body
               child.material.emissive = new THREE.Color(0x002222);
               child.material.emissiveIntensity = 0.1;
             }
