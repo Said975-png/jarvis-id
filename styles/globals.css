@@ -2325,28 +2325,20 @@ body {
 
 
 /* Mobile Responsive Design */
-@media (max-width: 1024px) {
-  .side-content {
-    display: none;
-  }
-
-  .floating-widget {
-    display: none;
-  }
-
-  .hero-container {
-    padding: 0 1.5rem;
-  }
-
+@media (max-width: 1200px) {
   .hero-grid {
     grid-template-columns: 1fr;
-    gap: 2rem;
+    gap: 3rem;
     text-align: center;
+    padding: 0 1.5rem;
   }
 
   .hero-left {
     text-align: center;
     order: 1;
+    max-width: 600px;
+    margin: 0 auto;
+    padding-right: 0;
   }
 
   .hero-center {
@@ -2355,6 +2347,9 @@ body {
 
   .hero-right {
     order: 3;
+    max-width: 600px;
+    margin: 0 auto;
+    padding-left: 0;
   }
 
   .hero-buttons {
@@ -2364,8 +2359,25 @@ body {
   .hero-subtitle {
     margin-left: auto;
     margin-right: auto;
+    max-width: 500px;
   }
 
+  .bg-jarvis {
+    font-size: 8rem;
+  }
+
+  .hero-3d-main {
+    width: 350px;
+    height: 350px;
+  }
+
+  .tech-stack {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 1024px) {
   .navbar-menu {
     display: none;
   }
@@ -2383,20 +2395,6 @@ body {
 
   .navbar-content {
     justify-content: space-between;
-  }
-
-  .bg-jarvis {
-    font-size: 10rem;
-  }
-
-  .hero-3d-main {
-    width: 400px;
-    height: 400px;
-  }
-
-  .tech-stack {
-    max-width: 400px;
-    margin: 0 auto;
   }
 }
 
