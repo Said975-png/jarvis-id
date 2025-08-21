@@ -3211,10 +3211,7 @@ body {
 
 /* Add similar orbit rings for capabilities */
 .capabilities-visual .orbit-ring {
-  position: absolute;
-  border: 1px solid rgba(0, 255, 255, 0.2);
-  border-radius: 50%;
-  animation: rotateOrbit 20s linear infinite;
+  display: none !important;
 }
 
 .capabilities-visual .ring-1 {
