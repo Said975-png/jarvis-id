@@ -123,7 +123,7 @@ export default function Home() {
 
               <h1 className="hero-title">
                 Создаем <span className="gradient-text">интеллектуальные</span><br />
-                веб-реше��ия будущего
+                веб-решения будущего
               </h1>
 
               <p className="hero-subtitle">
@@ -271,7 +271,7 @@ export default function Home() {
               {/* Status Indicator */}
               <div className="status-indicator">
                 <div className="status-dot"></div>
-                <span className="status-text">Система активна • Все модули функционируют</span>
+                <span className="status-text">Система активна • Все модули фун��ционируют</span>
               </div>
             </div>
 
@@ -335,7 +335,7 @@ export default function Home() {
                 <span className="highlight-text"> Решения</span>
               </h2>
               <p className="capabilities-subtitle">
-                Мы создаем сайты с интеллектуальными ИИ ассистентами, которые революционизируют взаимоде��ствие с вашими клиентами
+                Мы создаем сайты с интеллектуальными ИИ ассистентами, которы�� революционизируют взаимоде��ствие с вашими клиентами
               </p>
 
               <div className="capabilities-features">
@@ -462,8 +462,8 @@ export default function Home() {
                     </svg>
                   </div>
                   <div className="metric-content">
-                    <span className="metric-value">95%</span>
-                    <span className="metric-label">Точность</span>
+                    <span className="metric-value">99.7%</span>
+                    <span className="metric-label">Точность ИИ</span>
                   </div>
                 </div>
                 <div className="metric-item">
