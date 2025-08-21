@@ -235,6 +235,64 @@ body {
   overflow: visible;
 }
 
+.hero-side-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
+
+.hero-side-text.left-text {
+  transform: rotate(180deg);
+}
+
+.creative-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.text-accent {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: #00ffff;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.text-main {
+  font-size: 2rem;
+  font-weight: 900;
+  color: #ffffff;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.text-sub {
+  font-size: 1rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.7);
+  letter-spacing: 0.15em;
+  text-transform: lowercase;
+  font-style: italic;
+}
+
+.creative-quote {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.5);
+  font-style: italic;
+  font-weight: 300;
+  text-align: center;
+  border-left: 2px solid #00ffff;
+  padding-left: 1rem;
+  letter-spacing: 0.05em;
+}
+
 .scene3d-container {
   width: 100%;
   height: 100%;
