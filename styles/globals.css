@@ -421,18 +421,22 @@ body {
 }
 
 .tech-content h4 {
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 700;
   color: #ffffff;
   margin-bottom: 0.25rem;
   font-family: 'Inter', sans-serif;
+  word-wrap: break-word;
+  hyphens: auto;
 }
 
 .tech-content p {
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.6);
   line-height: 1.4;
+  word-wrap: break-word;
+  hyphens: auto;
 }
 
 /* Side Content - Updated */
