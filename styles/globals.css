@@ -1606,12 +1606,53 @@ body {
   box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
 }
 
+/* Premium Stats */
+.side-stat.premium {
+  padding: 1.5rem;
+  background: rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  backdrop-filter: blur(20px);
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s ease;
+}
+
+.side-stat.premium::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: conic-gradient(from 0deg, transparent, rgba(0, 255, 255, 0.1), transparent);
+  animation: rotate 8s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.side-stat.premium:hover::before {
+  opacity: 1;
+}
+
+.side-stat.premium:hover {
+  transform: translateY(-5px) translateX(10px);
+  border-color: rgba(0, 255, 255, 0.3);
+  box-shadow: 0 20px 40px rgba(0, 255, 255, 0.1);
+}
+
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
 .side-stat {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  opacity: 0.8;
+  opacity: 0.9;
   transition: all 0.3s ease;
+  position: relative;
 }
 
 .side-stat:hover {
@@ -1620,19 +1661,38 @@ body {
 }
 
 .stat-number {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 700;
   color: #ffffff;
   line-height: 1;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  position: relative;
+  z-index: 2;
+}
+
+.gradient-text {
+  background: linear-gradient(45deg, #00ffff, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .stat-label {
-  font-size: 0.8rem;
-  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.7);
   font-weight: 400;
-  margin-top: 0.25rem;
+  margin-top: 0.5rem;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  position: relative;
+  z-index: 2;
+}
+
+.stat-icon {
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+  opacity: 0.8;
+  position: relative;
+  z-index: 2;
 }
 
 .side-feature {
