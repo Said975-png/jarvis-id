@@ -383,7 +383,7 @@ export default function Home() {
 
               <div className="capabilities-buttons">
                 <button className="btn-primary">
-                  <span>Попробовать ИИ</span>
+                  <span>Запустить JARVIS</span>
                   <div className="btn-shine"></div>
                   <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
                     <path d="M3.5 8H12.5M12.5 8L8.5 4M12.5 8L8.5 12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
