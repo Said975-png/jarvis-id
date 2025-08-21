@@ -2020,11 +2020,10 @@ body {
 
 /* Enhanced Footer */
 .footer {
-  background: rgba(255, 255, 255, 0.01);
-  border-top: 1px solid rgba(255, 255, 255, 0.05);
-  padding: 5rem 0 2.5rem;
-  margin-top: 8rem;
-  backdrop-filter: blur(20px);
+  background: #000000;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 4rem 0 2rem;
+  margin-top: 6rem;
   position: relative;
 }
 
