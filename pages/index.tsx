@@ -249,7 +249,7 @@ export default function Home() {
                   </div>
                   <div className="feature-content">
                     <h3 className="feature-title">Голографические Интерфейсы</h3>
-                    <p className="feature-description">Иммерсивные 3D-интерфейсы с поддержкой AR/VR для невероятного пользовательского опыта</p>
+                    <p className="feature-description">Им��ерсивные 3D-интерфейсы с поддержкой AR/VR для невероятного пользовательского опыта</p>
                   </div>
                 </div>
               </div>
@@ -333,7 +333,7 @@ export default function Home() {
               <span>Наши тарифы</span>
             </div>
             <h2 className="pricing-title">
-              ��ыберите идеальный
+              Выберите идеальный
               <span className="gradient-text"> план</span>
             </h2>
             <p className="pricing-subtitle">
@@ -590,7 +590,7 @@ export default function Home() {
                   <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
                 </svg>
               </div>
-              <h3 className="feature-card-title">Поиск выгодных аналогов</h3>
+              <h3 className="feature-card-title">Поиск выгодных ��налогов</h3>
               <p className="feature-card-description">Находит дешевые альтернативы</p>
               <div className="feature-details">
                 <div className="detail-item">
@@ -634,7 +634,7 @@ export default function Home() {
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                     <polyline points="20,6 9,17 4,12"/>
                   </svg>
-                  <span>Нико��да не устает</span>
+                  <span>Никогда не устает</span>
                 </div>
                 <div className="detail-item">
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -889,7 +889,7 @@ export default function Home() {
                     <span>⭐⭐⭐⭐⭐</span>
                   </div>
                   <p className="review-text">
-                    "Мне сделали сайт с Jarvis Intercoma под мою студию украшений. Красиво, удобно, и всё автоматизировано. Теперь я занимаюс�� только заказами, а не сижу целый день в переписках с клиентами."
+                    "Мне сделали сайт с Jarvis Intercoma под мою студию украшений. Красиво, удобно, и всё автоматизировано. Теперь я занимаюсь только заказами, а не сижу целый день в переписках с клиента��и."
                   </p>
                   <div className="review-author">
                     <div className="author-info">
@@ -974,7 +974,7 @@ export default function Home() {
                     <span className="footer-logo-text">JARVIS</span>
                   </div>
                   <p className="footer-description">
-                    Создаем интеллектуальные веб-решения будущего с помощью передовых AI-технологий для максимальной эффективности вашего бизнеса.
+                    Создаем интеллектуальные веб-решения с AI-технологиями.
                   </p>
                 </div>
 
