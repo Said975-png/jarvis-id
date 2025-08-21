@@ -2396,19 +2396,31 @@ body {
 /* Tablet Landscape (768px - 991px) */
 @media (min-width: 768px) and (max-width: 991px) {
   .navbar-content {
-    gap: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    gap: 1rem;
   }
 
   .navbar-search {
-    width: 200px;
+    flex: 1;
+    max-width: 250px;
+    margin: 0 1rem;
+  }
+
+  .navbar-cart {
+    margin-right: 0.5rem;
   }
 
   .hero-title {
-    font-size: 3rem;
+    font-size: 3.2rem;
+    line-height: 1.2;
   }
 
   .hero-container {
-    padding: 0 1rem;
+    padding: 2rem 1.5rem;
+    text-align: center;
   }
 }
 
@@ -2601,7 +2613,7 @@ body {
     padding: 0.75rem 1.5rem;
   }
 
-  /* Убираем hover ��ффекты на мобильных */
+  /* Убираем hover эффекты на мобильных */
   .cart-btn:hover,
   .auth-btn:hover {
     transform: none;
