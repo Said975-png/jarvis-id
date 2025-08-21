@@ -47,43 +47,53 @@ function CyborgHead({ position = [0, 0, 0], scale = 1 }: CyborgHeadProps) {
     if (scene) {
       console.log('GLB model loaded successfully');
 
-      // Enhance materials and set green/teal colors
+      // Enhance materials and set colors
       scene.traverse((child: any) => {
         if (child.isMesh) {
           if (child.material) {
             // Clone material to avoid affecting other instances
             child.material = child.material.clone();
 
-            // Set body color to teal/green, but head/face to black
-            if (child.material.name &&
-                (child.material.name.toLowerCase().includes('head') ||
-                 child.material.name.toLowerCase().includes('face'))) {
-              child.material.color = new THREE.Color(0x000000); // Black face
-              child.material.emissive = new THREE.Color(0x000000);
-              child.material.emissiveIntensity = 0.0;
-            } else if (child.material.name &&
-                (child.material.name.toLowerCase().includes('body') ||
-                 child.material.name.toLowerCase().includes('main') ||
-                 !child.material.name.toLowerCase().includes('eye'))) {
-              child.material.color = new THREE.Color(0x00ccaa); // Teal body
-              child.material.emissive = new THREE.Color(0x002222);
-              child.material.emissiveIntensity = 0.1;
-            }
+            console.log('Material name:', child.material.name); // Debug material names
 
-            // Enhance metallic properties
-            child.material.metalness = Math.max(child.material.metalness || 0, 0.6);
-            child.material.roughness = Math.min(child.material.roughness || 1, 0.4);
-            child.material.envMapIntensity = 1.0;
-
-            // Set eyes to white
-            if (child.material.name &&
+            // Determine if this is an eye material
+            const isEye = child.material.name &&
                 (child.material.name.toLowerCase().includes('eye') ||
                  child.material.name.toLowerCase().includes('glow') ||
-                 child.material.name.toLowerCase().includes('light'))) {
-              child.material.color = new THREE.Color(0xffffff); // White
+                 child.material.name.toLowerCase().includes('light'));
+
+            // Determine if this is likely a face/head part (spherical shape at top)
+            const isFace = child.geometry &&
+                (child.geometry.type === 'SphereGeometry' ||
+                 (child.position && child.position.y > 0));
+
+            if (isEye) {
+              // White glowing eyes
+              child.material.color = new THREE.Color(0xffffff);
               child.material.emissive = new THREE.Color(0xffffff);
               child.material.emissiveIntensity = 0.9;
+              child.material.metalness = 0.1;
+              child.material.roughness = 0.8;
+            } else if (isFace || (child.material.name &&
+                (child.material.name.toLowerCase().includes('head') ||
+                 child.material.name.toLowerCase().includes('face') ||
+                 child.material.name.toLowerCase().includes('sphere')))) {
+              // Black face/head
+              child.material.color = new THREE.Color(0x000000);
+              child.material.emissive = new THREE.Color(0x000000);
+              child.material.emissiveIntensity = 0.0;
+              child.material.metalness = 0.8;
+              child.material.roughness = 0.3;
+            } else {
+              // Teal body parts
+              child.material.color = new THREE.Color(0x00ccaa);
+              child.material.emissive = new THREE.Color(0x002222);
+              child.material.emissiveIntensity = 0.1;
+              child.material.metalness = 0.6;
+              child.material.roughness = 0.4;
             }
+
+            child.material.envMapIntensity = 1.0;
           }
         }
       });
